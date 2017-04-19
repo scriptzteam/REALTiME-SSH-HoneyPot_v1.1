@@ -2287,3 +2287,49 @@
 2017-04-19T22:05:46+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13336,134.19.187.78] sending close 40
 2017-04-19T22:05:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13336,134.19.187.78] got channel 'direct-tcpip' request
 2017-04-19T22:05:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13336,134.19.187.78] direct-tcp connection request to 98.136.217.202:25 from localhost:5556
+2017-04-19T22:06:11+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13336,134.19.187.78] remote eof
+2017-04-19T22:06:11+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13336,134.19.187.78] remote close
+2017-04-19T22:06:11+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13336,134.19.187.78] sending close 41
+2017-04-19T22:06:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 122.191.89.188:38851 (10.8.41.81:2222) [session: c47e4036]
+2017-04-19T22:06:42+0000 [HoneyPotSSHTransport,13436,122.191.89.188] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-04-19T22:06:42+0000 [HoneyPotSSHTransport,13436,122.191.89.188] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-04-19T22:06:42+0000 [HoneyPotSSHTransport,13436,122.191.89.188] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-04-19T22:06:42+0000 [HoneyPotSSHTransport,13436,122.191.89.188] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-04-19T22:06:43+0000 [HoneyPotSSHTransport,13436,122.191.89.188] NEW KEYS
+2017-04-19T22:06:44+0000 [HoneyPotSSHTransport,13436,122.191.89.188] starting service 'ssh-userauth'
+2017-04-19T22:06:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13436,122.191.89.188] 'admin' trying auth 'password'
+2017-04-19T22:06:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13436,122.191.89.188] first time for 122.191.89.188, need: 1
+2017-04-19T22:06:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13436,122.191.89.188] login attempt: 1
+2017-04-19T22:06:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13436,122.191.89.188] login attempt [admin/admin123] succeeded
+2017-04-19T22:06:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13436,122.191.89.188] 'admin' authenticated with 'password'
+2017-04-19T22:06:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13436,122.191.89.188] starting service 'ssh-connection'
+2017-04-19T22:06:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 149.56.24.226:44636 (10.8.41.81:2222) [session: 67b7c00c]
+2017-04-19T22:06:46+0000 [HoneyPotSSHTransport,13436,122.191.89.188] avatar admin logging out
+2017-04-19T22:06:46+0000 [HoneyPotSSHTransport,13436,122.191.89.188] connection lost
+2017-04-19T22:06:46+0000 [HoneyPotSSHTransport,13436,122.191.89.188] Connection lost after 4 seconds
+2017-04-19T22:06:46+0000 [HoneyPotSSHTransport,13437,149.56.24.226] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-19T22:06:46+0000 [HoneyPotSSHTransport,13437,149.56.24.226] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-19T22:06:46+0000 [HoneyPotSSHTransport,13437,149.56.24.226] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-19T22:06:46+0000 [HoneyPotSSHTransport,13437,149.56.24.226] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-19T22:06:47+0000 [HoneyPotSSHTransport,13437,149.56.24.226] NEW KEYS
+2017-04-19T22:06:47+0000 [HoneyPotSSHTransport,13437,149.56.24.226] starting service 'ssh-userauth'
+2017-04-19T22:06:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13437,149.56.24.226] 'root' trying auth 'password'
+2017-04-19T22:06:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13437,149.56.24.226] login attempt: 382
+2017-04-19T22:06:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13437,149.56.24.226] login return, expect: [doctor/doctor]
+2017-04-19T22:06:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13437,149.56.24.226] login attempt [root/dance] failed
+2017-04-19T22:06:48+0000 [-] 'root' failed auth 'password'
+2017-04-19T22:06:48+0000 [-] unauthorized login: 
+2017-04-19T22:06:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13437,149.56.24.226] 'root' trying auth 'password'
+2017-04-19T22:06:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13437,149.56.24.226] login attempt: 383
+2017-04-19T22:06:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13437,149.56.24.226] login return, expect: [doctor/doctor]
+2017-04-19T22:06:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13437,149.56.24.226] login attempt [root/daniel] failed
+2017-04-19T22:06:49+0000 [-] 'root' failed auth 'password'
+2017-04-19T22:06:49+0000 [-] unauthorized login: 
+2017-04-19T22:06:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13437,149.56.24.226] 'root' trying auth 'password'
+2017-04-19T22:06:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13437,149.56.24.226] login attempt: 384
+2017-04-19T22:06:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13437,149.56.24.226] login return, expect: [doctor/doctor]
+2017-04-19T22:06:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13437,149.56.24.226] login attempt [root/darkness] failed
+2017-04-19T22:06:51+0000 [-] 'root' failed auth 'password'
+2017-04-19T22:06:51+0000 [-] unauthorized login: 
+2017-04-19T22:06:51+0000 [HoneyPotSSHTransport,13437,149.56.24.226] connection lost
+2017-04-19T22:06:51+0000 [HoneyPotSSHTransport,13437,149.56.24.226] Connection lost after 4 seconds
