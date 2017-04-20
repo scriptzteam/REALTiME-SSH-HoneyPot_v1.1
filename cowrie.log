@@ -621,3 +621,57 @@
 2017-04-20T17:42:35+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16093,91.195.103.213] remote eof
 2017-04-20T17:42:35+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16093,91.195.103.213] remote close
 2017-04-20T17:42:35+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16093,91.195.103.213] sending close 14
+2017-04-20T17:43:11+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 200.169.180.117:57847 (10.8.41.81:2223) [session: TT8885]
+2017-04-20T17:43:12+0000 [CowrieTelnetTransport,8885,200.169.180.117] first time for 200.169.180.117, need: 1
+2017-04-20T17:43:12+0000 [CowrieTelnetTransport,8885,200.169.180.117] login attempt: 1
+2017-04-20T17:43:12+0000 [CowrieTelnetTransport,8885,200.169.180.117] login attempt [guest/guest] succeeded
+2017-04-20T17:43:14+0000 [CowrieTelnetTransport,8885,200.169.180.117] Opening TTY Log: log/tty/20170420-174314-None-8885i.log
+2017-04-20T17:43:14+0000 [CowrieTelnetTransport,8885,200.169.180.117] Warning: state changed and new state returned
+2017-04-20T17:43:14+0000 [CowrieTelnetTransport,8885,200.169.180.117] CMD: enable
+2017-04-20T17:43:14+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command found: enable 
+2017-04-20T17:43:14+0000 [CowrieTelnetTransport,8885,200.169.180.117] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-20T17:43:14+0000 [CowrieTelnetTransport,8885,200.169.180.117] CMD: shell
+2017-04-20T17:43:14+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command not found: shell
+2017-04-20T17:43:14+0000 [CowrieTelnetTransport,8885,200.169.180.117] CMD: sh
+2017-04-20T17:43:14+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command found: sh 
+2017-04-20T17:43:15+0000 [CowrieTelnetTransport,8885,200.169.180.117] CMD: cat /proc/mounts; /bin/busybox WDCRO
+2017-04-20T17:43:15+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command found: cat /proc/mounts
+2017-04-20T17:43:15+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command found: /bin/busybox WDCRO
+2017-04-20T17:43:15+0000 [CowrieTelnetTransport,8885,200.169.180.117] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox WDCRO
+2017-04-20T17:43:15+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command found: cd /dev/shm
+2017-04-20T17:43:15+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command found: cat .s
+2017-04-20T17:43:15+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command found: cp /bin/echo .s
+2017-04-20T17:43:15+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command found: /bin/busybox WDCRO
+2017-04-20T17:43:15+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 61.14.210.25:47551 (10.8.41.81:2222) [session: c2587fb4]
+2017-04-20T17:43:15+0000 [CowrieTelnetTransport,8885,200.169.180.117] CMD: nc; wget; /bin/busybox WDCRO
+2017-04-20T17:43:15+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command not found: nc
+2017-04-20T17:43:15+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command found: wget 
+2017-04-20T17:43:15+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command found: /bin/busybox WDCRO
+2017-04-20T17:43:16+0000 [CowrieTelnetTransport,8885,200.169.180.117] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-04-20T17:43:16+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command not found: dd bs=52 count=1 if=.s
+2017-04-20T17:43:16+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command found: cat /dev/shm/.s
+2017-04-20T17:43:16+0000 [HoneyPotSSHTransport,16106,61.14.210.25] Remote SSH version: SSH-2.0-libssh-0.1
+2017-04-20T17:43:16+0000 [HoneyPotSSHTransport,16106,61.14.210.25] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-04-20T17:43:16+0000 [HoneyPotSSHTransport,16106,61.14.210.25] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-04-20T17:43:16+0000 [HoneyPotSSHTransport,16106,61.14.210.25] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-04-20T17:43:16+0000 [CowrieTelnetTransport,8885,200.169.180.117] CMD: /bin/busybox WDCRO
+2017-04-20T17:43:16+0000 [CowrieTelnetTransport,8885,200.169.180.117] Command found: /bin/busybox WDCRO
+2017-04-20T17:43:17+0000 [HoneyPotSSHTransport,16106,61.14.210.25] NEW KEYS
+2017-04-20T17:43:17+0000 [HoneyPotSSHTransport,16106,61.14.210.25] starting service 'ssh-userauth'
+2017-04-20T17:43:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16106,61.14.210.25] 'root' trying auth 'password'
+2017-04-20T17:43:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16106,61.14.210.25] login attempt: 2
+2017-04-20T17:43:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16106,61.14.210.25] login return, expect: [root/dlghtmxm2017!]
+2017-04-20T17:43:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16106,61.14.210.25] login attempt [root/dlghtmxm2017!] succeeded
+2017-04-20T17:43:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16106,61.14.210.25] 'root' authenticated with 'password'
+2017-04-20T17:43:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16106,61.14.210.25] starting service 'ssh-connection'
+2017-04-20T17:43:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,16106,61.14.210.25] got channel 'session' request
+2017-04-20T17:43:20+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16106,61.14.210.25] channel open
+2017-04-20T17:43:21+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16106,61.14.210.25] pty request: 'xterm' (24, 80, 0, 0)
+2017-04-20T17:43:21+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16106,61.14.210.25] Terminal Size: 24 80
+2017-04-20T17:43:21+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16106,61.14.210.25] getting shell
+2017-04-20T17:43:21+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16106,61.14.210.25] Opening TTY Log: log/tty/20170420-174321-c2587fb4-0i.log
+2017-04-20T17:43:25+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16106,61.14.210.25] Closing TTY Log: log/tty/20170420-174321-c2587fb4-0i.log after 4 seconds
+2017-04-20T17:43:25+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16106,61.14.210.25] honeypot terminal protocol connection lost disconnected
+2017-04-20T17:43:25+0000 [HoneyPotSSHTransport,16106,61.14.210.25] avatar root logging out
+2017-04-20T17:43:25+0000 [HoneyPotSSHTransport,16106,61.14.210.25] connection lost
+2017-04-20T17:43:25+0000 [HoneyPotSSHTransport,16106,61.14.210.25] Connection lost after 9 seconds
