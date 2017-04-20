@@ -7845,3 +7845,34 @@
 2017-04-20T13:33:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.207.37.166:55174 (10.8.41.81:2222) [session: 106016a5]
 2017-04-20T13:33:46+0000 [HoneyPotSSHTransport,15779,103.207.37.166] connection lost
 2017-04-20T13:33:46+0000 [HoneyPotSSHTransport,15779,103.207.37.166] Connection lost after 0 seconds
+2017-04-20T13:34:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 58.214.2.27:40796 (10.8.41.81:2223) [session: TT8797]
+2017-04-20T13:34:15+0000 [CowrieTelnetTransport,8797,58.214.2.27] first time for 58.214.2.27, need: 1
+2017-04-20T13:34:15+0000 [CowrieTelnetTransport,8797,58.214.2.27] login attempt: 1
+2017-04-20T13:34:15+0000 [CowrieTelnetTransport,8797,58.214.2.27] login attempt [root/system] succeeded
+2017-04-20T13:34:17+0000 [CowrieTelnetTransport,8797,58.214.2.27] Opening TTY Log: log/tty/20170420-133417-None-8797i.log
+2017-04-20T13:34:17+0000 [CowrieTelnetTransport,8797,58.214.2.27] Warning: state changed and new state returned
+2017-04-20T13:34:17+0000 [CowrieTelnetTransport,8797,58.214.2.27] Received unhandled keyID: '\x00'
+2017-04-20T13:34:18+0000 [CowrieTelnetTransport,8797,58.214.2.27] CMD: enable
+2017-04-20T13:34:18+0000 [CowrieTelnetTransport,8797,58.214.2.27] Command found: enable 
+2017-04-20T13:34:18+0000 [CowrieTelnetTransport,8797,58.214.2.27] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-20T13:34:18+0000 [CowrieTelnetTransport,8797,58.214.2.27] Received unhandled keyID: '\x00'
+2017-04-20T13:34:19+0000 [CowrieTelnetTransport,8797,58.214.2.27] CMD: system
+2017-04-20T13:34:19+0000 [CowrieTelnetTransport,8797,58.214.2.27] Command not found: system
+2017-04-20T13:34:19+0000 [CowrieTelnetTransport,8797,58.214.2.27] Received unhandled keyID: '\x00'
+2017-04-20T13:34:19+0000 [CowrieTelnetTransport,8797,58.214.2.27] CMD: shell
+2017-04-20T13:34:19+0000 [CowrieTelnetTransport,8797,58.214.2.27] Command not found: shell
+2017-04-20T13:34:19+0000 [CowrieTelnetTransport,8797,58.214.2.27] Received unhandled keyID: '\x00'
+2017-04-20T13:34:19+0000 [CowrieTelnetTransport,8797,58.214.2.27] CMD: sh
+2017-04-20T13:34:19+0000 [CowrieTelnetTransport,8797,58.214.2.27] Command found: sh 
+2017-04-20T13:34:20+0000 [CowrieTelnetTransport,8797,58.214.2.27] Received unhandled keyID: '\x00'
+2017-04-20T13:34:20+0000 [CowrieTelnetTransport,8797,58.214.2.27] CMD: /bin/busybox MIRAI
+2017-04-20T13:34:20+0000 [CowrieTelnetTransport,8797,58.214.2.27] Command found: /bin/busybox MIRAI
+2017-04-20T13:34:21+0000 [CowrieTelnetTransport,8797,58.214.2.27] Closing TTY Log: log/tty/20170420-133417-None-8797i.log after 3 seconds
+2017-04-20T13:34:21+0000 [CowrieTelnetTransport,8797,58.214.2.27] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-20T13:34:21+0000 [CowrieTelnetTransport,8797,58.214.2.27] Connection lost after 7 seconds
+2017-04-20T13:34:54+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,15286,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-20T13:34:54+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,15286,91.230.47.81] direct-tcp connection request to 136.243.58.37:80 from localhost:5556
+2017-04-20T13:34:55+0000 [SSHChannel None (34) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15286,91.230.47.81] direct-tcp forward to 136.243.58.37:80 with data 'GET /internals/api/ip?1492695266269022602 HTTP/1.1\r\nHost: ip2.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-04-20T13:34:55+0000 [SSHChannel None (34) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15286,91.230.47.81] failed to connect: Connection refused
+2017-04-20T13:34:55+0000 [SSHChannel None (34) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15286,91.230.47.81] sending close 34
