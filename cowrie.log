@@ -7708,3 +7708,27 @@
 2017-04-20T16:51:16+0000 [SSHChannel None (45) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15780,91.230.47.77] failed to connect: Connection refused
 2017-04-20T16:51:16+0000 [SSHChannel None (45) on SSHService 'ssh-connection' on HoneyPotSSHTransport,15780,91.230.47.77] sending close 45
 2017-04-20T16:52:35+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 79.225.101.125:50457 (10.8.41.81:2223) [session: TT8858]
+2017-04-20T16:53:18+0000 [CowrieTelnetTransport,8858,79.225.101.125] login attempt: 2
+2017-04-20T16:53:18+0000 [CowrieTelnetTransport,8858,79.225.101.125] login return, expect: [admin/admin]
+2017-04-20T16:53:19+0000 [CowrieTelnetTransport,8858,79.225.101.125] login attempt [admin/admin] succeeded
+2017-04-20T16:53:20+0000 [CowrieTelnetTransport,8858,79.225.101.125] Opening TTY Log: log/tty/20170420-165320-None-8858i.log
+2017-04-20T16:53:20+0000 [CowrieTelnetTransport,8858,79.225.101.125] Warning: state changed and new state returned
+2017-04-20T16:53:21+0000 [CowrieTelnetTransport,8858,79.225.101.125] CMD: enable
+2017-04-20T16:53:21+0000 [CowrieTelnetTransport,8858,79.225.101.125] Command found: enable 
+2017-04-20T16:53:21+0000 [CowrieTelnetTransport,8858,79.225.101.125] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-20T16:53:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.47.74:63236 (10.8.41.81:2222) [session: d2beca92]
+2017-04-20T16:53:48+0000 [HoneyPotSSHTransport,16092,91.230.47.74] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-04-20T16:53:48+0000 [HoneyPotSSHTransport,16092,91.230.47.74] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-04-20T16:53:48+0000 [HoneyPotSSHTransport,16092,91.230.47.74] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-20T16:53:48+0000 [HoneyPotSSHTransport,16092,91.230.47.74] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-20T16:53:49+0000 [HoneyPotSSHTransport,16092,91.230.47.74] NEW KEYS
+2017-04-20T16:53:49+0000 [HoneyPotSSHTransport,16092,91.230.47.74] starting service 'ssh-userauth'
+2017-04-20T16:53:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16092,91.230.47.74] '1111' trying auth 'password'
+2017-04-20T16:53:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16092,91.230.47.74] login attempt: 9
+2017-04-20T16:53:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16092,91.230.47.74] login return, expect: [1111/1111]
+2017-04-20T16:53:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16092,91.230.47.74] login attempt [1111/1111] succeeded
+2017-04-20T16:53:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16092,91.230.47.74] '1111' authenticated with 'password'
+2017-04-20T16:53:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16092,91.230.47.74] starting service 'ssh-connection'
+2017-04-20T16:53:51+0000 [HoneyPotSSHTransport,15780,91.230.47.77] avatar 1111 logging out
+2017-04-20T16:53:51+0000 [HoneyPotSSHTransport,15780,91.230.47.77] connection lost
+2017-04-20T16:53:51+0000 [HoneyPotSSHTransport,15780,91.230.47.77] Connection lost after 11691 seconds
