@@ -8054,3 +8054,62 @@
 2017-04-20T20:01:44+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16103,91.230.47.81] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: hipcow.pw\r\nAccept: */*\r\n\r\n'
 2017-04-20T20:01:44+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16103,91.230.47.81] failed to connect: Connection refused
 2017-04-20T20:01:44+0000 [SSHChannel None (40) on SSHService 'ssh-connection' on HoneyPotSSHTransport,16103,91.230.47.81] sending close 40
+2017-04-20T20:02:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 95.215.60.242:53250 (10.8.41.81:2223) [session: TT9039]
+2017-04-20T20:02:51+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 39.36.238.106:51584 (10.8.41.81:2223) [session: TT9040]
+2017-04-20T20:02:53+0000 [CowrieTelnetTransport,9040,39.36.238.106] first time for 39.36.238.106, need: 1
+2017-04-20T20:02:53+0000 [CowrieTelnetTransport,9040,39.36.238.106] login attempt: 1
+2017-04-20T20:02:53+0000 [CowrieTelnetTransport,9040,39.36.238.106] login attempt [root/888888] succeeded
+2017-04-20T20:02:54+0000 [CowrieTelnetTransport,9040,39.36.238.106] Opening TTY Log: log/tty/20170420-200254-None-9040i.log
+2017-04-20T20:02:54+0000 [CowrieTelnetTransport,9040,39.36.238.106] Warning: state changed and new state returned
+2017-04-20T20:02:54+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 111.194.99.250:47737 (10.8.41.81:2222) [session: f6037129]
+2017-04-20T20:02:55+0000 [CowrieTelnetTransport,9039,95.215.60.242] login attempt: 277
+2017-04-20T20:02:55+0000 [CowrieTelnetTransport,9039,95.215.60.242] login return, expect: [root/54321]
+2017-04-20T20:02:55+0000 [CowrieTelnetTransport,9039,95.215.60.242] login attempt [Administrator/] failed
+2017-04-20T20:02:55+0000 [CowrieTelnetTransport,9039,95.215.60.242] Warning: state changed and new state returned
+2017-04-20T20:02:55+0000 [CowrieTelnetTransport,9039,95.215.60.242] login attempt: 278
+2017-04-20T20:02:55+0000 [CowrieTelnetTransport,9039,95.215.60.242] login return, expect: [root/54321]
+2017-04-20T20:02:55+0000 [CowrieTelnetTransport,9039,95.215.60.242] login attempt [enable/shell] failed
+2017-04-20T20:02:55+0000 [CowrieTelnetTransport,9039,95.215.60.242] Warning: state changed and new state returned
+2017-04-20T20:02:55+0000 [CowrieTelnetTransport,9039,95.215.60.242] login attempt: 279
+2017-04-20T20:02:55+0000 [CowrieTelnetTransport,9039,95.215.60.242] login return, expect: [root/54321]
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9039,95.215.60.242] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9039,95.215.60.242] Warning: state changed and new state returned
+2017-04-20T20:02:56+0000 [HoneyPotSSHTransport,16141,111.194.99.250] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-04-20T20:02:56+0000 [HoneyPotSSHTransport,16141,111.194.99.250] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-04-20T20:02:56+0000 [HoneyPotSSHTransport,16141,111.194.99.250] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-04-20T20:02:56+0000 [HoneyPotSSHTransport,16141,111.194.99.250] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] CMD: enable
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command found: enable 
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] CMD: shell
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command not found: shell
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] CMD: sh
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command found: sh 
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] CMD: cat /proc/mounts; /bin/busybox PVCFA
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command found: cat /proc/mounts
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command found: /bin/busybox PVCFA
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox PVCFA
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command found: cd /dev/shm
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command found: cat .s
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command found: cp /bin/echo .s
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command found: /bin/busybox PVCFA
+2017-04-20T20:02:56+0000 [HoneyPotSSHTransport,16141,111.194.99.250] NEW KEYS
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] CMD: nc; wget; /bin/busybox PVCFA
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command not found: nc
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command found: wget 
+2017-04-20T20:02:56+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command found: /bin/busybox PVCFA
+2017-04-20T20:02:57+0000 [HoneyPotSSHTransport,16141,111.194.99.250] starting service 'ssh-userauth'
+2017-04-20T20:02:57+0000 [CowrieTelnetTransport,9040,39.36.238.106] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-04-20T20:02:57+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command not found: dd bs=52 count=1 if=.s
+2017-04-20T20:02:57+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command found: cat /dev/shm/.s
+2017-04-20T20:02:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16141,111.194.99.250] 'root' trying auth 'password'
+2017-04-20T20:02:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16141,111.194.99.250] first time for 111.194.99.250, need: 1
+2017-04-20T20:02:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16141,111.194.99.250] login attempt: 1
+2017-04-20T20:02:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16141,111.194.99.250] login attempt [root/123456] succeeded
+2017-04-20T20:02:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16141,111.194.99.250] 'root' authenticated with 'password'
+2017-04-20T20:02:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,16141,111.194.99.250] starting service 'ssh-connection'
+2017-04-20T20:02:59+0000 [CowrieTelnetTransport,9040,39.36.238.106] CMD: /bin/busybox PVCFA
+2017-04-20T20:02:59+0000 [CowrieTelnetTransport,9040,39.36.238.106] Command found: /bin/busybox PVCFA
+2017-04-20T20:02:59+0000 [HoneyPotSSHTransport,16141,111.194.99.250] avatar root logging out
+2017-04-20T20:02:59+0000 [HoneyPotSSHTransport,16141,111.194.99.250] connection lost
+2017-04-20T20:02:59+0000 [HoneyPotSSHTransport,16141,111.194.99.250] Connection lost after 4 seconds
