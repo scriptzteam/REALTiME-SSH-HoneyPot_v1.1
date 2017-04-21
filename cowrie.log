@@ -6705,3 +6705,883 @@
 2017-04-21T13:36:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] got channel 'direct-tcpip' request
 2017-04-21T13:36:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] direct-tcp connection request to 140.78.3.69:25 from localhost:5556
 2017-04-21T13:37:01+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:45903 (10.8.41.81:2222) [session: f46fff39]
+2017-04-21T13:37:02+0000 [HoneyPotSSHTransport,19772,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-21T13:37:02+0000 [HoneyPotSSHTransport,19772,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-21T13:37:02+0000 [HoneyPotSSHTransport,19772,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:02+0000 [HoneyPotSSHTransport,19772,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:02+0000 [HoneyPotSSHTransport,19772,58.218.204.188] NEW KEYS
+2017-04-21T13:37:03+0000 [HoneyPotSSHTransport,19772,58.218.204.188] starting service 'ssh-userauth'
+2017-04-21T13:37:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19772,58.218.204.188] 'root' trying auth 'none'
+2017-04-21T13:37:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19772,58.218.204.188] 'root' authenticated with 'none'
+2017-04-21T13:37:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19772,58.218.204.188] starting service 'ssh-connection'
+2017-04-21T13:37:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:43557 (10.8.41.81:2222) [session: 7e4fd7b4]
+2017-04-21T13:37:05+0000 [HoneyPotSSHTransport,19772,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-04-21T13:37:05+0000 [HoneyPotSSHTransport,19772,58.218.204.188] avatar root logging out
+2017-04-21T13:37:05+0000 [HoneyPotSSHTransport,19772,58.218.204.188] connection lost
+2017-04-21T13:37:05+0000 [HoneyPotSSHTransport,19772,58.218.204.188] Connection lost after 4 seconds
+2017-04-21T13:37:05+0000 [HoneyPotSSHTransport,19773,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-21T13:37:05+0000 [HoneyPotSSHTransport,19773,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-21T13:37:05+0000 [HoneyPotSSHTransport,19773,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:05+0000 [HoneyPotSSHTransport,19773,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:06+0000 [HoneyPotSSHTransport,19773,58.218.204.188] NEW KEYS
+2017-04-21T13:37:07+0000 [HoneyPotSSHTransport,19773,58.218.204.188] starting service 'ssh-userauth'
+2017-04-21T13:37:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19773,58.218.204.188] 'root' trying auth 'none'
+2017-04-21T13:37:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19773,58.218.204.188] 'root' authenticated with 'none'
+2017-04-21T13:37:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19773,58.218.204.188] starting service 'ssh-connection'
+2017-04-21T13:37:10+0000 [HoneyPotSSHTransport,19773,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-04-21T13:37:10+0000 [HoneyPotSSHTransport,19773,58.218.204.188] avatar root logging out
+2017-04-21T13:37:10+0000 [HoneyPotSSHTransport,19773,58.218.204.188] connection lost
+2017-04-21T13:37:10+0000 [HoneyPotSSHTransport,19773,58.218.204.188] Connection lost after 5 seconds
+2017-04-21T13:37:13+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:13+0000 [SSHChannel None (16) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19653,91.195.103.202] remote eof
+2017-04-21T13:37:13+0000 [SSHChannel None (16) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19653,91.195.103.202] remote close
+2017-04-21T13:37:13+0000 [SSHChannel None (16) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19653,91.195.103.202] sending close 16
+2017-04-21T13:37:13+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19653,91.195.103.202] got channel 'direct-tcpip' request
+2017-04-21T13:37:13+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19653,91.195.103.202] direct-tcp connection request to 173.194.77.27:25 from localhost:5556
+2017-04-21T13:37:17+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:52488 (10.8.41.81:2222) [session: 2e038383]
+2017-04-21T13:37:18+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:61628 (10.8.41.81:2222) [session: 31606934]
+2017-04-21T13:37:18+0000 [HoneyPotSSHTransport,19775,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-21T13:37:18+0000 [HoneyPotSSHTransport,19775,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-21T13:37:18+0000 [HoneyPotSSHTransport,19775,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:18+0000 [HoneyPotSSHTransport,19775,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:19+0000 [HoneyPotSSHTransport,19774,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-21T13:37:19+0000 [HoneyPotSSHTransport,19774,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-21T13:37:19+0000 [HoneyPotSSHTransport,19774,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:19+0000 [HoneyPotSSHTransport,19774,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:19+0000 [HoneyPotSSHTransport,19774,58.218.204.188] NEW KEYS
+2017-04-21T13:37:20+0000 [HoneyPotSSHTransport,19775,58.218.204.188] NEW KEYS
+2017-04-21T13:37:20+0000 [HoneyPotSSHTransport,19774,58.218.204.188] starting service 'ssh-userauth'
+2017-04-21T13:37:20+0000 [HoneyPotSSHTransport,19775,58.218.204.188] starting service 'ssh-userauth'
+2017-04-21T13:37:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19775,58.218.204.188] 'root' trying auth 'none'
+2017-04-21T13:37:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19775,58.218.204.188] 'root' authenticated with 'none'
+2017-04-21T13:37:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19775,58.218.204.188] starting service 'ssh-connection'
+2017-04-21T13:37:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19774,58.218.204.188] 'root' trying auth 'none'
+2017-04-21T13:37:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19774,58.218.204.188] 'root' authenticated with 'none'
+2017-04-21T13:37:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19774,58.218.204.188] starting service 'ssh-connection'
+2017-04-21T13:37:24+0000 [HoneyPotSSHTransport,19775,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-04-21T13:37:24+0000 [HoneyPotSSHTransport,19775,58.218.204.188] avatar root logging out
+2017-04-21T13:37:24+0000 [HoneyPotSSHTransport,19775,58.218.204.188] connection lost
+2017-04-21T13:37:24+0000 [HoneyPotSSHTransport,19775,58.218.204.188] Connection lost after 6 seconds
+2017-04-21T13:37:25+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.47.82:62586 (10.8.41.81:2222) [session: 9bd2b8aa]
+2017-04-21T13:37:25+0000 [HoneyPotSSHTransport,19774,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-04-21T13:37:25+0000 [HoneyPotSSHTransport,19774,58.218.204.188] avatar root logging out
+2017-04-21T13:37:25+0000 [HoneyPotSSHTransport,19774,58.218.204.188] connection lost
+2017-04-21T13:37:25+0000 [HoneyPotSSHTransport,19774,58.218.204.188] Connection lost after 7 seconds
+2017-04-21T13:37:36+0000 [HoneyPotSSHTransport,19776,91.230.47.82] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-04-21T13:37:36+0000 [HoneyPotSSHTransport,19776,91.230.47.82] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-04-21T13:37:36+0000 [HoneyPotSSHTransport,19776,91.230.47.82] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:36+0000 [HoneyPotSSHTransport,19776,91.230.47.82] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:38+0000 [HoneyPotSSHTransport,19776,91.230.47.82] NEW KEYS
+2017-04-21T13:37:38+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:43514 (10.8.41.81:2222) [session: 407b409d]
+2017-04-21T13:37:38+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:47334 (10.8.41.81:2222) [session: 30499d7b]
+2017-04-21T13:37:39+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19653,91.195.103.202] remote eof
+2017-04-21T13:37:39+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19653,91.195.103.202] remote close
+2017-04-21T13:37:39+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19653,91.195.103.202] sending close 17
+2017-04-21T13:37:39+0000 [HoneyPotSSHTransport,19778,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-21T13:37:39+0000 [HoneyPotSSHTransport,19778,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-21T13:37:39+0000 [HoneyPotSSHTransport,19778,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:39+0000 [HoneyPotSSHTransport,19778,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:39+0000 [HoneyPotSSHTransport,19776,91.230.47.82] starting service 'ssh-userauth'
+2017-04-21T13:37:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19653,91.195.103.202] got channel 'direct-tcpip' request
+2017-04-21T13:37:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19653,91.195.103.202] direct-tcp connection request to 173.194.77.26:25 from localhost:5556
+2017-04-21T13:37:39+0000 [HoneyPotSSHTransport,19777,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-21T13:37:39+0000 [HoneyPotSSHTransport,19777,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-21T13:37:39+0000 [HoneyPotSSHTransport,19777,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:39+0000 [HoneyPotSSHTransport,19777,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:39+0000 [HoneyPotSSHTransport,19778,58.218.204.188] NEW KEYS
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19546,91.230.47.67] got channel 'direct-tcpip' request
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19546,91.230.47.67] direct-tcp connection request to 23.38.211.155:443 from localhost:5556
+2017-04-21T13:37:40+0000 [HoneyPotSSHTransport,19777,58.218.204.188] NEW KEYS
+2017-04-21T13:37:40+0000 [HoneyPotSSHTransport,19778,58.218.204.188] starting service 'ssh-userauth'
+2017-04-21T13:37:40+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19546,91.230.47.67] direct-tcp forward to 23.38.211.155:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xf6\x0c\xd2\xda\x11b\xe6\x8a\x83!)\xf3\t\xa8B\x16\xa2Q\x152\xd9l\x9a@\xcb\x99EE\xceOQ\xf2'
+2017-04-21T13:37:40+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19546,91.230.47.67] failed to connect: Connection refused
+2017-04-21T13:37:40+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,19546,91.230.47.67] sending close 10
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 283, in ssh_CHANNEL_EOF
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,19637,91.230.47.82] Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 208, in doRead
+	    return self._dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/tcp.py", line 214, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/cowrie/cowrie/cowrie/ssh/transport.py", line 89, in dataReceived
+	    self.dispatchMessage(messageNum, packet[1:])
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 767, in dispatchMessage
+	    messageNum, payload)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 103, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/log.py", line 86, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 122, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/python/context.py", line 85, in callWithContext
+	    return func(*args,**kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/service.py", line 45, in packetReceived
+	    return f(packet)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/connection.py", line 296, in ssh_CHANNEL_CLOSE
+	    channel = self.channels[localChannel]
+	exceptions.KeyError: 0
+	
+2017-04-21T13:37:40+0000 [HoneyPotSSHTransport,19777,58.218.204.188] starting service 'ssh-userauth'
+2017-04-21T13:37:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19778,58.218.204.188] 'root' trying auth 'none'
+2017-04-21T13:37:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19778,58.218.204.188] 'root' authenticated with 'none'
+2017-04-21T13:37:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19778,58.218.204.188] starting service 'ssh-connection'
+2017-04-21T13:37:42+0000 [HoneyPotSSHTransport,19778,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-04-21T13:37:42+0000 [HoneyPotSSHTransport,19778,58.218.204.188] avatar root logging out
+2017-04-21T13:37:42+0000 [HoneyPotSSHTransport,19778,58.218.204.188] connection lost
+2017-04-21T13:37:42+0000 [HoneyPotSSHTransport,19778,58.218.204.188] Connection lost after 3 seconds
+2017-04-21T13:37:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19777,58.218.204.188] 'root' trying auth 'none'
+2017-04-21T13:37:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19777,58.218.204.188] 'root' authenticated with 'none'
+2017-04-21T13:37:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19777,58.218.204.188] starting service 'ssh-connection'
+2017-04-21T13:37:44+0000 [HoneyPotSSHTransport,19777,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-04-21T13:37:44+0000 [HoneyPotSSHTransport,19777,58.218.204.188] avatar root logging out
+2017-04-21T13:37:44+0000 [HoneyPotSSHTransport,19777,58.218.204.188] connection lost
+2017-04-21T13:37:44+0000 [HoneyPotSSHTransport,19777,58.218.204.188] Connection lost after 6 seconds
+2017-04-21T13:37:50+0000 [HoneyPotSSHTransport,19776,91.230.47.82] Got remote error, code 11
+	reason: Bye Bye
+2017-04-21T13:37:50+0000 [HoneyPotSSHTransport,19776,91.230.47.82] connection lost
+2017-04-21T13:37:50+0000 [HoneyPotSSHTransport,19776,91.230.47.82] Connection lost after 25 seconds
+2017-04-21T13:37:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:54877 (10.8.41.81:2222) [session: 1da3df8f]
+2017-04-21T13:37:55+0000 [HoneyPotSSHTransport,19779,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-21T13:37:55+0000 [HoneyPotSSHTransport,19779,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-21T13:37:55+0000 [HoneyPotSSHTransport,19779,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:55+0000 [HoneyPotSSHTransport,19779,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:37:56+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:59667 (10.8.41.81:2222) [session: 48549344]
+2017-04-21T13:37:56+0000 [HoneyPotSSHTransport,19779,58.218.204.188] NEW KEYS
+2017-04-21T13:37:57+0000 [HoneyPotSSHTransport,19779,58.218.204.188] starting service 'ssh-userauth'
+2017-04-21T13:37:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19779,58.218.204.188] 'root' trying auth 'none'
+2017-04-21T13:38:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19779,58.218.204.188] 'root' authenticated with 'none'
+2017-04-21T13:38:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,19779,58.218.204.188] starting service 'ssh-connection'
+2017-04-21T13:38:00+0000 [HoneyPotSSHTransport,19780,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-21T13:38:00+0000 [HoneyPotSSHTransport,19780,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-21T13:38:00+0000 [HoneyPotSSHTransport,19780,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-21T13:38:00+0000 [HoneyPotSSHTransport,19780,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
