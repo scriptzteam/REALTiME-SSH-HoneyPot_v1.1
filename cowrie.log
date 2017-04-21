@@ -256,3 +256,23 @@
 2017-04-21T19:30:52+0000 [CowrieTelnetTransport,10116,95.215.60.242] login return, expect: [root/54321]
 2017-04-21T19:30:52+0000 [CowrieTelnetTransport,10116,95.215.60.242] login attempt [sh//bin/busybox ECCHI] failed
 2017-04-21T19:30:52+0000 [CowrieTelnetTransport,10116,95.215.60.242] Warning: state changed and new state returned
+2017-04-21T19:31:08+0000 [CowrieTelnetTransport,10114,95.215.60.242] Connection lost after 35 seconds
+2017-04-21T19:31:23+0000 [CowrieTelnetTransport,10116,95.215.60.242] Connection lost after 36 seconds
+2017-04-21T19:31:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,20789,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-21T19:31:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,20789,91.230.47.81] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-04-21T19:31:37+0000 [SSHChannel None (123) on SSHService 'ssh-connection' on HoneyPotSSHTransport,20789,91.230.47.81] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: hipcow.pw\r\nAccept: */*\r\n\r\n'
+2017-04-21T19:31:37+0000 [SSHChannel None (123) on SSHService 'ssh-connection' on HoneyPotSSHTransport,20789,91.230.47.81] failed to connect: Connection refused
+2017-04-21T19:31:37+0000 [SSHChannel None (123) on SSHService 'ssh-connection' on HoneyPotSSHTransport,20789,91.230.47.81] sending close 123
+2017-04-21T19:31:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.47.82:57849 (10.8.41.81:2222) [session: 7745af45]
+2017-04-21T19:31:49+0000 [HoneyPotSSHTransport,20817,91.230.47.82] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-04-21T19:31:49+0000 [HoneyPotSSHTransport,20817,91.230.47.82] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-04-21T19:31:49+0000 [HoneyPotSSHTransport,20817,91.230.47.82] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-21T19:31:49+0000 [HoneyPotSSHTransport,20817,91.230.47.82] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-21T19:31:49+0000 [HoneyPotSSHTransport,20817,91.230.47.82] NEW KEYS
+2017-04-21T19:31:49+0000 [HoneyPotSSHTransport,20817,91.230.47.82] starting service 'ssh-userauth'
+2017-04-21T19:31:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,20817,91.230.47.82] '1111' trying auth 'password'
+2017-04-21T19:31:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,20817,91.230.47.82] login attempt: 123
+2017-04-21T19:31:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,20817,91.230.47.82] login return, expect: [1111/1111]
+2017-04-21T19:31:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,20817,91.230.47.82] login attempt [1111/1111] succeeded
+2017-04-21T19:31:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,20817,91.230.47.82] '1111' authenticated with 'password'
+2017-04-21T19:31:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,20817,91.230.47.82] starting service 'ssh-connection'
