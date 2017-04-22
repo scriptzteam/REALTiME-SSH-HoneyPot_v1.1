@@ -1579,3 +1579,46 @@
 2017-04-22T22:09:42+0000 [HoneyPotSSHTransport,21531,121.18.238.109] Connection lost after 5 seconds
 2017-04-22T22:10:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21504,91.230.47.82] got channel 'direct-tcpip' request
 2017-04-22T22:10:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21504,91.230.47.82] direct-tcp connection request to 195.130.132.8:25 from localhost:5556
+2017-04-22T22:10:29+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 50.154.151.196:56756 (10.8.41.81:2223) [session: TT11385]
+2017-04-22T22:10:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21455,91.195.103.197] got channel 'direct-tcpip' request
+2017-04-22T22:10:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21455,91.195.103.197] direct-tcp connection request to 66.196.118.33:25 from localhost:5556
+2017-04-22T22:10:30+0000 [CowrieTelnetTransport,11385,50.154.151.196] first time for 50.154.151.196, need: 1
+2017-04-22T22:10:30+0000 [CowrieTelnetTransport,11385,50.154.151.196] login attempt: 1
+2017-04-22T22:10:30+0000 [CowrieTelnetTransport,11385,50.154.151.196] login attempt [Administrator/admin] succeeded
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Opening TTY Log: log/tty/20170422-221032-None-11385i.log
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Warning: state changed and new state returned
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] CMD: enable
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command found: enable 
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] CMD: shell
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command not found: shell
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] CMD: sh
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command found: sh 
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] CMD: cat /proc/mounts; /bin/busybox GATZP
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command found: cat /proc/mounts
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command found: /bin/busybox GATZP
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox GATZP
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command found: cd /dev/shm
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command found: cat .s
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command found: cp /bin/echo .s
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command found: /bin/busybox GATZP
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] CMD: nc; wget; /bin/busybox GATZP
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command not found: nc
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command found: wget 
+2017-04-22T22:10:32+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command found: /bin/busybox GATZP
+2017-04-22T22:10:33+0000 [CowrieTelnetTransport,11385,50.154.151.196] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-04-22T22:10:33+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command not found: dd bs=52 count=1 if=.s
+2017-04-22T22:10:33+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command found: cat /dev/shm/.s
+2017-04-22T22:10:33+0000 [CowrieTelnetTransport,11385,50.154.151.196] CMD: /bin/busybox GATZP
+2017-04-22T22:10:33+0000 [CowrieTelnetTransport,11385,50.154.151.196] Command found: /bin/busybox GATZP
+2017-04-22T22:10:35+0000 [CowrieTelnetTransport,11384,187.112.163.124] Closing TTY Log: log/tty/20170422-220853-None-11384i.log after 102 seconds
+2017-04-22T22:10:35+0000 [CowrieTelnetTransport,11384,187.112.163.124] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-22T22:10:35+0000 [CowrieTelnetTransport,11384,187.112.163.124] Connection lost after 105 seconds
+2017-04-22T22:10:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21504,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-22T22:10:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21504,91.230.47.82] direct-tcp connection request to 64.59.134.8:25 from localhost:5556
+2017-04-22T22:10:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21504,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-22T22:10:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21504,91.230.47.82] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-04-22T22:10:55+0000 [SSHChannel None (80) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21455,91.195.103.197] remote eof
+2017-04-22T22:10:55+0000 [SSHChannel None (80) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21455,91.195.103.197] remote close
+2017-04-22T22:10:55+0000 [SSHChannel None (80) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21455,91.195.103.197] sending close 80
