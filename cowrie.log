@@ -2521,3 +2521,36 @@
 2017-04-22T06:12:01+0000 [SSHChannel None (166) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21007,91.195.103.183] direct-tcp forward to 107.189.171.198:80 with data 'GET /ip/header?id_ip=16991181578&id_provider=19 HTTP/1.1\r\nHost: ipinfoplz.com\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) Version/9.0.3 Safari/601.4.4\r\nX-Group: 19\r\nX-Id: 16991181578\r\nAccept-Encoding: gzip\r\nConnection: close\r\n\r\n'
 2017-04-22T06:12:01+0000 [SSHChannel None (166) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21007,91.195.103.183] failed to connect: Connection refused
 2017-04-22T06:12:01+0000 [SSHChannel None (166) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21007,91.195.103.183] sending close 166
+2017-04-22T06:12:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21006,91.230.47.69] got channel 'direct-tcpip' request
+2017-04-22T06:12:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21006,91.230.47.69] direct-tcp connection request to 173.230.217.202:443 from localhost:5556
+2017-04-22T06:12:11+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21006,91.230.47.69] direct-tcp forward to 173.230.217.202:443 with data "\x16\x03\x01\x00\x87\x01\x00\x00\x83\x03\x01X\xfa\xf4\x1d\x8f$?\xfc\x85}\x95$W\xa6\xbf^\xd7\x18\xbb\r\x0f\x1c\x04\x88\xb0'\xa1\xae[\xd22\xf0\x00\x00\x18\xc0\x14\xc0\x13\x005\x00/\xc0\n\xc0\t\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00B\x00\x00\x00!\x00\x1f\x00\x00\x1cnative.np.ac.playstation.net\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00"
+2017-04-22T06:12:11+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21006,91.230.47.69] failed to connect: Connection refused
+2017-04-22T06:12:11+0000 [SSHChannel None (37) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21006,91.230.47.69] sending close 37
+2017-04-22T06:12:15+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.103.221.161:57197 (10.8.41.81:2222) [session: 8ee71cf1]
+2017-04-22T06:12:16+0000 [HoneyPotSSHTransport,21098,116.103.221.161] Remote SSH version: SSH-2.0-Granados-1.0
+2017-04-22T06:12:16+0000 [HoneyPotSSHTransport,21098,116.103.221.161] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-04-22T06:12:16+0000 [HoneyPotSSHTransport,21098,116.103.221.161] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-04-22T06:12:16+0000 [HoneyPotSSHTransport,21098,116.103.221.161] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-04-22T06:12:16+0000 [HoneyPotSSHTransport,21098,116.103.221.161] NEW KEYS
+2017-04-22T06:12:17+0000 [HoneyPotSSHTransport,21098,116.103.221.161] starting service 'ssh-userauth'
+2017-04-22T06:12:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21098,116.103.221.161] 'admin' trying auth 'password'
+2017-04-22T06:12:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21098,116.103.221.161] first time for 116.103.221.161, need: 1
+2017-04-22T06:12:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21098,116.103.221.161] login attempt: 1
+2017-04-22T06:12:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21098,116.103.221.161] login attempt [admin/admin] succeeded
+2017-04-22T06:12:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21098,116.103.221.161] 'admin' authenticated with 'password'
+2017-04-22T06:12:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21098,116.103.221.161] starting service 'ssh-connection'
+2017-04-22T06:12:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21098,116.103.221.161] got channel 'direct-tcpip' request
+2017-04-22T06:12:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21098,116.103.221.161] direct-tcp connection request to ipinfo.io:80 from localhost:80
+2017-04-22T06:12:21+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21098,116.103.221.161] direct-tcp forward to ipinfo.io:80 with data 'GET /json HTTP/1.1\r\nHost:ipinfo.io\r\n\r\n'
+2017-04-22T06:12:21+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21098,116.103.221.161] failed to connect: Connection refused
+2017-04-22T06:12:21+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21098,116.103.221.161] sending close 0
+2017-04-22T06:12:21+0000 [HoneyPotSSHTransport,21098,116.103.221.161] Got remote error, code 0
+	reason: 
+2017-04-22T06:12:21+0000 [HoneyPotSSHTransport,21098,116.103.221.161] avatar admin logging out
+2017-04-22T06:12:21+0000 [HoneyPotSSHTransport,21098,116.103.221.161] connection lost
+2017-04-22T06:12:21+0000 [HoneyPotSSHTransport,21098,116.103.221.161] Connection lost after 6 seconds
+2017-04-22T06:12:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21007,91.195.103.183] got channel 'direct-tcpip' request
+2017-04-22T06:12:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21007,91.195.103.183] direct-tcp connection request to 107.189.171.198:80 from localhost:5556
+2017-04-22T06:12:46+0000 [SSHChannel None (167) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21007,91.195.103.183] direct-tcp forward to 107.189.171.198:80 with data 'GET /ip/header?id_ip=16991231997&id_provider=19 HTTP/1.1\r\nHost: ipinfoplz.com\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/601.4.4 (KHTML, like Gecko) Version/9.0.3 Safari/601.4.4\r\nX-Group: 19\r\nX-Id: 16991231997\r\nAccept-Encoding: gzip\r\nConnection: close\r\n\r\n'
+2017-04-22T06:12:46+0000 [SSHChannel None (167) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21007,91.195.103.183] failed to connect: Connection refused
+2017-04-22T06:12:46+0000 [SSHChannel None (167) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21007,91.195.103.183] sending close 167
