@@ -2612,3 +2612,22 @@
 2017-04-22T06:14:01+0000 [HoneyPotSSHTransport,21100,51.254.207.17] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
 2017-04-22T06:14:01+0000 [HoneyPotSSHTransport,21100,51.254.207.17] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
 2017-04-22T06:14:01+0000 [HoneyPotSSHTransport,21100,51.254.207.17] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-22T06:14:02+0000 [HoneyPotSSHTransport,21100,51.254.207.17] NEW KEYS
+2017-04-22T06:14:02+0000 [HoneyPotSSHTransport,21100,51.254.207.17] starting service 'ssh-userauth'
+2017-04-22T06:14:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21100,51.254.207.17] 'admin' trying auth 'password'
+2017-04-22T06:14:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21100,51.254.207.17] first time for 51.254.207.17, need: 1
+2017-04-22T06:14:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21100,51.254.207.17] login attempt: 1
+2017-04-22T06:14:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21100,51.254.207.17] login attempt [admin/default] succeeded
+2017-04-22T06:14:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21100,51.254.207.17] 'admin' authenticated with 'password'
+2017-04-22T06:14:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,21100,51.254.207.17] starting service 'ssh-connection'
+2017-04-22T06:14:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21100,51.254.207.17] got channel 'direct-tcpip' request
+2017-04-22T06:14:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,21100,51.254.207.17] direct-tcp connection request to 23.23.128.123:80 from 127.0.0.1:22
+2017-04-22T06:14:05+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21100,51.254.207.17] direct-tcp forward to 23.23.128.123:80 with data 'GET / HTTP/1.1\r\nHost: api.ipify.org\r\nConnection: close\r\n\r\n'
+2017-04-22T06:14:05+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21100,51.254.207.17] failed to connect: Connection refused
+2017-04-22T06:14:05+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21100,51.254.207.17] sending close 0
+2017-04-22T06:14:05+0000 [HoneyPotSSHTransport,21100,51.254.207.17] Got remote error, code 11
+	reason: 
+2017-04-22T06:14:05+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,21100,51.254.207.17] remote eof
+2017-04-22T06:14:05+0000 [HoneyPotSSHTransport,21100,51.254.207.17] avatar admin logging out
+2017-04-22T06:14:05+0000 [HoneyPotSSHTransport,21100,51.254.207.17] connection lost
+2017-04-22T06:14:05+0000 [HoneyPotSSHTransport,21100,51.254.207.17] Connection lost after 4 seconds
