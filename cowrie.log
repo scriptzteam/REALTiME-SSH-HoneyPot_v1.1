@@ -1171,3 +1171,680 @@
 2017-04-24T08:08:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 64.29.145.46:25 from localhost:5556
 2017-04-24T08:08:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
 2017-04-24T08:08:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 66.196.118.37:25 from localhost:5556
+2017-04-24T08:08:02+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 134.2.127.19:33890 (10.8.41.81:2222) [session: f5f1a52a]
+2017-04-24T08:08:02+0000 [HoneyPotSSHTransport,30682,134.2.127.19] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-24T08:08:02+0000 [HoneyPotSSHTransport,30682,134.2.127.19] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-24T08:08:02+0000 [HoneyPotSSHTransport,30682,134.2.127.19] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:02+0000 [HoneyPotSSHTransport,30682,134.2.127.19] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:02+0000 [HoneyPotSSHTransport,30682,134.2.127.19] NEW KEYS
+2017-04-24T08:08:02+0000 [HoneyPotSSHTransport,30682,134.2.127.19] starting service 'ssh-userauth'
+2017-04-24T08:08:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30682,134.2.127.19] 'root' trying auth 'password'
+2017-04-24T08:08:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30682,134.2.127.19] login attempt: 403
+2017-04-24T08:08:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30682,134.2.127.19] login return, expect: [root/root]
+2017-04-24T08:08:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30682,134.2.127.19] login attempt [root/root] succeeded
+2017-04-24T08:08:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30682,134.2.127.19] 'root' authenticated with 'password'
+2017-04-24T08:08:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30682,134.2.127.19] starting service 'ssh-connection'
+2017-04-24T08:08:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:32502 (10.8.41.81:2222) [session: d546c079]
+2017-04-24T08:08:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] channel open
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] executing command "mkdir /tmp/.xs/"
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Opening TTY Log: log/tty/20170424-080804-f5f1a52a-0e.log
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] CMD: mkdir /tmp/.xs/
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Command found: mkdir /tmp/.xs/
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] exitCode: 0
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] sending close 0
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] exitCode: 0
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Closing TTY Log: log/tty/20170424-080804-f5f1a52a-0e.log after 0 seconds
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] remote close
+2017-04-24T08:08:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:04+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] channel open
+2017-04-24T08:08:04+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] executing command "cat >/tmp/.xs/daemon.armv4l.mod"
+2017-04-24T08:08:04+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Opening TTY Log: log/tty/20170424-080804-f5f1a52a-1e.log
+2017-04-24T08:08:04+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] CMD: cat >/tmp/.xs/daemon.armv4l.mod
+2017-04-24T08:08:04+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Command found: cat > /tmp/.xs/daemon.armv4l.mod
+2017-04-24T08:08:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:04+0000 [HoneyPotSSHTransport,30683,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-24T08:08:04+0000 [HoneyPotSSHTransport,30683,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-24T08:08:04+0000 [HoneyPotSSHTransport,30683,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:04+0000 [HoneyPotSSHTransport,30683,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] adding 87185 to 43887 in channel 1
+2017-04-24T08:08:06+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:06+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] exitCode: 0
+2017-04-24T08:08:06+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:06+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Not storing duplicate content 9c2848962733846bf50b490fd8f6c7ce9ecade2d3f2f530f5ecbba283af87d3a
+2017-04-24T08:08:06+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Saved stdin contents with SHA-256 9c2848962733846bf50b490fd8f6c7ce9ecade2d3f2f530f5ecbba283af87d3a to dl/9c2848962733846bf50b490fd8f6c7ce9ecade2d3f2f530f5ecbba283af87d3a
+2017-04-24T08:08:06+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Closing TTY Log: log/tty/20170424-080804-f5f1a52a-1e.log after 1 seconds
+2017-04-24T08:08:06+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:06+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] sending close 1
+2017-04-24T08:08:06+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] remote close
+2017-04-24T08:08:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] channel open
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] executing command "chmod 777 /tmp/.xs/daemon.armv4l.mod"
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Opening TTY Log: log/tty/20170424-080806-f5f1a52a-2e.log
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] CMD: chmod 777 /tmp/.xs/daemon.armv4l.mod
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Command found: chmod 777 /tmp/.xs/daemon.armv4l.mod
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] exitCode: 0
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] sending close 2
+2017-04-24T08:08:06+0000 [HoneyPotSSHTransport,30683,58.218.204.188] NEW KEYS
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] exitCode: 0
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Closing TTY Log: log/tty/20170424-080806-f5f1a52a-2e.log after 0 seconds
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:06+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] remote close
+2017-04-24T08:08:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] channel open
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] executing command "/tmp/.xs/daemon.armv4l.mod"
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Opening TTY Log: log/tty/20170424-080806-f5f1a52a-3e.log
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] CMD: /tmp/.xs/daemon.armv4l.mod
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Command not found: /tmp/.xs/daemon.armv4l.mod
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] exitCode: 0
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] sending close 3
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] exitCode: 0
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] Closing TTY Log: log/tty/20170424-080806-f5f1a52a-3e.log after 0 seconds
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:06+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30682,134.2.127.19] remote close
+2017-04-24T08:08:06+0000 [HoneyPotSSHTransport,30682,134.2.127.19] Got remote error, code 11
+	reason: 
+2017-04-24T08:08:06+0000 [HoneyPotSSHTransport,30682,134.2.127.19] avatar root logging out
+2017-04-24T08:08:06+0000 [HoneyPotSSHTransport,30682,134.2.127.19] connection lost
+2017-04-24T08:08:06+0000 [HoneyPotSSHTransport,30682,134.2.127.19] Connection lost after 4 seconds
+2017-04-24T08:08:06+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 134.2.127.19:33914 (10.8.41.81:2222) [session: dff1ec91]
+2017-04-24T08:08:06+0000 [HoneyPotSSHTransport,30684,134.2.127.19] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-24T08:08:06+0000 [HoneyPotSSHTransport,30684,134.2.127.19] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-24T08:08:06+0000 [HoneyPotSSHTransport,30684,134.2.127.19] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:06+0000 [HoneyPotSSHTransport,30684,134.2.127.19] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:06+0000 [HoneyPotSSHTransport,30684,134.2.127.19] NEW KEYS
+2017-04-24T08:08:06+0000 [HoneyPotSSHTransport,30684,134.2.127.19] starting service 'ssh-userauth'
+2017-04-24T08:08:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30684,134.2.127.19] 'root' trying auth 'password'
+2017-04-24T08:08:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30684,134.2.127.19] login attempt: 404
+2017-04-24T08:08:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30684,134.2.127.19] login return, expect: [root/root]
+2017-04-24T08:08:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30684,134.2.127.19] login attempt [root/root] succeeded
+2017-04-24T08:08:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30684,134.2.127.19] 'root' authenticated with 'password'
+2017-04-24T08:08:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30684,134.2.127.19] starting service 'ssh-connection'
+2017-04-24T08:08:08+0000 [HoneyPotSSHTransport,30683,58.218.204.188] starting service 'ssh-userauth'
+2017-04-24T08:08:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 65.55.92.152:25 from localhost:5556
+2017-04-24T08:08:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 104.44.194.233:25 from localhost:5556
+2017-04-24T08:08:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] channel open
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] executing command "mkdir /tmp/.xs/"
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Opening TTY Log: log/tty/20170424-080808-dff1ec91-0e.log
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] CMD: mkdir /tmp/.xs/
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Command found: mkdir /tmp/.xs/
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] exitCode: 0
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] sending close 0
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] exitCode: 0
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Closing TTY Log: log/tty/20170424-080808-dff1ec91-0e.log after 0 seconds
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] remote close
+2017-04-24T08:08:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:08+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] channel open
+2017-04-24T08:08:08+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] executing command "cat >/tmp/.xs/daemon.i686.mod"
+2017-04-24T08:08:08+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Opening TTY Log: log/tty/20170424-080808-dff1ec91-1e.log
+2017-04-24T08:08:08+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] CMD: cat >/tmp/.xs/daemon.i686.mod
+2017-04-24T08:08:08+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Command found: cat > /tmp/.xs/daemon.i686.mod
+2017-04-24T08:08:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30683,58.218.204.188] 'root' trying auth 'none'
+2017-04-24T08:08:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30683,58.218.204.188] 'root' authenticated with 'none'
+2017-04-24T08:08:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30683,58.218.204.188] starting service 'ssh-connection'
+2017-04-24T08:08:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:11+0000 [HoneyPotSSHTransport,30683,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-04-24T08:08:11+0000 [HoneyPotSSHTransport,30683,58.218.204.188] avatar root logging out
+2017-04-24T08:08:11+0000 [HoneyPotSSHTransport,30683,58.218.204.188] connection lost
+2017-04-24T08:08:11+0000 [HoneyPotSSHTransport,30683,58.218.204.188] Connection lost after 6 seconds
+2017-04-24T08:08:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:11+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:11+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] exitCode: 0
+2017-04-24T08:08:11+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:11+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Not storing duplicate content 5685b086ce12ffede8814e303223a67eca476735dfe4e9e84b751354a5ea0232
+2017-04-24T08:08:11+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Saved stdin contents with SHA-256 5685b086ce12ffede8814e303223a67eca476735dfe4e9e84b751354a5ea0232 to dl/5685b086ce12ffede8814e303223a67eca476735dfe4e9e84b751354a5ea0232
+2017-04-24T08:08:11+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Closing TTY Log: log/tty/20170424-080808-dff1ec91-1e.log after 3 seconds
+2017-04-24T08:08:11+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:11+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] sending close 1
+2017-04-24T08:08:11+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] remote close
+2017-04-24T08:08:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.28.27:25 from localhost:5556
+2017-04-24T08:08:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] channel open
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] executing command "chmod 777 /tmp/.xs/daemon.i686.mod"
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Opening TTY Log: log/tty/20170424-080811-dff1ec91-2e.log
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] CMD: chmod 777 /tmp/.xs/daemon.i686.mod
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Command found: chmod 777 /tmp/.xs/daemon.i686.mod
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] exitCode: 0
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] sending close 2
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] exitCode: 0
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Closing TTY Log: log/tty/20170424-080811-dff1ec91-2e.log after 0 seconds
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:11+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] remote close
+2017-04-24T08:08:11+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:11+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] channel open
+2017-04-24T08:08:11+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] executing command "/tmp/.xs/daemon.i686.mod"
+2017-04-24T08:08:11+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Opening TTY Log: log/tty/20170424-080811-dff1ec91-3e.log
+2017-04-24T08:08:12+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] CMD: /tmp/.xs/daemon.i686.mod
+2017-04-24T08:08:12+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Command not found: /tmp/.xs/daemon.i686.mod
+2017-04-24T08:08:12+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] exitCode: 0
+2017-04-24T08:08:12+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:12+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] sending close 3
+2017-04-24T08:08:12+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:12+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:12+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] exitCode: 0
+2017-04-24T08:08:12+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] Closing TTY Log: log/tty/20170424-080811-dff1ec91-3e.log after 0 seconds
+2017-04-24T08:08:12+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:12+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30684,134.2.127.19] remote close
+2017-04-24T08:08:12+0000 [HoneyPotSSHTransport,30684,134.2.127.19] Got remote error, code 11
+	reason: 
+2017-04-24T08:08:12+0000 [HoneyPotSSHTransport,30684,134.2.127.19] avatar root logging out
+2017-04-24T08:08:12+0000 [HoneyPotSSHTransport,30684,134.2.127.19] connection lost
+2017-04-24T08:08:12+0000 [HoneyPotSSHTransport,30684,134.2.127.19] Connection lost after 5 seconds
+2017-04-24T08:08:12+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 134.2.127.19:33928 (10.8.41.81:2222) [session: f62446d2]
+2017-04-24T08:08:12+0000 [HoneyPotSSHTransport,30685,134.2.127.19] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-24T08:08:12+0000 [HoneyPotSSHTransport,30685,134.2.127.19] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-24T08:08:12+0000 [HoneyPotSSHTransport,30685,134.2.127.19] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:12+0000 [HoneyPotSSHTransport,30685,134.2.127.19] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:12+0000 [HoneyPotSSHTransport,30685,134.2.127.19] NEW KEYS
+2017-04-24T08:08:12+0000 [HoneyPotSSHTransport,30685,134.2.127.19] starting service 'ssh-userauth'
+2017-04-24T08:08:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30685,134.2.127.19] 'root' trying auth 'password'
+2017-04-24T08:08:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30685,134.2.127.19] login attempt: 405
+2017-04-24T08:08:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30685,134.2.127.19] login return, expect: [root/root]
+2017-04-24T08:08:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30685,134.2.127.19] login attempt [root/root] succeeded
+2017-04-24T08:08:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30685,134.2.127.19] 'root' authenticated with 'password'
+2017-04-24T08:08:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30685,134.2.127.19] starting service 'ssh-connection'
+2017-04-24T08:08:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 104.44.194.235:25 from localhost:5556
+2017-04-24T08:08:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] channel open
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] executing command "mkdir /tmp/.xs/"
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Opening TTY Log: log/tty/20170424-080814-f62446d2-0e.log
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] CMD: mkdir /tmp/.xs/
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Command found: mkdir /tmp/.xs/
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] exitCode: 0
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] sending close 0
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] exitCode: 0
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Closing TTY Log: log/tty/20170424-080814-f62446d2-0e.log after 0 seconds
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] remote close
+2017-04-24T08:08:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:14+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] channel open
+2017-04-24T08:08:14+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] executing command "cat >/tmp/.xs/daemon.mips.mod"
+2017-04-24T08:08:14+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Opening TTY Log: log/tty/20170424-080814-f62446d2-1e.log
+2017-04-24T08:08:14+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] CMD: cat >/tmp/.xs/daemon.mips.mod
+2017-04-24T08:08:14+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Command found: cat > /tmp/.xs/daemon.mips.mod
+2017-04-24T08:08:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 66.196.118.33:25 from localhost:5556
+2017-04-24T08:08:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:15+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:58104 (10.8.41.81:2222) [session: 429d0a80]
+2017-04-24T08:08:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 65.54.188.110:25 from localhost:5556
+2017-04-24T08:08:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:15+0000 [HoneyPotSSHTransport,30686,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-24T08:08:15+0000 [HoneyPotSSHTransport,30686,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-24T08:08:15+0000 [HoneyPotSSHTransport,30686,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:15+0000 [HoneyPotSSHTransport,30686,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:16+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:16+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] adding 68689 to 62383 in channel 1
+2017-04-24T08:08:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] exitCode: 0
+2017-04-24T08:08:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Not storing duplicate content 86fbdd7df9486a17e9c408c7e50635e26402fdf297c9e97f1a5256100401dcc5
+2017-04-24T08:08:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Saved stdin contents with SHA-256 86fbdd7df9486a17e9c408c7e50635e26402fdf297c9e97f1a5256100401dcc5 to dl/86fbdd7df9486a17e9c408c7e50635e26402fdf297c9e97f1a5256100401dcc5
+2017-04-24T08:08:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Closing TTY Log: log/tty/20170424-080814-f62446d2-1e.log after 1 seconds
+2017-04-24T08:08:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] sending close 1
+2017-04-24T08:08:16+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] remote close
+2017-04-24T08:08:16+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] channel open
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] executing command "chmod 777 /tmp/.xs/daemon.mips.mod"
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Opening TTY Log: log/tty/20170424-080816-f62446d2-2e.log
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] CMD: chmod 777 /tmp/.xs/daemon.mips.mod
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Command found: chmod 777 /tmp/.xs/daemon.mips.mod
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] exitCode: 0
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] sending close 2
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] exitCode: 0
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Closing TTY Log: log/tty/20170424-080816-f62446d2-2e.log after 0 seconds
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:16+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] remote close
+2017-04-24T08:08:16+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] channel open
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] executing command "/tmp/.xs/daemon.mips.mod"
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Opening TTY Log: log/tty/20170424-080816-f62446d2-3e.log
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] CMD: /tmp/.xs/daemon.mips.mod
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Command not found: /tmp/.xs/daemon.mips.mod
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] exitCode: 0
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] sending close 3
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] exitCode: 0
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] Closing TTY Log: log/tty/20170424-080816-f62446d2-3e.log after 0 seconds
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:16+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30685,134.2.127.19] remote close
+2017-04-24T08:08:16+0000 [HoneyPotSSHTransport,30685,134.2.127.19] Got remote error, code 11
+	reason: 
+2017-04-24T08:08:16+0000 [HoneyPotSSHTransport,30685,134.2.127.19] avatar root logging out
+2017-04-24T08:08:16+0000 [HoneyPotSSHTransport,30685,134.2.127.19] connection lost
+2017-04-24T08:08:16+0000 [HoneyPotSSHTransport,30685,134.2.127.19] Connection lost after 4 seconds
+2017-04-24T08:08:16+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 134.2.127.19:33938 (10.8.41.81:2222) [session: 702aeb98]
+2017-04-24T08:08:16+0000 [HoneyPotSSHTransport,30687,134.2.127.19] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-24T08:08:16+0000 [HoneyPotSSHTransport,30687,134.2.127.19] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-24T08:08:16+0000 [HoneyPotSSHTransport,30687,134.2.127.19] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:16+0000 [HoneyPotSSHTransport,30687,134.2.127.19] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:16+0000 [HoneyPotSSHTransport,30687,134.2.127.19] NEW KEYS
+2017-04-24T08:08:16+0000 [HoneyPotSSHTransport,30687,134.2.127.19] starting service 'ssh-userauth'
+2017-04-24T08:08:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30687,134.2.127.19] 'root' trying auth 'password'
+2017-04-24T08:08:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30687,134.2.127.19] login attempt: 406
+2017-04-24T08:08:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30687,134.2.127.19] login return, expect: [root/root]
+2017-04-24T08:08:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30687,134.2.127.19] login attempt [root/root] succeeded
+2017-04-24T08:08:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30687,134.2.127.19] 'root' authenticated with 'password'
+2017-04-24T08:08:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30687,134.2.127.19] starting service 'ssh-connection'
+2017-04-24T08:08:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 64.233.163.27:25 from localhost:5556
+2017-04-24T08:08:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 66.196.118.35:25 from localhost:5556
+2017-04-24T08:08:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 173.194.77.26:25 from localhost:5556
+2017-04-24T08:08:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 173.194.77.26:25 from localhost:5556
+2017-04-24T08:08:18+0000 [HoneyPotSSHTransport,30686,58.218.204.188] NEW KEYS
+2017-04-24T08:08:18+0000 [HoneyPotSSHTransport,30686,58.218.204.188] starting service 'ssh-userauth'
+2017-04-24T08:08:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] channel open
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] executing command "mkdir /tmp/.xs/"
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Opening TTY Log: log/tty/20170424-080818-702aeb98-0e.log
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] CMD: mkdir /tmp/.xs/
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Command found: mkdir /tmp/.xs/
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] exitCode: 0
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] sending close 0
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] exitCode: 0
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Closing TTY Log: log/tty/20170424-080818-702aeb98-0e.log after 0 seconds
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] remote close
+2017-04-24T08:08:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:18+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] channel open
+2017-04-24T08:08:18+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] executing command "cat >/tmp/.xs/daemon.mipsel.mod"
+2017-04-24T08:08:18+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Opening TTY Log: log/tty/20170424-080818-702aeb98-1e.log
+2017-04-24T08:08:18+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] CMD: cat >/tmp/.xs/daemon.mipsel.mod
+2017-04-24T08:08:18+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Command found: cat > /tmp/.xs/daemon.mipsel.mod
+2017-04-24T08:08:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30686,58.218.204.188] 'root' trying auth 'none'
+2017-04-24T08:08:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30686,58.218.204.188] 'root' authenticated with 'none'
+2017-04-24T08:08:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30686,58.218.204.188] starting service 'ssh-connection'
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.193.27:25 from localhost:5556
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.23.27:25 from localhost:5556
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 66.42.86.8:25 from localhost:5556
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 144.160.235.143:25 from localhost:5556
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 64.233.163.27:25 from localhost:5556
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 65.55.33.119:25 from localhost:5556
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:22+0000 [HoneyPotSSHTransport,30686,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-04-24T08:08:22+0000 [HoneyPotSSHTransport,30686,58.218.204.188] avatar root logging out
+2017-04-24T08:08:22+0000 [HoneyPotSSHTransport,30686,58.218.204.188] connection lost
+2017-04-24T08:08:22+0000 [HoneyPotSSHTransport,30686,58.218.204.188] Connection lost after 7 seconds
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 66.196.118.33:25 from localhost:5556
+2017-04-24T08:08:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 64.233.163.27:25 from localhost:5556
+2017-04-24T08:08:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:23+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:23+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] exitCode: 0
+2017-04-24T08:08:23+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:23+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Not storing duplicate content 5c8c41253aa68adeb955e7d1c7b8e084e06537f75eff12c3f3a0f3cb30cb2152
+2017-04-24T08:08:23+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Saved stdin contents with SHA-256 5c8c41253aa68adeb955e7d1c7b8e084e06537f75eff12c3f3a0f3cb30cb2152 to dl/5c8c41253aa68adeb955e7d1c7b8e084e06537f75eff12c3f3a0f3cb30cb2152
+2017-04-24T08:08:23+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Closing TTY Log: log/tty/20170424-080818-702aeb98-1e.log after 4 seconds
+2017-04-24T08:08:23+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:23+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] sending close 1
+2017-04-24T08:08:23+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] remote close
+2017-04-24T08:08:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] channel open
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] executing command "chmod 777 /tmp/.xs/daemon.mipsel.mod"
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Opening TTY Log: log/tty/20170424-080823-702aeb98-2e.log
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] CMD: chmod 777 /tmp/.xs/daemon.mipsel.mod
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Command found: chmod 777 /tmp/.xs/daemon.mipsel.mod
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] exitCode: 0
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] sending close 2
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] exitCode: 0
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Closing TTY Log: log/tty/20170424-080823-702aeb98-2e.log after 0 seconds
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:23+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] remote close
+2017-04-24T08:08:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] channel open
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] executing command "/tmp/.xs/daemon.mipsel.mod"
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Opening TTY Log: log/tty/20170424-080823-702aeb98-3e.log
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] CMD: /tmp/.xs/daemon.mipsel.mod
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Command not found: /tmp/.xs/daemon.mipsel.mod
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] exitCode: 0
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] sending close 3
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] exitCode: 0
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] Closing TTY Log: log/tty/20170424-080823-702aeb98-3e.log after 0 seconds
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:23+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30687,134.2.127.19] remote close
+2017-04-24T08:08:23+0000 [HoneyPotSSHTransport,30687,134.2.127.19] Got remote error, code 11
+	reason: 
+2017-04-24T08:08:23+0000 [HoneyPotSSHTransport,30687,134.2.127.19] avatar root logging out
+2017-04-24T08:08:23+0000 [HoneyPotSSHTransport,30687,134.2.127.19] connection lost
+2017-04-24T08:08:23+0000 [HoneyPotSSHTransport,30687,134.2.127.19] Connection lost after 7 seconds
+2017-04-24T08:08:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 134.2.127.19:33950 (10.8.41.81:2222) [session: 9b276c62]
+2017-04-24T08:08:23+0000 [HoneyPotSSHTransport,30688,134.2.127.19] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-24T08:08:23+0000 [HoneyPotSSHTransport,30688,134.2.127.19] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-24T08:08:23+0000 [HoneyPotSSHTransport,30688,134.2.127.19] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:23+0000 [HoneyPotSSHTransport,30688,134.2.127.19] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:24+0000 [SSHChannel None (107) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29851,91.195.103.197] remote eof
+2017-04-24T08:08:24+0000 [SSHChannel None (107) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29851,91.195.103.197] remote close
+2017-04-24T08:08:24+0000 [SSHChannel None (107) on SSHService 'ssh-connection' on HoneyPotSSHTransport,29851,91.195.103.197] sending close 107
+2017-04-24T08:08:24+0000 [HoneyPotSSHTransport,30688,134.2.127.19] NEW KEYS
+2017-04-24T08:08:24+0000 [HoneyPotSSHTransport,30688,134.2.127.19] starting service 'ssh-userauth'
+2017-04-24T08:08:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30688,134.2.127.19] 'root' trying auth 'password'
+2017-04-24T08:08:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30688,134.2.127.19] login attempt: 407
+2017-04-24T08:08:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30688,134.2.127.19] login return, expect: [root/root]
+2017-04-24T08:08:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30688,134.2.127.19] login attempt [root/root] succeeded
+2017-04-24T08:08:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30688,134.2.127.19] 'root' authenticated with 'password'
+2017-04-24T08:08:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30688,134.2.127.19] starting service 'ssh-connection'
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.28.27:25 from localhost:5556
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 173.194.77.26:25 from localhost:5556
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.193.27:25 from localhost:5556
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] channel open
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] executing command "mkdir /tmp/.xs/"
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Opening TTY Log: log/tty/20170424-080826-9b276c62-0e.log
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] CMD: mkdir /tmp/.xs/
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Command found: mkdir /tmp/.xs/
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] exitCode: 0
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] sending close 0
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] exitCode: 0
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Closing TTY Log: log/tty/20170424-080826-9b276c62-0e.log after 0 seconds
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:26+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] remote close
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] channel open
+2017-04-24T08:08:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] executing command "cat >/tmp/.xs/test.mod"
+2017-04-24T08:08:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Opening TTY Log: log/tty/20170424-080826-9b276c62-1e.log
+2017-04-24T08:08:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] CMD: cat >/tmp/.xs/test.mod
+2017-04-24T08:08:26+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Command found: cat > /tmp/.xs/test.mod
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 98.138.112.32:25 from localhost:5556
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 98.138.112.32:25 from localhost:5556
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:27+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:29981 (10.8.41.81:2222) [session: 3ca7e2f2]
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] adding 98100 to 32972 in channel 1
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] adding 65672 to 65400 in channel 1
+2017-04-24T08:08:27+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:27+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] exitCode: 0
+2017-04-24T08:08:27+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:27+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Not storing duplicate content 0ffa9e646e881568c1f65055917547b04d89a8a2150af45faa66beb2733e7427
+2017-04-24T08:08:27+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Saved stdin contents with SHA-256 0ffa9e646e881568c1f65055917547b04d89a8a2150af45faa66beb2733e7427 to dl/0ffa9e646e881568c1f65055917547b04d89a8a2150af45faa66beb2733e7427
+2017-04-24T08:08:27+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Closing TTY Log: log/tty/20170424-080826-9b276c62-1e.log after 1 seconds
+2017-04-24T08:08:27+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:27+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] sending close 1
+2017-04-24T08:08:27+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] remote close
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 64.233.163.27:25 from localhost:5556
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] channel open
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.193.27:25 from localhost:5556
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] executing command "chmod 777 /tmp/.xs/test.mod"
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Opening TTY Log: log/tty/20170424-080827-9b276c62-2e.log
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] CMD: chmod 777 /tmp/.xs/test.mod
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Command found: chmod 777 /tmp/.xs/test.mod
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] exitCode: 0
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] sending close 2
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] exitCode: 0
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Closing TTY Log: log/tty/20170424-080827-9b276c62-2e.log after 0 seconds
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:27+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] remote close
+2017-04-24T08:08:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] got channel 'session' request
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] channel open
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] executing command "/tmp/.xs/test.mod"
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Opening TTY Log: log/tty/20170424-080827-9b276c62-3e.log
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] CMD: /tmp/.xs/test.mod
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Command not found: /tmp/.xs/test.mod
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] exitCode: 0
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] sending request 'exit-status'
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] sending close 3
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] received eof, sending ctrl-d to command
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Received CTRL-D, exiting..
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] exitCode: 0
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] Closing TTY Log: log/tty/20170424-080827-9b276c62-3e.log after 0 seconds
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-24T08:08:27+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30688,134.2.127.19] remote close
+2017-04-24T08:08:27+0000 [HoneyPotSSHTransport,30688,134.2.127.19] Got remote error, code 11
+	reason: 
+2017-04-24T08:08:27+0000 [HoneyPotSSHTransport,30689,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-24T08:08:27+0000 [HoneyPotSSHTransport,30689,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-24T08:08:27+0000 [HoneyPotSSHTransport,30689,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:27+0000 [HoneyPotSSHTransport,30689,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:27+0000 [HoneyPotSSHTransport,30688,134.2.127.19] avatar root logging out
+2017-04-24T08:08:27+0000 [HoneyPotSSHTransport,30688,134.2.127.19] connection lost
+2017-04-24T08:08:27+0000 [HoneyPotSSHTransport,30688,134.2.127.19] Connection lost after 4 seconds
+2017-04-24T08:08:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 64.233.163.27:25 from localhost:5556
+2017-04-24T08:08:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 65.55.92.136:25 from localhost:5556
+2017-04-24T08:08:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.193.27:25 from localhost:5556
+2017-04-24T08:08:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.28.27:25 from localhost:5556
+2017-04-24T08:08:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.28.27:25 from localhost:5556
+2017-04-24T08:08:29+0000 [HoneyPotSSHTransport,30689,58.218.204.188] NEW KEYS
+2017-04-24T08:08:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 64.233.163.27:25 from localhost:5556
+2017-04-24T08:08:30+0000 [HoneyPotSSHTransport,30689,58.218.204.188] starting service 'ssh-userauth'
+2017-04-24T08:08:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30689,58.218.204.188] 'root' trying auth 'none'
+2017-04-24T08:08:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30689,58.218.204.188] 'root' authenticated with 'none'
+2017-04-24T08:08:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30689,58.218.204.188] starting service 'ssh-connection'
+2017-04-24T08:08:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 66.196.118.36:25 from localhost:5556
+2017-04-24T08:08:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 65.55.92.136:25 from localhost:5556
+2017-04-24T08:08:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.193.27:25 from localhost:5556
+2017-04-24T08:08:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 98.136.217.203:25 from localhost:5556
+2017-04-24T08:08:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.193.27:25 from localhost:5556
+2017-04-24T08:08:32+0000 [HoneyPotSSHTransport,30689,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-04-24T08:08:32+0000 [HoneyPotSSHTransport,30689,58.218.204.188] avatar root logging out
+2017-04-24T08:08:32+0000 [HoneyPotSSHTransport,30689,58.218.204.188] connection lost
+2017-04-24T08:08:32+0000 [HoneyPotSSHTransport,30689,58.218.204.188] Connection lost after 5 seconds
+2017-04-24T08:08:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 65.55.92.136:25 from localhost:5556
+2017-04-24T08:08:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 173.194.77.26:25 from localhost:5556
+2017-04-24T08:08:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 66.196.118.33:25 from localhost:5556
+2017-04-24T08:08:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 98.138.112.32:25 from localhost:5556
+2017-04-24T08:08:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 65.55.37.88:25 from localhost:5556
+2017-04-24T08:08:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 65.55.33.135:25 from localhost:5556
+2017-04-24T08:08:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:38+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 65.55.92.152:25 from localhost:5556
+2017-04-24T08:08:39+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:47459 (10.8.41.81:2222) [session: 246558ff]
+2017-04-24T08:08:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 66.196.118.37:25 from localhost:5556
+2017-04-24T08:08:41+0000 [HoneyPotSSHTransport,30690,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-24T08:08:41+0000 [HoneyPotSSHTransport,30690,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-24T08:08:41+0000 [HoneyPotSSHTransport,30690,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:41+0000 [HoneyPotSSHTransport,30690,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 64.233.163.27:25 from localhost:5556
+2017-04-24T08:08:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 98.136.217.203:25 from localhost:5556
+2017-04-24T08:08:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.28.27:25 from localhost:5556
+2017-04-24T08:08:42+0000 [HoneyPotSSHTransport,30690,58.218.204.188] NEW KEYS
+2017-04-24T08:08:43+0000 [HoneyPotSSHTransport,30690,58.218.204.188] starting service 'ssh-userauth'
+2017-04-24T08:08:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30690,58.218.204.188] 'root' trying auth 'none'
+2017-04-24T08:08:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30690,58.218.204.188] 'root' authenticated with 'none'
+2017-04-24T08:08:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30690,58.218.204.188] starting service 'ssh-connection'
+2017-04-24T08:08:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 66.196.118.33:25 from localhost:5556
+2017-04-24T08:08:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.193.27:25 from localhost:5556
+2017-04-24T08:08:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.23.27:25 from localhost:5556
+2017-04-24T08:08:45+0000 [HoneyPotSSHTransport,30690,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-04-24T08:08:45+0000 [HoneyPotSSHTransport,30690,58.218.204.188] avatar root logging out
+2017-04-24T08:08:45+0000 [HoneyPotSSHTransport,30690,58.218.204.188] connection lost
+2017-04-24T08:08:45+0000 [HoneyPotSSHTransport,30690,58.218.204.188] Connection lost after 6 seconds
+2017-04-24T08:08:50+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp forward to 65.55.37.88:25 with data 'QUIT\r\n'
+2017-04-24T08:08:50+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] failed to connect: Connection refused
+2017-04-24T08:08:50+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] sending close 1
+2017-04-24T08:08:50+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] remote eof
+2017-04-24T08:08:50+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] remote close
+2017-04-24T08:08:50+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] remote eof
+2017-04-24T08:08:50+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] remote close
+2017-04-24T08:08:50+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] sending close 2
+2017-04-24T08:08:51+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp forward to 66.196.118.240:25 with data 'QUIT\r\n'
+2017-04-24T08:08:51+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] failed to connect: Connection refused
+2017-04-24T08:08:51+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] sending close 3
+2017-04-24T08:08:51+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] remote eof
+2017-04-24T08:08:51+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] remote close
+2017-04-24T08:08:51+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 58.218.204.188:63307 (10.8.41.81:2222) [session: 6f449a18]
+2017-04-24T08:08:52+0000 [HoneyPotSSHTransport,30691,58.218.204.188] Remote SSH version: SSH-2.0-PUTTY
+2017-04-24T08:08:52+0000 [HoneyPotSSHTransport,30691,58.218.204.188] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-24T08:08:52+0000 [HoneyPotSSHTransport,30691,58.218.204.188] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:52+0000 [HoneyPotSSHTransport,30691,58.218.204.188] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-24T08:08:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 64.233.163.26:25 from localhost:5556
+2017-04-24T08:08:53+0000 [HoneyPotSSHTransport,30691,58.218.204.188] NEW KEYS
+2017-04-24T08:08:53+0000 [HoneyPotSSHTransport,30691,58.218.204.188] starting service 'ssh-userauth'
+2017-04-24T08:08:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 64.233.163.26:25 from localhost:5556
+2017-04-24T08:08:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30691,58.218.204.188] 'root' trying auth 'none'
+2017-04-24T08:08:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30691,58.218.204.188] 'root' authenticated with 'none'
+2017-04-24T08:08:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,30691,58.218.204.188] starting service 'ssh-connection'
+2017-04-24T08:08:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.193.26:25 from localhost:5556
+2017-04-24T08:08:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 74.125.28.26:25 from localhost:5556
+2017-04-24T08:08:56+0000 [HoneyPotSSHTransport,30691,58.218.204.188] Got remote error, code 11
+	reason: 
+2017-04-24T08:08:56+0000 [HoneyPotSSHTransport,30691,58.218.204.188] avatar root logging out
+2017-04-24T08:08:56+0000 [HoneyPotSSHTransport,30691,58.218.204.188] connection lost
+2017-04-24T08:08:56+0000 [HoneyPotSSHTransport,30691,58.218.204.188] Connection lost after 4 seconds
+2017-04-24T08:08:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-24T08:08:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,30661,91.230.47.82] direct-tcp connection request to 173.194.77.27:25 from localhost:5556
