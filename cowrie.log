@@ -2648,3 +2648,43 @@
 2017-04-27T13:41:37+0000 [SSHChannel None (198) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43324,91.230.47.81] sending close 198
 2017-04-27T13:43:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43587,91.195.103.212] got channel 'direct-tcpip' request
 2017-04-27T13:43:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43587,91.195.103.212] direct-tcp connection request to 98.136.216.25:25 from localhost:5556
+2017-04-27T13:43:26+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43587,91.195.103.212] remote eof
+2017-04-27T13:43:26+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43587,91.195.103.212] remote close
+2017-04-27T13:43:26+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43587,91.195.103.212] sending close 6
+2017-04-27T13:43:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43587,91.195.103.212] got channel 'direct-tcpip' request
+2017-04-27T13:43:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43587,91.195.103.212] direct-tcp connection request to 98.136.216.25:25 from localhost:5556
+2017-04-27T13:43:41+0000 [-] Process ended. Telnet Session disconnected
+2017-04-27T13:43:41+0000 [CowrieTelnetTransport,22784,49.112.80.53] Closing TTY Log: log/tty/20170427-134033-None-22784i.log after 187 seconds
+2017-04-27T13:43:41+0000 [CowrieTelnetTransport,22784,49.112.80.53] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-27T13:43:41+0000 [CowrieTelnetTransport,22784,49.112.80.53] Connection lost after 195 seconds
+2017-04-27T13:43:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 190.196.145.74:51059 (10.8.41.81:2222) [session: 1b3a735c]
+2017-04-27T13:43:43+0000 [HoneyPotSSHTransport,43598,190.196.145.74] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-27T13:43:43+0000 [HoneyPotSSHTransport,43598,190.196.145.74] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-27T13:43:43+0000 [HoneyPotSSHTransport,43598,190.196.145.74] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-27T13:43:43+0000 [HoneyPotSSHTransport,43598,190.196.145.74] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-27T13:43:43+0000 [HoneyPotSSHTransport,43598,190.196.145.74] NEW KEYS
+2017-04-27T13:43:44+0000 [HoneyPotSSHTransport,43598,190.196.145.74] starting service 'ssh-userauth'
+2017-04-27T13:43:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43598,190.196.145.74] 'test' trying auth 'password'
+2017-04-27T13:43:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43598,190.196.145.74] login attempt: 969
+2017-04-27T13:43:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43598,190.196.145.74] login return, expect: [virus/virus]
+2017-04-27T13:43:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43598,190.196.145.74] login attempt [test/123] failed
+2017-04-27T13:43:45+0000 [-] 'test' failed auth 'password'
+2017-04-27T13:43:45+0000 [-] unauthorized login: 
+2017-04-27T13:43:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43598,190.196.145.74] 'test' trying auth 'password'
+2017-04-27T13:43:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43598,190.196.145.74] login attempt: 970
+2017-04-27T13:43:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43598,190.196.145.74] login return, expect: [virus/virus]
+2017-04-27T13:43:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43598,190.196.145.74] login attempt [test/1234] failed
+2017-04-27T13:43:47+0000 [-] 'test' failed auth 'password'
+2017-04-27T13:43:47+0000 [-] unauthorized login: 
+2017-04-27T13:43:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43598,190.196.145.74] 'test' trying auth 'password'
+2017-04-27T13:43:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43598,190.196.145.74] login attempt: 971
+2017-04-27T13:43:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43598,190.196.145.74] login return, expect: [virus/virus]
+2017-04-27T13:43:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43598,190.196.145.74] login attempt [test/12345] failed
+2017-04-27T13:43:49+0000 [-] 'test' failed auth 'password'
+2017-04-27T13:43:49+0000 [-] unauthorized login: 
+2017-04-27T13:43:49+0000 [HoneyPotSSHTransport,43598,190.196.145.74] connection lost
+2017-04-27T13:43:49+0000 [HoneyPotSSHTransport,43598,190.196.145.74] Connection lost after 6 seconds
+2017-04-27T13:43:51+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43587,91.195.103.212] remote eof
+2017-04-27T13:43:51+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43587,91.195.103.212] remote close
+2017-04-27T13:43:51+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43587,91.195.103.212] sending close 7
