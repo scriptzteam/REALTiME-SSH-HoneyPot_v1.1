@@ -1712,3 +1712,47 @@
 2017-04-27T13:23:54+0000 [SSHChannel None (192) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43324,91.230.47.81] direct-tcp forward to 95.213.194.60:80 with data 'GET /proxy.php HTTP/1.1\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nConnection: Close\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0\r\nAccept-Language: en-US,en;q=0.5\r\nCache-Control: max-age=0\r\nReferer: RefererString\r\nCookie: param1=CookieString\r\nAccept-Encoding: gzip\r\nHost: check2.zennolab.com\r\n\r\n'
 2017-04-27T13:23:54+0000 [SSHChannel None (192) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43324,91.230.47.81] failed to connect: Connection refused
 2017-04-27T13:23:54+0000 [SSHChannel None (192) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43324,91.230.47.81] sending close 192
+2017-04-27T13:24:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43512,91.230.47.76] got channel 'direct-tcpip' request
+2017-04-27T13:24:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43512,91.230.47.76] direct-tcp connection request to 64.98.36.151:25 from localhost:5556
+2017-04-27T13:24:36+0000 [CowrieTelnetTransport,22782,185.165.29.34] Closing TTY Log: log/tty/20170427-132254-None-22782i.log after 101 seconds
+2017-04-27T13:24:36+0000 [CowrieTelnetTransport,22782,185.165.29.34] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-27T13:24:36+0000 [CowrieTelnetTransport,22782,185.165.29.34] Connection lost after 108 seconds
+2017-04-27T13:24:43+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 5.9.59.52:50237 (10.8.41.81:2222) [session: e0be16bc]
+2017-04-27T13:24:43+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 190.196.145.74:35726 (10.8.41.81:2222) [session: 5e0f0a47]
+2017-04-27T13:24:43+0000 [HoneyPotSSHTransport,43568,5.9.59.52] Remote SSH version: SSH-2.0-PuTTY_Release_0.63
+2017-04-27T13:24:43+0000 [HoneyPotSSHTransport,43568,5.9.59.52] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-27T13:24:43+0000 [HoneyPotSSHTransport,43568,5.9.59.52] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-27T13:24:43+0000 [HoneyPotSSHTransport,43568,5.9.59.52] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-27T13:24:43+0000 [HoneyPotSSHTransport,43569,190.196.145.74] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-27T13:24:43+0000 [HoneyPotSSHTransport,43569,190.196.145.74] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-27T13:24:43+0000 [HoneyPotSSHTransport,43569,190.196.145.74] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-27T13:24:43+0000 [HoneyPotSSHTransport,43569,190.196.145.74] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-27T13:24:45+0000 [HoneyPotSSHTransport,43569,190.196.145.74] NEW KEYS
+2017-04-27T13:24:45+0000 [HoneyPotSSHTransport,43569,190.196.145.74] starting service 'ssh-userauth'
+2017-04-27T13:24:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43569,190.196.145.74] 'sunny' trying auth 'password'
+2017-04-27T13:24:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43569,190.196.145.74] login attempt: 951
+2017-04-27T13:24:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43569,190.196.145.74] login return, expect: [virus/virus]
+2017-04-27T13:24:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43569,190.196.145.74] login attempt [sunny/sunny] failed
+2017-04-27T13:24:46+0000 [HoneyPotSSHTransport,43568,5.9.59.52] NEW KEYS
+2017-04-27T13:24:46+0000 [HoneyPotSSHTransport,43568,5.9.59.52] starting service 'ssh-userauth'
+2017-04-27T13:24:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43568,5.9.59.52] 'user' trying auth 'none'
+2017-04-27T13:24:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43568,5.9.59.52] 'user' authenticated with 'none'
+2017-04-27T13:24:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43568,5.9.59.52] starting service 'ssh-connection'
+2017-04-27T13:24:48+0000 [-] 'sunny' failed auth 'password'
+2017-04-27T13:24:48+0000 [-] unauthorized login: 
+2017-04-27T13:24:48+0000 [HoneyPotSSHTransport,43569,190.196.145.74] connection lost
+2017-04-27T13:24:48+0000 [HoneyPotSSHTransport,43569,190.196.145.74] Connection lost after 4 seconds
+2017-04-27T13:24:50+0000 [SSHChannel None (30) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43512,91.230.47.76] remote eof
+2017-04-27T13:24:50+0000 [SSHChannel None (30) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43512,91.230.47.76] remote close
+2017-04-27T13:24:50+0000 [SSHChannel None (30) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43512,91.230.47.76] sending close 30
+2017-04-27T13:24:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43568,5.9.59.52] got channel 'direct-tcpip' request
+2017-04-27T13:24:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43568,5.9.59.52] direct-tcp connection request to 104.27.189.196:80 from 0.0.0.0:0
+2017-04-27T13:24:50+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43568,5.9.59.52] direct-tcp forward to 104.27.189.196:80 with data 'GET / HTTP/1.1\r\nHost: watchadultvideoonline.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2431.0 Safari/537.36\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nReferer: http://www.cum-squirt.com/tits/\r\nAccept-Encoding: gzip,deflate\r\nAccept-Language: en-GB;q=0.8,en-US;q=0.4,en;q=0.2,en-GB;q=0.2\r\nAccept-Charset: iso-8859-1,*,utf-8\r\n\r\n'
+2017-04-27T13:24:50+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43568,5.9.59.52] failed to connect: Connection refused
+2017-04-27T13:24:50+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43568,5.9.59.52] sending close 0
+2017-04-27T13:24:50+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43568,5.9.59.52] remote eof
+2017-04-27T13:24:50+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43568,5.9.59.52] remote close
+2017-04-27T13:24:58+0000 [HoneyPotSSHTransport,43568,5.9.59.52] avatar user logging out
+2017-04-27T13:24:58+0000 [HoneyPotSSHTransport,43568,5.9.59.52] connection lost
+2017-04-27T13:24:58+0000 [HoneyPotSSHTransport,43568,5.9.59.52] Connection lost after 15 seconds
