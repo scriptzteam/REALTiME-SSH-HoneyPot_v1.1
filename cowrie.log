@@ -5162,3 +5162,46 @@
 2017-04-28T20:03:52+0000 [CowrieTelnetTransport,26255,94.177.201.131] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-04-28T20:03:52+0000 [CowrieTelnetTransport,26255,94.177.201.131] Connection lost after 154 seconds
+2017-04-28T20:04:07+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 59.45.175.64:38008 (10.8.41.81:2222) [session: e7abd40c]
+2017-04-28T20:04:07+0000 [HoneyPotSSHTransport,44947,59.45.175.64] Remote SSH version: SSH-2.0-PUTTY
+2017-04-28T20:04:07+0000 [HoneyPotSSHTransport,44947,59.45.175.64] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-28T20:04:07+0000 [HoneyPotSSHTransport,44947,59.45.175.64] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-28T20:04:07+0000 [HoneyPotSSHTransport,44947,59.45.175.64] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-28T20:04:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44885,91.230.47.77] got channel 'direct-tcpip' request
+2017-04-28T20:04:14+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44885,91.230.47.77] direct-tcp connection request to 50.19.93.247:80 from localhost:5556
+2017-04-28T20:04:14+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44885,91.230.47.77] direct-tcp forward to 50.19.93.247:80 with data 'GET / HTTP/1.0\r\nHost: api.ipify.org\r\n\r\n'
+2017-04-28T20:04:14+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44885,91.230.47.77] failed to connect: Connection refused
+2017-04-28T20:04:14+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44885,91.230.47.77] sending close 2
+2017-04-28T20:04:20+0000 [HoneyPotSSHTransport,44947,59.45.175.64] connection lost
+2017-04-28T20:04:20+0000 [HoneyPotSSHTransport,44947,59.45.175.64] Connection lost after 13 seconds
+2017-04-28T20:04:24+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 115.127.63.251:31788 (10.8.41.81:2223) [session: TT26260]
+2017-04-28T20:04:25+0000 [CowrieTelnetTransport,26260,115.127.63.251] first time for 115.127.63.251, need: 1
+2017-04-28T20:04:25+0000 [CowrieTelnetTransport,26260,115.127.63.251] login attempt: 1
+2017-04-28T20:04:26+0000 [CowrieTelnetTransport,26260,115.127.63.251] login attempt [root/1234] succeeded
+2017-04-28T20:04:27+0000 [CowrieTelnetTransport,26260,115.127.63.251] Opening TTY Log: log/tty/20170428-200427-None-26260i.log
+2017-04-28T20:04:27+0000 [CowrieTelnetTransport,26260,115.127.63.251] Warning: state changed and new state returned
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] CMD: enable
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command found: enable 
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] CMD: shell
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command not found: shell
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] CMD: sh
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command found: sh 
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] CMD: cat /proc/mounts; /bin/busybox ABNUH
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command found: cat /proc/mounts
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command found: /bin/busybox ABNUH
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox ABNUH
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command found: cd /dev/shm
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command found: cat .s
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command found: cp /bin/echo .s
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command found: /bin/busybox ABNUH
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] CMD: nc; wget; /bin/busybox ABNUH
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command not found: nc
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command found: wget 
+2017-04-28T20:04:28+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command found: /bin/busybox ABNUH
+2017-04-28T20:04:29+0000 [CowrieTelnetTransport,26260,115.127.63.251] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-04-28T20:04:29+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command not found: dd bs=52 count=1 if=.s
+2017-04-28T20:04:29+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command found: cat /dev/shm/.s
+2017-04-28T20:04:29+0000 [CowrieTelnetTransport,26260,115.127.63.251] CMD: /bin/busybox ABNUH
+2017-04-28T20:04:29+0000 [CowrieTelnetTransport,26260,115.127.63.251] Command found: /bin/busybox ABNUH
+2017-04-28T20:04:50+0000 [CowrieTelnetTransport,26259,122.114.22.51] Connection lost after 66 seconds
