@@ -5666,3 +5666,36 @@
 2017-04-28T04:37:57+0000 [CowrieTelnetTransport,24233,31.41.218.108] Connection lost after 39 seconds
 2017-04-28T04:37:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 51.15.143.247:55319 (10.8.41.81:2223) [session: TT24238]
 2017-04-28T04:37:59+0000 [CowrieTelnetTransport,24235,51.15.143.247] Connection lost after 38 seconds
+2017-04-28T04:38:02+0000 [CowrieTelnetTransport,24238,51.15.143.247] login attempt: 799
+2017-04-28T04:38:02+0000 [CowrieTelnetTransport,24238,51.15.143.247] login return, expect: [admin/5up]
+2017-04-28T04:38:02+0000 [CowrieTelnetTransport,24238,51.15.143.247] login attempt [user/123456] failed
+2017-04-28T04:38:02+0000 [CowrieTelnetTransport,24238,51.15.143.247] Warning: state changed and new state returned
+2017-04-28T04:38:02+0000 [CowrieTelnetTransport,24238,51.15.143.247] login attempt: 800
+2017-04-28T04:38:02+0000 [CowrieTelnetTransport,24238,51.15.143.247] login return, expect: [admin/5up]
+2017-04-28T04:38:03+0000 [CowrieTelnetTransport,24238,51.15.143.247] login attempt [enable/shell] failed
+2017-04-28T04:38:03+0000 [CowrieTelnetTransport,24238,51.15.143.247] Warning: state changed and new state returned
+2017-04-28T04:38:03+0000 [CowrieTelnetTransport,24238,51.15.143.247] login attempt: 801
+2017-04-28T04:38:03+0000 [CowrieTelnetTransport,24238,51.15.143.247] login return, expect: [admin/5up]
+2017-04-28T04:38:03+0000 [CowrieTelnetTransport,24238,51.15.143.247] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-28T04:38:03+0000 [CowrieTelnetTransport,24238,51.15.143.247] Warning: state changed and new state returned
+2017-04-28T04:38:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44089,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-28T04:38:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44089,91.230.47.81] direct-tcp connection request to 146.0.234.126:8888 from localhost:5556
+2017-04-28T04:38:03+0000 [SSHChannel None (213) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44089,91.230.47.81] direct-tcp forward to 146.0.234.126:8888 with data 'GET /v2/callerinfo HTTP/1.1\r\nHost: 146.0.234.126:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-04-28T04:38:03+0000 [SSHChannel None (213) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44089,91.230.47.81] failed to connect: Connection refused
+2017-04-28T04:38:03+0000 [SSHChannel None (213) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44089,91.230.47.81] sending close 213
+2017-04-28T04:38:06+0000 [CowrieTelnetTransport,24237,51.15.143.247] Connection lost after 36 seconds
+2017-04-28T04:38:19+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.243.107.201:51988 (10.8.41.81:2222) [session: ced6be33]
+2017-04-28T04:38:20+0000 [HoneyPotSSHTransport,44150,103.243.107.201] Remote SSH version: SSH-2.0-Granados-1.0
+2017-04-28T04:38:20+0000 [HoneyPotSSHTransport,44150,103.243.107.201] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-04-28T04:38:20+0000 [HoneyPotSSHTransport,44150,103.243.107.201] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-04-28T04:38:20+0000 [HoneyPotSSHTransport,44150,103.243.107.201] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-04-28T04:38:21+0000 [HoneyPotSSHTransport,44150,103.243.107.201] NEW KEYS
+2017-04-28T04:38:21+0000 [HoneyPotSSHTransport,44150,103.243.107.201] starting service 'ssh-userauth'
+2017-04-28T04:38:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44150,103.243.107.201] 'user' trying auth 'password'
+2017-04-28T04:38:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44150,103.243.107.201] login attempt: 201
+2017-04-28T04:38:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44150,103.243.107.201] login return, expect: [root/root]
+2017-04-28T04:38:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44150,103.243.107.201] login attempt [user/1234] failed
+2017-04-28T04:38:23+0000 [-] 'user' failed auth 'password'
+2017-04-28T04:38:23+0000 [-] unauthorized login: 
+2017-04-28T04:38:35+0000 [CowrieTelnetTransport,24238,51.15.143.247] Connection lost after 37 seconds
+2017-04-28T04:39:02+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.243.107.233:58952 (10.8.41.81:2222) [session: 88cd1a51]
