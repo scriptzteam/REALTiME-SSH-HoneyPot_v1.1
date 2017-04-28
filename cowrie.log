@@ -4617,3 +4617,96 @@
 2017-04-28T19:51:54+0000 [SSHChannel None (49) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44879,91.195.103.212] remote close
 2017-04-28T19:51:54+0000 [SSHChannel None (49) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44879,91.195.103.212] sending close 49
 2017-04-28T19:52:23+0000 [CowrieTelnetTransport,26247,89.248.167.173] Connection lost after 65 seconds
+2017-04-28T19:53:40+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 200.175.184.148:55408 (10.8.41.81:2222) [session: 95fd0edd]
+2017-04-28T19:53:40+0000 [HoneyPotSSHTransport,44944,200.175.184.148] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-04-28T19:53:40+0000 [HoneyPotSSHTransport,44944,200.175.184.148] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-28T19:53:40+0000 [HoneyPotSSHTransport,44944,200.175.184.148] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-28T19:53:40+0000 [HoneyPotSSHTransport,44944,200.175.184.148] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-28T19:53:44+0000 [HoneyPotSSHTransport,44944,200.175.184.148] NEW KEYS
+2017-04-28T19:53:45+0000 [HoneyPotSSHTransport,44944,200.175.184.148] starting service 'ssh-userauth'
+2017-04-28T19:53:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44944,200.175.184.148] 'rppt' trying auth 'password'
+2017-04-28T19:53:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44944,200.175.184.148] first time for 200.175.184.148, need: 1
+2017-04-28T19:53:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44944,200.175.184.148] login attempt: 1
+2017-04-28T19:53:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44944,200.175.184.148] login attempt [rppt/uz5YtIl2zx] succeeded
+2017-04-28T19:53:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44944,200.175.184.148] 'rppt' authenticated with 'password'
+2017-04-28T19:53:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,44944,200.175.184.148] starting service 'ssh-connection'
+2017-04-28T19:53:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] got channel 'session' request
+2017-04-28T19:53:47+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] channel open
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] executing command "unset HISTORY HISTFILE HISTSAVE HISTZONE HISTORY HISTLOG WATCH ; history -n ; export HISTFILE=/dev/null ; export HISTSIZE=0; export HISTFILESIZE=0 ; rm -rf /var/log/wtmp ; rm -rf /var/log/lastlog ; rm -rf /var/log/secure ; rm -rf /var/log/xferlog ; rm -rf /var/log/messages ; rm -rf /var/run/utmp ; touch /var/run/utmp ; touch /var/log/messages ; touch /var/log/wtmp ; touch /var/log/messages ; touch /var/log/xferlog ; touch /var/log/secure ;  touch /var/log/lastlog ; rm -rf /var/log/maillog ; touch /var/log/maillog ; rm -rf /root/.bash_history ; touch /root/.bash_history ; history -r "
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Opening TTY Log: log/tty/20170428-195348-95fd0edd-0e.log
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] CMD: unset HISTORY HISTFILE HISTSAVE HISTZONE HISTORY HISTLOG WATCH ; history -n ; export HISTFILE=/dev/null ; export HISTSIZE=0; export HISTFILESIZE=0 ; rm -rf /var/log/wtmp ; rm -rf /var/log/lastlog ; rm -rf /var/log/secure ; rm -rf /var/log/xferlog ; rm -rf /var/log/messages ; rm -rf /var/run/utmp ; touch /var/run/utmp ; touch /var/log/messages ; touch /var/log/wtmp ; touch /var/log/messages ; touch /var/log/xferlog ; touch /var/log/secure ;  touch /var/log/lastlog ; rm -rf /var/log/maillog ; touch /var/log/maillog ; rm -rf /root/.bash_history ; touch /root/.bash_history ; history -r 
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: unset HISTORY HISTFILE HISTSAVE HISTZONE HISTORY HISTLOG WATCH
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: history -n
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: export HISTFILE=/dev/null
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: export HISTSIZE=0
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: export HISTFILESIZE=0
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: rm -rf /var/log/wtmp
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: rm -rf /var/log/lastlog
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: rm -rf /var/log/secure
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: rm -rf /var/log/xferlog
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: rm -rf /var/log/messages
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: rm -rf /var/run/utmp
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: touch /var/run/utmp
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: touch /var/log/messages
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: touch /var/log/wtmp
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: touch /var/log/messages
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: touch /var/log/xferlog
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: touch /var/log/secure
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: touch /var/log/lastlog
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: rm -rf /var/log/maillog
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: touch /var/log/maillog
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: rm -rf /root/.bash_history
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: touch /root/.bash_history
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: history -r
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] exitCode: 0
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] sending request 'exit-status'
+2017-04-28T19:53:48+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] sending close 0
+2017-04-28T19:53:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] got channel 'session' request
+2017-04-28T19:53:48+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] channel open
+2017-04-28T19:53:48+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] executing command "uname"
+2017-04-28T19:53:48+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Opening TTY Log: log/tty/20170428-195348-95fd0edd-1e.log
+2017-04-28T19:53:48+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] CMD: uname
+2017-04-28T19:53:48+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: uname 
+2017-04-28T19:53:48+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] exitCode: 0
+2017-04-28T19:53:48+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] sending request 'exit-status'
+2017-04-28T19:53:48+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] sending close 1
+2017-04-28T19:53:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] got channel 'session' request
+2017-04-28T19:53:48+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] channel open
+2017-04-28T19:53:49+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] executing command "free -m"
+2017-04-28T19:53:49+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Opening TTY Log: log/tty/20170428-195349-95fd0edd-2e.log
+2017-04-28T19:53:49+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] CMD: free -m
+2017-04-28T19:53:49+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: free -m
+2017-04-28T19:53:49+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] exitCode: 0
+2017-04-28T19:53:49+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] sending request 'exit-status'
+2017-04-28T19:53:49+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] sending close 2
+2017-04-28T19:53:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] got channel 'session' request
+2017-04-28T19:53:49+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] channel open
+2017-04-28T19:53:49+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] executing command "ps -x"
+2017-04-28T19:53:49+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Opening TTY Log: log/tty/20170428-195349-95fd0edd-3e.log
+2017-04-28T19:53:49+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] CMD: ps -x
+2017-04-28T19:53:49+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: ps -x
+2017-04-28T19:53:49+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] exitCode: 0
+2017-04-28T19:53:49+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] sending request 'exit-status'
+2017-04-28T19:53:49+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] sending close 3
+2017-04-28T19:53:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] got channel 'session' request
+2017-04-28T19:53:49+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] channel open
+2017-04-28T19:53:50+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] executing command "cat /proc/cpuinfo"
+2017-04-28T19:53:50+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Opening TTY Log: log/tty/20170428-195350-95fd0edd-4e.log
+2017-04-28T19:53:50+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] CMD: cat /proc/cpuinfo
+2017-04-28T19:53:50+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Command found: cat /proc/cpuinfo
+2017-04-28T19:53:50+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] exitCode: 0
+2017-04-28T19:53:50+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] sending request 'exit-status'
+2017-04-28T19:53:50+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] sending close 4
+2017-04-28T19:53:50+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Closing TTY Log: log/tty/20170428-195348-95fd0edd-0e.log after 2 seconds
+2017-04-28T19:53:50+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] honeypot terminal protocol connection lost disconnected
+2017-04-28T19:53:50+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Closing TTY Log: log/tty/20170428-195348-95fd0edd-1e.log after 2 seconds
+2017-04-28T19:53:50+0000 [SSHChannel session (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] honeypot terminal protocol connection lost disconnected
+2017-04-28T19:53:50+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Closing TTY Log: log/tty/20170428-195349-95fd0edd-2e.log after 1 seconds
+2017-04-28T19:53:50+0000 [SSHChannel session (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] honeypot terminal protocol connection lost disconnected
+2017-04-28T19:53:50+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Closing TTY Log: log/tty/20170428-195349-95fd0edd-3e.log after 1 seconds
+2017-04-28T19:53:50+0000 [SSHChannel session (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] honeypot terminal protocol connection lost disconnected
+2017-04-28T19:53:50+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] Closing TTY Log: log/tty/20170428-195350-95fd0edd-4e.log after 0 seconds
+2017-04-28T19:53:50+0000 [SSHChannel session (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,44944,200.175.184.148] honeypot terminal protocol connection lost disconnected
+2017-04-28T19:53:50+0000 [HoneyPotSSHTransport,44944,200.175.184.148] avatar rppt logging out
+2017-04-28T19:53:50+0000 [HoneyPotSSHTransport,44944,200.175.184.148] connection lost
+2017-04-28T19:53:50+0000 [HoneyPotSSHTransport,44944,200.175.184.148] Connection lost after 10 seconds
