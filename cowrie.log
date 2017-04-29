@@ -3372,3 +3372,37 @@
 2017-04-29T18:58:41+0000 [SSHChannel None (63) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48363,91.195.103.213] sending close 63
 2017-04-29T18:58:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48363,91.195.103.213] got channel 'direct-tcpip' request
 2017-04-29T18:58:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48363,91.195.103.213] direct-tcp connection request to 98.138.112.34:25 from localhost:5556
+2017-04-29T18:59:06+0000 [SSHChannel None (64) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48363,91.195.103.213] remote eof
+2017-04-29T18:59:06+0000 [SSHChannel None (64) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48363,91.195.103.213] remote close
+2017-04-29T18:59:06+0000 [SSHChannel None (64) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48363,91.195.103.213] sending close 64
+2017-04-29T18:59:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 14.161.50.249:52679 (10.8.41.81:2222) [session: 86802b40]
+2017-04-29T18:59:23+0000 [HoneyPotSSHTransport,48566,14.161.50.249] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-29T18:59:23+0000 [HoneyPotSSHTransport,48566,14.161.50.249] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-29T18:59:23+0000 [HoneyPotSSHTransport,48566,14.161.50.249] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-29T18:59:23+0000 [HoneyPotSSHTransport,48566,14.161.50.249] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-29T18:59:25+0000 [HoneyPotSSHTransport,48566,14.161.50.249] NEW KEYS
+2017-04-29T18:59:25+0000 [HoneyPotSSHTransport,48566,14.161.50.249] starting service 'ssh-userauth'
+2017-04-29T18:59:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48566,14.161.50.249] 'xgridagent' trying auth 'password'
+2017-04-29T18:59:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48566,14.161.50.249] login attempt: 1179
+2017-04-29T18:59:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48566,14.161.50.249] login return, expect: [doctor/doctor]
+2017-04-29T18:59:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48566,14.161.50.249] login attempt [xgridagent/xgridagent] failed
+2017-04-29T18:59:27+0000 [-] 'xgridagent' failed auth 'password'
+2017-04-29T18:59:27+0000 [-] unauthorized login: 
+2017-04-29T18:59:27+0000 [HoneyPotSSHTransport,48566,14.161.50.249] connection lost
+2017-04-29T18:59:27+0000 [HoneyPotSSHTransport,48566,14.161.50.249] Connection lost after 4 seconds
+2017-04-29T18:59:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48313,91.230.47.73] got channel 'direct-tcpip' request
+2017-04-29T18:59:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48313,91.230.47.73] direct-tcp connection request to 196.35.61.100:25 from localhost:5556
+2017-04-29T18:59:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48383,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-29T18:59:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48383,91.230.47.81] direct-tcp connection request to 91.121.57.68:80 from localhost:5556
+2017-04-29T18:59:43+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48383,91.230.47.81] direct-tcp forward to 91.121.57.68:80 with data 'GET /proxy.php HTTP/1.1\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nConnection: Close\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0\r\nAccept-Language: en-US,en;q=0.5\r\nCache-Control: max-age=0\r\nReferer: RefererString\r\nCookie: param1=CookieString\r\nAccept-Encoding: gzip\r\nHost: check2.zennolab.com\r\n\r\n'
+2017-04-29T18:59:43+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48383,91.230.47.81] failed to connect: Connection refused
+2017-04-29T18:59:43+0000 [SSHChannel None (85) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48383,91.230.47.81] sending close 85
+2017-04-29T18:59:44+0000 [CowrieTelnetTransport,29228,163.172.210.71] Closing TTY Log: log/tty/20170429-185742-None-29228i.log after 121 seconds
+2017-04-29T18:59:44+0000 [CowrieTelnetTransport,29228,163.172.210.71] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-29T18:59:44+0000 [CowrieTelnetTransport,29228,163.172.210.71] Connection lost after 128 seconds
+2017-04-29T19:00:01+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 148.251.21.236:55144 (10.8.41.81:2222) [session: e7f88741]
+2017-04-29T19:00:01+0000 [HoneyPotSSHTransport,48567,148.251.21.236] Remote SSH version: SSH-2.0-PuTTY_Release_0.63
+2017-04-29T19:00:01+0000 [HoneyPotSSHTransport,48567,148.251.21.236] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-29T19:00:01+0000 [HoneyPotSSHTransport,48567,148.251.21.236] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-29T19:00:01+0000 [HoneyPotSSHTransport,48567,148.251.21.236] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
