@@ -3390,3 +3390,55 @@
 2017-04-29T10:46:01+0000 [-] unauthorized login: 
 2017-04-29T10:46:01+0000 [HoneyPotSSHTransport,46487,202.103.238.19] connection lost
 2017-04-29T10:46:01+0000 [HoneyPotSSHTransport,46487,202.103.238.19] Connection lost after 9 seconds
+2017-04-29T10:46:09+0000 [CowrieTelnetTransport,28205,171.96.106.160] Closing TTY Log: log/tty/20170429-104426-None-28205i.log after 102 seconds
+2017-04-29T10:46:09+0000 [CowrieTelnetTransport,28205,171.96.106.160] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-29T10:46:09+0000 [CowrieTelnetTransport,28205,171.96.106.160] Connection lost after 105 seconds
+2017-04-29T10:46:15+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 202.39.151.230:56499 (10.8.41.81:2223) [session: TT28211]
+2017-04-29T10:46:15+0000 [CowrieTelnetTransport,28208,77.231.200.100] Connection lost after 36 seconds
+2017-04-29T10:46:15+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 77.231.200.100:34825 (10.8.41.81:2223) [session: TT28212]
+2017-04-29T10:46:16+0000 [CowrieTelnetTransport,28212,77.231.200.100] login attempt: 8
+2017-04-29T10:46:16+0000 [CowrieTelnetTransport,28212,77.231.200.100] login return, expect: [admin/smcadmin]
+2017-04-29T10:46:17+0000 [CowrieTelnetTransport,28212,77.231.200.100] login attempt [root/system] failed
+2017-04-29T10:46:17+0000 [CowrieTelnetTransport,28212,77.231.200.100] Warning: state changed and new state returned
+2017-04-29T10:46:17+0000 [CowrieTelnetTransport,28212,77.231.200.100] login attempt: 9
+2017-04-29T10:46:17+0000 [CowrieTelnetTransport,28212,77.231.200.100] login return, expect: [admin/smcadmin]
+2017-04-29T10:46:18+0000 [CowrieTelnetTransport,28212,77.231.200.100] login attempt [enable\x00/system\x00] failed
+2017-04-29T10:46:18+0000 [CowrieTelnetTransport,28212,77.231.200.100] Warning: state changed and new state returned
+2017-04-29T10:46:18+0000 [CowrieTelnetTransport,28200,185.165.29.34] Closing TTY Log: log/tty/20170429-104413-None-28200i.log after 124 seconds
+2017-04-29T10:46:18+0000 [CowrieTelnetTransport,28200,185.165.29.34] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-29T10:46:18+0000 [CowrieTelnetTransport,28200,185.165.29.34] Connection lost after 135 seconds
+2017-04-29T10:46:18+0000 [CowrieTelnetTransport,28212,77.231.200.100] login attempt: 10
+2017-04-29T10:46:18+0000 [CowrieTelnetTransport,28212,77.231.200.100] login return, expect: [admin/smcadmin]
+2017-04-29T10:46:19+0000 [CowrieTelnetTransport,28212,77.231.200.100] login attempt [shell\x00/sh\x00] failed
+2017-04-29T10:46:19+0000 [CowrieTelnetTransport,28212,77.231.200.100] Warning: state changed and new state returned
+2017-04-29T10:46:20+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 202.39.151.230:55732 (10.8.41.81:2223) [session: TT28213]
+2017-04-29T10:46:20+0000 [CowrieTelnetTransport,28213,202.39.151.230] Connection lost after 0 seconds
+2017-04-29T10:46:25+0000 [CowrieTelnetTransport,28199,202.39.151.230] Connection lost after 300 seconds
+2017-04-29T10:46:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,46003,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-29T10:46:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,46003,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-04-29T10:46:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 1.234.62.166:41588 (10.8.41.81:2222) [session: ebea5c03]
+2017-04-29T10:46:42+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,46003,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: hipcow.pw\r\nAccept: */*\r\n\r\n'
+2017-04-29T10:46:42+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,46003,91.230.47.82] failed to connect: Connection refused
+2017-04-29T10:46:42+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,46003,91.230.47.82] sending close 14
+2017-04-29T10:46:42+0000 [HoneyPotSSHTransport,46488,1.234.62.166] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-29T10:46:42+0000 [HoneyPotSSHTransport,46488,1.234.62.166] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-29T10:46:42+0000 [HoneyPotSSHTransport,46488,1.234.62.166] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-29T10:46:42+0000 [HoneyPotSSHTransport,46488,1.234.62.166] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-29T10:46:47+0000 [HoneyPotSSHTransport,46488,1.234.62.166] connection lost
+2017-04-29T10:46:47+0000 [HoneyPotSSHTransport,46488,1.234.62.166] Connection lost after 5 seconds
+2017-04-29T10:46:50+0000 [CowrieTelnetTransport,28212,77.231.200.100] Connection lost after 35 seconds
+2017-04-29T10:46:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 77.231.200.100:35248 (10.8.41.81:2223) [session: TT28214]
+2017-04-29T10:46:51+0000 [CowrieTelnetTransport,28214,77.231.200.100] login attempt: 11
+2017-04-29T10:46:51+0000 [CowrieTelnetTransport,28214,77.231.200.100] login return, expect: [admin/smcadmin]
+2017-04-29T10:46:51+0000 [CowrieTelnetTransport,28214,77.231.200.100] login attempt [root/888888] failed
+2017-04-29T10:46:51+0000 [CowrieTelnetTransport,28214,77.231.200.100] Warning: state changed and new state returned
+2017-04-29T10:46:52+0000 [CowrieTelnetTransport,28214,77.231.200.100] login attempt: 12
+2017-04-29T10:46:52+0000 [CowrieTelnetTransport,28214,77.231.200.100] login return, expect: [admin/smcadmin]
+2017-04-29T10:46:53+0000 [CowrieTelnetTransport,28214,77.231.200.100] login attempt [enable\x00/system\x00] failed
+2017-04-29T10:46:53+0000 [CowrieTelnetTransport,28214,77.231.200.100] Warning: state changed and new state returned
+2017-04-29T10:46:53+0000 [CowrieTelnetTransport,28214,77.231.200.100] login attempt: 13
+2017-04-29T10:46:53+0000 [CowrieTelnetTransport,28214,77.231.200.100] login return, expect: [admin/smcadmin]
+2017-04-29T10:46:54+0000 [CowrieTelnetTransport,28214,77.231.200.100] login attempt [shell\x00/sh\x00] failed
+2017-04-29T10:46:54+0000 [CowrieTelnetTransport,28214,77.231.200.100] Warning: state changed and new state returned
