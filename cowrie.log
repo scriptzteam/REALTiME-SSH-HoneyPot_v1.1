@@ -6195,3 +6195,51 @@
 2017-04-29T19:40:45+0000 [SSHChannel None (21) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48316,91.195.103.187] direct-tcp forward to 104.81.104.99:443 with data "\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80'\xbeNF\x9c\xd9\xc7\x03}\xdfKc*P\xd6X\xaa\xac\xda\xc1\xb3\xba\xddt\xbf\x02={>o\xd8u"
 2017-04-29T19:40:45+0000 [SSHChannel None (21) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48316,91.195.103.187] failed to connect: Connection refused
 2017-04-29T19:40:45+0000 [SSHChannel None (21) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48316,91.195.103.187] sending close 21
+2017-04-29T19:41:34+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 5.231.86.70:53420 (10.8.41.81:2223) [session: TT29258]
+2017-04-29T19:41:39+0000 [CowrieTelnetTransport,29258,5.231.86.70] login attempt: 20
+2017-04-29T19:41:39+0000 [CowrieTelnetTransport,29258,5.231.86.70] login return, expect: [root/vizxv]
+2017-04-29T19:41:39+0000 [CowrieTelnetTransport,29258,5.231.86.70] login attempt [default/antslq] failed
+2017-04-29T19:41:39+0000 [CowrieTelnetTransport,29258,5.231.86.70] Warning: state changed and new state returned
+2017-04-29T19:41:39+0000 [CowrieTelnetTransport,29258,5.231.86.70] login attempt: 21
+2017-04-29T19:41:39+0000 [CowrieTelnetTransport,29258,5.231.86.70] login return, expect: [root/vizxv]
+2017-04-29T19:41:40+0000 [CowrieTelnetTransport,29258,5.231.86.70] login attempt [enable/shell] failed
+2017-04-29T19:41:40+0000 [CowrieTelnetTransport,29258,5.231.86.70] Warning: state changed and new state returned
+2017-04-29T19:41:40+0000 [CowrieTelnetTransport,29258,5.231.86.70] login attempt: 22
+2017-04-29T19:41:40+0000 [CowrieTelnetTransport,29258,5.231.86.70] login return, expect: [root/vizxv]
+2017-04-29T19:41:40+0000 [CowrieTelnetTransport,29258,5.231.86.70] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-29T19:41:40+0000 [CowrieTelnetTransport,29258,5.231.86.70] Warning: state changed and new state returned
+2017-04-29T19:41:44+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 213.207.53.163:44434 (10.8.41.81:2223) [session: TT29259]
+2017-04-29T19:41:45+0000 [CowrieTelnetTransport,29259,213.207.53.163] first time for 213.207.53.163, need: 1
+2017-04-29T19:41:45+0000 [CowrieTelnetTransport,29259,213.207.53.163] login attempt: 1
+2017-04-29T19:41:45+0000 [CowrieTelnetTransport,29259,213.207.53.163] login attempt [root/00000000] succeeded
+2017-04-29T19:41:47+0000 [CowrieTelnetTransport,29259,213.207.53.163] Opening TTY Log: log/tty/20170429-194147-None-29259i.log
+2017-04-29T19:41:47+0000 [CowrieTelnetTransport,29259,213.207.53.163] Warning: state changed and new state returned
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] CMD: enable
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command found: enable 
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] CMD: shell
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command not found: shell
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] CMD: sh
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command found: sh 
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] CMD: cat /proc/mounts; /bin/busybox QANPZ
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command found: cat /proc/mounts
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command found: /bin/busybox QANPZ
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox QANPZ
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command found: cd /dev/shm
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command found: cat .s
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command found: cp /bin/echo .s
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command found: /bin/busybox QANPZ
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] CMD: nc; wget; /bin/busybox QANPZ
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command not found: nc
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command found: wget 
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command found: /bin/busybox QANPZ
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command not found: dd bs=52 count=1 if=.s
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command found: cat /dev/shm/.s
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] CMD: /bin/busybox QANPZ
+2017-04-29T19:41:48+0000 [CowrieTelnetTransport,29259,213.207.53.163] Command found: /bin/busybox QANPZ
+2017-04-29T19:41:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48316,91.195.103.187] got channel 'direct-tcpip' request
+2017-04-29T19:41:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48316,91.195.103.187] direct-tcp connection request to 54.192.129.58:443 from localhost:5556
+2017-04-29T19:41:58+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48316,91.195.103.187] direct-tcp forward to 54.192.129.58:443 with data '\x16\x03\x01\x00u\x01\x00\x00q\x03\x01Y\x04\xecno^nk+x\xf2\xc3l!]\xaaP\x10\x9d\xb1\xa7,4/eA &\xe1W#\x8e\x00\x00\x18\x00/\x005\x00\x05\x00\n\xc0\x13\xc0\x14\xc0\t\xc0\n\x002\x008\x00\x13\x00\x04\x01\x00\x000\xff\x01\x00\x01\x00\x00\x00\x00\x17\x00\x15\x00\x00\x12account.mojang.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00'
+2017-04-29T19:41:58+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48316,91.195.103.187] failed to connect: Connection refused
+2017-04-29T19:41:58+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48316,91.195.103.187] sending close 22
