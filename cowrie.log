@@ -6803,3 +6803,79 @@
 2017-04-29T06:39:54+0000 [CowrieTelnetTransport,27869,93.118.97.217] Command found: /bin/busybox WVOHD
 2017-04-29T06:40:00+0000 [HoneyPotSSHTransport,45842,172.81.185.94] connection lost
 2017-04-29T06:40:00+0000 [HoneyPotSSHTransport,45842,172.81.185.94] Connection lost after 50 seconds
+2017-04-29T06:40:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,45513,91.195.103.199] got channel 'direct-tcpip' request
+2017-04-29T06:40:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,45513,91.195.103.199] direct-tcp connection request to 136.243.80.213:80 from localhost:5556
+2017-04-29T06:40:06+0000 [SSHChannel None (47) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45513,91.195.103.199] remote eof
+2017-04-29T06:40:06+0000 [SSHChannel None (47) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45513,91.195.103.199] remote close
+2017-04-29T06:40:06+0000 [SSHChannel None (47) on SSHService 'ssh-connection' on HoneyPotSSHTransport,45513,91.195.103.199] sending close 47
+2017-04-29T06:40:16+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.81.185.115:60688 (10.8.41.81:2222) [session: 8b7ed6fc]
+2017-04-29T06:40:16+0000 [HoneyPotSSHTransport,45845,172.81.185.115] Remote SSH version: SSH-2.0-Granados-1.0
+2017-04-29T06:40:16+0000 [HoneyPotSSHTransport,45845,172.81.185.115] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-04-29T06:40:16+0000 [HoneyPotSSHTransport,45845,172.81.185.115] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-04-29T06:40:16+0000 [HoneyPotSSHTransport,45845,172.81.185.115] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-04-29T06:40:17+0000 [HoneyPotSSHTransport,45845,172.81.185.115] NEW KEYS
+2017-04-29T06:40:17+0000 [HoneyPotSSHTransport,45845,172.81.185.115] starting service 'ssh-userauth'
+2017-04-29T06:40:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45845,172.81.185.115] 'root' trying auth 'password'
+2017-04-29T06:40:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45845,172.81.185.115] login attempt: 2
+2017-04-29T06:40:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45845,172.81.185.115] login return, expect: [root/root]
+2017-04-29T06:40:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,45845,172.81.185.115] login attempt [root/admin] failed
+2017-04-29T06:40:18+0000 [-] 'root' failed auth 'password'
+2017-04-29T06:40:18+0000 [-] unauthorized login: 
+2017-04-29T06:40:31+0000 [CowrieTelnetTransport,27867,81.30.196.70] Closing TTY Log: log/tty/20170429-063850-None-27867i.log after 100 seconds
+2017-04-29T06:40:31+0000 [CowrieTelnetTransport,27867,81.30.196.70] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-29T06:40:31+0000 [CowrieTelnetTransport,27867,81.30.196.70] Connection lost after 104 seconds
+2017-04-29T06:40:31+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.41.218.108:42064 (10.8.41.81:2223) [session: TT27870]
+2017-04-29T06:40:32+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.41.218.108:46819 (10.8.41.81:2223) [session: TT27871]
+2017-04-29T06:40:35+0000 [CowrieTelnetTransport,27870,31.41.218.108] login attempt: 21271
+2017-04-29T06:40:35+0000 [CowrieTelnetTransport,27870,31.41.218.108] login return, expect: [Admin/atc456]
+2017-04-29T06:40:36+0000 [CowrieTelnetTransport,27870,31.41.218.108] login attempt [admin/] failed
+2017-04-29T06:40:36+0000 [CowrieTelnetTransport,27870,31.41.218.108] Warning: state changed and new state returned
+2017-04-29T06:40:36+0000 [CowrieTelnetTransport,27870,31.41.218.108] login attempt: 21272
+2017-04-29T06:40:36+0000 [CowrieTelnetTransport,27870,31.41.218.108] login return, expect: [Admin/atc456]
+2017-04-29T06:40:36+0000 [CowrieTelnetTransport,27870,31.41.218.108] login attempt [enable/shell] failed
+2017-04-29T06:40:36+0000 [CowrieTelnetTransport,27870,31.41.218.108] Warning: state changed and new state returned
+2017-04-29T06:40:36+0000 [CowrieTelnetTransport,27870,31.41.218.108] login attempt: 21273
+2017-04-29T06:40:36+0000 [CowrieTelnetTransport,27870,31.41.218.108] login return, expect: [Admin/atc456]
+2017-04-29T06:40:37+0000 [CowrieTelnetTransport,27870,31.41.218.108] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-29T06:40:37+0000 [CowrieTelnetTransport,27870,31.41.218.108] Warning: state changed and new state returned
+2017-04-29T06:40:37+0000 [CowrieTelnetTransport,27871,31.41.218.108] login attempt: 21274
+2017-04-29T06:40:37+0000 [CowrieTelnetTransport,27871,31.41.218.108] login return, expect: [Admin/atc456]
+2017-04-29T06:40:37+0000 [CowrieTelnetTransport,27871,31.41.218.108] login attempt [admin/5up] failed
+2017-04-29T06:40:37+0000 [CowrieTelnetTransport,27871,31.41.218.108] Warning: state changed and new state returned
+2017-04-29T06:40:38+0000 [CowrieTelnetTransport,27871,31.41.218.108] login attempt: 21275
+2017-04-29T06:40:38+0000 [CowrieTelnetTransport,27871,31.41.218.108] login return, expect: [Admin/atc456]
+2017-04-29T06:40:38+0000 [CowrieTelnetTransport,27871,31.41.218.108] login attempt [enable/shell] failed
+2017-04-29T06:40:38+0000 [CowrieTelnetTransport,27871,31.41.218.108] Warning: state changed and new state returned
+2017-04-29T06:40:38+0000 [CowrieTelnetTransport,27871,31.41.218.108] login attempt: 21276
+2017-04-29T06:40:38+0000 [CowrieTelnetTransport,27871,31.41.218.108] login return, expect: [Admin/atc456]
+2017-04-29T06:40:39+0000 [CowrieTelnetTransport,27871,31.41.218.108] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-29T06:40:39+0000 [CowrieTelnetTransport,27871,31.41.218.108] Warning: state changed and new state returned
+2017-04-29T06:40:47+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.41.218.108:59443 (10.8.41.81:2223) [session: TT27872]
+2017-04-29T06:40:51+0000 [CowrieTelnetTransport,27872,31.41.218.108] login attempt: 21277
+2017-04-29T06:40:51+0000 [CowrieTelnetTransport,27872,31.41.218.108] login return, expect: [Admin/atc456]
+2017-04-29T06:40:52+0000 [CowrieTelnetTransport,27872,31.41.218.108] login attempt [Administrator/] failed
+2017-04-29T06:40:52+0000 [CowrieTelnetTransport,27872,31.41.218.108] Warning: state changed and new state returned
+2017-04-29T06:40:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.165.29.34:46570 (10.8.41.81:2223) [session: TT27873]
+2017-04-29T06:40:52+0000 [CowrieTelnetTransport,27872,31.41.218.108] login attempt: 21278
+2017-04-29T06:40:52+0000 [CowrieTelnetTransport,27872,31.41.218.108] login return, expect: [Admin/atc456]
+2017-04-29T06:40:52+0000 [CowrieTelnetTransport,27872,31.41.218.108] login attempt [enable/shell] failed
+2017-04-29T06:40:52+0000 [CowrieTelnetTransport,27872,31.41.218.108] Warning: state changed and new state returned
+2017-04-29T06:40:53+0000 [CowrieTelnetTransport,27872,31.41.218.108] login attempt: 21279
+2017-04-29T06:40:53+0000 [CowrieTelnetTransport,27872,31.41.218.108] login return, expect: [Admin/atc456]
+2017-04-29T06:40:53+0000 [CowrieTelnetTransport,27872,31.41.218.108] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-29T06:40:53+0000 [CowrieTelnetTransport,27872,31.41.218.108] Warning: state changed and new state returned
+2017-04-29T06:40:54+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.41.218.108:59609 (10.8.41.81:2223) [session: TT27874]
+2017-04-29T06:40:55+0000 [CowrieTelnetTransport,27873,185.165.29.34] Connection lost after 3 seconds
+2017-04-29T06:40:58+0000 [CowrieTelnetTransport,27874,31.41.218.108] login attempt: 21280
+2017-04-29T06:40:58+0000 [CowrieTelnetTransport,27874,31.41.218.108] login return, expect: [Admin/atc456]
+2017-04-29T06:40:59+0000 [CowrieTelnetTransport,27874,31.41.218.108] login attempt [default/] failed
+2017-04-29T06:40:59+0000 [CowrieTelnetTransport,27874,31.41.218.108] Warning: state changed and new state returned
+2017-04-29T06:40:59+0000 [CowrieTelnetTransport,27874,31.41.218.108] login attempt: 21281
+2017-04-29T06:40:59+0000 [CowrieTelnetTransport,27874,31.41.218.108] login return, expect: [Admin/atc456]
+2017-04-29T06:41:00+0000 [CowrieTelnetTransport,27874,31.41.218.108] login attempt [enable/shell] failed
+2017-04-29T06:41:00+0000 [CowrieTelnetTransport,27874,31.41.218.108] Warning: state changed and new state returned
+2017-04-29T06:41:00+0000 [CowrieTelnetTransport,27874,31.41.218.108] login attempt: 21282
+2017-04-29T06:41:00+0000 [CowrieTelnetTransport,27874,31.41.218.108] login return, expect: [Admin/atc456]
+2017-04-29T06:41:00+0000 [CowrieTelnetTransport,27874,31.41.218.108] login attempt [sh//bin/busybox ECCHI] failed
+2017-04-29T06:41:00+0000 [CowrieTelnetTransport,27874,31.41.218.108] Warning: state changed and new state returned
