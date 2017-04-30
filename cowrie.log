@@ -4765,3 +4765,50 @@
 2017-04-30T15:30:21+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,51788,91.195.103.186] remote eof
 2017-04-30T15:30:21+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,51788,91.195.103.186] remote close
 2017-04-30T15:30:21+0000 [SSHChannel None (41) on SSHService 'ssh-connection' on HoneyPotSSHTransport,51788,91.195.103.186] sending close 41
+2017-04-30T15:31:10+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 84.200.24.226:60634 (10.8.41.81:2222) [session: dfec2ecb]
+2017-04-30T15:31:10+0000 [HoneyPotSSHTransport,52344,84.200.24.226] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-30T15:31:10+0000 [HoneyPotSSHTransport,52344,84.200.24.226] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-30T15:31:10+0000 [HoneyPotSSHTransport,52344,84.200.24.226] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-30T15:31:10+0000 [HoneyPotSSHTransport,52344,84.200.24.226] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-30T15:31:17+0000 [HoneyPotSSHTransport,52344,84.200.24.226] NEW KEYS
+2017-04-30T15:31:17+0000 [HoneyPotSSHTransport,52344,84.200.24.226] starting service 'ssh-userauth'
+2017-04-30T15:31:17+0000 [HoneyPotSSHTransport,52344,84.200.24.226] connection lost
+2017-04-30T15:31:17+0000 [HoneyPotSSHTransport,52344,84.200.24.226] Connection lost after 6 seconds
+2017-04-30T15:31:19+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 159.146.106.197:34866 (10.8.41.81:2223) [session: TT31320]
+2017-04-30T15:31:20+0000 [CowrieTelnetTransport,31320,159.146.106.197] first time for 159.146.106.197, need: 1
+2017-04-30T15:31:20+0000 [CowrieTelnetTransport,31320,159.146.106.197] login attempt: 1
+2017-04-30T15:31:20+0000 [CowrieTelnetTransport,31320,159.146.106.197] login attempt [root/1234] succeeded
+2017-04-30T15:31:22+0000 [CowrieTelnetTransport,31320,159.146.106.197] Opening TTY Log: log/tty/20170430-153122-None-31320i.log
+2017-04-30T15:31:22+0000 [CowrieTelnetTransport,31320,159.146.106.197] Warning: state changed and new state returned
+2017-04-30T15:31:22+0000 [CowrieTelnetTransport,31320,159.146.106.197] CMD: enable
+2017-04-30T15:31:22+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command found: enable 
+2017-04-30T15:31:22+0000 [CowrieTelnetTransport,31320,159.146.106.197] Reading txtcmd from "txtcmds/bin/enable"
+2017-04-30T15:31:22+0000 [CowrieTelnetTransport,31320,159.146.106.197] CMD: shell
+2017-04-30T15:31:22+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command not found: shell
+2017-04-30T15:31:22+0000 [CowrieTelnetTransport,31320,159.146.106.197] CMD: sh
+2017-04-30T15:31:22+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command found: sh 
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] CMD: cat /proc/mounts; /bin/busybox RWGMA
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command found: cat /proc/mounts
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command found: /bin/busybox RWGMA
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox RWGMA
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command found: cd /dev/shm
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command found: cat .s
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command found: cp /bin/echo .s
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command found: /bin/busybox RWGMA
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] CMD: nc; wget; /bin/busybox RWGMA
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command not found: nc
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command found: wget 
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command found: /bin/busybox RWGMA
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command not found: dd bs=52 count=1 if=.s
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command found: cat /dev/shm/.s
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] CMD: /bin/busybox RWGMA
+2017-04-30T15:31:23+0000 [CowrieTelnetTransport,31320,159.146.106.197] Command found: /bin/busybox RWGMA
+2017-04-30T15:31:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,51813,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-30T15:31:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,51813,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-04-30T15:31:49+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,51813,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: hipcow.pw\r\nAccept: */*\r\n\r\n'
+2017-04-30T15:31:49+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,51813,91.230.47.82] failed to connect: Connection refused
+2017-04-30T15:31:49+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,51813,91.230.47.82] sending close 10
+2017-04-30T15:32:01+0000 [HoneyPotSSHTransport,51746,91.230.47.71] avatar 1111 logging out
+2017-04-30T15:32:01+0000 [HoneyPotSSHTransport,51746,91.230.47.71] connection lost
+2017-04-30T15:32:01+0000 [HoneyPotSSHTransport,51746,91.230.47.71] Connection lost after 10999 seconds
