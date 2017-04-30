@@ -5307,3 +5307,26 @@
 2017-04-30T22:30:59+0000 [CowrieTelnetTransport,32512,51.15.5.250] login return, expect: [Administrator/meinsm]
 2017-04-30T22:30:59+0000 [CowrieTelnetTransport,32512,51.15.5.250] login attempt [sh//bin/busybox ECCHI] failed
 2017-04-30T22:30:59+0000 [CowrieTelnetTransport,32512,51.15.5.250] Warning: state changed and new state returned
+2017-04-30T22:31:11+0000 [CowrieTelnetTransport,32510,119.28.72.174] Connection lost after 41 seconds
+2017-04-30T22:31:30+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 84.200.24.226:55712 (10.8.41.81:2222) [session: c7843254]
+2017-04-30T22:31:30+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 85.10.201.23:51987 (10.8.41.81:2222) [session: e18cfcd0]
+2017-04-30T22:31:30+0000 [HoneyPotSSHTransport,53103,84.200.24.226] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-04-30T22:31:30+0000 [HoneyPotSSHTransport,53103,84.200.24.226] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-04-30T22:31:30+0000 [HoneyPotSSHTransport,53103,84.200.24.226] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-30T22:31:30+0000 [HoneyPotSSHTransport,53103,84.200.24.226] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-30T22:31:30+0000 [HoneyPotSSHTransport,53104,85.10.201.23] Remote SSH version: SSH-2.0-PuTTY_Release_0.63
+2017-04-30T22:31:30+0000 [HoneyPotSSHTransport,53104,85.10.201.23] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-30T22:31:30+0000 [HoneyPotSSHTransport,53104,85.10.201.23] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-30T22:31:30+0000 [HoneyPotSSHTransport,53104,85.10.201.23] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-30T22:31:31+0000 [HoneyPotSSHTransport,53104,85.10.201.23] NEW KEYS
+2017-04-30T22:31:31+0000 [HoneyPotSSHTransport,53104,85.10.201.23] starting service 'ssh-userauth'
+2017-04-30T22:31:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,53104,85.10.201.23] 'user' trying auth 'none'
+2017-04-30T22:31:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,53104,85.10.201.23] 'user' authenticated with 'none'
+2017-04-30T22:31:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,53104,85.10.201.23] starting service 'ssh-connection'
+2017-04-30T22:31:34+0000 [HoneyPotSSHTransport,53103,84.200.24.226] connection lost
+2017-04-30T22:31:34+0000 [HoneyPotSSHTransport,53103,84.200.24.226] Connection lost after 4 seconds
+2017-04-30T22:31:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52714,91.230.47.82] got channel 'direct-tcpip' request
+2017-04-30T22:31:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,52714,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-04-30T22:31:41+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52714,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: hipcow.pw\r\nAccept: */*\r\n\r\n'
+2017-04-30T22:31:41+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52714,91.230.47.82] failed to connect: Connection refused
+2017-04-30T22:31:41+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,52714,91.230.47.82] sending close 11
