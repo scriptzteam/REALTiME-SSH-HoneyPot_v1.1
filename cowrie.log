@@ -3372,3 +3372,74 @@
 2017-05-01T01:54:00+0000 [CowrieTelnetTransport,33036,223.22.253.150] first time for 223.22.253.150, need: 1
 2017-05-01T01:54:00+0000 [CowrieTelnetTransport,33036,223.22.253.150] login attempt: 1
 2017-05-01T01:54:00+0000 [CowrieTelnetTransport,33036,223.22.253.150] login attempt [root/admin] succeeded
+2017-05-01T01:54:02+0000 [CowrieTelnetTransport,33036,223.22.253.150] Opening TTY Log: log/tty/20170501-015402-None-33036i.log
+2017-05-01T01:54:02+0000 [CowrieTelnetTransport,33036,223.22.253.150] Warning: state changed and new state returned
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] CMD: enable
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command found: enable 
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] CMD: shell
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command not found: shell
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] CMD: sh
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command found: sh 
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] CMD: cat /proc/mounts; /bin/busybox YOCVE
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command found: cat /proc/mounts
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command found: /bin/busybox YOCVE
+2017-05-01T01:54:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 84.200.24.226:38914 (10.8.41.81:2222) [session: 0a25cd05]
+2017-05-01T01:54:03+0000 [HoneyPotSSHTransport,53480,84.200.24.226] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-05-01T01:54:03+0000 [HoneyPotSSHTransport,53480,84.200.24.226] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-01T01:54:03+0000 [HoneyPotSSHTransport,53480,84.200.24.226] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-01T01:54:03+0000 [HoneyPotSSHTransport,53480,84.200.24.226] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox YOCVE
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command found: cd /dev/shm
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command found: cat .s
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command found: cp /bin/echo .s
+2017-05-01T01:54:03+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command found: /bin/busybox YOCVE
+2017-05-01T01:54:04+0000 [CowrieTelnetTransport,33036,223.22.253.150] CMD: nc; wget; /bin/busybox YOCVE
+2017-05-01T01:54:04+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command not found: nc
+2017-05-01T01:54:04+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command found: wget 
+2017-05-01T01:54:04+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command found: /bin/busybox YOCVE
+2017-05-01T01:54:04+0000 [CowrieTelnetTransport,33036,223.22.253.150] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-05-01T01:54:04+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command not found: dd bs=52 count=1 if=.s
+2017-05-01T01:54:04+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command found: cat /dev/shm/.s
+2017-05-01T01:54:04+0000 [CowrieTelnetTransport,33036,223.22.253.150] CMD: /bin/busybox YOCVE
+2017-05-01T01:54:04+0000 [CowrieTelnetTransport,33036,223.22.253.150] Command found: /bin/busybox YOCVE
+2017-05-01T01:54:07+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:13233 (10.8.41.81:2222) [session: 9d969231]
+2017-05-01T01:54:07+0000 [HoneyPotSSHTransport,53480,84.200.24.226] connection lost
+2017-05-01T01:54:07+0000 [HoneyPotSSHTransport,53480,84.200.24.226] Connection lost after 4 seconds
+2017-05-01T01:54:10+0000 [HoneyPotSSHTransport,53481,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-05-01T01:54:10+0000 [HoneyPotSSHTransport,53481,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-01T01:54:10+0000 [HoneyPotSSHTransport,53481,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-01T01:54:10+0000 [HoneyPotSSHTransport,53481,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-01T01:54:11+0000 [HoneyPotSSHTransport,53481,113.195.145.52] NEW KEYS
+2017-05-01T01:54:17+0000 [HoneyPotSSHTransport,53481,113.195.145.52] starting service 'ssh-userauth'
+2017-05-01T01:54:17+0000 [HoneyPotSSHTransport,53481,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-05-01T01:54:17+0000 [HoneyPotSSHTransport,53481,113.195.145.52] connection lost
+2017-05-01T01:54:17+0000 [HoneyPotSSHTransport,53481,113.195.145.52] Connection lost after 9 seconds
+2017-05-01T01:54:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,53264,91.195.103.215] got channel 'direct-tcpip' request
+2017-05-01T01:54:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,53264,91.195.103.215] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-05-01T01:54:24+0000 [CowrieTelnetTransport,33032,182.50.244.132] Closing TTY Log: log/tty/20170501-015242-None-33032i.log after 102 seconds
+2017-05-01T01:54:24+0000 [CowrieTelnetTransport,33032,182.50.244.132] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-01T01:54:24+0000 [CowrieTelnetTransport,33032,182.50.244.132] Connection lost after 106 seconds
+2017-05-01T01:54:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,53271,91.230.47.76] got channel 'direct-tcpip' request
+2017-05-01T01:54:28+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,53271,91.230.47.76] direct-tcp connection request to 137.118.47.43:25 from localhost:5556
+2017-05-01T01:54:33+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 221.194.47.224:47024 (10.8.41.81:2222) [session: 099443b4]
+2017-05-01T01:54:33+0000 [HoneyPotSSHTransport,53482,221.194.47.224] Remote SSH version: SSH-2.0-PUTTY
+2017-05-01T01:54:33+0000 [HoneyPotSSHTransport,53482,221.194.47.224] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-01T01:54:33+0000 [HoneyPotSSHTransport,53482,221.194.47.224] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-01T01:54:33+0000 [HoneyPotSSHTransport,53482,221.194.47.224] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-01T01:54:34+0000 [HoneyPotSSHTransport,53482,221.194.47.224] NEW KEYS
+2017-05-01T01:54:35+0000 [HoneyPotSSHTransport,53482,221.194.47.224] starting service 'ssh-userauth'
+2017-05-01T01:54:35+0000 [HoneyPotSSHTransport,53482,221.194.47.224] Got remote error, code 11
+	reason: 
+2017-05-01T01:54:35+0000 [HoneyPotSSHTransport,53482,221.194.47.224] connection lost
+2017-05-01T01:54:35+0000 [HoneyPotSSHTransport,53482,221.194.47.224] Connection lost after 1 seconds
+2017-05-01T01:54:44+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53264,91.195.103.215] remote eof
+2017-05-01T01:54:44+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53264,91.195.103.215] remote close
+2017-05-01T01:54:44+0000 [SSHChannel None (71) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53264,91.195.103.215] sending close 71
+2017-05-01T01:54:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,53264,91.195.103.215] got channel 'direct-tcpip' request
+2017-05-01T01:54:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,53264,91.195.103.215] direct-tcp connection request to 188.125.69.79:25 from localhost:5556
+2017-05-01T01:55:00+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53271,91.230.47.76] remote eof
+2017-05-01T01:55:00+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53271,91.230.47.76] remote close
+2017-05-01T01:55:00+0000 [SSHChannel None (29) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53271,91.230.47.76] sending close 29
