@@ -382,3 +382,44 @@
 2017-05-01T02:34:55+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53348,91.230.47.81] direct-tcp forward to 23.64.33.238:443 with data "\x16\x03\x03\x00\xb1\x01\x00\x00\xad\x03\x03Y\x06\x9e\xac\xa3\x03\xd0\x9aZ\xbbz\xb0\xda+:\xf9Q_ZH\x10\xba\xc0\x88W\x1d\x13\x88\x05|\xbc\xf9\x00\x00<\xc0(\xc0\x14\x00k\x009\x00=\x005\xc0'\xc0\x13\x00g\x003\x00<\x00/\xc00\x00\x9f\x00\x9d\xc0/\x00\x9e\x00\x9c\xc0\t\xc0#\xc0\n\xc0$\xc0\x12\x00\x16\x00\n\xc0\x11\x00\x05\x00\x04\x00\x15\x00\t\x01\x00\x00H\x00\x00\x00\x14\x00\x12\x00\x00\x0fmapps.kohls.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\xff\x01\x00\x01\x00\x00\r\x00\x0e\x00\x0c\x04\x01\x05\x01\x06\x01\x02\x01\x02\x03\x01\x01"
 2017-05-01T02:34:55+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53348,91.230.47.81] failed to connect: Connection refused
 2017-05-01T02:34:55+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,53348,91.230.47.81] sending close 119
+2017-05-01T02:35:21+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 122.173.240.229:55056 (10.8.41.81:2223) [session: TT33102]
+2017-05-01T02:35:22+0000 [CowrieTelnetTransport,33102,122.173.240.229] first time for 122.173.240.229, need: 1
+2017-05-01T02:35:22+0000 [CowrieTelnetTransport,33102,122.173.240.229] login attempt: 1
+2017-05-01T02:35:23+0000 [CowrieTelnetTransport,33102,122.173.240.229] login attempt [root/dreambox] succeeded
+2017-05-01T02:35:24+0000 [CowrieTelnetTransport,33102,122.173.240.229] Opening TTY Log: log/tty/20170501-023524-None-33102i.log
+2017-05-01T02:35:24+0000 [CowrieTelnetTransport,33102,122.173.240.229] Warning: state changed and new state returned
+2017-05-01T02:35:25+0000 [CowrieTelnetTransport,33102,122.173.240.229] CMD: enable
+2017-05-01T02:35:25+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command found: enable 
+2017-05-01T02:35:25+0000 [CowrieTelnetTransport,33102,122.173.240.229] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-01T02:35:25+0000 [CowrieTelnetTransport,33102,122.173.240.229] CMD: shell
+2017-05-01T02:35:25+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command not found: shell
+2017-05-01T02:35:25+0000 [CowrieTelnetTransport,33102,122.173.240.229] CMD: sh
+2017-05-01T02:35:25+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command found: sh 
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] CMD: cat /proc/mounts; /bin/busybox BOBPX
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command found: cat /proc/mounts
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command found: /bin/busybox BOBPX
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox BOBPX
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command found: cd /dev/shm
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command found: cat .s
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command found: cp /bin/echo .s
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command found: /bin/busybox BOBPX
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] CMD: nc; wget; /bin/busybox BOBPX
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command not found: nc
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command found: wget 
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command found: /bin/busybox BOBPX
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command not found: dd bs=52 count=1 if=.s
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command found: cat /dev/shm/.s
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] CMD: /bin/busybox BOBPX
+2017-05-01T02:35:26+0000 [CowrieTelnetTransport,33102,122.173.240.229] Command found: /bin/busybox BOBPX
+2017-05-01T02:35:31+0000 [CowrieTelnetTransport,33095,185.165.29.43] Closing TTY Log: log/tty/20170501-023320-None-33095i.log after 130 seconds
+2017-05-01T02:35:31+0000 [CowrieTelnetTransport,33095,185.165.29.43] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-01T02:35:31+0000 [CowrieTelnetTransport,33095,185.165.29.43] Connection lost after 140 seconds
+2017-05-01T02:35:34+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 84.200.24.226:45028 (10.8.41.81:2222) [session: 47af37f6]
+2017-05-01T02:35:35+0000 [HoneyPotSSHTransport,53558,84.200.24.226] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-05-01T02:35:35+0000 [HoneyPotSSHTransport,53558,84.200.24.226] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-01T02:35:35+0000 [HoneyPotSSHTransport,53558,84.200.24.226] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-01T02:35:35+0000 [HoneyPotSSHTransport,53558,84.200.24.226] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-01T02:35:39+0000 [HoneyPotSSHTransport,53558,84.200.24.226] connection lost
+2017-05-01T02:35:39+0000 [HoneyPotSSHTransport,53558,84.200.24.226] Connection lost after 5 seconds
