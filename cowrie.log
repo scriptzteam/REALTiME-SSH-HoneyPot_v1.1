@@ -7192,3 +7192,38 @@
 2017-05-02T07:44:52+0000 [SSHChannel None (34) on SSHService 'ssh-connection' on HoneyPotSSHTransport,56274,91.195.103.213] sending close 34
 2017-05-02T07:44:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,56274,91.195.103.213] got channel 'direct-tcpip' request
 2017-05-02T07:44:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,56274,91.195.103.213] direct-tcp connection request to 66.196.118.33:25 from localhost:5556
+2017-05-02T07:45:17+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,56274,91.195.103.213] remote eof
+2017-05-02T07:45:17+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,56274,91.195.103.213] remote close
+2017-05-02T07:45:17+0000 [SSHChannel None (35) on SSHService 'ssh-connection' on HoneyPotSSHTransport,56274,91.195.103.213] sending close 35
+2017-05-02T07:45:27+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 101.94.132.117:45004 (10.8.41.81:2223) [session: TT36821]
+2017-05-02T07:45:31+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 23.227.178.211:60982 (10.8.41.81:2223) [session: TT36822]
+2017-05-02T07:45:36+0000 [CowrieTelnetTransport,36822,23.227.178.211] login attempt: 26
+2017-05-02T07:45:36+0000 [CowrieTelnetTransport,36822,23.227.178.211] login return, expect: [admin/admin]
+2017-05-02T07:45:36+0000 [CowrieTelnetTransport,36822,23.227.178.211] login attempt [admin/admin] succeeded
+2017-05-02T07:45:38+0000 [CowrieTelnetTransport,36822,23.227.178.211] Opening TTY Log: log/tty/20170502-074538-None-36822i.log
+2017-05-02T07:45:38+0000 [CowrieTelnetTransport,36822,23.227.178.211] Warning: state changed and new state returned
+2017-05-02T07:45:38+0000 [CowrieTelnetTransport,36822,23.227.178.211] Closing TTY Log: log/tty/20170502-074538-None-36822i.log after 0 seconds
+2017-05-02T07:45:38+0000 [CowrieTelnetTransport,36822,23.227.178.211] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-02T07:45:38+0000 [CowrieTelnetTransport,36822,23.227.178.211] Connection lost after 6 seconds
+2017-05-02T07:45:38+0000 [CowrieTelnetTransport,36821,101.94.132.117] Connection lost after 10 seconds
+2017-05-02T07:45:50+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 5.9.158.113:56081 (10.8.41.81:2222) [session: 8104a6ba]
+2017-05-02T07:45:50+0000 [HoneyPotSSHTransport,56369,5.9.158.113] Remote SSH version: SSH-2.0-PuTTY_Release_0.63
+2017-05-02T07:45:50+0000 [HoneyPotSSHTransport,56369,5.9.158.113] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-05-02T07:45:50+0000 [HoneyPotSSHTransport,56369,5.9.158.113] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-02T07:45:50+0000 [HoneyPotSSHTransport,56369,5.9.158.113] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-02T07:45:52+0000 [HoneyPotSSHTransport,56369,5.9.158.113] NEW KEYS
+2017-05-02T07:45:52+0000 [HoneyPotSSHTransport,56369,5.9.158.113] starting service 'ssh-userauth'
+2017-05-02T07:45:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,56369,5.9.158.113] 'user' trying auth 'none'
+2017-05-02T07:45:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,56369,5.9.158.113] 'user' authenticated with 'none'
+2017-05-02T07:45:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,56369,5.9.158.113] starting service 'ssh-connection'
+2017-05-02T07:45:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,56369,5.9.158.113] got channel 'direct-tcpip' request
+2017-05-02T07:45:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,56369,5.9.158.113] direct-tcp connection request to 104.28.8.180:80 from 0.0.0.0:0
+2017-05-02T07:45:57+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,56369,5.9.158.113] direct-tcp forward to 104.28.8.180:80 with data 'GET / HTTP/1.1\r\nHost: youradultube.com\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; chromeframe/24.0.1312.52; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nReferer: http://lesbianandgay.org/\r\nAccept-Encoding: gzip,deflate\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Charset: iso-8859-1,*,utf-8\r\n\r\n'
+2017-05-02T07:45:57+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,56369,5.9.158.113] failed to connect: Connection refused
+2017-05-02T07:45:57+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,56369,5.9.158.113] sending close 0
+2017-05-02T07:45:57+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,56369,5.9.158.113] remote eof
+2017-05-02T07:45:57+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,56369,5.9.158.113] remote close
+2017-05-02T07:45:58+0000 [HoneyPotSSHTransport,56369,5.9.158.113] avatar user logging out
+2017-05-02T07:45:58+0000 [HoneyPotSSHTransport,56369,5.9.158.113] connection lost
+2017-05-02T07:45:58+0000 [HoneyPotSSHTransport,56369,5.9.158.113] Connection lost after 8 seconds
