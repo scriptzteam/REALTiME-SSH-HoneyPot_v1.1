@@ -1471,3 +1471,42 @@
 2017-05-02T20:46:43+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,56814,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
 2017-05-02T20:46:43+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,56814,91.230.47.82] failed to connect: Connection refused
 2017-05-02T20:46:43+0000 [SSHChannel None (25) on SSHService 'ssh-connection' on HoneyPotSSHTransport,56814,91.230.47.82] sending close 25
+2017-05-02T20:47:43+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 114.34.242.99:36227 (10.8.41.81:2223) [session: TT38094]
+2017-05-02T20:47:45+0000 [CowrieTelnetTransport,38094,114.34.242.99] first time for 114.34.242.99, need: 1
+2017-05-02T20:47:45+0000 [CowrieTelnetTransport,38094,114.34.242.99] login attempt: 1
+2017-05-02T20:47:45+0000 [CowrieTelnetTransport,38094,114.34.242.99] login attempt [user/user] succeeded
+2017-05-02T20:47:47+0000 [CowrieTelnetTransport,38094,114.34.242.99] Opening TTY Log: log/tty/20170502-204747-None-38094i.log
+2017-05-02T20:47:47+0000 [CowrieTelnetTransport,38094,114.34.242.99] Warning: state changed and new state returned
+2017-05-02T20:47:47+0000 [CowrieTelnetTransport,38094,114.34.242.99] Received unhandled keyID: '\x00'
+2017-05-02T20:47:48+0000 [CowrieTelnetTransport,38094,114.34.242.99] CMD: enable
+2017-05-02T20:47:48+0000 [CowrieTelnetTransport,38094,114.34.242.99] Command found: enable 
+2017-05-02T20:47:48+0000 [CowrieTelnetTransport,38094,114.34.242.99] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-02T20:47:48+0000 [CowrieTelnetTransport,38094,114.34.242.99] Received unhandled keyID: '\x00'
+2017-05-02T20:47:48+0000 [CowrieTelnetTransport,38094,114.34.242.99] CMD: system
+2017-05-02T20:47:48+0000 [CowrieTelnetTransport,38094,114.34.242.99] Command not found: system
+2017-05-02T20:47:48+0000 [CowrieTelnetTransport,38094,114.34.242.99] Received unhandled keyID: '\x00'
+2017-05-02T20:47:48+0000 [CowrieTelnetTransport,38094,114.34.242.99] CMD: shell
+2017-05-02T20:47:48+0000 [CowrieTelnetTransport,38094,114.34.242.99] Command not found: shell
+2017-05-02T20:47:49+0000 [CowrieTelnetTransport,38094,114.34.242.99] Received unhandled keyID: '\x00'
+2017-05-02T20:47:49+0000 [CowrieTelnetTransport,38094,114.34.242.99] CMD: sh
+2017-05-02T20:47:49+0000 [CowrieTelnetTransport,38094,114.34.242.99] Command found: sh 
+2017-05-02T20:47:49+0000 [CowrieTelnetTransport,38094,114.34.242.99] Received unhandled keyID: '\x00'
+2017-05-02T20:47:49+0000 [CowrieTelnetTransport,38094,114.34.242.99] CMD: /bin/busybox MIRAI
+2017-05-02T20:47:49+0000 [CowrieTelnetTransport,38094,114.34.242.99] Command found: /bin/busybox MIRAI
+2017-05-02T20:47:50+0000 [CowrieTelnetTransport,38094,114.34.242.99] Closing TTY Log: log/tty/20170502-204747-None-38094i.log after 3 seconds
+2017-05-02T20:47:50+0000 [CowrieTelnetTransport,38094,114.34.242.99] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-02T20:47:50+0000 [CowrieTelnetTransport,38094,114.34.242.99] Connection lost after 6 seconds
+2017-05-02T20:47:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 119.28.72.174:43629 (10.8.41.81:2223) [session: TT38095]
+2017-05-02T20:47:54+0000 [CowrieTelnetTransport,38095,119.28.72.174] login attempt: 403
+2017-05-02T20:47:54+0000 [CowrieTelnetTransport,38095,119.28.72.174] login return, expect: [root/default]
+2017-05-02T20:47:55+0000 [CowrieTelnetTransport,38095,119.28.72.174] login attempt [user/user] failed
+2017-05-02T20:47:55+0000 [CowrieTelnetTransport,38095,119.28.72.174] Warning: state changed and new state returned
+2017-05-02T20:47:56+0000 [CowrieTelnetTransport,38095,119.28.72.174] login attempt: 404
+2017-05-02T20:47:56+0000 [CowrieTelnetTransport,38095,119.28.72.174] login return, expect: [root/default]
+2017-05-02T20:47:56+0000 [CowrieTelnetTransport,38095,119.28.72.174] login attempt [enable/shell] failed
+2017-05-02T20:47:56+0000 [CowrieTelnetTransport,38095,119.28.72.174] Warning: state changed and new state returned
+2017-05-02T20:47:56+0000 [CowrieTelnetTransport,38095,119.28.72.174] login attempt: 405
+2017-05-02T20:47:56+0000 [CowrieTelnetTransport,38095,119.28.72.174] login return, expect: [root/default]
+2017-05-02T20:47:57+0000 [CowrieTelnetTransport,38095,119.28.72.174] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-02T20:47:57+0000 [CowrieTelnetTransport,38095,119.28.72.174] Warning: state changed and new state returned
