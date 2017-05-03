@@ -2566,3 +2566,27 @@
 2017-05-03T03:19:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 123.207.188.70:60359 (10.8.41.81:2223) [session: TT39006]
 2017-05-03T03:19:49+0000 [CowrieTelnetTransport,39006,123.207.188.70] Connection lost after 4 seconds
 2017-05-03T03:19:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 123.207.188.70:62105 (10.8.41.81:2223) [session: TT39007]
+2017-05-03T03:20:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,57196,91.195.103.211] got channel 'direct-tcpip' request
+2017-05-03T03:20:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,57196,91.195.103.211] direct-tcp connection request to 23.14.8.44:443 from localhost:5556
+2017-05-03T03:20:03+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57196,91.195.103.211] direct-tcp forward to 23.14.8.44:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\x82\xcb\x12`\xb5k\xc9\x92}\xfc\x8ch\xad\xf3\xae.\xc4FBO2\x13eN\xa7\xd8\xf9\xdfF<>\xb9'
+2017-05-03T03:20:03+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57196,91.195.103.211] failed to connect: Connection refused
+2017-05-03T03:20:03+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57196,91.195.103.211] sending close 3
+2017-05-03T03:20:21+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.47.79:64465 (10.8.41.81:2222) [session: 972fc99e]
+2017-05-03T03:20:22+0000 [HoneyPotSSHTransport,57204,91.230.47.79] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-05-03T03:20:22+0000 [HoneyPotSSHTransport,57204,91.230.47.79] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-05-03T03:20:22+0000 [HoneyPotSSHTransport,57204,91.230.47.79] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-03T03:20:22+0000 [HoneyPotSSHTransport,57204,91.230.47.79] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-03T03:20:23+0000 [HoneyPotSSHTransport,57204,91.230.47.79] NEW KEYS
+2017-05-03T03:20:23+0000 [HoneyPotSSHTransport,57204,91.230.47.79] starting service 'ssh-userauth'
+2017-05-03T03:20:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,57204,91.230.47.79] '1111' trying auth 'password'
+2017-05-03T03:20:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,57204,91.230.47.79] login attempt: 15
+2017-05-03T03:20:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,57204,91.230.47.79] login return, expect: [1111/1111]
+2017-05-03T03:20:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,57204,91.230.47.79] login attempt [1111/1111] succeeded
+2017-05-03T03:20:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,57204,91.230.47.79] '1111' authenticated with 'password'
+2017-05-03T03:20:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,57204,91.230.47.79] starting service 'ssh-connection'
+2017-05-03T03:20:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,57199,91.230.47.67] got channel 'direct-tcpip' request
+2017-05-03T03:20:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,57199,91.230.47.67] direct-tcp connection request to 107.22.190.115:80 from localhost:5556
+2017-05-03T03:20:53+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57199,91.230.47.67] direct-tcp forward to 107.22.190.115:80 with data 'GET / HTTP/1.0\r\nHost: api.ipify.org\r\n\r\n'
+2017-05-03T03:20:53+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57199,91.230.47.67] failed to connect: Connection refused
+2017-05-03T03:20:53+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57199,91.230.47.67] sending close 0
+2017-05-03T03:20:56+0000 [CowrieTelnetTransport,39007,123.207.188.70] Connection lost after 66 seconds
