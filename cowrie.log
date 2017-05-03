@@ -4518,3 +4518,48 @@
 2017-05-03T03:25:54+0000 [CowrieTelnetTransport,39023,31.41.218.108] login return, expect: [Admin/atc456]
 2017-05-03T03:25:55+0000 [CowrieTelnetTransport,39023,31.41.218.108] login attempt [sh//bin/busybox ECCHI] failed
 2017-05-03T03:25:55+0000 [CowrieTelnetTransport,39023,31.41.218.108] Warning: state changed and new state returned
+2017-05-03T03:26:09+0000 [CowrieTelnetTransport,39022,31.41.218.108] Connection lost after 38 seconds
+2017-05-03T03:26:13+0000 [CowrieTelnetTransport,39019,31.41.218.108] Closing TTY Log: log/tty/20170503-032408-None-39019i.log after 125 seconds
+2017-05-03T03:26:13+0000 [CowrieTelnetTransport,39019,31.41.218.108] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-03T03:26:13+0000 [CowrieTelnetTransport,39019,31.41.218.108] Connection lost after 131 seconds
+2017-05-03T03:26:26+0000 [CowrieTelnetTransport,39023,31.41.218.108] Connection lost after 36 seconds
+2017-05-03T03:26:42+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.145.252.26:59671 (10.8.41.81:2222) [session: 849ada73]
+2017-05-03T03:26:42+0000 [HoneyPotSSHTransport,57207,185.145.252.26] Remote SSH version: SSH-2.0-paramiko_1.10.1
+2017-05-03T03:26:42+0000 [HoneyPotSSHTransport,57207,185.145.252.26] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-05-03T03:26:42+0000 [HoneyPotSSHTransport,57207,185.145.252.26] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-03T03:26:42+0000 [HoneyPotSSHTransport,57207,185.145.252.26] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-03T03:26:42+0000 [HoneyPotSSHTransport,57207,185.145.252.26] NEW KEYS
+2017-05-03T03:26:42+0000 [HoneyPotSSHTransport,57207,185.145.252.26] starting service 'ssh-userauth'
+2017-05-03T03:26:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,57196,91.195.103.211] got channel 'direct-tcpip' request
+2017-05-03T03:26:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,57196,91.195.103.211] direct-tcp connection request to 98.138.112.35:25 from localhost:5556
+2017-05-03T03:26:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,57207,185.145.252.26] 'admin' trying auth 'none'
+2017-05-03T03:26:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,57207,185.145.252.26] 'admin' authenticated with 'none'
+2017-05-03T03:26:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,57207,185.145.252.26] starting service 'ssh-connection'
+2017-05-03T03:26:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] got channel 'direct-tcpip' request
+2017-05-03T03:26:45+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] direct-tcp connection request to 216.58.211.110:80 from localhost:8080
+2017-05-03T03:26:46+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] direct-tcp forward to 216.58.211.110:80 with data 'GET / HTTP/1.0\r\nHost: google.com\r\n\r\n'
+2017-05-03T03:26:46+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] failed to connect: Connection refused
+2017-05-03T03:26:46+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] sending close 0
+2017-05-03T03:26:47+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] remote eof
+2017-05-03T03:26:47+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] remote close
+2017-05-03T03:26:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] got channel 'direct-tcpip' request
+2017-05-03T03:26:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] direct-tcp connection request to 206.190.36.45:80 from localhost:8080
+2017-05-03T03:26:47+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] direct-tcp forward to 206.190.36.45:80 with data 'GET / HTTP/1.0\r\nHost: yahoo.com\r\n\r\n'
+2017-05-03T03:26:47+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] failed to connect: Connection refused
+2017-05-03T03:26:47+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] sending close 1
+2017-05-03T03:26:48+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] remote eof
+2017-05-03T03:26:48+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] remote close
+2017-05-03T03:26:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] got channel 'direct-tcpip' request
+2017-05-03T03:26:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] direct-tcp connection request to 5.255.255.80:80 from localhost:8080
+2017-05-03T03:26:48+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] direct-tcp forward to 5.255.255.80:80 with data 'GET / HTTP/1.0\r\nHost: yandex.ru\r\n\r\n'
+2017-05-03T03:26:48+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] failed to connect: Connection refused
+2017-05-03T03:26:48+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] sending close 2
+2017-05-03T03:26:48+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,57207,185.145.252.26] remote eof
+2017-05-03T03:26:48+0000 [HoneyPotSSHTransport,57207,185.145.252.26] avatar admin logging out
+2017-05-03T03:26:48+0000 [HoneyPotSSHTransport,57207,185.145.252.26] connection lost
+2017-05-03T03:26:48+0000 [HoneyPotSSHTransport,57207,185.145.252.26] Connection lost after 6 seconds
+2017-05-03T03:26:52+0000 [CowrieTelnetTransport,39021,31.41.218.108] Closing TTY Log: log/tty/20170503-032449-None-39021i.log after 123 seconds
+2017-05-03T03:26:52+0000 [CowrieTelnetTransport,39021,31.41.218.108] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-03T03:26:52+0000 [CowrieTelnetTransport,39021,31.41.218.108] Connection lost after 131 seconds
