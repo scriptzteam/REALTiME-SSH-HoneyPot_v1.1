@@ -1403,3 +1403,71 @@
 2017-05-04T19:37:50+0000 [CowrieTelnetTransport,41903,88.250.129.202] login return, expect: [root/system]
 2017-05-04T19:37:51+0000 [CowrieTelnetTransport,41903,88.250.129.202] login attempt [shell\x00/sh\x00] failed
 2017-05-04T19:37:51+0000 [CowrieTelnetTransport,41903,88.250.129.202] Warning: state changed and new state returned
+2017-05-04T19:38:09+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:33554 (10.8.41.81:2222) [session: 6b080807]
+2017-05-04T19:38:09+0000 [HoneyPotSSHTransport,62656,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-04T19:38:09+0000 [HoneyPotSSHTransport,62656,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-04T19:38:09+0000 [HoneyPotSSHTransport,62656,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-04T19:38:09+0000 [HoneyPotSSHTransport,62656,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-04T19:38:09+0000 [HoneyPotSSHTransport,62656,130.206.99.99] NEW KEYS
+2017-05-04T19:38:09+0000 [HoneyPotSSHTransport,62656,130.206.99.99] starting service 'ssh-userauth'
+2017-05-04T19:38:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,62656,130.206.99.99] 'angela' trying auth 'password'
+2017-05-04T19:38:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,62656,130.206.99.99] login attempt: 350
+2017-05-04T19:38:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,62656,130.206.99.99] login return, expect: [aa/123456]
+2017-05-04T19:38:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,62656,130.206.99.99] login attempt [angela/angela1234] failed
+2017-05-04T19:38:11+0000 [-] 'angela' failed auth 'password'
+2017-05-04T19:38:11+0000 [-] unauthorized login: 
+2017-05-04T19:38:11+0000 [HoneyPotSSHTransport,62656,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-04T19:38:11+0000 [HoneyPotSSHTransport,62656,130.206.99.99] connection lost
+2017-05-04T19:38:11+0000 [HoneyPotSSHTransport,62656,130.206.99.99] Connection lost after 2 seconds
+2017-05-04T19:38:22+0000 [CowrieTelnetTransport,41903,88.250.129.202] Connection lost after 33 seconds
+2017-05-04T19:38:22+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 88.250.129.202:57015 (10.8.41.81:2223) [session: TT41904]
+2017-05-04T19:38:22+0000 [CowrieTelnetTransport,41904,88.250.129.202] login attempt: 26
+2017-05-04T19:38:22+0000 [CowrieTelnetTransport,41904,88.250.129.202] login return, expect: [root/system]
+2017-05-04T19:38:23+0000 [CowrieTelnetTransport,41904,88.250.129.202] login attempt [root/vizxv] failed
+2017-05-04T19:38:23+0000 [CowrieTelnetTransport,41904,88.250.129.202] Warning: state changed and new state returned
+2017-05-04T19:38:23+0000 [CowrieTelnetTransport,41904,88.250.129.202] login attempt: 27
+2017-05-04T19:38:23+0000 [CowrieTelnetTransport,41904,88.250.129.202] login return, expect: [root/system]
+2017-05-04T19:38:24+0000 [CowrieTelnetTransport,41904,88.250.129.202] login attempt [enable\x00/system\x00] failed
+2017-05-04T19:38:24+0000 [CowrieTelnetTransport,41904,88.250.129.202] Warning: state changed and new state returned
+2017-05-04T19:38:25+0000 [CowrieTelnetTransport,41904,88.250.129.202] login attempt: 28
+2017-05-04T19:38:25+0000 [CowrieTelnetTransport,41904,88.250.129.202] login return, expect: [root/system]
+2017-05-04T19:38:25+0000 [CowrieTelnetTransport,41904,88.250.129.202] login attempt [shell\x00/sh\x00] failed
+2017-05-04T19:38:25+0000 [CowrieTelnetTransport,41904,88.250.129.202] Warning: state changed and new state returned
+2017-05-04T19:38:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,62435,91.195.103.188] got channel 'direct-tcpip' request
+2017-05-04T19:38:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,62435,91.195.103.188] direct-tcp connection request to 107.22.251.1:443 from localhost:5556
+2017-05-04T19:38:52+0000 [SSHChannel None (121) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62435,91.195.103.188] direct-tcp forward to 107.22.251.1:443 with data '\x16\x03\x01\x00\xae\x01\x00\x00\xaa\x03\x01Y\x0b\x83/\x01n\x07\xf9\xf9\xdd\xb3\xcc\xacpV\xa6\xa6@)\x8d\x0e\xa9\x1f@H.\xdc?\x83\x97\xee\xf7 \n\r\xd7\xd2\x86\x86Q\x06\xea\xf09M[\xcdQ\x1c\xe7\x87=G@2\xa0d\xe5,\xff`%\x1d\x1c5\x00\x1c\xc0\x14\xc0\x13\x009\x003\x005\x00/\xc0\n\xc0\t\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00E\x00\x00\x00$\x00"\x00\x00\x1fru.socialclub.rockstargames.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00'
+2017-05-04T19:38:52+0000 [SSHChannel None (121) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62435,91.195.103.188] failed to connect: Connection refused
+2017-05-04T19:38:52+0000 [SSHChannel None (121) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62435,91.195.103.188] sending close 121
+2017-05-04T19:38:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,62435,91.195.103.188] got channel 'direct-tcpip' request
+2017-05-04T19:38:53+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,62435,91.195.103.188] direct-tcp connection request to 107.22.251.1:443 from localhost:5556
+2017-05-04T19:38:53+0000 [SSHChannel None (122) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62435,91.195.103.188] direct-tcp forward to 107.22.251.1:443 with data '\x16\x03\x01\x00\x8e\x01\x00\x00\x8a\x03\x01Y\x0b\x830\xbf\x86\xf4\xd4N\x0c\xc0j\xe7\xa9\x80\x94\xc0\\\x05\xf4\x8f\xb1\xd8\xf7\x19@\xb6\xcb\x861u\xe9\x00\x00\x1c\xc0\x14\xc0\x13\x009\x003\x005\x00/\xc0\n\xc0\t\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00E\x00\x00\x00$\x00"\x00\x00\x1fru.socialclub.rockstargames.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00'
+2017-05-04T19:38:53+0000 [SSHChannel None (122) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62435,91.195.103.188] failed to connect: Connection refused
+2017-05-04T19:38:53+0000 [SSHChannel None (122) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62435,91.195.103.188] sending close 122
+2017-05-04T19:38:57+0000 [CowrieTelnetTransport,41904,88.250.129.202] Connection lost after 34 seconds
+2017-05-04T19:38:57+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 88.250.129.202:57382 (10.8.41.81:2223) [session: TT41905]
+2017-05-04T19:38:57+0000 [CowrieTelnetTransport,41905,88.250.129.202] login attempt: 29
+2017-05-04T19:38:57+0000 [CowrieTelnetTransport,41905,88.250.129.202] login return, expect: [root/system]
+2017-05-04T19:38:58+0000 [CowrieTelnetTransport,41905,88.250.129.202] login attempt [root/anko] failed
+2017-05-04T19:38:58+0000 [CowrieTelnetTransport,41905,88.250.129.202] Warning: state changed and new state returned
+2017-05-04T19:38:58+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:41720 (10.8.41.81:2222) [session: ba4218f9]
+2017-05-04T19:38:58+0000 [HoneyPotSSHTransport,62657,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-04T19:38:58+0000 [HoneyPotSSHTransport,62657,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-04T19:38:58+0000 [HoneyPotSSHTransport,62657,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-04T19:38:58+0000 [HoneyPotSSHTransport,62657,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-04T19:38:58+0000 [HoneyPotSSHTransport,62657,130.206.99.99] NEW KEYS
+2017-05-04T19:38:58+0000 [HoneyPotSSHTransport,62657,130.206.99.99] starting service 'ssh-userauth'
+2017-05-04T19:38:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,62657,130.206.99.99] 'angela' trying auth 'password'
+2017-05-04T19:38:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,62657,130.206.99.99] login attempt: 351
+2017-05-04T19:38:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,62657,130.206.99.99] login return, expect: [aa/123456]
+2017-05-04T19:38:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,62657,130.206.99.99] login attempt [angela/angela321] failed
+2017-05-04T19:38:59+0000 [CowrieTelnetTransport,41905,88.250.129.202] login attempt: 30
+2017-05-04T19:38:59+0000 [CowrieTelnetTransport,41905,88.250.129.202] login return, expect: [root/system]
+2017-05-04T19:39:00+0000 [CowrieTelnetTransport,41905,88.250.129.202] login attempt [enable\x00/system\x00] failed
+2017-05-04T19:39:00+0000 [CowrieTelnetTransport,41905,88.250.129.202] Warning: state changed and new state returned
+2017-05-04T19:39:00+0000 [-] 'angela' failed auth 'password'
+2017-05-04T19:39:00+0000 [-] unauthorized login: 
+2017-05-04T19:39:00+0000 [HoneyPotSSHTransport,62657,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-04T19:39:00+0000 [HoneyPotSSHTransport,62657,130.206.99.99] connection lost
+2017-05-04T19:39:00+0000 [HoneyPotSSHTransport,62657,130.206.99.99] Connection lost after 2 seconds
