@@ -6723,3 +6723,65 @@
 	reason: Bye Bye
 2017-05-04T16:31:35+0000 [HoneyPotSSHTransport,62353,130.206.99.99] connection lost
 2017-05-04T16:31:35+0000 [HoneyPotSSHTransport,62353,130.206.99.99] Connection lost after 2 seconds
+2017-05-04T16:32:12+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 5.140.133.104:48490 (10.8.41.81:2223) [session: TT41518]
+2017-05-04T16:32:13+0000 [CowrieTelnetTransport,41518,5.140.133.104] first time for 5.140.133.104, need: 1
+2017-05-04T16:32:13+0000 [CowrieTelnetTransport,41518,5.140.133.104] login attempt: 1
+2017-05-04T16:32:14+0000 [CowrieTelnetTransport,41518,5.140.133.104] login attempt [admin/1111] succeeded
+2017-05-04T16:32:16+0000 [CowrieTelnetTransport,41518,5.140.133.104] Opening TTY Log: log/tty/20170504-163216-None-41518i.log
+2017-05-04T16:32:16+0000 [CowrieTelnetTransport,41518,5.140.133.104] Warning: state changed and new state returned
+2017-05-04T16:32:16+0000 [CowrieTelnetTransport,41518,5.140.133.104] CMD: enable
+2017-05-04T16:32:16+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command found: enable 
+2017-05-04T16:32:16+0000 [CowrieTelnetTransport,41518,5.140.133.104] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-04T16:32:16+0000 [CowrieTelnetTransport,41518,5.140.133.104] CMD: shell
+2017-05-04T16:32:16+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command not found: shell
+2017-05-04T16:32:16+0000 [CowrieTelnetTransport,41518,5.140.133.104] CMD: sh
+2017-05-04T16:32:16+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command found: sh 
+2017-05-04T16:32:16+0000 [CowrieTelnetTransport,41518,5.140.133.104] CMD: cat /proc/mounts; /bin/busybox FMDCR
+2017-05-04T16:32:16+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command found: cat /proc/mounts
+2017-05-04T16:32:16+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command found: /bin/busybox FMDCR
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox FMDCR
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command found: cd /dev/shm
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command found: cat .s
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command found: cp /bin/echo .s
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command found: /bin/busybox FMDCR
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] CMD: nc; wget; /bin/busybox FMDCR
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command not found: nc
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command found: wget 
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command found: /bin/busybox FMDCR
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command not found: dd bs=52 count=1 if=.s
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command found: cat /dev/shm/.s
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] CMD: /bin/busybox FMDCR
+2017-05-04T16:32:17+0000 [CowrieTelnetTransport,41518,5.140.133.104] Command found: /bin/busybox FMDCR
+2017-05-04T16:32:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,62192,91.195.103.194] got channel 'direct-tcpip' request
+2017-05-04T16:32:18+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,62192,91.195.103.194] direct-tcp connection request to 104.109.107.107:443 from localhost:5556
+2017-05-04T16:32:18+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62192,91.195.103.194] direct-tcp forward to 104.109.107.107:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xff\xda=\xd1\x15n\xff\xda\xbf$p\xc4\x04\xae\xfd2\x04P5\\\x0c\xb2\xde\xf0+\x17\xcc\xb5\xa1\x05[\xa9'
+2017-05-04T16:32:18+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62192,91.195.103.194] failed to connect: Connection refused
+2017-05-04T16:32:18+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62192,91.195.103.194] sending close 119
+2017-05-04T16:32:20+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:34625 (10.8.41.81:2222) [session: d678d9cf]
+2017-05-04T16:32:20+0000 [HoneyPotSSHTransport,62354,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-04T16:32:20+0000 [HoneyPotSSHTransport,62354,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-04T16:32:20+0000 [HoneyPotSSHTransport,62354,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-04T16:32:20+0000 [HoneyPotSSHTransport,62354,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-04T16:32:20+0000 [HoneyPotSSHTransport,62354,130.206.99.99] NEW KEYS
+2017-05-04T16:32:20+0000 [HoneyPotSSHTransport,62354,130.206.99.99] starting service 'ssh-userauth'
+2017-05-04T16:32:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,62354,130.206.99.99] 'Admin' trying auth 'password'
+2017-05-04T16:32:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,62354,130.206.99.99] login attempt: 117
+2017-05-04T16:32:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,62354,130.206.99.99] login return, expect: [aa/123456]
+2017-05-04T16:32:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,62354,130.206.99.99] login attempt [Admin/abcd1234] failed
+2017-05-04T16:32:22+0000 [-] 'Admin' failed auth 'password'
+2017-05-04T16:32:22+0000 [-] unauthorized login: 
+2017-05-04T16:32:22+0000 [HoneyPotSSHTransport,62354,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-04T16:32:22+0000 [HoneyPotSSHTransport,62354,130.206.99.99] connection lost
+2017-05-04T16:32:22+0000 [HoneyPotSSHTransport,62354,130.206.99.99] Connection lost after 2 seconds
+2017-05-04T16:32:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,62198,91.195.103.188] got channel 'direct-tcpip' request
+2017-05-04T16:32:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,62198,91.195.103.188] direct-tcp connection request to 107.22.251.1:443 from localhost:5556
+2017-05-04T16:32:23+0000 [SSHChannel None (156) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62198,91.195.103.188] direct-tcp forward to 107.22.251.1:443 with data '\x16\x03\x01\x00\x8e\x01\x00\x00\x8a\x03\x01Y\x0bWz\xf5\xban\x91\\\xa0\xa8\xd1{iz\x9f:\x11p.\xc6I\xf5\xd5\xd3\xff\nH\xee\xcb\x1eg\x00\x00\x1c\xc0\x14\xc0\x13\x009\x003\x005\x00/\xc0\n\xc0\t\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00E\x00\x00\x00$\x00"\x00\x00\x1fru.socialclub.rockstargames.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00'
+2017-05-04T16:32:23+0000 [SSHChannel None (156) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62198,91.195.103.188] failed to connect: Connection refused
+2017-05-04T16:32:23+0000 [SSHChannel None (156) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62198,91.195.103.188] sending close 156
+2017-05-04T16:32:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,62198,91.195.103.188] got channel 'direct-tcpip' request
+2017-05-04T16:32:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,62198,91.195.103.188] direct-tcp connection request to 107.22.251.1:443 from localhost:5556
+2017-05-04T16:32:24+0000 [SSHChannel None (157) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62198,91.195.103.188] direct-tcp forward to 107.22.251.1:443 with data '\x16\x03\x01\x00\xae\x01\x00\x00\xaa\x03\x01Y\x0bW{\x08Y\xa1\xa5\x1a|^\xc5\xd4Zp8\x0c\x89fA\x91\xb8\xaa\xe1\xc1\xfe\xd3\x9a\x8bP\x8f\x1f \xfb\x81&\xf8\xea7\x99\x8c\x08\xe8PN\xf9 \xf8L\x1a\xef/\xd7^\xa3\x89\x9b\x9a\x1b\x1c\x13^\x1dJ2\x00\x1c\xc0\x14\xc0\x13\x009\x003\x005\x00/\xc0\n\xc0\t\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00E\x00\x00\x00$\x00"\x00\x00\x1fru.socialclub.rockstargames.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00'
+2017-05-04T16:32:24+0000 [SSHChannel None (157) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62198,91.195.103.188] failed to connect: Connection refused
+2017-05-04T16:32:24+0000 [SSHChannel None (157) on SSHService 'ssh-connection' on HoneyPotSSHTransport,62198,91.195.103.188] sending close 157
