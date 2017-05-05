@@ -8038,3 +8038,38 @@
 2017-05-05T19:48:57+0000 [SSHChannel None (72) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64756,91.195.103.216] sending close 72
 2017-05-05T19:48:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64756,91.195.103.216] got channel 'direct-tcpip' request
 2017-05-05T19:48:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64756,91.195.103.216] direct-tcp connection request to 66.196.118.36:25 from localhost:5556
+2017-05-05T19:49:15+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:40255 (10.8.41.81:2222) [session: f2ca0be6]
+2017-05-05T19:49:15+0000 [HoneyPotSSHTransport,64922,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-05T19:49:15+0000 [HoneyPotSSHTransport,64922,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-05T19:49:15+0000 [HoneyPotSSHTransport,64922,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T19:49:15+0000 [HoneyPotSSHTransport,64922,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T19:49:15+0000 [HoneyPotSSHTransport,64922,130.206.99.99] NEW KEYS
+2017-05-05T19:49:16+0000 [HoneyPotSSHTransport,64922,130.206.99.99] starting service 'ssh-userauth'
+2017-05-05T19:49:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64922,130.206.99.99] 'jacob' trying auth 'password'
+2017-05-05T19:49:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64922,130.206.99.99] login attempt: 2155
+2017-05-05T19:49:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64922,130.206.99.99] login return, expect: [aa/123456]
+2017-05-05T19:49:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64922,130.206.99.99] login attempt [jacob/12] failed
+2017-05-05T19:49:18+0000 [-] 'jacob' failed auth 'password'
+2017-05-05T19:49:18+0000 [-] unauthorized login: 
+2017-05-05T19:49:18+0000 [HoneyPotSSHTransport,64922,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-05T19:49:18+0000 [HoneyPotSSHTransport,64922,130.206.99.99] connection lost
+2017-05-05T19:49:18+0000 [HoneyPotSSHTransport,64922,130.206.99.99] Connection lost after 2 seconds
+2017-05-05T19:49:22+0000 [SSHChannel None (73) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64756,91.195.103.216] direct-tcp forward to 66.196.118.36:25 with data 'QUIT\r\n'
+2017-05-05T19:49:22+0000 [SSHChannel None (73) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64756,91.195.103.216] failed to connect: Connection refused
+2017-05-05T19:49:22+0000 [SSHChannel None (73) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64756,91.195.103.216] sending close 73
+2017-05-05T19:49:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] got channel 'direct-tcpip' request
+2017-05-05T19:49:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] direct-tcp connection request to 104.81.122.232:443 from localhost:5556
+2017-05-05T19:49:33+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] direct-tcp forward to 104.81.122.232:443 with data "\x16\x03\x03\x00\x9d\x01\x00\x00\x99\x03\x03Y\x0c\xd77\xd2>\xb2\xffIw;\xaa\r\x8bfj\xd2\x8e\xb1\xa4\xa1\x99\x97\xafC\xd7}(\xf4\xecJ\x83\x00\x00*\x00<\x00/\x00=\x005\x00\x05\x00\n\xc0'\xc0\x13\xc0\x14\xc0+\xc0#\xc0,\xc0$\xc0\t\xc0\n\x00@\x002\x00j\x008\x00\x13\x00\x04\x01\x00\x00F\xff\x01\x00\x01\x00\x00\x00\x00\x19\x00\x17\x00\x00\x14www.westernunion.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\r\x00\x10\x00\x0e\x04\x01\x05\x01\x02\x01\x04\x03\x05\x03\x02\x03\x02\x02"
+2017-05-05T19:49:33+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] failed to connect: Connection refused
+2017-05-05T19:49:33+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] sending close 53
+2017-05-05T19:49:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] got channel 'direct-tcpip' request
+2017-05-05T19:49:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] direct-tcp connection request to 104.81.122.232:443 from localhost:5556
+2017-05-05T19:49:34+0000 [SSHChannel None (54) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] direct-tcp forward to 104.81.122.232:443 with data "\x16\x03\x03\x00\x9d\x01\x00\x00\x99\x03\x03Y\x0c\xd77\x8a\xaa4Z;V\x03g/\xdd\xba\x9e\x0f\xfd\x11\xd3>\xf9\x07\xed\xff)\xfd=\xae>zZ\x00\x00*\x00<\x00/\x00=\x005\x00\x05\x00\n\xc0'\xc0\x13\xc0\x14\xc0+\xc0#\xc0,\xc0$\xc0\t\xc0\n\x00@\x002\x00j\x008\x00\x13\x00\x04\x01\x00\x00F\xff\x01\x00\x01\x00\x00\x00\x00\x19\x00\x17\x00\x00\x14www.westernunion.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\r\x00\x10\x00\x0e\x04\x01\x05\x01\x02\x01\x04\x03\x05\x03\x02\x03\x02\x02"
+2017-05-05T19:49:34+0000 [SSHChannel None (54) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] failed to connect: Connection refused
+2017-05-05T19:49:34+0000 [SSHChannel None (54) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] sending close 54
+2017-05-05T19:49:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] got channel 'direct-tcpip' request
+2017-05-05T19:49:43+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] direct-tcp connection request to 66.218.160.74:443 from localhost:5556
+2017-05-05T19:49:43+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] direct-tcp forward to 66.218.160.74:443 with data "\x16\x03\x03\x00\x99\x01\x00\x00\x95\x03\x03Y\x0c\xd7A\x93\xd7\xf7&\x969\tP\x07\xd0\xae\xda\x08Z4\xe6Tx)\x97\n\xeaf\xa20\xf7{\x98\x00\x00*\x00<\x00/\x00=\x005\x00\x05\x00\n\xc0'\xc0\x13\xc0\x14\xc0+\xc0#\xc0,\xc0$\xc0\t\xc0\n\x00@\x002\x00j\x008\x00\x13\x00\x04\x01\x00\x00B\xff\x01\x00\x01\x00\x00\x00\x00\x15\x00\x13\x00\x00\x10westernunion.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\r\x00\x10\x00\x0e\x04\x01\x05\x01\x02\x01\x04\x03\x05\x03\x02\x03\x02\x02"
+2017-05-05T19:49:43+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] failed to connect: Connection refused
+2017-05-05T19:49:43+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64812,91.230.47.81] sending close 55
