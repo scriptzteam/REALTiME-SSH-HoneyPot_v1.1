@@ -8266,3 +8266,53 @@
 2017-05-05T13:59:51+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64358,91.230.47.69] direct-tcp forward to 23.40.208.124:443 with data '\x16\x03\x01\x00\xa3\x01\x00\x00\x9f\x03\x01Y\x0c\x85-A\x0cJ\x88\xe8h\xeb\x86\xdd\xcc\xd3m\x95\xc7\xf1\xcf\xa9\xda\x8c*X\xfc\xd0Fb\x17\xfa\xe7 e\x03j=W\xe9\x17\xc5\xc6\xb5;\xac\x9et\x84\xde\x14@\xd0\x01\xe96\xe6\x85\xd2\x93\x97\xad`\xe0\xae\xcc\x00\x18\xc0\x14\xc0\x13\xc0\n\xc0\t\x005\x00/\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00>\x00\x00\x00\x1f\x00\x1d\x00\x00\x1aauth.np.ac.playstation.net\x00\n\x00\x08\x00\x06\x00\x19\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00'
 2017-05-05T13:59:51+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64358,91.230.47.69] failed to connect: Connection refused
 2017-05-05T13:59:51+0000 [SSHChannel None (6) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64358,91.230.47.69] sending close 6
+2017-05-05T14:00:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:53305 (10.8.41.81:2222) [session: 61e6029b]
+2017-05-05T14:00:03+0000 [HoneyPotSSHTransport,64406,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-05T14:00:03+0000 [HoneyPotSSHTransport,64406,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-05T14:00:03+0000 [HoneyPotSSHTransport,64406,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T14:00:03+0000 [HoneyPotSSHTransport,64406,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T14:00:04+0000 [HoneyPotSSHTransport,64406,130.206.99.99] NEW KEYS
+2017-05-05T14:00:04+0000 [HoneyPotSSHTransport,64406,130.206.99.99] starting service 'ssh-userauth'
+2017-05-05T14:00:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64406,130.206.99.99] 'ftp' trying auth 'password'
+2017-05-05T14:00:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64406,130.206.99.99] login attempt: 1726
+2017-05-05T14:00:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64406,130.206.99.99] login return, expect: [aa/123456]
+2017-05-05T14:00:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64406,130.206.99.99] login attempt [ftp/321] failed
+2017-05-05T14:00:06+0000 [-] 'ftp' failed auth 'password'
+2017-05-05T14:00:06+0000 [-] unauthorized login: 
+2017-05-05T14:00:06+0000 [HoneyPotSSHTransport,64406,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-05T14:00:06+0000 [HoneyPotSSHTransport,64406,130.206.99.99] connection lost
+2017-05-05T14:00:06+0000 [HoneyPotSSHTransport,64406,130.206.99.99] Connection lost after 2 seconds
+2017-05-05T14:00:13+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 101.231.202.73:2350 (10.8.41.81:2223) [session: TT43592]
+2017-05-05T14:00:14+0000 [CowrieTelnetTransport,43592,101.231.202.73] Connection lost after 0 seconds
+2017-05-05T14:00:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 101.231.202.73:2391 (10.8.41.81:2223) [session: TT43593]
+2017-05-05T14:00:15+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 172.81.185.115:62626 (10.8.41.81:2222) [session: c6103bb1]
+2017-05-05T14:00:15+0000 [HoneyPotSSHTransport,64407,172.81.185.115] Remote SSH version: SSH-2.0-Granados-1.0
+2017-05-05T14:00:15+0000 [HoneyPotSSHTransport,64407,172.81.185.115] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-05T14:00:15+0000 [HoneyPotSSHTransport,64407,172.81.185.115] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T14:00:15+0000 [HoneyPotSSHTransport,64407,172.81.185.115] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T14:00:15+0000 [HoneyPotSSHTransport,64407,172.81.185.115] NEW KEYS
+2017-05-05T14:00:15+0000 [HoneyPotSSHTransport,64407,172.81.185.115] starting service 'ssh-userauth'
+2017-05-05T14:00:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64407,172.81.185.115] 'user' trying auth 'password'
+2017-05-05T14:00:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64407,172.81.185.115] login attempt: 96
+2017-05-05T14:00:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64407,172.81.185.115] login return, expect: [root/root]
+2017-05-05T14:00:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64407,172.81.185.115] login attempt [user/1234] failed
+2017-05-05T14:00:17+0000 [-] 'user' failed auth 'password'
+2017-05-05T14:00:17+0000 [-] unauthorized login: 
+2017-05-05T14:00:52+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:33238 (10.8.41.81:2222) [session: 5a1abb15]
+2017-05-05T14:00:52+0000 [HoneyPotSSHTransport,64408,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-05T14:00:52+0000 [HoneyPotSSHTransport,64408,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-05T14:00:52+0000 [HoneyPotSSHTransport,64408,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T14:00:52+0000 [HoneyPotSSHTransport,64408,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T14:00:52+0000 [HoneyPotSSHTransport,64408,130.206.99.99] NEW KEYS
+2017-05-05T14:00:52+0000 [HoneyPotSSHTransport,64408,130.206.99.99] starting service 'ssh-userauth'
+2017-05-05T14:00:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64408,130.206.99.99] 'ftp' trying auth 'password'
+2017-05-05T14:00:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64408,130.206.99.99] login attempt: 1727
+2017-05-05T14:00:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64408,130.206.99.99] login return, expect: [aa/123456]
+2017-05-05T14:00:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64408,130.206.99.99] login attempt [ftp/654321] failed
+2017-05-05T14:00:54+0000 [-] 'ftp' failed auth 'password'
+2017-05-05T14:00:54+0000 [-] unauthorized login: 
+2017-05-05T14:00:54+0000 [HoneyPotSSHTransport,64408,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-05T14:00:54+0000 [HoneyPotSSHTransport,64408,130.206.99.99] connection lost
+2017-05-05T14:00:54+0000 [HoneyPotSSHTransport,64408,130.206.99.99] Connection lost after 2 seconds
