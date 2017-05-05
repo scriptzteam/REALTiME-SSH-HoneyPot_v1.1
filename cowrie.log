@@ -7537,3 +7537,55 @@
 2017-05-05T09:10:52+0000 [CowrieTelnetTransport,43156,218.151.38.66] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-05-05T09:10:52+0000 [CowrieTelnetTransport,43156,218.151.38.66] Connection lost after 105 seconds
+2017-05-05T09:11:14+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:45712 (10.8.41.81:2222) [session: a532b314]
+2017-05-05T09:11:14+0000 [HoneyPotSSHTransport,63966,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-05T09:11:14+0000 [HoneyPotSSHTransport,63966,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-05T09:11:14+0000 [HoneyPotSSHTransport,63966,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T09:11:14+0000 [HoneyPotSSHTransport,63966,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T09:11:14+0000 [HoneyPotSSHTransport,63966,130.206.99.99] NEW KEYS
+2017-05-05T09:11:15+0000 [HoneyPotSSHTransport,63966,130.206.99.99] starting service 'ssh-userauth'
+2017-05-05T09:11:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,63966,130.206.99.99] 'dinesh' trying auth 'password'
+2017-05-05T09:11:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,63966,130.206.99.99] login attempt: 1366
+2017-05-05T09:11:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,63966,130.206.99.99] login return, expect: [aa/123456]
+2017-05-05T09:11:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,63966,130.206.99.99] login attempt [dinesh/1234] failed
+2017-05-05T09:11:16+0000 [-] 'dinesh' failed auth 'password'
+2017-05-05T09:11:16+0000 [-] unauthorized login: 
+2017-05-05T09:11:16+0000 [HoneyPotSSHTransport,63966,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-05T09:11:16+0000 [HoneyPotSSHTransport,63966,130.206.99.99] connection lost
+2017-05-05T09:11:16+0000 [HoneyPotSSHTransport,63966,130.206.99.99] Connection lost after 2 seconds
+2017-05-05T09:11:44+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.164.177.139:34241 (10.8.41.81:2223) [session: TT43157]
+2017-05-05T09:11:44+0000 [CowrieTelnetTransport,43157,212.164.177.139] first time for 212.164.177.139, need: 1
+2017-05-05T09:11:44+0000 [CowrieTelnetTransport,43157,212.164.177.139] login attempt: 1
+2017-05-05T09:11:45+0000 [CowrieTelnetTransport,43157,212.164.177.139] login attempt [admin/1111111] succeeded
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Opening TTY Log: log/tty/20170505-091147-None-43157i.log
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Warning: state changed and new state returned
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] CMD: enable
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command found: enable 
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] CMD: shell
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command not found: shell
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] CMD: sh
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command found: sh 
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] CMD: cat /proc/mounts; /bin/busybox VDNDV
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command found: cat /proc/mounts
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command found: /bin/busybox VDNDV
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox VDNDV
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command found: cd /dev/shm
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command found: cat .s
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command found: cp /bin/echo .s
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command found: /bin/busybox VDNDV
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] CMD: nc; wget; /bin/busybox VDNDV
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command not found: nc
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command found: wget 
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command found: /bin/busybox VDNDV
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command not found: dd bs=52 count=1 if=.s
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command found: cat /dev/shm/.s
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] CMD: /bin/busybox VDNDV
+2017-05-05T09:11:47+0000 [CowrieTelnetTransport,43157,212.164.177.139] Command found: /bin/busybox VDNDV
+2017-05-05T09:11:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,63762,91.230.47.72] got channel 'direct-tcpip' request
+2017-05-05T09:11:51+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,63762,91.230.47.72] direct-tcp connection request to 52.223.196.99:80 from localhost:5556
+2017-05-05T09:11:51+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63762,91.230.47.72] direct-tcp forward to 52.223.196.99:80 with data 'GET /v0/CtMBYFg5BggDepnInU7etaLZ7M2pmxGEY0LVc2LCQwCAlWp4Asq3LrRK8fDCFpADew9Q1Z-UIsPkJ4LOaSULAiHGfld5_tst1JScDxj3hFeC0RgiZ8NJDvch0wZ7fZbEg3itgG6RPD2HsaGJhS0UUbiiJH2TVqQ1Nla1GbFo1jYN94q7gVEf_pp4J-XMp_rsF_h6A9Y3rSyltADU-gOVvFAZ_5aNjpzsDK2Ttw8Y0NimFlDOQMZOVxFa2sixuWyKEag0VXqJJMBtxhNLKBmbF46BXbBueBIQKUyH46rs8OXF-pA8xG1vgxoM2lC8FMQIrAmOGmq7/index-live.m3u8 HTTP/1.1\r\nHost: video-edge-c1d968.fra02.hls.ttvnw.net\r\nAccept-Encoding: gzip,deflate\r\nConnection: close\r\n\r\n'
+2017-05-05T09:11:51+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63762,91.230.47.72] failed to connect: Connection refused
+2017-05-05T09:11:51+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,63762,91.230.47.72] sending close 26
