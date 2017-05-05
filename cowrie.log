@@ -403,3 +403,42 @@
 2017-05-05T14:07:48+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64358,91.230.47.69] direct-tcp forward to 173.230.217.202:443 with data '\x16\x03\x01\x00\x85\x01\x00\x00\x81\x03\x01Y\x0c\x87\x0b\xecz\xfc?\x8a\xb3NUl\xe7Kw\xeb^\xfbf\xba8\x97R\x8f?\xd7\xf5\xed\x1b\x17\x89\x00\x00\x18\xc0\x14\xc0\x13\xc0\n\xc0\t\x005\x00/\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00@\x00\x00\x00!\x00\x1f\x00\x00\x1cnative.np.ac.playstation.net\x00\n\x00\x08\x00\x06\x00\x19\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00'
 2017-05-05T14:07:48+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64358,91.230.47.69] failed to connect: Connection refused
 2017-05-05T14:07:48+0000 [SSHChannel None (9) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64358,91.230.47.69] sending close 9
+2017-05-05T14:08:02+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:50260 (10.8.41.81:2222) [session: b13bacd0]
+2017-05-05T14:08:02+0000 [HoneyPotSSHTransport,64429,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-05T14:08:02+0000 [HoneyPotSSHTransport,64429,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-05T14:08:02+0000 [HoneyPotSSHTransport,64429,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T14:08:02+0000 [HoneyPotSSHTransport,64429,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T14:08:02+0000 [HoneyPotSSHTransport,64429,130.206.99.99] NEW KEYS
+2017-05-05T14:08:03+0000 [HoneyPotSSHTransport,64429,130.206.99.99] starting service 'ssh-userauth'
+2017-05-05T14:08:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64429,130.206.99.99] 'ftp' trying auth 'password'
+2017-05-05T14:08:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64429,130.206.99.99] login attempt: 1736
+2017-05-05T14:08:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64429,130.206.99.99] login return, expect: [aa/123456]
+2017-05-05T14:08:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64429,130.206.99.99] login attempt [ftp/passwd] failed
+2017-05-05T14:08:05+0000 [-] 'ftp' failed auth 'password'
+2017-05-05T14:08:05+0000 [-] unauthorized login: 
+2017-05-05T14:08:05+0000 [HoneyPotSSHTransport,64429,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-05T14:08:05+0000 [HoneyPotSSHTransport,64429,130.206.99.99] connection lost
+2017-05-05T14:08:05+0000 [HoneyPotSSHTransport,64429,130.206.99.99] Connection lost after 2 seconds
+2017-05-05T14:08:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64359,91.195.103.215] got channel 'direct-tcpip' request
+2017-05-05T14:08:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,64359,91.195.103.215] direct-tcp connection request to 23.61.211.183:443 from localhost:5556
+2017-05-05T14:08:25+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64359,91.195.103.215] direct-tcp forward to 23.61.211.183:443 with data "\x16\x03\x03\x00\xce\x01\x00\x00\xca\x03\x03Y\x0c\x873\t8[\x10/$_\xf2\x06\xd8\xc2-3\xd2O_Y\x13\xf3\x04\xff\x0e(\x80g\xacTL\x00\x00<\xc0,\xc0+\xc00\xc0/\x00\x9f\x00\x9e\xc0$\xc0#\xc0(\xc0'\xc0\n\xc0\t\xc0\x14\xc0\x13\x009\x003\x00\x9d\x00\x9c\x00=\x00<\x005\x00/\x00\n\x00j\x00@\x008\x002\x00\x13\x00\x05\x00\x04\x01\x00\x00e\x00\x00\x00*\x00(\x00\x00%auth.api.sonyentertainmentnetwork.com\x00\n\x00\x08\x00\x06\x00\x1d\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00\r\x00\x14\x00\x12\x04\x01\x05\x01\x02\x01\x04\x03\x05\x03\x02\x03\x02\x02\x06\x01\x06\x03\x00#\x00\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00"
+2017-05-05T14:08:25+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64359,91.195.103.215] failed to connect: Connection refused
+2017-05-05T14:08:25+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64359,91.195.103.215] sending close 13
+2017-05-05T14:08:48+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:58418 (10.8.41.81:2222) [session: 24f2d95d]
+2017-05-05T14:08:49+0000 [HoneyPotSSHTransport,64430,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-05T14:08:49+0000 [HoneyPotSSHTransport,64430,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-05T14:08:49+0000 [HoneyPotSSHTransport,64430,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T14:08:49+0000 [HoneyPotSSHTransport,64430,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T14:08:49+0000 [HoneyPotSSHTransport,64430,130.206.99.99] NEW KEYS
+2017-05-05T14:08:49+0000 [HoneyPotSSHTransport,64430,130.206.99.99] starting service 'ssh-userauth'
+2017-05-05T14:08:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64430,130.206.99.99] 'ftp' trying auth 'password'
+2017-05-05T14:08:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64430,130.206.99.99] login attempt: 1737
+2017-05-05T14:08:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64430,130.206.99.99] login return, expect: [aa/123456]
+2017-05-05T14:08:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64430,130.206.99.99] login attempt [ftp/password] failed
+2017-05-05T14:08:51+0000 [-] 'ftp' failed auth 'password'
+2017-05-05T14:08:51+0000 [-] unauthorized login: 
+2017-05-05T14:08:51+0000 [HoneyPotSSHTransport,64430,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-05T14:08:51+0000 [HoneyPotSSHTransport,64430,130.206.99.99] connection lost
+2017-05-05T14:08:51+0000 [HoneyPotSSHTransport,64430,130.206.99.99] Connection lost after 2 seconds
