@@ -2008,3 +2008,44 @@
 2017-05-05T17:15:53+0000 [SSHChannel None (42) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64358,91.230.47.69] direct-tcp forward to 23.38.211.155:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xe8ga\x86h}\x91E\x84\x87\x10\xffG\xc5D\xc4\xf4&\xcc\x8b"Ta\xc0R\xaf\xf4\xb0\xe2\x12]\x83'
 2017-05-05T17:15:53+0000 [SSHChannel None (42) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64358,91.230.47.69] failed to connect: Connection refused
 2017-05-05T17:15:53+0000 [SSHChannel None (42) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64358,91.230.47.69] sending close 42
+2017-05-05T17:16:06+0000 [SSHChannel None (126) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64359,91.195.103.215] remote eof
+2017-05-05T17:16:06+0000 [SSHChannel None (126) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64359,91.195.103.215] remote close
+2017-05-05T17:16:06+0000 [SSHChannel None (126) on SSHService 'ssh-connection' on HoneyPotSSHTransport,64359,91.195.103.215] sending close 126
+2017-05-05T17:16:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 183.146.12.53:39716 (10.8.41.81:2222) [session: 2d236ff1]
+2017-05-05T17:16:24+0000 [HoneyPotSSHTransport,64700,183.146.12.53] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-05-05T17:16:24+0000 [HoneyPotSSHTransport,64700,183.146.12.53] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-05T17:16:24+0000 [HoneyPotSSHTransport,64700,183.146.12.53] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-05T17:16:24+0000 [HoneyPotSSHTransport,64700,183.146.12.53] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-05T17:16:26+0000 [HoneyPotSSHTransport,64700,183.146.12.53] NEW KEYS
+2017-05-05T17:16:26+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:45451 (10.8.41.81:2222) [session: 364af75e]
+2017-05-05T17:16:26+0000 [HoneyPotSSHTransport,64701,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-05T17:16:26+0000 [HoneyPotSSHTransport,64701,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-05T17:16:26+0000 [HoneyPotSSHTransport,64701,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T17:16:26+0000 [HoneyPotSSHTransport,64701,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-05T17:16:26+0000 [HoneyPotSSHTransport,64700,183.146.12.53] starting service 'ssh-userauth'
+2017-05-05T17:16:26+0000 [HoneyPotSSHTransport,64701,130.206.99.99] NEW KEYS
+2017-05-05T17:16:26+0000 [HoneyPotSSHTransport,64701,130.206.99.99] starting service 'ssh-userauth'
+2017-05-05T17:16:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64701,130.206.99.99] 'guest' trying auth 'password'
+2017-05-05T17:16:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64701,130.206.99.99] login attempt: 1969
+2017-05-05T17:16:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64701,130.206.99.99] login return, expect: [aa/123456]
+2017-05-05T17:16:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64701,130.206.99.99] login attempt [guest/guest123] failed
+2017-05-05T17:16:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64700,183.146.12.53] 'root' trying auth 'password'
+2017-05-05T17:16:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64700,183.146.12.53] first time for 183.146.12.53, found cached: root:xmhdipc
+2017-05-05T17:16:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64700,183.146.12.53] login attempt [root/xmhdipc] succeeded
+2017-05-05T17:16:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64700,183.146.12.53] 'root' authenticated with 'password'
+2017-05-05T17:16:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,64700,183.146.12.53] starting service 'ssh-connection'
+2017-05-05T17:16:30+0000 [-] 'guest' failed auth 'password'
+2017-05-05T17:16:30+0000 [-] unauthorized login: 
+2017-05-05T17:16:30+0000 [CowrieTelnetTransport,43862,220.135.146.100] Connection lost after 82 seconds
+2017-05-05T17:16:30+0000 [HoneyPotSSHTransport,64701,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-05T17:16:30+0000 [HoneyPotSSHTransport,64701,130.206.99.99] connection lost
+2017-05-05T17:16:30+0000 [HoneyPotSSHTransport,64701,130.206.99.99] Connection lost after 3 seconds
+2017-05-05T17:16:30+0000 [HoneyPotSSHTransport,64700,183.146.12.53] avatar root logging out
+2017-05-05T17:16:30+0000 [HoneyPotSSHTransport,64700,183.146.12.53] connection lost
+2017-05-05T17:16:30+0000 [HoneyPotSSHTransport,64700,183.146.12.53] Connection lost after 7 seconds
+2017-05-05T17:16:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 220.135.146.100:60374 (10.8.41.81:2223) [session: TT43863]
+2017-05-05T17:16:59+0000 [CowrieTelnetTransport,43863,220.135.146.100] login attempt: 9
+2017-05-05T17:16:59+0000 [CowrieTelnetTransport,43863,220.135.146.100] login return, expect: [root/1111]
+2017-05-05T17:16:59+0000 [CowrieTelnetTransport,43863,220.135.146.100] login attempt [admin/ZmqVfoSIP] failed
+2017-05-05T17:16:59+0000 [CowrieTelnetTransport,43863,220.135.146.100] Warning: state changed and new state returned
