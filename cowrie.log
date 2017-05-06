@@ -7800,3 +7800,90 @@
 	    command_faked_package_class_factory.getCommand(p)
 	exceptions.AttributeError: 'HoneyPotExecProtocol' object has no attribute 'commands'
 	
+2017-05-06T01:53:07+0000 [CowrieTelnetTransport,44709,45.32.202.49] Connection lost after 37 seconds
+2017-05-06T01:53:11+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:53061 (10.8.41.81:2222) [session: bcd1ed73]
+2017-05-06T01:53:11+0000 [HoneyPotSSHTransport,65501,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-06T01:53:11+0000 [HoneyPotSSHTransport,65501,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-06T01:53:11+0000 [HoneyPotSSHTransport,65501,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-06T01:53:11+0000 [HoneyPotSSHTransport,65501,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-06T01:53:11+0000 [HoneyPotSSHTransport,65501,130.206.99.99] NEW KEYS
+2017-05-06T01:53:11+0000 [HoneyPotSSHTransport,65501,130.206.99.99] starting service 'ssh-userauth'
+2017-05-06T01:53:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65501,130.206.99.99] 'kristen' trying auth 'password'
+2017-05-06T01:53:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65501,130.206.99.99] login attempt: 2601
+2017-05-06T01:53:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65501,130.206.99.99] login return, expect: [aa/123456]
+2017-05-06T01:53:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65501,130.206.99.99] login attempt [kristen/1234] failed
+2017-05-06T01:53:13+0000 [-] 'kristen' failed auth 'password'
+2017-05-06T01:53:13+0000 [-] unauthorized login: 
+2017-05-06T01:53:13+0000 [HoneyPotSSHTransport,65501,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-06T01:53:13+0000 [HoneyPotSSHTransport,65501,130.206.99.99] connection lost
+2017-05-06T01:53:13+0000 [HoneyPotSSHTransport,65501,130.206.99.99] Connection lost after 2 seconds
+2017-05-06T01:53:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,65397,91.195.103.185] got channel 'direct-tcpip' request
+2017-05-06T01:53:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,65397,91.195.103.185] direct-tcp connection request to 68.178.213.244:25 from localhost:5556
+2017-05-06T01:53:41+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.32.202.49:51935 (10.8.41.81:2223) [session: TT44710]
+2017-05-06T01:53:44+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.32.202.49:41716 (10.8.41.81:2223) [session: TT44711]
+2017-05-06T01:53:45+0000 [CowrieTelnetTransport,44710,45.32.202.49] login attempt: 1450
+2017-05-06T01:53:45+0000 [CowrieTelnetTransport,44710,45.32.202.49] login return, expect: [admin/meinsm]
+2017-05-06T01:53:45+0000 [CowrieTelnetTransport,44710,45.32.202.49] login attempt [admin/] failed
+2017-05-06T01:53:46+0000 [CowrieTelnetTransport,44710,45.32.202.49] Warning: state changed and new state returned
+2017-05-06T01:53:46+0000 [CowrieTelnetTransport,44710,45.32.202.49] login attempt: 1451
+2017-05-06T01:53:46+0000 [CowrieTelnetTransport,44710,45.32.202.49] login return, expect: [admin/meinsm]
+2017-05-06T01:53:47+0000 [CowrieTelnetTransport,44710,45.32.202.49] login attempt [enable/shell] failed
+2017-05-06T01:53:47+0000 [CowrieTelnetTransport,44710,45.32.202.49] Warning: state changed and new state returned
+2017-05-06T01:53:47+0000 [CowrieTelnetTransport,44710,45.32.202.49] login attempt: 1452
+2017-05-06T01:53:47+0000 [CowrieTelnetTransport,44710,45.32.202.49] login return, expect: [admin/meinsm]
+2017-05-06T01:53:48+0000 [CowrieTelnetTransport,44710,45.32.202.49] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-06T01:53:48+0000 [CowrieTelnetTransport,44710,45.32.202.49] Warning: state changed and new state returned
+2017-05-06T01:53:48+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.32.202.49:45994 (10.8.41.81:2223) [session: TT44712]
+2017-05-06T01:53:48+0000 [CowrieTelnetTransport,44703,104.238.185.124] Closing TTY Log: log/tty/20170506-015143-None-44703i.log after 124 seconds
+2017-05-06T01:53:48+0000 [CowrieTelnetTransport,44703,104.238.185.124] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-06T01:53:48+0000 [CowrieTelnetTransport,44703,104.238.185.124] Connection lost after 133 seconds
+2017-05-06T01:53:50+0000 [CowrieTelnetTransport,44711,45.32.202.49] login attempt: 1453
+2017-05-06T01:53:50+0000 [CowrieTelnetTransport,44711,45.32.202.49] login return, expect: [admin/meinsm]
+2017-05-06T01:53:51+0000 [CowrieTelnetTransport,44711,45.32.202.49] login attempt [admin/5up] failed
+2017-05-06T01:53:51+0000 [CowrieTelnetTransport,44711,45.32.202.49] Warning: state changed and new state returned
+2017-05-06T01:53:51+0000 [CowrieTelnetTransport,44711,45.32.202.49] login attempt: 1454
+2017-05-06T01:53:51+0000 [CowrieTelnetTransport,44711,45.32.202.49] login return, expect: [admin/meinsm]
+2017-05-06T01:53:52+0000 [CowrieTelnetTransport,44711,45.32.202.49] login attempt [enable/shell] failed
+2017-05-06T01:53:52+0000 [CowrieTelnetTransport,44711,45.32.202.49] Warning: state changed and new state returned
+2017-05-06T01:53:52+0000 [CowrieTelnetTransport,44711,45.32.202.49] login attempt: 1455
+2017-05-06T01:53:52+0000 [CowrieTelnetTransport,44711,45.32.202.49] login return, expect: [admin/meinsm]
+2017-05-06T01:53:53+0000 [CowrieTelnetTransport,44711,45.32.202.49] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-06T01:53:53+0000 [CowrieTelnetTransport,44711,45.32.202.49] Warning: state changed and new state returned
+2017-05-06T01:53:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 45.32.202.49:33922 (10.8.41.81:2223) [session: TT44713]
+2017-05-06T01:53:53+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 59.45.175.67:60187 (10.8.41.81:2222) [session: ff66726c]
+2017-05-06T01:53:56+0000 [CowrieTelnetTransport,44712,45.32.202.49] login attempt: 1456
+2017-05-06T01:53:56+0000 [CowrieTelnetTransport,44712,45.32.202.49] login return, expect: [admin/meinsm]
+2017-05-06T01:53:56+0000 [CowrieTelnetTransport,44712,45.32.202.49] login attempt [root/54321] failed
+2017-05-06T01:53:56+0000 [CowrieTelnetTransport,44712,45.32.202.49] Warning: state changed and new state returned
+2017-05-06T01:53:57+0000 [CowrieTelnetTransport,44712,45.32.202.49] login attempt: 1457
+2017-05-06T01:53:57+0000 [CowrieTelnetTransport,44712,45.32.202.49] login return, expect: [admin/meinsm]
+2017-05-06T01:53:58+0000 [CowrieTelnetTransport,44712,45.32.202.49] login attempt [enable/shell] failed
+2017-05-06T01:53:58+0000 [CowrieTelnetTransport,44712,45.32.202.49] Warning: state changed and new state returned
+2017-05-06T01:53:58+0000 [HoneyPotSSHTransport,65502,59.45.175.67] Remote SSH version: SSH-2.0-PUTTY
+2017-05-06T01:53:58+0000 [HoneyPotSSHTransport,65502,59.45.175.67] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-06T01:53:58+0000 [HoneyPotSSHTransport,65502,59.45.175.67] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-06T01:53:58+0000 [HoneyPotSSHTransport,65502,59.45.175.67] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-06T01:53:58+0000 [CowrieTelnetTransport,44713,45.32.202.49] login attempt: 1458
+2017-05-06T01:53:58+0000 [CowrieTelnetTransport,44713,45.32.202.49] login return, expect: [admin/meinsm]
+2017-05-06T01:53:59+0000 [CowrieTelnetTransport,44713,45.32.202.49] login attempt [root/1234567890] failed
+2017-05-06T01:53:59+0000 [CowrieTelnetTransport,44713,45.32.202.49] Warning: state changed and new state returned
+2017-05-06T01:53:59+0000 [CowrieTelnetTransport,44712,45.32.202.49] login attempt: 1459
+2017-05-06T01:53:59+0000 [CowrieTelnetTransport,44712,45.32.202.49] login return, expect: [admin/meinsm]
+2017-05-06T01:54:00+0000 [CowrieTelnetTransport,44712,45.32.202.49] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-06T01:54:00+0000 [CowrieTelnetTransport,44712,45.32.202.49] Warning: state changed and new state returned
+2017-05-06T01:54:00+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:32992 (10.8.41.81:2222) [session: 1cc6bbd9]
+2017-05-06T01:54:00+0000 [HoneyPotSSHTransport,65503,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-06T01:54:00+0000 [HoneyPotSSHTransport,65503,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-06T01:54:00+0000 [HoneyPotSSHTransport,65503,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-06T01:54:00+0000 [HoneyPotSSHTransport,65503,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-06T01:54:00+0000 [HoneyPotSSHTransport,65503,130.206.99.99] NEW KEYS
+2017-05-06T01:54:00+0000 [HoneyPotSSHTransport,65503,130.206.99.99] starting service 'ssh-userauth'
+2017-05-06T01:54:00+0000 [CowrieTelnetTransport,44713,45.32.202.49] login attempt: 1460
+2017-05-06T01:54:00+0000 [CowrieTelnetTransport,44713,45.32.202.49] login return, expect: [admin/meinsm]
+2017-05-06T01:54:01+0000 [CowrieTelnetTransport,44713,45.32.202.49] login attempt [enable/shell] failed
+2017-05-06T01:54:01+0000 [CowrieTelnetTransport,44713,45.32.202.49] Warning: state changed and new state returned
+2017-05-06T01:54:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65503,130.206.99.99] 'kristen' trying auth 'password'
+2017-05-06T01:54:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65503,130.206.99.99] login attempt: 2602
+2017-05-06T01:54:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65503,130.206.99.99] login return, expect: [aa/123456]
