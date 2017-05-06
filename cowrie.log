@@ -2028,3 +2028,37 @@
 2017-05-06T10:06:00+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,66081,91.230.47.67] direct-tcp forward to 54.225.141.149:80 with data 'GET / HTTP/1.0\r\nHost: api.ipify.org\r\n\r\n'
 2017-05-06T10:06:00+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,66081,91.230.47.67] failed to connect: Connection refused
 2017-05-06T10:06:00+0000 [SSHChannel None (7) on SSHService 'ssh-connection' on HoneyPotSSHTransport,66081,91.230.47.67] sending close 7
+2017-05-06T10:06:10+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:49652 (10.8.41.81:2222) [session: 094843e7]
+2017-05-06T10:06:12+0000 [HoneyPotSSHTransport,66356,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-06T10:06:12+0000 [HoneyPotSSHTransport,66356,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-06T10:06:12+0000 [HoneyPotSSHTransport,66356,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-06T10:06:12+0000 [HoneyPotSSHTransport,66356,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-06T10:06:12+0000 [HoneyPotSSHTransport,66356,130.206.99.99] NEW KEYS
+2017-05-06T10:06:12+0000 [HoneyPotSSHTransport,66356,130.206.99.99] starting service 'ssh-userauth'
+2017-05-06T10:06:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,66356,130.206.99.99] 'michael' trying auth 'password'
+2017-05-06T10:06:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,66356,130.206.99.99] login attempt: 3215
+2017-05-06T10:06:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,66356,130.206.99.99] login return, expect: [aa/123456]
+2017-05-06T10:06:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,66356,130.206.99.99] login attempt [michael/12] failed
+2017-05-06T10:06:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 1.234.62.166:58892 (10.8.41.81:2222) [session: 2b30c691]
+2017-05-06T10:06:14+0000 [HoneyPotSSHTransport,66357,1.234.62.166] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-05-06T10:06:14+0000 [HoneyPotSSHTransport,66357,1.234.62.166] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-06T10:06:14+0000 [HoneyPotSSHTransport,66357,1.234.62.166] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-06T10:06:14+0000 [HoneyPotSSHTransport,66357,1.234.62.166] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-06T10:06:14+0000 [-] 'michael' failed auth 'password'
+2017-05-06T10:06:14+0000 [-] unauthorized login: 
+2017-05-06T10:06:14+0000 [HoneyPotSSHTransport,66356,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-06T10:06:14+0000 [HoneyPotSSHTransport,66356,130.206.99.99] connection lost
+2017-05-06T10:06:14+0000 [HoneyPotSSHTransport,66356,130.206.99.99] Connection lost after 4 seconds
+2017-05-06T10:06:15+0000 [HoneyPotSSHTransport,66357,1.234.62.166] NEW KEYS
+2017-05-06T10:06:15+0000 [HoneyPotSSHTransport,66357,1.234.62.166] starting service 'ssh-userauth'
+2017-05-06T10:06:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,66357,1.234.62.166] 'minecraft' trying auth 'password'
+2017-05-06T10:06:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,66357,1.234.62.166] login attempt: 131
+2017-05-06T10:06:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,66357,1.234.62.166] login return, expect: [root/admin]
+2017-05-06T10:06:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,66357,1.234.62.166] login attempt [minecraft/123] failed
+2017-05-06T10:06:18+0000 [-] 'minecraft' failed auth 'password'
+2017-05-06T10:06:18+0000 [-] unauthorized login: 
+2017-05-06T10:06:18+0000 [HoneyPotSSHTransport,66357,1.234.62.166] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-05-06T10:06:18+0000 [HoneyPotSSHTransport,66357,1.234.62.166] connection lost
+2017-05-06T10:06:18+0000 [HoneyPotSSHTransport,66357,1.234.62.166] Connection lost after 4 seconds
