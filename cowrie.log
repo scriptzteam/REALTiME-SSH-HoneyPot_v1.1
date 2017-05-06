@@ -1248,3 +1248,65 @@
 2017-05-06T09:53:44+0000 [HoneyPotSSHTransport,66336,130.206.99.99] connection lost
 2017-05-06T09:53:44+0000 [HoneyPotSSHTransport,66336,130.206.99.99] Connection lost after 2 seconds
 2017-05-06T09:53:53+0000 [CowrieTelnetTransport,45550,185.188.206.2] Connection lost after 37 seconds
+2017-05-06T09:54:03+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 2.181.65.40:56415 (10.8.41.81:2223) [session: TT45551]
+2017-05-06T09:54:04+0000 [CowrieTelnetTransport,45551,2.181.65.40] first time for 2.181.65.40, need: 1
+2017-05-06T09:54:04+0000 [CowrieTelnetTransport,45551,2.181.65.40] login attempt: 1
+2017-05-06T09:54:05+0000 [CowrieTelnetTransport,45551,2.181.65.40] login attempt [admin1/password] succeeded
+2017-05-06T09:54:06+0000 [CowrieTelnetTransport,45551,2.181.65.40] Opening TTY Log: log/tty/20170506-095406-None-45551i.log
+2017-05-06T09:54:06+0000 [CowrieTelnetTransport,45551,2.181.65.40] Warning: state changed and new state returned
+2017-05-06T09:54:06+0000 [SSHChannel None (224) on SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] remote eof
+2017-05-06T09:54:06+0000 [SSHChannel None (224) on SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] remote close
+2017-05-06T09:54:06+0000 [SSHChannel None (224) on SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] sending close 224
+2017-05-06T09:54:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] got channel 'direct-tcpip' request
+2017-05-06T09:54:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] direct-tcp connection request to 64.233.188.26:25 from localhost:5556
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] CMD: enable
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command found: enable 
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] CMD: shell
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command not found: shell
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] CMD: sh
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command found: sh 
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] CMD: cat /proc/mounts; /bin/busybox URKRB
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command found: cat /proc/mounts
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command found: /bin/busybox URKRB
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox URKRB
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command found: cd /dev/shm
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command found: cat .s
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command found: cp /bin/echo .s
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command found: /bin/busybox URKRB
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] CMD: nc; wget; /bin/busybox URKRB
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command not found: nc
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command found: wget 
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command found: /bin/busybox URKRB
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command not found: dd bs=52 count=1 if=.s
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command found: cat /dev/shm/.s
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] CMD: /bin/busybox URKRB
+2017-05-06T09:54:07+0000 [CowrieTelnetTransport,45551,2.181.65.40] Command found: /bin/busybox URKRB
+2017-05-06T09:54:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:48371 (10.8.41.81:2222) [session: e2c40df3]
+2017-05-06T09:54:29+0000 [HoneyPotSSHTransport,66337,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-06T09:54:29+0000 [HoneyPotSSHTransport,66337,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-06T09:54:29+0000 [HoneyPotSSHTransport,66337,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-06T09:54:29+0000 [HoneyPotSSHTransport,66337,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-06T09:54:29+0000 [HoneyPotSSHTransport,66337,130.206.99.99] NEW KEYS
+2017-05-06T09:54:29+0000 [HoneyPotSSHTransport,66337,130.206.99.99] starting service 'ssh-userauth'
+2017-05-06T09:54:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,66337,130.206.99.99] 'megan' trying auth 'password'
+2017-05-06T09:54:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,66337,130.206.99.99] login attempt: 3201
+2017-05-06T09:54:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,66337,130.206.99.99] login return, expect: [aa/123456]
+2017-05-06T09:54:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,66337,130.206.99.99] login attempt [megan/megan1234567] failed
+2017-05-06T09:54:31+0000 [-] 'megan' failed auth 'password'
+2017-05-06T09:54:31+0000 [-] unauthorized login: 
+2017-05-06T09:54:31+0000 [HoneyPotSSHTransport,66337,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-06T09:54:31+0000 [HoneyPotSSHTransport,66337,130.206.99.99] connection lost
+2017-05-06T09:54:31+0000 [HoneyPotSSHTransport,66337,130.206.99.99] Connection lost after 2 seconds
+2017-05-06T09:54:31+0000 [SSHChannel None (225) on SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] remote eof
+2017-05-06T09:54:31+0000 [SSHChannel None (225) on SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] remote close
+2017-05-06T09:54:31+0000 [SSHChannel None (225) on SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] sending close 225
+2017-05-06T09:54:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] got channel 'direct-tcpip' request
+2017-05-06T09:54:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] direct-tcp connection request to 74.125.28.27:25 from localhost:5556
+2017-05-06T09:54:57+0000 [SSHChannel None (226) on SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] remote eof
+2017-05-06T09:54:57+0000 [SSHChannel None (226) on SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] remote close
+2017-05-06T09:54:57+0000 [SSHChannel None (226) on SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] sending close 226
+2017-05-06T09:54:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] got channel 'direct-tcpip' request
+2017-05-06T09:54:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,66077,91.195.103.210] direct-tcp connection request to 74.125.28.27:25 from localhost:5556
