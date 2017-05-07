@@ -2694,3 +2694,66 @@
 2017-05-07T13:29:56+0000 [SSHChannel None (364) on SSHService 'ssh-connection' on HoneyPotSSHTransport,70198,91.195.103.188] direct-tcp forward to 173.194.79.108:993 with data '\x16\x03\x01\x00}\x01\x00\x00y\x03\x01Y\x0f!9TK,\xde\x0b^;\x97?\x1c\x13\x17\xeb\x8d\x98\x9b\x83H\xe4\x0e>\x9aL\xbc\xe9E?\xff\x00\x00\x1c\xc0\x14\xc0\x13\x009\x003\x005\x00/\xc0\n\xc0\t\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x004\x00\x00\x00\x13\x00\x11\x00\x00\x0eimap.gmail.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00'
 2017-05-07T13:29:56+0000 [SSHChannel None (364) on SSHService 'ssh-connection' on HoneyPotSSHTransport,70198,91.195.103.188] failed to connect: Connection refused
 2017-05-07T13:29:56+0000 [SSHChannel None (364) on SSHService 'ssh-connection' on HoneyPotSSHTransport,70198,91.195.103.188] sending close 364
+2017-05-07T13:30:29+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:40388 (10.8.41.81:2222) [session: 25d11afa]
+2017-05-07T13:30:29+0000 [HoneyPotSSHTransport,70441,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-07T13:30:29+0000 [HoneyPotSSHTransport,70441,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-07T13:30:29+0000 [HoneyPotSSHTransport,70441,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-07T13:30:29+0000 [HoneyPotSSHTransport,70441,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-07T13:30:29+0000 [HoneyPotSSHTransport,70441,130.206.99.99] NEW KEYS
+2017-05-07T13:30:29+0000 [HoneyPotSSHTransport,70441,130.206.99.99] starting service 'ssh-userauth'
+2017-05-07T13:30:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,70441,130.206.99.99] 'root' trying auth 'password'
+2017-05-07T13:30:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,70441,130.206.99.99] login attempt: 5273
+2017-05-07T13:30:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,70441,130.206.99.99] login return, expect: [aa/123456]
+2017-05-07T13:30:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,70441,130.206.99.99] login attempt [root/osamu123] failed
+2017-05-07T13:30:31+0000 [-] 'root' failed auth 'password'
+2017-05-07T13:30:31+0000 [-] unauthorized login: 
+2017-05-07T13:30:31+0000 [HoneyPotSSHTransport,70441,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-07T13:30:31+0000 [HoneyPotSSHTransport,70441,130.206.99.99] connection lost
+2017-05-07T13:30:31+0000 [HoneyPotSSHTransport,70441,130.206.99.99] Connection lost after 2 seconds
+2017-05-07T13:30:31+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,70295,91.230.47.82] got channel 'direct-tcpip' request
+2017-05-07T13:30:31+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,70295,91.230.47.82] direct-tcp connection request to 107.6.186.178:80 from localhost:5556
+2017-05-07T13:30:33+0000 [SSHChannel None (12) on SSHService 'ssh-connection' on HoneyPotSSHTransport,70295,91.230.47.82] direct-tcp forward to 107.6.186.178:80 with data 'GET /internals/api/ip?1494163796409957959 HTTP/1.1\r\nHost: ip5.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-05-07T13:30:33+0000 [SSHChannel None (12) on SSHService 'ssh-connection' on HoneyPotSSHTransport,70295,91.230.47.82] failed to connect: Connection refused
+2017-05-07T13:30:33+0000 [SSHChannel None (12) on SSHService 'ssh-connection' on HoneyPotSSHTransport,70295,91.230.47.82] sending close 12
+2017-05-07T13:30:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,70196,91.195.103.185] got channel 'direct-tcpip' request
+2017-05-07T13:30:34+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,70196,91.195.103.185] direct-tcp connection request to 204.13.81.152:25 from localhost:5556
+2017-05-07T13:30:47+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 92.126.141.65:43719 (10.8.41.81:2223) [session: TT48158]
+2017-05-07T13:30:48+0000 [CowrieTelnetTransport,48158,92.126.141.65] first time for 92.126.141.65, need: 1
+2017-05-07T13:30:48+0000 [CowrieTelnetTransport,48158,92.126.141.65] login attempt: 1
+2017-05-07T13:30:49+0000 [CowrieTelnetTransport,48158,92.126.141.65] login attempt [root/vizxv] succeeded
+2017-05-07T13:30:50+0000 [CowrieTelnetTransport,48158,92.126.141.65] Opening TTY Log: log/tty/20170507-133050-None-48158i.log
+2017-05-07T13:30:50+0000 [CowrieTelnetTransport,48158,92.126.141.65] Warning: state changed and new state returned
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] Received unhandled keyID: '\x00'
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] CMD: enable
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] Command found: enable 
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] Received unhandled keyID: '\x00'
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] CMD: system
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] Command not found: system
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] Received unhandled keyID: '\x00'
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] CMD: shell
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] Command not found: shell
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] Received unhandled keyID: '\x00'
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] CMD: sh
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] Command found: sh 
+2017-05-07T13:30:51+0000 [CowrieTelnetTransport,48158,92.126.141.65] Received unhandled keyID: '\x00'
+2017-05-07T13:30:52+0000 [CowrieTelnetTransport,48158,92.126.141.65] CMD: /bin/busybox MIRAI
+2017-05-07T13:30:52+0000 [CowrieTelnetTransport,48158,92.126.141.65] Command found: /bin/busybox MIRAI
+2017-05-07T13:30:53+0000 [CowrieTelnetTransport,48158,92.126.141.65] Closing TTY Log: log/tty/20170507-133050-None-48158i.log after 2 seconds
+2017-05-07T13:30:53+0000 [CowrieTelnetTransport,48158,92.126.141.65] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-07T13:30:53+0000 [CowrieTelnetTransport,48158,92.126.141.65] Connection lost after 5 seconds
+2017-05-07T13:30:56+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.61.8.51:45665 (10.8.41.81:2222) [session: 3a5d0ae3]
+2017-05-07T13:30:57+0000 [HoneyPotSSHTransport,70442,103.61.8.51] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-05-07T13:30:57+0000 [HoneyPotSSHTransport,70442,103.61.8.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-07T13:30:57+0000 [HoneyPotSSHTransport,70442,103.61.8.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-07T13:30:57+0000 [HoneyPotSSHTransport,70442,103.61.8.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-07T13:30:59+0000 [HoneyPotSSHTransport,70442,103.61.8.51] NEW KEYS
+2017-05-07T13:30:59+0000 [HoneyPotSSHTransport,70442,103.61.8.51] starting service 'ssh-userauth'
+2017-05-07T13:30:59+0000 [HoneyPotSSHTransport,70442,103.61.8.51] connection lost
+2017-05-07T13:30:59+0000 [HoneyPotSSHTransport,70442,103.61.8.51] Connection lost after 2 seconds
+2017-05-07T13:31:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,70196,91.195.103.185] got channel 'direct-tcpip' request
+2017-05-07T13:31:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,70196,91.195.103.185] direct-tcp connection request to 104.44.194.237:25 from localhost:5556
+2017-05-07T13:31:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,70196,91.195.103.185] got channel 'direct-tcpip' request
+2017-05-07T13:31:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,70196,91.195.103.185] direct-tcp connection request to 74.125.30.27:25 from localhost:5556
