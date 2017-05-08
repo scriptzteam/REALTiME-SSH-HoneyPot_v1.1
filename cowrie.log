@@ -6054,3 +6054,33 @@
 2017-05-08T01:47:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 113.105.123.162:56705 (10.8.41.81:2223) [session: TT49043]
 2017-05-08T01:47:38+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 113.105.123.162:18177 (10.8.41.81:2223) [session: TT49044]
 2017-05-08T01:47:38+0000 [CowrieTelnetTransport,49043,113.105.123.162] Connection lost after 0 seconds
+2017-05-08T01:48:21+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:39031 (10.8.41.81:2222) [session: 263bbd53]
+2017-05-08T01:48:22+0000 [HoneyPotSSHTransport,71873,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-08T01:48:22+0000 [HoneyPotSSHTransport,71873,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-08T01:48:22+0000 [HoneyPotSSHTransport,71873,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-08T01:48:22+0000 [HoneyPotSSHTransport,71873,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-08T01:48:22+0000 [HoneyPotSSHTransport,71873,130.206.99.99] NEW KEYS
+2017-05-08T01:48:22+0000 [HoneyPotSSHTransport,71873,130.206.99.99] starting service 'ssh-userauth'
+2017-05-08T01:48:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,71873,130.206.99.99] 'teamspeak' trying auth 'password'
+2017-05-08T01:48:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,71873,130.206.99.99] login attempt: 6198
+2017-05-08T01:48:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,71873,130.206.99.99] login return, expect: [aa/123456]
+2017-05-08T01:48:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,71873,130.206.99.99] login attempt [teamspeak/iamhacker22] failed
+2017-05-08T01:48:24+0000 [-] 'teamspeak' failed auth 'password'
+2017-05-08T01:48:24+0000 [-] unauthorized login: 
+2017-05-08T01:48:24+0000 [HoneyPotSSHTransport,71873,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-08T01:48:24+0000 [HoneyPotSSHTransport,71873,130.206.99.99] connection lost
+2017-05-08T01:48:24+0000 [HoneyPotSSHTransport,71873,130.206.99.99] Connection lost after 2 seconds
+2017-05-08T01:48:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,71145,91.195.103.202] got channel 'direct-tcpip' request
+2017-05-08T01:48:29+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,71145,91.195.103.202] direct-tcp connection request to 144.76.202.77:80 from localhost:5556
+2017-05-08T01:48:29+0000 [SSHChannel None (227) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71145,91.195.103.202] direct-tcp forward to 144.76.202.77:80 with data 'GET /chea9iquae/ HTTP/1.1\r\nHost: 144.76.202.77\r\nAccept: */*\r\nConnection: close\r\nAccept-Encoding: gzip, deflate\r\nUser-Agent: python-requests/2.12.1\r\n\r\n'
+2017-05-08T01:48:29+0000 [SSHChannel None (227) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71145,91.195.103.202] failed to connect: Connection refused
+2017-05-08T01:48:29+0000 [SSHChannel None (227) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71145,91.195.103.202] sending close 227
+2017-05-08T01:48:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,71145,91.195.103.202] got channel 'direct-tcpip' request
+2017-05-08T01:48:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,71145,91.195.103.202] direct-tcp connection request to 104.109.107.107:443 from localhost:5556
+2017-05-08T01:48:40+0000 [SSHChannel None (228) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71145,91.195.103.202] direct-tcp forward to 104.109.107.107:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\x93S\xd7V(\x19_|\xa8Nsd\x87\xb8Es"\xfb\x81@\x02)\xbd\xb0x\xc1X\x0e_\xce\xc1h'
+2017-05-08T01:48:40+0000 [SSHChannel None (228) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71145,91.195.103.202] failed to connect: Connection refused
+2017-05-08T01:48:40+0000 [SSHChannel None (228) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71145,91.195.103.202] sending close 228
+2017-05-08T01:48:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] got channel 'direct-tcpip' request
+2017-05-08T01:48:40+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] direct-tcp connection request to 164.132.190.162:25 from localhost:5556
+2017-05-08T01:48:45+0000 [CowrieTelnetTransport,49044,113.105.123.162] Connection lost after 66 seconds
