@@ -5432,3 +5432,43 @@
 2017-05-08T01:39:56+0000 [CowrieTelnetTransport,49030,208.168.237.70] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-05-08T01:39:56+0000 [CowrieTelnetTransport,49030,208.168.237.70] Connection lost after 104 seconds
+2017-05-08T01:40:01+0000 [SSHChannel None (291) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] direct-tcp forward to 98.138.112.33:25 with data 'QUIT\r\n'
+2017-05-08T01:40:01+0000 [SSHChannel None (291) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] failed to connect: Connection refused
+2017-05-08T01:40:01+0000 [SSHChannel None (291) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] sending close 291
+2017-05-08T01:40:01+0000 [SSHChannel None (291) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] remote eof
+2017-05-08T01:40:01+0000 [SSHChannel None (291) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] remote close
+2017-05-08T01:40:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,71295,91.195.103.205] got channel 'direct-tcpip' request
+2017-05-08T01:40:24+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,71295,91.195.103.205] direct-tcp connection request to 173.230.217.202:443 from localhost:5556
+2017-05-08T01:40:24+0000 [SSHChannel None (108) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71295,91.195.103.205] direct-tcp forward to 173.230.217.202:443 with data "\x16\x03\x01\x00\x87\x01\x00\x00\x83\x03\x01Y\x0f\xcce\xe8*\x18\x8e\xdd\r\x02\x1b\xad\xb8b'\xc0\x1d\x8d\xf9\xac\xc4\xfc%p\xe3\x14+\x15\x1f\x05\xa6\x00\x00\x18\xc0\x14\xc0\x13\x005\x00/\xc0\n\xc0\t\x008\x002\x00\n\x00\x13\x00\x05\x00\x04\x01\x00\x00B\x00\x00\x00!\x00\x1f\x00\x00\x1cnative.np.ac.playstation.net\x00\n\x00\x06\x00\x04\x00\x17\x00\x18\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x00\x17\x00\x00\xff\x01\x00\x01\x00"
+2017-05-08T01:40:24+0000 [SSHChannel None (108) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71295,91.195.103.205] failed to connect: Connection refused
+2017-05-08T01:40:24+0000 [SSHChannel None (108) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71295,91.195.103.205] sending close 108
+2017-05-08T01:40:26+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:42080 (10.8.41.81:2222) [session: e749b36c]
+2017-05-08T01:40:26+0000 [HoneyPotSSHTransport,71863,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-08T01:40:26+0000 [HoneyPotSSHTransport,71863,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-08T01:40:26+0000 [HoneyPotSSHTransport,71863,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-08T01:40:26+0000 [HoneyPotSSHTransport,71863,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-08T01:40:27+0000 [HoneyPotSSHTransport,71863,130.206.99.99] NEW KEYS
+2017-05-08T01:40:27+0000 [HoneyPotSSHTransport,71863,130.206.99.99] starting service 'ssh-userauth'
+2017-05-08T01:40:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,71863,130.206.99.99] 'taylor' trying auth 'password'
+2017-05-08T01:40:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,71863,130.206.99.99] login attempt: 6188
+2017-05-08T01:40:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,71863,130.206.99.99] login return, expect: [aa/123456]
+2017-05-08T01:40:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,71863,130.206.99.99] login attempt [taylor/taylor123456] failed
+2017-05-08T01:40:29+0000 [-] 'taylor' failed auth 'password'
+2017-05-08T01:40:29+0000 [-] unauthorized login: 
+2017-05-08T01:40:29+0000 [HoneyPotSSHTransport,71863,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-08T01:40:29+0000 [HoneyPotSSHTransport,71863,130.206.99.99] connection lost
+2017-05-08T01:40:29+0000 [HoneyPotSSHTransport,71863,130.206.99.99] Connection lost after 2 seconds
+2017-05-08T01:40:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,71171,91.195.103.215] got channel 'direct-tcpip' request
+2017-05-08T01:40:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,71171,91.195.103.215] direct-tcp connection request to 66.196.118.36:25 from localhost:5556
+2017-05-08T01:40:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] got channel 'direct-tcpip' request
+2017-05-08T01:40:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] direct-tcp connection request to 104.44.194.232:25 from localhost:5556
+2017-05-08T01:40:46+0000 [CowrieTelnetTransport,49031,88.229.84.233] Closing TTY Log: log/tty/20170508-013906-None-49031i.log after 100 seconds
+2017-05-08T01:40:46+0000 [CowrieTelnetTransport,49031,88.229.84.233] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-08T01:40:46+0000 [CowrieTelnetTransport,49031,88.229.84.233] Connection lost after 103 seconds
+2017-05-08T01:41:00+0000 [SSHChannel None (292) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] direct-tcp forward to 98.136.216.25:25 with data 'QUIT\r\n'
+2017-05-08T01:41:00+0000 [SSHChannel None (292) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] failed to connect: Connection refused
+2017-05-08T01:41:00+0000 [SSHChannel None (292) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] sending close 292
+2017-05-08T01:41:00+0000 [SSHChannel None (292) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] remote eof
+2017-05-08T01:41:00+0000 [SSHChannel None (292) on SSHService 'ssh-connection' on HoneyPotSSHTransport,71182,91.195.103.183] remote close
