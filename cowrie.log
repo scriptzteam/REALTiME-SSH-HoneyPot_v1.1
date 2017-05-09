@@ -1136,3 +1136,29 @@
 2017-05-09T01:18:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75973,45.76.83.116] first time for 45.76.83.116, need: 1
 2017-05-09T01:18:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75973,45.76.83.116] login attempt: 1
 2017-05-09T01:18:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75973,45.76.83.116] login attempt [1111/1111] succeeded
+2017-05-09T01:18:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75973,45.76.83.116] '1111' authenticated with 'password'
+2017-05-09T01:18:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75973,45.76.83.116] starting service 'ssh-connection'
+2017-05-09T01:18:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] got channel 'session' request
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] channel open
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] executing command "/sbin/ifconfig"
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] Opening TTY Log: log/tty/20170509-011805-e9b56e87-0e.log
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] CMD: /sbin/ifconfig
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] Command found: /sbin/ifconfig 
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] exitCode: 0
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] sending request 'exit-status'
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] sending close 0
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] received eof, sending ctrl-d to command
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] Received CTRL-D, exiting..
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] exitCode: 0
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] Closing TTY Log: log/tty/20170509-011805-e9b56e87-0e.log after 0 seconds
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-09T01:18:05+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75973,45.76.83.116] remote close
+2017-05-09T01:18:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,75902,91.230.47.82] got channel 'direct-tcpip' request
+2017-05-09T01:18:05+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,75902,91.230.47.82] direct-tcp connection request to 93.115.29.122:80 from localhost:5556
+2017-05-09T01:18:05+0000 [HoneyPotSSHTransport,75973,45.76.83.116] avatar 1111 logging out
+2017-05-09T01:18:05+0000 [HoneyPotSSHTransport,75973,45.76.83.116] connection lost
+2017-05-09T01:18:05+0000 [HoneyPotSSHTransport,75973,45.76.83.116] Connection lost after 5 seconds
+2017-05-09T01:18:06+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75902,91.230.47.82] direct-tcp forward to 93.115.29.122:80 with data 'GET /internals/api/ip?1494292649409627008 HTTP/1.1\r\nHost: ip3.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-05-09T01:18:06+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75902,91.230.47.82] failed to connect: Connection refused
+2017-05-09T01:18:06+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75902,91.230.47.82] sending close 14
