@@ -5940,3 +5940,26 @@
 2017-05-09T00:48:31+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75863,91.195.103.194] direct-tcp forward to 23.61.211.183:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\x03\xba\xd3\n\xf2\x08\x98\x89\xd6`\xe3\xce\xb7\x18\xa9\xca\\\x1a\x863\xe4\xdano\x15\xfcZl\xc64\xbb\xa7'
 2017-05-09T00:48:31+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75863,91.195.103.194] failed to connect: Connection refused
 2017-05-09T00:48:31+0000 [SSHChannel None (53) on SSHService 'ssh-connection' on HoneyPotSSHTransport,75863,91.195.103.194] sending close 53
+2017-05-09T00:49:14+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 202.103.238.19:33784 (10.8.41.81:2222) [session: c505b825]
+2017-05-09T00:49:15+0000 [HoneyPotSSHTransport,75949,202.103.238.19] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-05-09T00:49:15+0000 [HoneyPotSSHTransport,75949,202.103.238.19] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-09T00:49:15+0000 [HoneyPotSSHTransport,75949,202.103.238.19] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-09T00:49:15+0000 [HoneyPotSSHTransport,75949,202.103.238.19] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-09T00:49:15+0000 [HoneyPotSSHTransport,75949,202.103.238.19] NEW KEYS
+2017-05-09T00:49:16+0000 [HoneyPotSSHTransport,75949,202.103.238.19] starting service 'ssh-userauth'
+2017-05-09T00:49:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75949,202.103.238.19] 'testuser' trying auth 'password'
+2017-05-09T00:49:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75949,202.103.238.19] login attempt: 983
+2017-05-09T00:49:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75949,202.103.238.19] login return, expect: [doctor/doctor]
+2017-05-09T00:49:17+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,75949,202.103.238.19] login attempt [testuser/testuser] failed
+2017-05-09T00:49:18+0000 [-] 'testuser' failed auth 'password'
+2017-05-09T00:49:18+0000 [-] unauthorized login: 
+2017-05-09T00:49:19+0000 [HoneyPotSSHTransport,75949,202.103.238.19] connection lost
+2017-05-09T00:49:19+0000 [HoneyPotSSHTransport,75949,202.103.238.19] Connection lost after 4 seconds
+2017-05-09T00:49:25+0000 [CowrieTelnetTransport,51397,170.231.237.92] Closing TTY Log: log/tty/20170509-004723-None-51397i.log after 121 seconds
+2017-05-09T00:49:25+0000 [CowrieTelnetTransport,51397,170.231.237.92] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-09T00:49:25+0000 [CowrieTelnetTransport,51397,170.231.237.92] Connection lost after 129 seconds
+2017-05-09T00:49:45+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 122.114.213.217:50014 (10.8.41.81:2223) [session: TT51398]
+2017-05-09T00:49:46+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 122.114.213.217:50102 (10.8.41.81:2223) [session: TT51399]
+2017-05-09T00:49:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,75872,91.195.103.214] got channel 'direct-tcpip' request
+2017-05-09T00:49:58+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,75872,91.195.103.214] direct-tcp connection request to 66.196.118.35:25 from localhost:5556
