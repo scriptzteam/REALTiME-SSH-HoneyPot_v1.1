@@ -2672,3 +2672,93 @@
 2017-05-09T15:50:59+0000 [SSHChannel None (124) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76248,91.195.103.195] remote eof
 2017-05-09T15:50:59+0000 [SSHChannel None (124) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76248,91.195.103.195] remote close
 2017-05-09T15:50:59+0000 [SSHChannel None (124) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76248,91.195.103.195] sending close 124
+2017-05-09T15:51:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:35982 (10.8.41.81:2222) [session: 1095ad7a]
+2017-05-09T15:51:13+0000 [HoneyPotSSHTransport,76534,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-09T15:51:13+0000 [HoneyPotSSHTransport,76534,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-09T15:51:13+0000 [HoneyPotSSHTransport,76534,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-09T15:51:13+0000 [HoneyPotSSHTransport,76534,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-09T15:51:13+0000 [HoneyPotSSHTransport,76534,130.206.99.99] NEW KEYS
+2017-05-09T15:51:13+0000 [CowrieTelnetTransport,52923,85.49.76.137] Connection lost after 36 seconds
+2017-05-09T15:51:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 85.49.76.137:33574 (10.8.41.81:2223) [session: TT52925]
+2017-05-09T15:51:14+0000 [HoneyPotSSHTransport,76534,130.206.99.99] starting service 'ssh-userauth'
+2017-05-09T15:51:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76534,130.206.99.99] 'amanda' trying auth 'password'
+2017-05-09T15:51:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76534,130.206.99.99] login attempt: 7288
+2017-05-09T15:51:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76534,130.206.99.99] login return, expect: [aa/123456]
+2017-05-09T15:51:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76534,130.206.99.99] login attempt [amanda/test] failed
+2017-05-09T15:51:15+0000 [CowrieTelnetTransport,52925,85.49.76.137] login attempt: 11
+2017-05-09T15:51:15+0000 [CowrieTelnetTransport,52925,85.49.76.137] login return, expect: [tech/tech]
+2017-05-09T15:51:16+0000 [CowrieTelnetTransport,52925,85.49.76.137] login attempt [root/888888] failed
+2017-05-09T15:51:16+0000 [CowrieTelnetTransport,52925,85.49.76.137] Warning: state changed and new state returned
+2017-05-09T15:51:16+0000 [-] 'amanda' failed auth 'password'
+2017-05-09T15:51:16+0000 [-] unauthorized login: 
+2017-05-09T15:51:16+0000 [HoneyPotSSHTransport,76534,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-09T15:51:16+0000 [HoneyPotSSHTransport,76534,130.206.99.99] connection lost
+2017-05-09T15:51:16+0000 [HoneyPotSSHTransport,76534,130.206.99.99] Connection lost after 3 seconds
+2017-05-09T15:51:17+0000 [CowrieTelnetTransport,52925,85.49.76.137] login attempt: 12
+2017-05-09T15:51:17+0000 [CowrieTelnetTransport,52925,85.49.76.137] login return, expect: [tech/tech]
+2017-05-09T15:51:18+0000 [CowrieTelnetTransport,52925,85.49.76.137] login attempt [enable\x00/system\x00] failed
+2017-05-09T15:51:18+0000 [CowrieTelnetTransport,52925,85.49.76.137] Warning: state changed and new state returned
+2017-05-09T15:51:18+0000 [CowrieTelnetTransport,52924,115.119.138.120] Connection lost after 37 seconds
+2017-05-09T15:51:18+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 115.119.138.120:3786 (10.8.41.81:2223) [session: TT52926]
+2017-05-09T15:51:18+0000 [CowrieTelnetTransport,52925,85.49.76.137] login attempt: 13
+2017-05-09T15:51:18+0000 [CowrieTelnetTransport,52925,85.49.76.137] login return, expect: [tech/tech]
+2017-05-09T15:51:19+0000 [CowrieTelnetTransport,52925,85.49.76.137] login attempt [shell\x00/sh\x00] failed
+2017-05-09T15:51:19+0000 [CowrieTelnetTransport,52925,85.49.76.137] Warning: state changed and new state returned
+2017-05-09T15:51:19+0000 [CowrieTelnetTransport,52926,115.119.138.120] login attempt: 5
+2017-05-09T15:51:19+0000 [CowrieTelnetTransport,52926,115.119.138.120] login return, expect: [root/xmhdipc]
+2017-05-09T15:51:20+0000 [CowrieTelnetTransport,52926,115.119.138.120] login attempt [root/anko] failed
+2017-05-09T15:51:20+0000 [CowrieTelnetTransport,52926,115.119.138.120] Warning: state changed and new state returned
+2017-05-09T15:51:21+0000 [CowrieTelnetTransport,52926,115.119.138.120] login attempt: 6
+2017-05-09T15:51:21+0000 [CowrieTelnetTransport,52926,115.119.138.120] login return, expect: [root/xmhdipc]
+2017-05-09T15:51:21+0000 [CowrieTelnetTransport,52926,115.119.138.120] login attempt [enable\x00/system\x00] failed
+2017-05-09T15:51:21+0000 [CowrieTelnetTransport,52926,115.119.138.120] Warning: state changed and new state returned
+2017-05-09T15:51:22+0000 [CowrieTelnetTransport,52926,115.119.138.120] login attempt: 7
+2017-05-09T15:51:22+0000 [CowrieTelnetTransport,52926,115.119.138.120] login return, expect: [root/xmhdipc]
+2017-05-09T15:51:23+0000 [CowrieTelnetTransport,52926,115.119.138.120] login attempt [shell\x00/sh\x00] failed
+2017-05-09T15:51:23+0000 [CowrieTelnetTransport,52926,115.119.138.120] Warning: state changed and new state returned
+2017-05-09T15:51:50+0000 [CowrieTelnetTransport,52925,85.49.76.137] Connection lost after 36 seconds
+2017-05-09T15:51:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 85.49.76.137:34060 (10.8.41.81:2223) [session: TT52927]
+2017-05-09T15:51:51+0000 [CowrieTelnetTransport,52927,85.49.76.137] login attempt: 14
+2017-05-09T15:51:51+0000 [CowrieTelnetTransport,52927,85.49.76.137] login return, expect: [tech/tech]
+2017-05-09T15:51:52+0000 [CowrieTelnetTransport,52927,85.49.76.137] login attempt [666666/666666] failed
+2017-05-09T15:51:52+0000 [CowrieTelnetTransport,52927,85.49.76.137] Warning: state changed and new state returned
+2017-05-09T15:51:53+0000 [CowrieTelnetTransport,52927,85.49.76.137] login attempt: 15
+2017-05-09T15:51:53+0000 [CowrieTelnetTransport,52927,85.49.76.137] login return, expect: [tech/tech]
+2017-05-09T15:51:53+0000 [CowrieTelnetTransport,52927,85.49.76.137] login attempt [enable\x00/system\x00] failed
+2017-05-09T15:51:53+0000 [CowrieTelnetTransport,52927,85.49.76.137] Warning: state changed and new state returned
+2017-05-09T15:51:54+0000 [CowrieTelnetTransport,52926,115.119.138.120] Connection lost after 36 seconds
+2017-05-09T15:51:54+0000 [CowrieTelnetTransport,52927,85.49.76.137] login attempt: 16
+2017-05-09T15:51:54+0000 [CowrieTelnetTransport,52927,85.49.76.137] login return, expect: [tech/tech]
+2017-05-09T15:51:55+0000 [CowrieTelnetTransport,52927,85.49.76.137] login attempt [shell\x00/sh\x00] failed
+2017-05-09T15:51:55+0000 [CowrieTelnetTransport,52927,85.49.76.137] Warning: state changed and new state returned
+2017-05-09T15:51:55+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 115.119.138.120:4098 (10.8.41.81:2223) [session: TT52928]
+2017-05-09T15:51:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:45690 (10.8.41.81:2222) [session: b18fc2f4]
+2017-05-09T15:51:55+0000 [HoneyPotSSHTransport,76535,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-09T15:51:55+0000 [HoneyPotSSHTransport,76535,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-09T15:51:55+0000 [HoneyPotSSHTransport,76535,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-09T15:51:55+0000 [HoneyPotSSHTransport,76535,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-09T15:51:56+0000 [CowrieTelnetTransport,52928,115.119.138.120] login attempt: 8
+2017-05-09T15:51:56+0000 [CowrieTelnetTransport,52928,115.119.138.120] login return, expect: [root/xmhdipc]
+2017-05-09T15:51:56+0000 [CowrieTelnetTransport,52928,115.119.138.120] login attempt [root/pass] failed
+2017-05-09T15:51:57+0000 [CowrieTelnetTransport,52928,115.119.138.120] Warning: state changed and new state returned
+2017-05-09T15:51:57+0000 [HoneyPotSSHTransport,76535,130.206.99.99] NEW KEYS
+2017-05-09T15:51:57+0000 [HoneyPotSSHTransport,76535,130.206.99.99] starting service 'ssh-userauth'
+2017-05-09T15:51:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76535,130.206.99.99] 'amber' trying auth 'password'
+2017-05-09T15:51:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76535,130.206.99.99] login attempt: 7289
+2017-05-09T15:51:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76535,130.206.99.99] login return, expect: [aa/123456]
+2017-05-09T15:51:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76535,130.206.99.99] login attempt [amber/amber1] failed
+2017-05-09T15:51:58+0000 [CowrieTelnetTransport,52928,115.119.138.120] login attempt: 9
+2017-05-09T15:51:58+0000 [CowrieTelnetTransport,52928,115.119.138.120] login return, expect: [root/xmhdipc]
+2017-05-09T15:51:59+0000 [CowrieTelnetTransport,52928,115.119.138.120] login attempt [enable\x00/system\x00] failed
+2017-05-09T15:51:59+0000 [CowrieTelnetTransport,52928,115.119.138.120] Warning: state changed and new state returned
+2017-05-09T15:51:59+0000 [-] 'amber' failed auth 'password'
+2017-05-09T15:51:59+0000 [-] unauthorized login: 
+2017-05-09T15:51:59+0000 [HoneyPotSSHTransport,76535,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-09T15:51:59+0000 [HoneyPotSSHTransport,76535,130.206.99.99] connection lost
+2017-05-09T15:51:59+0000 [HoneyPotSSHTransport,76535,130.206.99.99] Connection lost after 3 seconds
+2017-05-09T15:52:00+0000 [CowrieTelnetTransport,52928,115.119.138.120] login attempt: 10
+2017-05-09T15:52:00+0000 [CowrieTelnetTransport,52928,115.119.138.120] login return, expect: [root/xmhdipc]
+2017-05-09T15:52:00+0000 [CowrieTelnetTransport,52928,115.119.138.120] login attempt [shell\x00/sh\x00] failed
+2017-05-09T15:52:00+0000 [CowrieTelnetTransport,52928,115.119.138.120] Warning: state changed and new state returned
