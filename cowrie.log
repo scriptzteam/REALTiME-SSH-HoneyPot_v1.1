@@ -4178,3 +4178,41 @@
 2017-05-09T03:12:49+0000 [SSHChannel None (30) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76003,91.195.103.215] sending close 30
 2017-05-09T03:12:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,76003,91.195.103.215] got channel 'direct-tcpip' request
 2017-05-09T03:12:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,76003,91.195.103.215] direct-tcp connection request to 98.138.112.33:25 from localhost:5556
+2017-05-09T03:13:14+0000 [SSHChannel None (32) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76003,91.195.103.215] remote eof
+2017-05-09T03:13:14+0000 [SSHChannel None (32) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76003,91.195.103.215] remote close
+2017-05-09T03:13:14+0000 [SSHChannel None (32) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76003,91.195.103.215] sending close 32
+2017-05-09T03:13:45+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.230.47.82:51436 (10.8.41.81:2222) [session: ec5ad36a]
+2017-05-09T03:13:47+0000 [HoneyPotSSHTransport,76023,91.230.47.82] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-05-09T03:13:47+0000 [HoneyPotSSHTransport,76023,91.230.47.82] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-05-09T03:13:47+0000 [HoneyPotSSHTransport,76023,91.230.47.82] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-09T03:13:47+0000 [HoneyPotSSHTransport,76023,91.230.47.82] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-09T03:13:47+0000 [HoneyPotSSHTransport,76023,91.230.47.82] NEW KEYS
+2017-05-09T03:13:47+0000 [HoneyPotSSHTransport,76023,91.230.47.82] starting service 'ssh-userauth'
+2017-05-09T03:13:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76023,91.230.47.82] '1111' trying auth 'password'
+2017-05-09T03:13:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76023,91.230.47.82] login attempt: 310
+2017-05-09T03:13:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76023,91.230.47.82] login return, expect: [1111/1111]
+2017-05-09T03:13:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76023,91.230.47.82] login attempt [1111/1111] succeeded
+2017-05-09T03:13:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76023,91.230.47.82] '1111' authenticated with 'password'
+2017-05-09T03:13:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,76023,91.230.47.82] starting service 'ssh-connection'
+2017-05-09T03:13:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 90.181.28.222:52913 (10.8.41.81:2223) [session: TT51686]
+2017-05-09T03:13:51+0000 [CowrieTelnetTransport,51686,90.181.28.222] first time for 90.181.28.222, need: 1
+2017-05-09T03:13:51+0000 [CowrieTelnetTransport,51686,90.181.28.222] login attempt: 1
+2017-05-09T03:13:51+0000 [CowrieTelnetTransport,51686,90.181.28.222] login attempt [888888/888888] succeeded
+2017-05-09T03:13:53+0000 [CowrieTelnetTransport,51686,90.181.28.222] Opening TTY Log: log/tty/20170509-031353-None-51686i.log
+2017-05-09T03:13:53+0000 [CowrieTelnetTransport,51686,90.181.28.222] Warning: state changed and new state returned
+2017-05-09T03:13:53+0000 [CowrieTelnetTransport,51686,90.181.28.222] Received unhandled keyID: '\x00'
+2017-05-09T03:13:53+0000 [CowrieTelnetTransport,51686,90.181.28.222] CMD: enable
+2017-05-09T03:13:53+0000 [CowrieTelnetTransport,51686,90.181.28.222] Command found: enable 
+2017-05-09T03:13:53+0000 [CowrieTelnetTransport,51686,90.181.28.222] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-09T03:13:53+0000 [CowrieTelnetTransport,51686,90.181.28.222] Received unhandled keyID: '\x00'
+2017-05-09T03:13:53+0000 [CowrieTelnetTransport,51686,90.181.28.222] CMD: system
+2017-05-09T03:13:53+0000 [CowrieTelnetTransport,51686,90.181.28.222] Command not found: system
+2017-05-09T03:13:53+0000 [CowrieTelnetTransport,51686,90.181.28.222] Received unhandled keyID: '\x00'
+2017-05-09T03:13:53+0000 [CowrieTelnetTransport,51686,90.181.28.222] CMD: shell
+2017-05-09T03:13:53+0000 [CowrieTelnetTransport,51686,90.181.28.222] Command not found: shell
+2017-05-09T03:13:54+0000 [CowrieTelnetTransport,51686,90.181.28.222] Received unhandled keyID: '\x00'
+2017-05-09T03:13:54+0000 [CowrieTelnetTransport,51686,90.181.28.222] CMD: sh
+2017-05-09T03:13:54+0000 [CowrieTelnetTransport,51686,90.181.28.222] Command found: sh 
+2017-05-09T03:13:54+0000 [CowrieTelnetTransport,51686,90.181.28.222] Received unhandled keyID: '\x00'
+2017-05-09T03:13:54+0000 [CowrieTelnetTransport,51686,90.181.28.222] CMD: /bin/busybox satori
+2017-05-09T03:13:54+0000 [CowrieTelnetTransport,51686,90.181.28.222] Command found: /bin/busybox satori
