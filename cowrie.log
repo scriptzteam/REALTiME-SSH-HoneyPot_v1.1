@@ -3653,3 +3653,25 @@
 2017-05-09T20:33:56+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,77021,91.230.47.82] direct-tcp forward to 107.6.186.178:80 with data 'GET /internals/api/ip?1494361996409067057 HTTP/1.1\r\nHost: ip5.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
 2017-05-09T20:33:56+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,77021,91.230.47.82] failed to connect: Connection refused
 2017-05-09T20:33:56+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,77021,91.230.47.82] sending close 1
+2017-05-09T20:34:18+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:40287 (10.8.41.81:2222) [session: 818d42a2]
+2017-05-09T20:34:18+0000 [HoneyPotSSHTransport,77041,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-09T20:34:18+0000 [HoneyPotSSHTransport,77041,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-09T20:34:18+0000 [HoneyPotSSHTransport,77041,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-09T20:34:18+0000 [HoneyPotSSHTransport,77041,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-09T20:34:18+0000 [HoneyPotSSHTransport,77041,130.206.99.99] NEW KEYS
+2017-05-09T20:34:19+0000 [HoneyPotSSHTransport,77041,130.206.99.99] starting service 'ssh-userauth'
+2017-05-09T20:34:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77041,130.206.99.99] 'ben' trying auth 'password'
+2017-05-09T20:34:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77041,130.206.99.99] login attempt: 7697
+2017-05-09T20:34:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77041,130.206.99.99] login return, expect: [aa/123456]
+2017-05-09T20:34:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77041,130.206.99.99] login attempt [ben/12345] failed
+2017-05-09T20:34:21+0000 [-] 'ben' failed auth 'password'
+2017-05-09T20:34:21+0000 [-] unauthorized login: 
+2017-05-09T20:34:21+0000 [HoneyPotSSHTransport,77041,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-09T20:34:21+0000 [HoneyPotSSHTransport,77041,130.206.99.99] connection lost
+2017-05-09T20:34:21+0000 [HoneyPotSSHTransport,77041,130.206.99.99] Connection lost after 3 seconds
+2017-05-09T20:34:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,76967,91.195.103.204] got channel 'direct-tcpip' request
+2017-05-09T20:34:39+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,76967,91.195.103.204] direct-tcp connection request to 95.213.195.219:80 from localhost:5556
+2017-05-09T20:34:39+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76967,91.195.103.204] direct-tcp forward to 95.213.195.219:80 with data 'GET /proxy.php HTTP/1.1\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nConnection: Close\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0\r\nAccept-Language: en-US,en;q=0.5\r\nCache-Control: max-age=0\r\nReferer: RefererString\r\nCookie: param1=CookieString\r\nAccept-Encoding: gzip\r\nHost: chekfast.zennolab.com\r\n\r\n'
+2017-05-09T20:34:39+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76967,91.195.103.204] failed to connect: Connection refused
+2017-05-09T20:34:39+0000 [SSHChannel None (13) on SSHService 'ssh-connection' on HoneyPotSSHTransport,76967,91.195.103.204] sending close 13
