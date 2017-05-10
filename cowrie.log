@@ -5263,3 +5263,46 @@
 2017-05-10T03:13:53+0000 [CowrieTelnetTransport,54518,87.251.133.59] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-05-10T03:13:53+0000 [CowrieTelnetTransport,54518,87.251.133.59] Connection lost after 114 seconds
+2017-05-10T03:14:08+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 119.112.87.176:3585 (10.8.41.81:2223) [session: TT54519]
+2017-05-10T03:14:10+0000 [CowrieTelnetTransport,54519,119.112.87.176] first time for 119.112.87.176, need: 1
+2017-05-10T03:14:10+0000 [CowrieTelnetTransport,54519,119.112.87.176] login attempt: 1
+2017-05-10T03:14:11+0000 [CowrieTelnetTransport,54519,119.112.87.176] login attempt [root/xc3511] succeeded
+2017-05-10T03:14:12+0000 [CowrieTelnetTransport,54519,119.112.87.176] Opening TTY Log: log/tty/20170510-031412-None-54519i.log
+2017-05-10T03:14:12+0000 [CowrieTelnetTransport,54519,119.112.87.176] Warning: state changed and new state returned
+2017-05-10T03:14:13+0000 [CowrieTelnetTransport,54519,119.112.87.176] Received unhandled keyID: '\x00'
+2017-05-10T03:14:13+0000 [CowrieTelnetTransport,54519,119.112.87.176] CMD: enable
+2017-05-10T03:14:13+0000 [CowrieTelnetTransport,54519,119.112.87.176] Command found: enable 
+2017-05-10T03:14:13+0000 [CowrieTelnetTransport,54519,119.112.87.176] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-10T03:14:13+0000 [CowrieTelnetTransport,54519,119.112.87.176] Received unhandled keyID: '\x00'
+2017-05-10T03:14:14+0000 [CowrieTelnetTransport,54519,119.112.87.176] CMD: system
+2017-05-10T03:14:14+0000 [CowrieTelnetTransport,54519,119.112.87.176] Command not found: system
+2017-05-10T03:14:14+0000 [CowrieTelnetTransport,54519,119.112.87.176] Received unhandled keyID: '\x00'
+2017-05-10T03:14:14+0000 [CowrieTelnetTransport,54519,119.112.87.176] CMD: shell
+2017-05-10T03:14:14+0000 [CowrieTelnetTransport,54519,119.112.87.176] Command not found: shell
+2017-05-10T03:14:14+0000 [CowrieTelnetTransport,54519,119.112.87.176] Received unhandled keyID: '\x00'
+2017-05-10T03:14:14+0000 [CowrieTelnetTransport,54519,119.112.87.176] CMD: sh
+2017-05-10T03:14:14+0000 [CowrieTelnetTransport,54519,119.112.87.176] Command found: sh 
+2017-05-10T03:14:15+0000 [CowrieTelnetTransport,54519,119.112.87.176] Received unhandled keyID: '\x00'
+2017-05-10T03:14:15+0000 [CowrieTelnetTransport,54519,119.112.87.176] CMD: /bin/busybox MIRAI
+2017-05-10T03:14:15+0000 [CowrieTelnetTransport,54519,119.112.87.176] Command found: /bin/busybox MIRAI
+2017-05-10T03:14:16+0000 [CowrieTelnetTransport,54519,119.112.87.176] Closing TTY Log: log/tty/20170510-031412-None-54519i.log after 3 seconds
+2017-05-10T03:14:16+0000 [CowrieTelnetTransport,54519,119.112.87.176] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-10T03:14:16+0000 [CowrieTelnetTransport,54519,119.112.87.176] Connection lost after 7 seconds
+2017-05-10T03:14:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:59275 (10.8.41.81:2222) [session: d445bb00]
+2017-05-10T03:14:24+0000 [HoneyPotSSHTransport,77769,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-10T03:14:24+0000 [HoneyPotSSHTransport,77769,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-10T03:14:24+0000 [HoneyPotSSHTransport,77769,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-10T03:14:24+0000 [HoneyPotSSHTransport,77769,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-10T03:14:24+0000 [HoneyPotSSHTransport,77769,130.206.99.99] NEW KEYS
+2017-05-10T03:14:25+0000 [HoneyPotSSHTransport,77769,130.206.99.99] starting service 'ssh-userauth'
+2017-05-10T03:14:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77769,130.206.99.99] 'demo' trying auth 'password'
+2017-05-10T03:14:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77769,130.206.99.99] login attempt: 8252
+2017-05-10T03:14:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77769,130.206.99.99] login return, expect: [aa/123456]
+2017-05-10T03:14:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,77769,130.206.99.99] login attempt [demo/abcd1234] failed
+2017-05-10T03:14:27+0000 [-] 'demo' failed auth 'password'
+2017-05-10T03:14:27+0000 [-] unauthorized login: 
+2017-05-10T03:14:27+0000 [HoneyPotSSHTransport,77769,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-10T03:14:27+0000 [HoneyPotSSHTransport,77769,130.206.99.99] connection lost
+2017-05-10T03:14:27+0000 [HoneyPotSSHTransport,77769,130.206.99.99] Connection lost after 3 seconds
