@@ -845,3 +845,62 @@
 2017-05-11T03:23:45+0000 [SSHChannel None (20) on SSHService 'ssh-connection' on HoneyPotSSHTransport,82441,91.195.103.216] remote eof
 2017-05-11T03:23:45+0000 [SSHChannel None (20) on SSHService 'ssh-connection' on HoneyPotSSHTransport,82441,91.195.103.216] remote close
 2017-05-11T03:23:45+0000 [SSHChannel None (20) on SSHService 'ssh-connection' on HoneyPotSSHTransport,82441,91.195.103.216] sending close 20
+2017-05-11T03:24:02+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:30641 (10.8.41.81:2222) [session: 67bcddbf]
+2017-05-11T03:24:02+0000 [HoneyPotSSHTransport,82587,113.195.145.21] Remote SSH version: SSH-2.0-PUTTY
+2017-05-11T03:24:02+0000 [HoneyPotSSHTransport,82587,113.195.145.21] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-11T03:24:02+0000 [HoneyPotSSHTransport,82587,113.195.145.21] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-11T03:24:02+0000 [HoneyPotSSHTransport,82587,113.195.145.21] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-11T03:24:03+0000 [HoneyPotSSHTransport,82587,113.195.145.21] NEW KEYS
+2017-05-11T03:24:03+0000 [HoneyPotSSHTransport,82587,113.195.145.21] starting service 'ssh-userauth'
+2017-05-11T03:24:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82587,113.195.145.21] 'root' trying auth 'none'
+2017-05-11T03:24:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82587,113.195.145.21] 'root' authenticated with 'none'
+2017-05-11T03:24:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82587,113.195.145.21] starting service 'ssh-connection'
+2017-05-11T03:24:05+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:46540 (10.8.41.81:2222) [session: ed0f5255]
+2017-05-11T03:24:05+0000 [HoneyPotSSHTransport,82588,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-11T03:24:05+0000 [HoneyPotSSHTransport,82588,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-11T03:24:05+0000 [HoneyPotSSHTransport,82588,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T03:24:05+0000 [HoneyPotSSHTransport,82588,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T03:24:05+0000 [HoneyPotSSHTransport,82588,130.206.99.99] NEW KEYS
+2017-05-11T03:24:06+0000 [HoneyPotSSHTransport,82588,130.206.99.99] starting service 'ssh-userauth'
+2017-05-11T03:24:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82588,130.206.99.99] 'nagios' trying auth 'password'
+2017-05-11T03:24:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82588,130.206.99.99] login attempt: 10339
+2017-05-11T03:24:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82588,130.206.99.99] login return, expect: [aa/123456]
+2017-05-11T03:24:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82588,130.206.99.99] login attempt [nagios/test] failed
+2017-05-11T03:24:07+0000 [HoneyPotSSHTransport,82587,113.195.145.21] Got remote error, code 11
+	reason: 
+2017-05-11T03:24:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,82441,91.195.103.216] got channel 'direct-tcpip' request
+2017-05-11T03:24:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,82441,91.195.103.216] direct-tcp connection request to 23.23.154.116:80 from localhost:5556
+2017-05-11T03:24:07+0000 [HoneyPotSSHTransport,82587,113.195.145.21] avatar root logging out
+2017-05-11T03:24:07+0000 [HoneyPotSSHTransport,82587,113.195.145.21] connection lost
+2017-05-11T03:24:07+0000 [HoneyPotSSHTransport,82587,113.195.145.21] Connection lost after 4 seconds
+2017-05-11T03:24:07+0000 [SSHChannel None (21) on SSHService 'ssh-connection' on HoneyPotSSHTransport,82441,91.195.103.216] direct-tcp forward to 23.23.154.116:80 with data 'GET / HTTP/1.0\r\nHost: api.ipify.org\r\n\r\n'
+2017-05-11T03:24:07+0000 [SSHChannel None (21) on SSHService 'ssh-connection' on HoneyPotSSHTransport,82441,91.195.103.216] failed to connect: Connection refused
+2017-05-11T03:24:07+0000 [SSHChannel None (21) on SSHService 'ssh-connection' on HoneyPotSSHTransport,82441,91.195.103.216] sending close 21
+2017-05-11T03:24:08+0000 [-] 'nagios' failed auth 'password'
+2017-05-11T03:24:08+0000 [-] unauthorized login: 
+2017-05-11T03:24:08+0000 [HoneyPotSSHTransport,82588,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-11T03:24:08+0000 [HoneyPotSSHTransport,82588,130.206.99.99] connection lost
+2017-05-11T03:24:08+0000 [HoneyPotSSHTransport,82588,130.206.99.99] Connection lost after 2 seconds
+2017-05-11T03:24:28+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:45136 (10.8.41.81:2222) [session: ed3a199f]
+2017-05-11T03:24:33+0000 [HoneyPotSSHTransport,82589,113.195.145.21] Got remote error, code 11
+	reason: 
+2017-05-11T03:24:33+0000 [HoneyPotSSHTransport,82589,113.195.145.21] connection lost
+2017-05-11T03:24:33+0000 [HoneyPotSSHTransport,82589,113.195.145.21] Connection lost after 5 seconds
+2017-05-11T03:24:43+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:56264 (10.8.41.81:2222) [session: cdc5df1d]
+2017-05-11T03:24:43+0000 [HoneyPotSSHTransport,82590,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-11T03:24:43+0000 [HoneyPotSSHTransport,82590,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-11T03:24:43+0000 [HoneyPotSSHTransport,82590,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T03:24:43+0000 [HoneyPotSSHTransport,82590,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T03:24:43+0000 [HoneyPotSSHTransport,82590,130.206.99.99] NEW KEYS
+2017-05-11T03:24:43+0000 [HoneyPotSSHTransport,82590,130.206.99.99] starting service 'ssh-userauth'
+2017-05-11T03:24:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82590,130.206.99.99] 'nagios' trying auth 'password'
+2017-05-11T03:24:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82590,130.206.99.99] login attempt: 10340
+2017-05-11T03:24:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82590,130.206.99.99] login return, expect: [aa/123456]
+2017-05-11T03:24:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82590,130.206.99.99] login attempt [nagios/test123] failed
+2017-05-11T03:24:45+0000 [-] 'nagios' failed auth 'password'
+2017-05-11T03:24:45+0000 [-] unauthorized login: 
+2017-05-11T03:24:46+0000 [HoneyPotSSHTransport,82590,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-11T03:24:46+0000 [HoneyPotSSHTransport,82590,130.206.99.99] connection lost
+2017-05-11T03:24:46+0000 [HoneyPotSSHTransport,82590,130.206.99.99] Connection lost after 2 seconds
