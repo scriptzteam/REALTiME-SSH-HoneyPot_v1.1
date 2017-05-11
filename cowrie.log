@@ -151,3 +151,93 @@
 2017-05-11T01:13:56+0000 [HoneyPotSSHTransport,82093,113.195.145.21] avatar root logging out
 2017-05-11T01:13:56+0000 [HoneyPotSSHTransport,82093,113.195.145.21] connection lost
 2017-05-11T01:13:56+0000 [HoneyPotSSHTransport,82093,113.195.145.21] Connection lost after 3 seconds
+2017-05-11T01:14:02+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 118.46.52.115:4215 (10.8.41.81:2223) [session: TT56831]
+2017-05-11T01:14:02+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:36083 (10.8.41.81:2222) [session: d463cbe9]
+2017-05-11T01:14:02+0000 [HoneyPotSSHTransport,82094,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-11T01:14:02+0000 [HoneyPotSSHTransport,82094,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-11T01:14:02+0000 [HoneyPotSSHTransport,82094,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T01:14:02+0000 [HoneyPotSSHTransport,82094,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T01:14:03+0000 [HoneyPotSSHTransport,82094,130.206.99.99] NEW KEYS
+2017-05-11T01:14:04+0000 [CowrieTelnetTransport,56831,118.46.52.115] first time for 118.46.52.115, need: 1
+2017-05-11T01:14:04+0000 [CowrieTelnetTransport,56831,118.46.52.115] login attempt: 1
+2017-05-11T01:14:04+0000 [CowrieTelnetTransport,56831,118.46.52.115] login attempt [root/root54321] succeeded
+2017-05-11T01:14:06+0000 [CowrieTelnetTransport,56831,118.46.52.115] Opening TTY Log: log/tty/20170511-011406-None-56831i.log
+2017-05-11T01:14:06+0000 [CowrieTelnetTransport,56831,118.46.52.115] Warning: state changed and new state returned
+2017-05-11T01:14:06+0000 [HoneyPotSSHTransport,82094,130.206.99.99] starting service 'ssh-userauth'
+2017-05-11T01:14:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82094,130.206.99.99] 'mia' trying auth 'password'
+2017-05-11T01:14:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82094,130.206.99.99] login attempt: 10150
+2017-05-11T01:14:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82094,130.206.99.99] login return, expect: [aa/123456]
+2017-05-11T01:14:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82094,130.206.99.99] login attempt [mia/mia123456789] failed
+2017-05-11T01:14:07+0000 [CowrieTelnetTransport,56831,118.46.52.115] CMD: enable
+2017-05-11T01:14:07+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: enable 
+2017-05-11T01:14:07+0000 [CowrieTelnetTransport,56831,118.46.52.115] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-11T01:14:07+0000 [CowrieTelnetTransport,56831,118.46.52.115] CMD: system
+2017-05-11T01:14:07+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command not found: system
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] CMD: shell
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command not found: shell
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] CMD: sh
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: sh 
+2017-05-11T01:14:08+0000 [-] 'mia' failed auth 'password'
+2017-05-11T01:14:08+0000 [-] unauthorized login: 
+2017-05-11T01:14:08+0000 [HoneyPotSSHTransport,82094,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-11T01:14:08+0000 [HoneyPotSSHTransport,82094,130.206.99.99] connection lost
+2017-05-11T01:14:08+0000 [HoneyPotSSHTransport,82094,130.206.99.99] Connection lost after 5 seconds
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: /bin/busybox wget
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: wget
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: /bin/busybox 81c46036wget
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: echo -ne '\x0181c46036\x7f'
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: /bin/busybox printf '\00281c46036\177'
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: /bin/busybox tftp
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: tftp
+2017-05-11T01:14:08+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: /bin/busybox 81c46036tftp
+2017-05-11T01:14:09+0000 [CowrieTelnetTransport,56831,118.46.52.115] CMD:  /bin/busybox dd if=/bin/busybox bs=22 count=1 || /bin/busybox cat /bin/busybox
+2017-05-11T01:14:09+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
+2017-05-11T01:14:09+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: /bin/busybox cat /bin/busybox
+2017-05-11T01:14:09+0000 [CowrieTelnetTransport,56831,118.46.52.115] Command found: cat /bin/busybox
+2017-05-11T01:14:17+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:62969 (10.8.41.81:2222) [session: 6b16bddb]
+2017-05-11T01:14:22+0000 [HoneyPotSSHTransport,82095,113.195.145.21] Got remote error, code 11
+	reason: 
+2017-05-11T01:14:22+0000 [HoneyPotSSHTransport,82095,113.195.145.21] connection lost
+2017-05-11T01:14:22+0000 [HoneyPotSSHTransport,82095,113.195.145.21] Connection lost after 4 seconds
+2017-05-11T01:14:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,81677,91.195.103.199] got channel 'direct-tcpip' request
+2017-05-11T01:14:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,81677,91.195.103.199] direct-tcp connection request to 93.115.29.122:80 from localhost:5556
+2017-05-11T01:14:23+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,81677,91.195.103.199] direct-tcp forward to 93.115.29.122:80 with data 'GET /internals/api/ip?1494465226409029894 HTTP/1.1\r\nHost: ip3.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-05-11T01:14:23+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,81677,91.195.103.199] failed to connect: Connection refused
+2017-05-11T01:14:23+0000 [SSHChannel None (22) on SSHService 'ssh-connection' on HoneyPotSSHTransport,81677,91.195.103.199] sending close 22
+2017-05-11T01:14:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:42319 (10.8.41.81:2222) [session: b360b358]
+2017-05-11T01:14:46+0000 [HoneyPotSSHTransport,82096,113.195.145.21] Remote SSH version: SSH-2.0-PUTTY
+2017-05-11T01:14:46+0000 [HoneyPotSSHTransport,82096,113.195.145.21] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-11T01:14:46+0000 [HoneyPotSSHTransport,82096,113.195.145.21] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-11T01:14:46+0000 [HoneyPotSSHTransport,82096,113.195.145.21] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-11T01:14:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:45790 (10.8.41.81:2222) [session: 49d39643]
+2017-05-11T01:14:47+0000 [HoneyPotSSHTransport,82097,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-11T01:14:47+0000 [HoneyPotSSHTransport,82097,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-11T01:14:47+0000 [HoneyPotSSHTransport,82097,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T01:14:47+0000 [HoneyPotSSHTransport,82097,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T01:14:47+0000 [HoneyPotSSHTransport,82096,113.195.145.21] NEW KEYS
+2017-05-11T01:14:48+0000 [HoneyPotSSHTransport,82096,113.195.145.21] starting service 'ssh-userauth'
+2017-05-11T01:14:48+0000 [HoneyPotSSHTransport,82097,130.206.99.99] NEW KEYS
+2017-05-11T01:14:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82096,113.195.145.21] 'root' trying auth 'none'
+2017-05-11T01:14:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82096,113.195.145.21] 'root' authenticated with 'none'
+2017-05-11T01:14:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82096,113.195.145.21] starting service 'ssh-connection'
+2017-05-11T01:14:50+0000 [HoneyPotSSHTransport,82097,130.206.99.99] starting service 'ssh-userauth'
+2017-05-11T01:14:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82097,130.206.99.99] 'michael' trying auth 'password'
+2017-05-11T01:14:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82097,130.206.99.99] login attempt: 10151
+2017-05-11T01:14:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82097,130.206.99.99] login return, expect: [aa/123456]
+2017-05-11T01:14:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,82097,130.206.99.99] login attempt [michael/1] failed
+2017-05-11T01:14:51+0000 [HoneyPotSSHTransport,82096,113.195.145.21] Got remote error, code 11
+	reason: 
+2017-05-11T01:14:51+0000 [HoneyPotSSHTransport,82096,113.195.145.21] avatar root logging out
+2017-05-11T01:14:51+0000 [HoneyPotSSHTransport,82096,113.195.145.21] connection lost
+2017-05-11T01:14:51+0000 [HoneyPotSSHTransport,82096,113.195.145.21] Connection lost after 4 seconds
+2017-05-11T01:14:52+0000 [-] 'michael' failed auth 'password'
+2017-05-11T01:14:52+0000 [-] unauthorized login: 
+2017-05-11T01:14:52+0000 [HoneyPotSSHTransport,82097,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-11T01:14:52+0000 [HoneyPotSSHTransport,82097,130.206.99.99] connection lost
+2017-05-11T01:14:52+0000 [HoneyPotSSHTransport,82097,130.206.99.99] Connection lost after 5 seconds
