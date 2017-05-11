@@ -8377,3 +8377,68 @@
 2017-05-11T05:18:00+0000 [HoneyPotSSHTransport,83025,38.84.132.236] NEW KEYS
 2017-05-11T05:18:00+0000 [HoneyPotSSHTransport,83025,38.84.132.236] starting service 'ssh-userauth'
 2017-05-11T05:18:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83025,38.84.132.236] 'koha' trying auth 'none'
+2017-05-11T05:18:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83025,38.84.132.236] 'koha' authenticated with 'none'
+2017-05-11T05:18:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83025,38.84.132.236] starting service 'ssh-connection'
+2017-05-11T05:18:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,83025,38.84.132.236] got global no-more-sessions@openssh.com request
+2017-05-11T05:18:08+0000 [CowrieTelnetTransport,57261,31.41.218.108] Connection lost after 40 seconds
+2017-05-11T05:18:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,83025,38.84.132.236] got channel 'direct-tcpip' request
+2017-05-11T05:18:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,83025,38.84.132.236] direct-tcp connection request to 34.199.64.190:80 from 127.0.0.1:50648
+2017-05-11T05:18:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83025,38.84.132.236] direct-tcp forward to 34.199.64.190:80 with data 'GET / HTTP/1.1\r\nUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36\r\nHost: www.alexa.com\r\nAccept: */*\r\n\r\n'
+2017-05-11T05:18:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83025,38.84.132.236] failed to connect: Connection refused
+2017-05-11T05:18:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83025,38.84.132.236] sending close 0
+2017-05-11T05:18:10+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83025,38.84.132.236] remote close
+2017-05-11T05:18:11+0000 [CowrieTelnetTransport,57262,31.41.218.108] Connection lost after 41 seconds
+2017-05-11T05:18:11+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 31.41.218.108:44233 (10.8.41.81:2223) [session: TT57263]
+2017-05-11T05:18:12+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:53426 (10.8.41.81:2222) [session: 9f16145b]
+2017-05-11T05:18:12+0000 [HoneyPotSSHTransport,83026,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-11T05:18:12+0000 [HoneyPotSSHTransport,83026,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-11T05:18:12+0000 [HoneyPotSSHTransport,83026,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T05:18:12+0000 [HoneyPotSSHTransport,83026,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T05:18:13+0000 [HoneyPotSSHTransport,83026,130.206.99.99] NEW KEYS
+2017-05-11T05:18:13+0000 [HoneyPotSSHTransport,83026,130.206.99.99] starting service 'ssh-userauth'
+2017-05-11T05:18:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83026,130.206.99.99] 'normi' trying auth 'password'
+2017-05-11T05:18:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83026,130.206.99.99] login attempt: 10515
+2017-05-11T05:18:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83026,130.206.99.99] login return, expect: [aa/123456]
+2017-05-11T05:18:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83026,130.206.99.99] login attempt [normi/normi] failed
+2017-05-11T05:18:15+0000 [CowrieTelnetTransport,57263,31.41.218.108] login attempt: 34390
+2017-05-11T05:18:15+0000 [CowrieTelnetTransport,57263,31.41.218.108] login return, expect: [Admin/atc456]
+2017-05-11T05:18:16+0000 [CowrieTelnetTransport,57263,31.41.218.108] login attempt [admin/meinsm] failed
+2017-05-11T05:18:16+0000 [CowrieTelnetTransport,57263,31.41.218.108] Warning: state changed and new state returned
+2017-05-11T05:18:16+0000 [-] 'normi' failed auth 'password'
+2017-05-11T05:18:16+0000 [-] unauthorized login: 
+2017-05-11T05:18:16+0000 [HoneyPotSSHTransport,83026,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-11T05:18:16+0000 [HoneyPotSSHTransport,83026,130.206.99.99] connection lost
+2017-05-11T05:18:16+0000 [HoneyPotSSHTransport,83026,130.206.99.99] Connection lost after 3 seconds
+2017-05-11T05:18:16+0000 [CowrieTelnetTransport,57263,31.41.218.108] login attempt: 34391
+2017-05-11T05:18:16+0000 [CowrieTelnetTransport,57263,31.41.218.108] login return, expect: [Admin/atc456]
+2017-05-11T05:18:17+0000 [CowrieTelnetTransport,57263,31.41.218.108] login attempt [enable/shell] failed
+2017-05-11T05:18:17+0000 [CowrieTelnetTransport,57263,31.41.218.108] Warning: state changed and new state returned
+2017-05-11T05:18:17+0000 [CowrieTelnetTransport,57263,31.41.218.108] login attempt: 34392
+2017-05-11T05:18:17+0000 [CowrieTelnetTransport,57263,31.41.218.108] login return, expect: [Admin/atc456]
+2017-05-11T05:18:18+0000 [CowrieTelnetTransport,57263,31.41.218.108] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-11T05:18:18+0000 [CowrieTelnetTransport,57263,31.41.218.108] Warning: state changed and new state returned
+2017-05-11T05:18:20+0000 [HoneyPotSSHTransport,83025,38.84.132.236] Got remote error, code 11
+	reason: disconnected by user
+2017-05-11T05:18:20+0000 [HoneyPotSSHTransport,83025,38.84.132.236] avatar koha logging out
+2017-05-11T05:18:20+0000 [HoneyPotSSHTransport,83025,38.84.132.236] connection lost
+2017-05-11T05:18:20+0000 [HoneyPotSSHTransport,83025,38.84.132.236] Connection lost after 19 seconds
+2017-05-11T05:18:47+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:34899 (10.8.41.81:2222) [session: 55cb1f9d]
+2017-05-11T05:18:47+0000 [HoneyPotSSHTransport,83027,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-11T05:18:47+0000 [HoneyPotSSHTransport,83027,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-11T05:18:47+0000 [HoneyPotSSHTransport,83027,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T05:18:47+0000 [HoneyPotSSHTransport,83027,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T05:18:48+0000 [HoneyPotSSHTransport,83027,130.206.99.99] NEW KEYS
+2017-05-11T05:18:48+0000 [HoneyPotSSHTransport,83027,130.206.99.99] starting service 'ssh-userauth'
+2017-05-11T05:18:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83027,130.206.99.99] 'normi' trying auth 'password'
+2017-05-11T05:18:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83027,130.206.99.99] login attempt: 10516
+2017-05-11T05:18:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83027,130.206.99.99] login return, expect: [aa/123456]
+2017-05-11T05:18:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83027,130.206.99.99] login attempt [normi/normi1] failed
+2017-05-11T05:18:49+0000 [CowrieTelnetTransport,57263,31.41.218.108] Connection lost after 38 seconds
+2017-05-11T05:18:50+0000 [-] 'normi' failed auth 'password'
+2017-05-11T05:18:50+0000 [-] unauthorized login: 
+2017-05-11T05:18:50+0000 [HoneyPotSSHTransport,83027,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-11T05:18:50+0000 [HoneyPotSSHTransport,83027,130.206.99.99] connection lost
+2017-05-11T05:18:50+0000 [HoneyPotSSHTransport,83027,130.206.99.99] Connection lost after 2 seconds
+2017-05-11T05:19:01+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 37.115.76.234:60538 (10.8.41.81:2223) [session: TT57264]
