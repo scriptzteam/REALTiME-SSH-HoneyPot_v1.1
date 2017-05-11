@@ -7412,3 +7412,72 @@
 2017-05-11T13:17:00+0000 [-] 'root' failed auth 'password'
 2017-05-11T13:17:00+0000 [-] unauthorized login: 
 2017-05-11T13:17:01+0000 [HoneyPotSSHTransport,85409,107.173.54.145] NEW KEYS
+2017-05-11T13:17:02+0000 [HoneyPotSSHTransport,85409,107.173.54.145] starting service 'ssh-userauth'
+2017-05-11T13:17:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85403,116.54.222.195] 'root' trying auth 'password'
+2017-05-11T13:17:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85403,116.54.222.195] login attempt: 22
+2017-05-11T13:17:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85403,116.54.222.195] login return, expect: [admin/admin]
+2017-05-11T13:17:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85403,116.54.222.195] login attempt [root/ubnt] failed
+2017-05-11T13:17:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85409,107.173.54.145] 'admin' trying auth 'password'
+2017-05-11T13:17:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85409,107.173.54.145] login attempt: 10
+2017-05-11T13:17:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85409,107.173.54.145] login return, expect: [admin/1111]
+2017-05-11T13:17:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85409,107.173.54.145] login attempt [admin/1111] succeeded
+2017-05-11T13:17:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85409,107.173.54.145] 'admin' authenticated with 'password'
+2017-05-11T13:17:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85409,107.173.54.145] starting service 'ssh-connection'
+2017-05-11T13:17:05+0000 [-] 'root' failed auth 'password'
+2017-05-11T13:17:05+0000 [-] unauthorized login: 
+2017-05-11T13:17:05+0000 [-] Disconnecting with error, code 14
+	reason: too many bad auths
+2017-05-11T13:17:05+0000 [HoneyPotSSHTransport,85403,116.54.222.195] connection lost
+2017-05-11T13:17:05+0000 [HoneyPotSSHTransport,85403,116.54.222.195] Connection lost after 102 seconds
+2017-05-11T13:17:06+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] got channel 'session' request
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] channel open
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] executing command "/sbin/ifconfig"
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] Opening TTY Log: log/tty/20170511-131706-5fc87e9e-0e.log
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] CMD: /sbin/ifconfig
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] Command found: /sbin/ifconfig 
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] exitCode: 0
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] sending request 'exit-status'
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] sending close 0
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] received eof, sending ctrl-d to command
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] Received CTRL-D, exiting..
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] exitCode: 0
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] Closing TTY Log: log/tty/20170511-131706-5fc87e9e-0e.log after 0 seconds
+2017-05-11T13:17:06+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,85409,107.173.54.145] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-11T13:17:06+0000 [HoneyPotSSHTransport,85409,107.173.54.145] avatar admin logging out
+2017-05-11T13:17:06+0000 [HoneyPotSSHTransport,85409,107.173.54.145] connection lost
+2017-05-11T13:17:06+0000 [HoneyPotSSHTransport,85409,107.173.54.145] Connection lost after 6 seconds
+2017-05-11T13:17:10+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:36806 (10.8.41.81:2222) [session: 91def9e7]
+2017-05-11T13:17:10+0000 [HoneyPotSSHTransport,85410,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-11T13:17:10+0000 [HoneyPotSSHTransport,85410,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-11T13:17:10+0000 [HoneyPotSSHTransport,85410,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T13:17:10+0000 [HoneyPotSSHTransport,85410,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T13:17:10+0000 [HoneyPotSSHTransport,85410,130.206.99.99] NEW KEYS
+2017-05-11T13:17:11+0000 [HoneyPotSSHTransport,85410,130.206.99.99] starting service 'ssh-userauth'
+2017-05-11T13:17:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85410,130.206.99.99] 'root' trying auth 'password'
+2017-05-11T13:17:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85410,130.206.99.99] login attempt: 11240
+2017-05-11T13:17:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85410,130.206.99.99] login return, expect: [aa/123456]
+2017-05-11T13:17:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85410,130.206.99.99] login attempt [root/!@#123] failed
+2017-05-11T13:17:13+0000 [-] 'root' failed auth 'password'
+2017-05-11T13:17:13+0000 [-] unauthorized login: 
+2017-05-11T13:17:13+0000 [HoneyPotSSHTransport,85410,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-11T13:17:13+0000 [HoneyPotSSHTransport,85410,130.206.99.99] connection lost
+2017-05-11T13:17:13+0000 [HoneyPotSSHTransport,85410,130.206.99.99] Connection lost after 2 seconds
+2017-05-11T13:17:52+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:46513 (10.8.41.81:2222) [session: 2a7941fd]
+2017-05-11T13:17:52+0000 [HoneyPotSSHTransport,85411,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-11T13:17:52+0000 [HoneyPotSSHTransport,85411,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-11T13:17:52+0000 [HoneyPotSSHTransport,85411,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T13:17:52+0000 [HoneyPotSSHTransport,85411,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T13:17:54+0000 [HoneyPotSSHTransport,85411,130.206.99.99] NEW KEYS
+2017-05-11T13:17:54+0000 [HoneyPotSSHTransport,85411,130.206.99.99] starting service 'ssh-userauth'
+2017-05-11T13:17:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85411,130.206.99.99] 'root' trying auth 'password'
+2017-05-11T13:17:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85411,130.206.99.99] login attempt: 11241
+2017-05-11T13:17:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85411,130.206.99.99] login return, expect: [aa/123456]
+2017-05-11T13:17:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,85411,130.206.99.99] login attempt [root/1!2@3#] failed
+2017-05-11T13:17:57+0000 [-] 'root' failed auth 'password'
+2017-05-11T13:17:57+0000 [-] unauthorized login: 
+2017-05-11T13:17:57+0000 [HoneyPotSSHTransport,85411,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-11T13:17:57+0000 [HoneyPotSSHTransport,85411,130.206.99.99] connection lost
+2017-05-11T13:17:57+0000 [HoneyPotSSHTransport,85411,130.206.99.99] Connection lost after 5 seconds
