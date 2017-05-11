@@ -255,3 +255,86 @@
 2017-05-11T06:17:57+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83259,91.195.103.194] direct-tcp forward to 23.61.211.183:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80i\x85i>\x9c\xb2\xd8\xae\x0cq\xc2\xc3\x8e\xc5F\x8b\xf6\xb0\x89D\xe2q\x17N\x9bFx\xd7\xb9Z\xe1\xc0'
 2017-05-11T06:17:57+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83259,91.195.103.194] failed to connect: Connection refused
 2017-05-11T06:17:57+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83259,91.195.103.194] sending close 2
+2017-05-11T06:18:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,83276,91.195.103.217] got channel 'direct-tcpip' request
+2017-05-11T06:18:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,83276,91.195.103.217] direct-tcp connection request to 185.19.218.137:80 from localhost:5556
+2017-05-11T06:18:01+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83276,91.195.103.217] direct-tcp forward to 185.19.218.137:80 with data 'GET /get-ip.php HTTP/1.1\r\nHost: 185.19.218.137\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\nAccept: */*\r\nAccept-Encoding: deflate, gzip\r\n\r\n'
+2017-05-11T06:18:01+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83276,91.195.103.217] failed to connect: Connection refused
+2017-05-11T06:18:01+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83276,91.195.103.217] sending close 0
+2017-05-11T06:18:11+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:63077 (10.8.41.81:2222) [session: 71e2b1cc]
+2017-05-11T06:18:11+0000 [HoneyPotSSHTransport,83294,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-05-11T06:18:11+0000 [HoneyPotSSHTransport,83294,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-11T06:18:11+0000 [HoneyPotSSHTransport,83294,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-11T06:18:11+0000 [HoneyPotSSHTransport,83294,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-11T06:18:12+0000 [HoneyPotSSHTransport,83294,113.195.145.52] NEW KEYS
+2017-05-11T06:18:12+0000 [HoneyPotSSHTransport,83294,113.195.145.52] starting service 'ssh-userauth'
+2017-05-11T06:18:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83294,113.195.145.52] 'root' trying auth 'none'
+2017-05-11T06:18:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83294,113.195.145.52] 'root' authenticated with 'none'
+2017-05-11T06:18:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83294,113.195.145.52] starting service 'ssh-connection'
+2017-05-11T06:18:15+0000 [HoneyPotSSHTransport,83294,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-05-11T06:18:15+0000 [HoneyPotSSHTransport,83294,113.195.145.52] avatar root logging out
+2017-05-11T06:18:15+0000 [HoneyPotSSHTransport,83294,113.195.145.52] connection lost
+2017-05-11T06:18:15+0000 [HoneyPotSSHTransport,83294,113.195.145.52] Connection lost after 4 seconds
+2017-05-11T06:18:20+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:34370 (10.8.41.81:2222) [session: c51c80c8]
+2017-05-11T06:18:20+0000 [HoneyPotSSHTransport,83295,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-11T06:18:20+0000 [HoneyPotSSHTransport,83295,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-11T06:18:20+0000 [HoneyPotSSHTransport,83295,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T06:18:20+0000 [HoneyPotSSHTransport,83295,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T06:18:21+0000 [HoneyPotSSHTransport,83295,130.206.99.99] NEW KEYS
+2017-05-11T06:18:21+0000 [HoneyPotSSHTransport,83295,130.206.99.99] starting service 'ssh-userauth'
+2017-05-11T06:18:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83295,130.206.99.99] 'oracle' trying auth 'password'
+2017-05-11T06:18:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83295,130.206.99.99] login attempt: 10607
+2017-05-11T06:18:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83295,130.206.99.99] login return, expect: [aa/123456]
+2017-05-11T06:18:22+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83295,130.206.99.99] login attempt [oracle/12] failed
+2017-05-11T06:18:23+0000 [-] 'oracle' failed auth 'password'
+2017-05-11T06:18:23+0000 [-] unauthorized login: 
+2017-05-11T06:18:23+0000 [HoneyPotSSHTransport,83295,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-11T06:18:23+0000 [HoneyPotSSHTransport,83295,130.206.99.99] connection lost
+2017-05-11T06:18:23+0000 [HoneyPotSSHTransport,83295,130.206.99.99] Connection lost after 3 seconds
+2017-05-11T06:18:36+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:35562 (10.8.41.81:2222) [session: d07b5501]
+2017-05-11T06:18:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 123.207.230.210:51635 (10.8.41.81:2223) [session: TT57350]
+2017-05-11T06:18:37+0000 [HoneyPotSSHTransport,83296,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-05-11T06:18:37+0000 [HoneyPotSSHTransport,83296,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-11T06:18:37+0000 [HoneyPotSSHTransport,83296,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-11T06:18:37+0000 [HoneyPotSSHTransport,83296,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-11T06:18:37+0000 [CowrieTelnetTransport,57350,123.207.230.210] Connection lost after 0 seconds
+2017-05-11T06:18:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 123.207.230.210:51906 (10.8.41.81:2223) [session: TT57351]
+2017-05-11T06:18:38+0000 [HoneyPotSSHTransport,83296,113.195.145.52] NEW KEYS
+2017-05-11T06:18:38+0000 [HoneyPotSSHTransport,83296,113.195.145.52] starting service 'ssh-userauth'
+2017-05-11T06:18:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83296,113.195.145.52] 'root' trying auth 'none'
+2017-05-11T06:18:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83296,113.195.145.52] 'root' authenticated with 'none'
+2017-05-11T06:18:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83296,113.195.145.52] starting service 'ssh-connection'
+2017-05-11T06:18:41+0000 [HoneyPotSSHTransport,83296,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-05-11T06:18:41+0000 [HoneyPotSSHTransport,83296,113.195.145.52] avatar root logging out
+2017-05-11T06:18:41+0000 [HoneyPotSSHTransport,83296,113.195.145.52] connection lost
+2017-05-11T06:18:41+0000 [HoneyPotSSHTransport,83296,113.195.145.52] Connection lost after 4 seconds
+2017-05-11T06:18:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,83259,91.195.103.194] got channel 'direct-tcpip' request
+2017-05-11T06:18:49+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,83259,91.195.103.194] direct-tcp connection request to 23.61.211.183:443 from localhost:5556
+2017-05-11T06:18:49+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83259,91.195.103.194] direct-tcp forward to 23.61.211.183:443 with data "\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80|8B\x1e_\xe5\xdf\xcaE\x98\x12cj\x0e[\xe8\xdb\x18_#\xb9\xfbq\xb1\xd9w( \xdc'k\x91"
+2017-05-11T06:18:49+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83259,91.195.103.194] failed to connect: Connection refused
+2017-05-11T06:18:49+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,83259,91.195.103.194] sending close 3
+2017-05-11T06:18:51+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:45559 (10.8.41.81:2222) [session: ccd3e1c8]
+2017-05-11T06:18:51+0000 [HoneyPotSSHTransport,83297,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-05-11T06:18:51+0000 [HoneyPotSSHTransport,83297,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-11T06:18:51+0000 [HoneyPotSSHTransport,83297,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-11T06:18:51+0000 [HoneyPotSSHTransport,83297,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-11T06:18:52+0000 [HoneyPotSSHTransport,83297,113.195.145.52] NEW KEYS
+2017-05-11T06:18:53+0000 [HoneyPotSSHTransport,83297,113.195.145.52] starting service 'ssh-userauth'
+2017-05-11T06:18:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83297,113.195.145.52] 'root' trying auth 'none'
+2017-05-11T06:18:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83297,113.195.145.52] 'root' authenticated with 'none'
+2017-05-11T06:18:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83297,113.195.145.52] starting service 'ssh-connection'
+2017-05-11T06:18:55+0000 [HoneyPotSSHTransport,83297,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-05-11T06:18:55+0000 [HoneyPotSSHTransport,83297,113.195.145.52] avatar root logging out
+2017-05-11T06:18:55+0000 [HoneyPotSSHTransport,83297,113.195.145.52] connection lost
+2017-05-11T06:18:55+0000 [HoneyPotSSHTransport,83297,113.195.145.52] Connection lost after 4 seconds
+2017-05-11T06:18:58+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:44081 (10.8.41.81:2222) [session: 445b5160]
+2017-05-11T06:18:58+0000 [HoneyPotSSHTransport,83298,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-11T06:18:58+0000 [HoneyPotSSHTransport,83298,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-11T06:18:58+0000 [HoneyPotSSHTransport,83298,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T06:18:58+0000 [HoneyPotSSHTransport,83298,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-11T06:18:59+0000 [HoneyPotSSHTransport,83298,130.206.99.99] NEW KEYS
+2017-05-11T06:18:59+0000 [HoneyPotSSHTransport,83298,130.206.99.99] starting service 'ssh-userauth'
+2017-05-11T06:18:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,83298,130.206.99.99] 'oracle' trying auth 'password'
