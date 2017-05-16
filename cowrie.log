@@ -5599,3 +5599,98 @@
 2017-05-16T19:49:01+0000 [HoneyPotSSHTransport,100316,113.195.145.52] avatar root logging out
 2017-05-16T19:49:01+0000 [HoneyPotSSHTransport,100316,113.195.145.52] connection lost
 2017-05-16T19:49:01+0000 [HoneyPotSSHTransport,100316,113.195.145.52] Connection lost after 5 seconds
+2017-05-16T19:49:09+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:57487 (10.8.41.81:2222) [session: 2de81f38]
+2017-05-16T19:49:10+0000 [HoneyPotSSHTransport,100317,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-05-16T19:49:10+0000 [HoneyPotSSHTransport,100317,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-16T19:49:10+0000 [HoneyPotSSHTransport,100317,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-16T19:49:10+0000 [HoneyPotSSHTransport,100317,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-16T19:49:14+0000 [HoneyPotSSHTransport,100317,113.195.145.52] NEW KEYS
+2017-05-16T19:49:15+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 87.10.44.107:48265 (10.8.41.81:2223) [session: TT86771]
+2017-05-16T19:49:15+0000 [HoneyPotSSHTransport,100317,113.195.145.52] starting service 'ssh-userauth'
+2017-05-16T19:49:15+0000 [CowrieTelnetTransport,86771,87.10.44.107] first time for 87.10.44.107, need: 1
+2017-05-16T19:49:15+0000 [CowrieTelnetTransport,86771,87.10.44.107] login attempt: 1
+2017-05-16T19:49:16+0000 [CowrieTelnetTransport,86771,87.10.44.107] login attempt [root/12345] succeeded
+2017-05-16T19:49:18+0000 [CowrieTelnetTransport,86771,87.10.44.107] Opening TTY Log: log/tty/20170516-194918-None-86771i.log
+2017-05-16T19:49:18+0000 [CowrieTelnetTransport,86771,87.10.44.107] Warning: state changed and new state returned
+2017-05-16T19:49:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,100317,113.195.145.52] 'root' trying auth 'none'
+2017-05-16T19:49:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,100317,113.195.145.52] 'root' authenticated with 'none'
+2017-05-16T19:49:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,100317,113.195.145.52] starting service 'ssh-connection'
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] CMD: enable
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command found: enable 
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] CMD: shell
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command not found: shell
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] CMD: sh
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command found: sh 
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] CMD: cat /proc/mounts; /bin/busybox IWGNQ
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command found: cat /proc/mounts
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command found: /bin/busybox IWGNQ
+2017-05-16T19:49:20+0000 [HoneyPotSSHTransport,100317,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-05-16T19:49:20+0000 [HoneyPotSSHTransport,100317,113.195.145.52] avatar root logging out
+2017-05-16T19:49:20+0000 [HoneyPotSSHTransport,100317,113.195.145.52] connection lost
+2017-05-16T19:49:20+0000 [HoneyPotSSHTransport,100317,113.195.145.52] Connection lost after 10 seconds
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox IWGNQ
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command found: cd /dev/shm
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command found: cat .s
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command found: cp /bin/echo .s
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command found: /bin/busybox IWGNQ
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] CMD: nc; wget; /bin/busybox IWGNQ
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command not found: nc
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command found: wget 
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command found: /bin/busybox IWGNQ
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command not found: dd bs=52 count=1 if=.s
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command found: cat /dev/shm/.s
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] CMD: /bin/busybox IWGNQ
+2017-05-16T19:49:20+0000 [CowrieTelnetTransport,86771,87.10.44.107] Command found: /bin/busybox IWGNQ
+2017-05-16T19:49:23+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:49209 (10.8.41.81:2222) [session: 1ed8439f]
+2017-05-16T19:49:23+0000 [HoneyPotSSHTransport,100318,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-05-16T19:49:23+0000 [HoneyPotSSHTransport,100318,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-16T19:49:23+0000 [HoneyPotSSHTransport,100318,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-16T19:49:23+0000 [HoneyPotSSHTransport,100318,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-16T19:49:24+0000 [HoneyPotSSHTransport,100318,113.195.145.52] NEW KEYS
+2017-05-16T19:49:24+0000 [HoneyPotSSHTransport,100318,113.195.145.52] starting service 'ssh-userauth'
+2017-05-16T19:49:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,100318,113.195.145.52] 'root' trying auth 'none'
+2017-05-16T19:49:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,100318,113.195.145.52] 'root' authenticated with 'none'
+2017-05-16T19:49:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,100318,113.195.145.52] starting service 'ssh-connection'
+2017-05-16T19:49:30+0000 [HoneyPotSSHTransport,100318,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-05-16T19:49:30+0000 [HoneyPotSSHTransport,100318,113.195.145.52] avatar root logging out
+2017-05-16T19:49:30+0000 [HoneyPotSSHTransport,100318,113.195.145.52] connection lost
+2017-05-16T19:49:30+0000 [HoneyPotSSHTransport,100318,113.195.145.52] Connection lost after 7 seconds
+2017-05-16T19:49:37+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:42683 (10.8.41.81:2222) [session: 4ba54776]
+2017-05-16T19:49:37+0000 [HoneyPotSSHTransport,100319,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-05-16T19:49:37+0000 [HoneyPotSSHTransport,100319,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-16T19:49:37+0000 [HoneyPotSSHTransport,100319,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-16T19:49:37+0000 [HoneyPotSSHTransport,100319,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-16T19:49:41+0000 [HoneyPotSSHTransport,100319,113.195.145.52] NEW KEYS
+2017-05-16T19:49:42+0000 [HoneyPotSSHTransport,100319,113.195.145.52] starting service 'ssh-userauth'
+2017-05-16T19:49:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,100319,113.195.145.52] 'root' trying auth 'none'
+2017-05-16T19:49:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,100319,113.195.145.52] 'root' authenticated with 'none'
+2017-05-16T19:49:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,100319,113.195.145.52] starting service 'ssh-connection'
+2017-05-16T19:49:45+0000 [HoneyPotSSHTransport,100319,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-05-16T19:49:45+0000 [HoneyPotSSHTransport,100319,113.195.145.52] avatar root logging out
+2017-05-16T19:49:45+0000 [HoneyPotSSHTransport,100319,113.195.145.52] connection lost
+2017-05-16T19:49:45+0000 [HoneyPotSSHTransport,100319,113.195.145.52] Connection lost after 7 seconds
+2017-05-16T19:49:51+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.52:45209 (10.8.41.81:2222) [session: a6c020b4]
+2017-05-16T19:49:51+0000 [HoneyPotSSHTransport,100320,113.195.145.52] Remote SSH version: SSH-2.0-PUTTY
+2017-05-16T19:49:51+0000 [HoneyPotSSHTransport,100320,113.195.145.52] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-16T19:49:51+0000 [HoneyPotSSHTransport,100320,113.195.145.52] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-16T19:49:51+0000 [HoneyPotSSHTransport,100320,113.195.145.52] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-16T19:49:56+0000 [HoneyPotSSHTransport,100320,113.195.145.52] NEW KEYS
+2017-05-16T19:49:56+0000 [HoneyPotSSHTransport,100320,113.195.145.52] starting service 'ssh-userauth'
+2017-05-16T19:49:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,100320,113.195.145.52] 'root' trying auth 'none'
+2017-05-16T19:49:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,100320,113.195.145.52] 'root' authenticated with 'none'
+2017-05-16T19:49:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,100320,113.195.145.52] starting service 'ssh-connection'
+2017-05-16T19:49:58+0000 [SSHChannel None (572) on SSHService 'ssh-connection' on HoneyPotSSHTransport,99618,91.195.103.184] direct-tcp forward to 216.32.180.10:25 with data 'QUIT\r\n'
+2017-05-16T19:49:58+0000 [SSHChannel None (572) on SSHService 'ssh-connection' on HoneyPotSSHTransport,99618,91.195.103.184] failed to connect: Connection refused
+2017-05-16T19:49:58+0000 [SSHChannel None (572) on SSHService 'ssh-connection' on HoneyPotSSHTransport,99618,91.195.103.184] sending close 572
+2017-05-16T19:49:58+0000 [SSHChannel None (572) on SSHService 'ssh-connection' on HoneyPotSSHTransport,99618,91.195.103.184] remote eof
+2017-05-16T19:49:58+0000 [SSHChannel None (572) on SSHService 'ssh-connection' on HoneyPotSSHTransport,99618,91.195.103.184] remote close
+2017-05-16T19:49:59+0000 [HoneyPotSSHTransport,100320,113.195.145.52] Got remote error, code 11
+	reason: 
+2017-05-16T19:49:59+0000 [HoneyPotSSHTransport,100320,113.195.145.52] avatar root logging out
+2017-05-16T19:49:59+0000 [HoneyPotSSHTransport,100320,113.195.145.52] connection lost
+2017-05-16T19:49:59+0000 [HoneyPotSSHTransport,100320,113.195.145.52] Connection lost after 7 seconds
