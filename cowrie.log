@@ -2398,3 +2398,109 @@
 2017-05-17T14:54:55+0000 [CowrieTelnetTransport,89178,45.116.112.149] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-05-17T14:54:55+0000 [CowrieTelnetTransport,89178,45.116.112.149] Connection lost after 126 seconds
+2017-05-17T14:55:01+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 177.238.152.162:42062 (10.8.41.81:2223) [session: TT89183]
+2017-05-17T14:55:02+0000 [CowrieTelnetTransport,89183,177.238.152.162] first time for 177.238.152.162, need: 1
+2017-05-17T14:55:02+0000 [CowrieTelnetTransport,89183,177.238.152.162] login attempt: 1
+2017-05-17T14:55:03+0000 [CowrieTelnetTransport,89183,177.238.152.162] login attempt [tech/tech] succeeded
+2017-05-17T14:55:05+0000 [CowrieTelnetTransport,89183,177.238.152.162] Opening TTY Log: log/tty/20170517-145505-None-89183i.log
+2017-05-17T14:55:05+0000 [CowrieTelnetTransport,89183,177.238.152.162] Warning: state changed and new state returned
+2017-05-17T14:55:05+0000 [CowrieTelnetTransport,89183,177.238.152.162] CMD: enable
+2017-05-17T14:55:05+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command found: enable 
+2017-05-17T14:55:05+0000 [CowrieTelnetTransport,89183,177.238.152.162] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-17T14:55:05+0000 [CowrieTelnetTransport,89183,177.238.152.162] CMD: shell
+2017-05-17T14:55:05+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command not found: shell
+2017-05-17T14:55:05+0000 [CowrieTelnetTransport,89183,177.238.152.162] CMD: sh
+2017-05-17T14:55:05+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command found: sh 
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] CMD: cat /proc/mounts; /bin/busybox CXQFU
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command found: cat /proc/mounts
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command found: /bin/busybox CXQFU
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox CXQFU
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command found: cd /dev/shm
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command found: cat .s
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command found: cp /bin/echo .s
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command found: /bin/busybox CXQFU
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] CMD: nc; wget; /bin/busybox CXQFU
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command not found: nc
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command found: wget 
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command found: /bin/busybox CXQFU
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command not found: dd bs=52 count=1 if=.s
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command found: cat /dev/shm/.s
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] CMD: /bin/busybox CXQFU
+2017-05-17T14:55:06+0000 [CowrieTelnetTransport,89183,177.238.152.162] Command found: /bin/busybox CXQFU
+2017-05-17T14:55:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103705,91.230.47.82] got channel 'direct-tcpip' request
+2017-05-17T14:55:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103705,91.230.47.82] direct-tcp connection request to 107.6.167.194:80 from localhost:5556
+2017-05-17T14:55:10+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103705,91.230.47.82] direct-tcp forward to 107.6.167.194:80 with data 'GET /internals/api/ip?1495032870782114739 HTTP/1.1\r\nHost: ip4.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-05-17T14:55:10+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103705,91.230.47.82] failed to connect: Connection refused
+2017-05-17T14:55:10+0000 [SSHChannel None (28) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103705,91.230.47.82] sending close 28
+2017-05-17T14:55:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 120.253.127.99:46678 (10.8.41.81:2223) [session: TT89184]
+2017-05-17T14:55:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 120.253.127.99:46681 (10.8.41.81:2223) [session: TT89185]
+2017-05-17T14:55:14+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 120.253.127.99:46679 (10.8.41.81:2223) [session: TT89186]
+2017-05-17T14:55:15+0000 [CowrieTelnetTransport,89184,120.253.127.99] first time for 120.253.127.99, need: 1
+2017-05-17T14:55:15+0000 [CowrieTelnetTransport,89184,120.253.127.99] login attempt: 1
+2017-05-17T14:55:16+0000 [CowrieTelnetTransport,89184,120.253.127.99] login attempt [root/dreambox] succeeded
+2017-05-17T14:55:18+0000 [CowrieTelnetTransport,89184,120.253.127.99] Opening TTY Log: log/tty/20170517-145518-None-89184i.log
+2017-05-17T14:55:18+0000 [CowrieTelnetTransport,89184,120.253.127.99] Warning: state changed and new state returned
+2017-05-17T14:55:18+0000 [CowrieTelnetTransport,89185,120.253.127.99] login attempt: 2
+2017-05-17T14:55:18+0000 [CowrieTelnetTransport,89185,120.253.127.99] login return, expect: [root/dreambox]
+2017-05-17T14:55:19+0000 [CowrieTelnetTransport,89185,120.253.127.99] login attempt [root/root] failed
+2017-05-17T14:55:19+0000 [CowrieTelnetTransport,89185,120.253.127.99] Warning: state changed and new state returned
+2017-05-17T14:55:19+0000 [CowrieTelnetTransport,89186,120.253.127.99] login attempt: 3
+2017-05-17T14:55:19+0000 [CowrieTelnetTransport,89186,120.253.127.99] login return, expect: [root/dreambox]
+2017-05-17T14:55:20+0000 [CowrieTelnetTransport,89186,120.253.127.99] login attempt [admin/12345] failed
+2017-05-17T14:55:20+0000 [CowrieTelnetTransport,89186,120.253.127.99] Warning: state changed and new state returned
+2017-05-17T14:55:20+0000 [CowrieTelnetTransport,89184,120.253.127.99] CMD: enable
+2017-05-17T14:55:20+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command found: enable 
+2017-05-17T14:55:20+0000 [CowrieTelnetTransport,89184,120.253.127.99] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-17T14:55:20+0000 [CowrieTelnetTransport,89184,120.253.127.99] CMD: shell
+2017-05-17T14:55:20+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command not found: shell
+2017-05-17T14:55:20+0000 [CowrieTelnetTransport,89184,120.253.127.99] CMD: sh
+2017-05-17T14:55:20+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command found: sh 
+2017-05-17T14:55:20+0000 [CowrieTelnetTransport,89184,120.253.127.99] CMD: cat /proc/mounts; /bin/busybox JRBRT
+2017-05-17T14:55:20+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command found: cat /proc/mounts
+2017-05-17T14:55:20+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command found: /bin/busybox JRBRT
+2017-05-17T14:55:21+0000 [CowrieTelnetTransport,89184,120.253.127.99] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox JRBRT
+2017-05-17T14:55:21+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command found: cd /dev/shm
+2017-05-17T14:55:21+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command found: cat .s
+2017-05-17T14:55:21+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command found: cp /bin/echo .s
+2017-05-17T14:55:21+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command found: /bin/busybox JRBRT
+2017-05-17T14:55:21+0000 [CowrieTelnetTransport,89184,120.253.127.99] CMD: nc; wget; /bin/busybox JRBRT
+2017-05-17T14:55:21+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command not found: nc
+2017-05-17T14:55:21+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command found: wget 
+2017-05-17T14:55:21+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command found: /bin/busybox JRBRT
+2017-05-17T14:55:21+0000 [CowrieTelnetTransport,89186,120.253.127.99] login attempt: 4
+2017-05-17T14:55:21+0000 [CowrieTelnetTransport,89186,120.253.127.99] login return, expect: [root/dreambox]
+2017-05-17T14:55:22+0000 [CowrieTelnetTransport,89186,120.253.127.99] login attempt [root/54321] failed
+2017-05-17T14:55:22+0000 [CowrieTelnetTransport,89186,120.253.127.99] Warning: state changed and new state returned
+2017-05-17T14:55:26+0000 [CowrieTelnetTransport,89185,120.253.127.99] login attempt: 5
+2017-05-17T14:55:26+0000 [CowrieTelnetTransport,89185,120.253.127.99] login return, expect: [root/dreambox]
+2017-05-17T14:55:27+0000 [CowrieTelnetTransport,89185,120.253.127.99] login attempt [enable\x00/system\x00] failed
+2017-05-17T14:55:27+0000 [CowrieTelnetTransport,89185,120.253.127.99] Warning: state changed and new state returned
+2017-05-17T14:55:27+0000 [CowrieTelnetTransport,89184,120.253.127.99] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-05-17T14:55:27+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command not found: dd bs=52 count=1 if=.s
+2017-05-17T14:55:27+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command found: cat /dev/shm/.s
+2017-05-17T14:55:27+0000 [CowrieTelnetTransport,89184,120.253.127.99] CMD: /bin/busybox JRBRT
+2017-05-17T14:55:27+0000 [CowrieTelnetTransport,89184,120.253.127.99] Command found: /bin/busybox JRBRT
+2017-05-17T14:55:27+0000 [CowrieTelnetTransport,89186,120.253.127.99] login attempt: 6
+2017-05-17T14:55:27+0000 [CowrieTelnetTransport,89186,120.253.127.99] login return, expect: [root/dreambox]
+2017-05-17T14:55:28+0000 [CowrieTelnetTransport,89186,120.253.127.99] login attempt [administrator/1234] failed
+2017-05-17T14:55:28+0000 [CowrieTelnetTransport,89186,120.253.127.99] Warning: state changed and new state returned
+2017-05-17T14:55:29+0000 [CowrieTelnetTransport,89185,120.253.127.99] login attempt: 7
+2017-05-17T14:55:29+0000 [CowrieTelnetTransport,89185,120.253.127.99] login return, expect: [root/dreambox]
+2017-05-17T14:55:30+0000 [CowrieTelnetTransport,89185,120.253.127.99] login attempt [shell\x00/sh\x00] failed
+2017-05-17T14:55:30+0000 [CowrieTelnetTransport,89185,120.253.127.99] Warning: state changed and new state returned
+2017-05-17T14:55:30+0000 [CowrieTelnetTransport,89186,120.253.127.99] login attempt: 8
+2017-05-17T14:55:30+0000 [CowrieTelnetTransport,89186,120.253.127.99] login return, expect: [root/dreambox]
+2017-05-17T14:55:31+0000 [CowrieTelnetTransport,89186,120.253.127.99] login attempt [admin/admin] failed
+2017-05-17T14:55:31+0000 [CowrieTelnetTransport,89186,120.253.127.99] Warning: state changed and new state returned
+2017-05-17T14:55:33+0000 [CowrieTelnetTransport,89186,120.253.127.99] login attempt: 9
+2017-05-17T14:55:33+0000 [CowrieTelnetTransport,89186,120.253.127.99] login return, expect: [root/dreambox]
+2017-05-17T14:55:34+0000 [CowrieTelnetTransport,89186,120.253.127.99] login attempt [root/ikwb] failed
+2017-05-17T14:55:34+0000 [CowrieTelnetTransport,89186,120.253.127.99] Warning: state changed and new state returned
+2017-05-17T14:55:34+0000 [CowrieTelnetTransport,89186,120.253.127.99] Connection lost after 20 seconds
+2017-05-17T14:55:36+0000 [CowrieTelnetTransport,89180,185.141.24.24] Closing TTY Log: log/tty/20170517-145328-None-89180i.log after 127 seconds
+2017-05-17T14:55:36+0000 [CowrieTelnetTransport,89180,185.141.24.24] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-17T14:55:36+0000 [CowrieTelnetTransport,89180,185.141.24.24] Connection lost after 134 seconds
+2017-05-17T14:56:01+0000 [CowrieTelnetTransport,89185,120.253.127.99] Connection lost after 47 seconds
+2017-05-17T14:56:01+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 120.253.127.99:48068 (10.8.41.81:2223) [session: TT89187]
