@@ -5587,3 +5587,37 @@
 2017-05-17T22:10:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104560,107.173.54.145] login attempt: 40
 2017-05-17T22:10:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104560,107.173.54.145] login return, expect: [admin/1111]
 2017-05-17T22:10:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104560,107.173.54.145] login attempt [admin/1111] succeeded
+2017-05-17T22:10:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104560,107.173.54.145] 'admin' authenticated with 'password'
+2017-05-17T22:10:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,104560,107.173.54.145] starting service 'ssh-connection'
+2017-05-17T22:10:03+0000 [HoneyPotSSHTransport,104561,113.195.145.21] connection lost
+2017-05-17T22:10:03+0000 [HoneyPotSSHTransport,104561,113.195.145.21] Connection lost after 5 seconds
+2017-05-17T22:10:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104560,107.173.54.145] got channel 'session' request
+2017-05-17T22:10:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104560,107.173.54.145] channel open
+2017-05-17T22:10:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104560,107.173.54.145] executing command "/sbin/ifconfig"
+2017-05-17T22:10:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104560,107.173.54.145] Opening TTY Log: log/tty/20170517-221003-820f59b0-0e.log
+2017-05-17T22:10:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104560,107.173.54.145] CMD: /sbin/ifconfig
+2017-05-17T22:10:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104560,107.173.54.145] Command found: /sbin/ifconfig 
+2017-05-17T22:10:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104560,107.173.54.145] exitCode: 0
+2017-05-17T22:10:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104560,107.173.54.145] sending request 'exit-status'
+2017-05-17T22:10:03+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104560,107.173.54.145] sending close 0
+2017-05-17T22:10:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104560,107.173.54.145] Closing TTY Log: log/tty/20170517-221003-820f59b0-0e.log after 0 seconds
+2017-05-17T22:10:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104560,107.173.54.145] honeypot terminal protocol connection lost disconnected
+2017-05-17T22:10:04+0000 [HoneyPotSSHTransport,104560,107.173.54.145] avatar admin logging out
+2017-05-17T22:10:04+0000 [HoneyPotSSHTransport,104560,107.173.54.145] connection lost
+2017-05-17T22:10:04+0000 [HoneyPotSSHTransport,104560,107.173.54.145] Connection lost after 6 seconds
+2017-05-17T22:10:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104169,91.195.103.218] got channel 'direct-tcpip' request
+2017-05-17T22:10:23+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,104169,91.195.103.218] direct-tcp connection request to 185.19.218.137:80 from localhost:5556
+2017-05-17T22:10:23+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104169,91.195.103.218] direct-tcp forward to 185.19.218.137:80 with data 'GET /get-ip.php HTTP/1.1\r\nHost: 185.19.218.137\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\nAccept: */*\r\nAccept-Encoding: deflate, gzip\r\n\r\n'
+2017-05-17T22:10:23+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104169,91.195.103.218] failed to connect: Connection refused
+2017-05-17T22:10:23+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,104169,91.195.103.218] sending close 26
+2017-05-17T22:10:24+0000 [CowrieTelnetTransport,91287,213.136.75.147] Connection lost after 44 seconds
+2017-05-17T22:10:25+0000 [CowrieTelnetTransport,91285,213.136.75.147] Connection lost after 46 seconds
+2017-05-17T22:10:28+0000 [CowrieTelnetTransport,91286,213.136.75.147] Connection lost after 49 seconds
+2017-05-17T22:10:30+0000 [CowrieTelnetTransport,91288,213.136.75.147] Connection lost after 42 seconds
+2017-05-17T22:10:37+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:45618 (10.8.41.81:2222) [session: 5cf8d784]
+2017-05-17T22:10:37+0000 [HoneyPotSSHTransport,104562,113.195.145.21] Remote SSH version: SSH-2.0-PUTTY
+2017-05-17T22:10:37+0000 [HoneyPotSSHTransport,104562,113.195.145.21] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-17T22:10:37+0000 [HoneyPotSSHTransport,104562,113.195.145.21] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-17T22:10:37+0000 [HoneyPotSSHTransport,104562,113.195.145.21] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-17T22:10:42+0000 [HoneyPotSSHTransport,104562,113.195.145.21] connection lost
+2017-05-17T22:10:42+0000 [HoneyPotSSHTransport,104562,113.195.145.21] Connection lost after 5 seconds
