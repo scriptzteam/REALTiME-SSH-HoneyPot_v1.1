@@ -5828,3 +5828,38 @@
 2017-05-17T09:17:58+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103641,91.195.103.182] sending close 74
 2017-05-17T09:17:58+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103641,91.195.103.182] remote eof
 2017-05-17T09:17:59+0000 [SSHChannel None (74) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103641,91.195.103.182] remote close
+2017-05-17T09:18:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103640,91.195.103.218] got channel 'direct-tcpip' request
+2017-05-17T09:18:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,103640,91.195.103.218] direct-tcp connection request to 185.19.218.137:80 from localhost:5556
+2017-05-17T09:18:05+0000 [SSHChannel None (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103640,91.195.103.218] direct-tcp forward to 185.19.218.137:80 with data 'GET /get-ip.php HTTP/1.1\r\nHost: 185.19.218.137\r\nUser-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.16 Safari/537.36\r\nAccept: */*\r\nAccept-Encoding: deflate, gzip\r\n\r\n'
+2017-05-17T09:18:05+0000 [SSHChannel None (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103640,91.195.103.218] failed to connect: Connection refused
+2017-05-17T09:18:05+0000 [SSHChannel None (8) on SSHService 'ssh-connection' on HoneyPotSSHTransport,103640,91.195.103.218] sending close 8
+2017-05-17T09:18:52+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 116.96.203.126:56653 (10.8.41.81:2223) [session: TT88248]
+2017-05-17T09:18:54+0000 [CowrieTelnetTransport,88248,116.96.203.126] first time for 116.96.203.126, need: 1
+2017-05-17T09:18:54+0000 [CowrieTelnetTransport,88248,116.96.203.126] login attempt: 1
+2017-05-17T09:18:55+0000 [CowrieTelnetTransport,88248,116.96.203.126] login attempt [root/7ujMko0vizxv] succeeded
+2017-05-17T09:18:56+0000 [CowrieTelnetTransport,88248,116.96.203.126] Opening TTY Log: log/tty/20170517-091856-None-88248i.log
+2017-05-17T09:18:56+0000 [CowrieTelnetTransport,88248,116.96.203.126] Warning: state changed and new state returned
+2017-05-17T09:18:57+0000 [CowrieTelnetTransport,88248,116.96.203.126] CMD: enable
+2017-05-17T09:18:57+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command found: enable 
+2017-05-17T09:18:57+0000 [CowrieTelnetTransport,88248,116.96.203.126] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-17T09:18:57+0000 [CowrieTelnetTransport,88248,116.96.203.126] CMD: shell
+2017-05-17T09:18:57+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command not found: shell
+2017-05-17T09:18:57+0000 [CowrieTelnetTransport,88248,116.96.203.126] CMD: sh
+2017-05-17T09:18:57+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command found: sh 
+2017-05-17T09:18:58+0000 [CowrieTelnetTransport,88248,116.96.203.126] CMD: cat /proc/mounts; /bin/busybox HXEBW
+2017-05-17T09:18:58+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command found: cat /proc/mounts
+2017-05-17T09:18:58+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command found: /bin/busybox HXEBW
+2017-05-17T09:18:58+0000 [CowrieTelnetTransport,88248,116.96.203.126] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox HXEBW
+2017-05-17T09:18:58+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command found: cd /dev/shm
+2017-05-17T09:18:58+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command found: cat .s
+2017-05-17T09:18:58+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command found: cp /bin/echo .s
+2017-05-17T09:18:58+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command found: /bin/busybox HXEBW
+2017-05-17T09:18:58+0000 [CowrieTelnetTransport,88248,116.96.203.126] CMD: nc; wget; /bin/busybox HXEBW
+2017-05-17T09:18:58+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command not found: nc
+2017-05-17T09:18:58+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command found: wget 
+2017-05-17T09:18:58+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command found: /bin/busybox HXEBW
+2017-05-17T09:18:59+0000 [CowrieTelnetTransport,88248,116.96.203.126] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-05-17T09:18:59+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command not found: dd bs=52 count=1 if=.s
+2017-05-17T09:18:59+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command found: cat /dev/shm/.s
+2017-05-17T09:18:59+0000 [CowrieTelnetTransport,88248,116.96.203.126] CMD: /bin/busybox HXEBW
+2017-05-17T09:18:59+0000 [CowrieTelnetTransport,88248,116.96.203.126] Command found: /bin/busybox HXEBW
