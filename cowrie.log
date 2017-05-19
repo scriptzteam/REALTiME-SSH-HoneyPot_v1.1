@@ -4674,3 +4674,50 @@
 	reason: 
 2017-05-19T16:26:48+0000 [HoneyPotSSHTransport,109926,113.195.145.21] connection lost
 2017-05-19T16:26:48+0000 [HoneyPotSSHTransport,109926,113.195.145.21] Connection lost after 4 seconds
+2017-05-19T16:27:13+0000 [CowrieTelnetTransport,96475,185.107.80.140] Connection lost after 38 seconds
+2017-05-19T16:27:21+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:35179 (10.8.41.81:2222) [session: 97d6e520]
+2017-05-19T16:27:26+0000 [HoneyPotSSHTransport,109927,113.195.145.21] Got remote error, code 11
+	reason: 
+2017-05-19T16:27:26+0000 [HoneyPotSSHTransport,109927,113.195.145.21] connection lost
+2017-05-19T16:27:26+0000 [HoneyPotSSHTransport,109927,113.195.145.21] Connection lost after 5 seconds
+2017-05-19T16:27:52+0000 [CowrieTelnetTransport,96474,185.188.206.3] Closing TTY Log: log/tty/20170519-162550-None-96474i.log after 122 seconds
+2017-05-19T16:27:52+0000 [CowrieTelnetTransport,96474,185.188.206.3] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-19T16:27:52+0000 [CowrieTelnetTransport,96474,185.188.206.3] Connection lost after 133 seconds
+2017-05-19T16:27:53+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 82.56.208.165:43356 (10.8.41.81:2223) [session: TT96476]
+2017-05-19T16:27:54+0000 [CowrieTelnetTransport,96476,82.56.208.165] first time for 82.56.208.165, need: 1
+2017-05-19T16:27:54+0000 [CowrieTelnetTransport,96476,82.56.208.165] login attempt: 1
+2017-05-19T16:27:55+0000 [CowrieTelnetTransport,96476,82.56.208.165] login attempt [root/7ujMko0admin] succeeded
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Opening TTY Log: log/tty/20170519-162757-None-96476i.log
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Warning: state changed and new state returned
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] CMD: enable
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command found: enable 
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] CMD: shell
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command not found: shell
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] CMD: sh
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command found: sh 
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] CMD: cat /proc/mounts; /bin/busybox ORUAP
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command found: cat /proc/mounts
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command found: /bin/busybox ORUAP
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] CMD: cd /dev/shm; (cat .s || cp /bin/echo .s); /bin/busybox ORUAP
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command found: cd /dev/shm
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command found: cat .s
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command found: cp /bin/echo .s
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command found: /bin/busybox ORUAP
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] CMD: nc; wget; /bin/busybox ORUAP
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command not found: nc
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command found: wget 
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command found: /bin/busybox ORUAP
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command not found: dd bs=52 count=1 if=.s
+2017-05-19T16:27:57+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command found: cat /dev/shm/.s
+2017-05-19T16:27:58+0000 [CowrieTelnetTransport,96476,82.56.208.165] CMD: /bin/busybox ORUAP
+2017-05-19T16:27:58+0000 [CowrieTelnetTransport,96476,82.56.208.165] Command found: /bin/busybox ORUAP
+2017-05-19T16:27:59+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:38097 (10.8.41.81:2222) [session: d958ed21]
+2017-05-19T16:28:00+0000 [HoneyPotSSHTransport,109928,113.195.145.21] Remote SSH version: SSH-2.0-PUTTY
+2017-05-19T16:28:00+0000 [HoneyPotSSHTransport,109928,113.195.145.21] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-19T16:28:00+0000 [HoneyPotSSHTransport,109928,113.195.145.21] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-19T16:28:00+0000 [HoneyPotSSHTransport,109928,113.195.145.21] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-19T16:28:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,109600,91.230.47.72] got channel 'direct-tcpip' request
+2017-05-19T16:28:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,109600,91.230.47.72] direct-tcp connection request to 217.69.139.150:25 from localhost:5556
