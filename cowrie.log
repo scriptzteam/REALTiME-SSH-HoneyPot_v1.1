@@ -7154,3 +7154,110 @@
 2017-05-22T08:24:53+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,118691,91.230.47.81] direct-tcp forward to 134.119.192.227:8888 with data 'GET /v3/callerinfo/?geo=false HTTP/1.1\r\nConnection: close\r\nCache-Control: no-cache\r\nPragma: no-cache\r\nUser-Agent: Java/1.8.0_66\r\nHost: 134.119.192.227:8888\r\nAccept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2\r\n\r\n'
 2017-05-22T08:24:53+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,118691,91.230.47.81] failed to connect: Connection refused
 2017-05-22T08:24:53+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,118691,91.230.47.81] sending close 119
+2017-05-22T08:25:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:49350 (10.8.41.81:2222) [session: d4b9b60e]
+2017-05-22T08:25:13+0000 [HoneyPotSSHTransport,119163,113.195.145.21] Remote SSH version: SSH-2.0-PUTTY
+2017-05-22T08:25:13+0000 [HoneyPotSSHTransport,119163,113.195.145.21] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-22T08:25:13+0000 [HoneyPotSSHTransport,119163,113.195.145.21] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-22T08:25:13+0000 [HoneyPotSSHTransport,119163,113.195.145.21] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-22T08:25:14+0000 [HoneyPotSSHTransport,119163,113.195.145.21] NEW KEYS
+2017-05-22T08:25:14+0000 [HoneyPotSSHTransport,119163,113.195.145.21] starting service 'ssh-userauth'
+2017-05-22T08:25:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,119163,113.195.145.21] 'root' trying auth 'none'
+2017-05-22T08:25:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,119163,113.195.145.21] 'root' authenticated with 'none'
+2017-05-22T08:25:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,119163,113.195.145.21] starting service 'ssh-connection'
+2017-05-22T08:25:17+0000 [HoneyPotSSHTransport,119163,113.195.145.21] Got remote error, code 11
+	reason: 
+2017-05-22T08:25:17+0000 [HoneyPotSSHTransport,119163,113.195.145.21] avatar root logging out
+2017-05-22T08:25:17+0000 [HoneyPotSSHTransport,119163,113.195.145.21] connection lost
+2017-05-22T08:25:17+0000 [HoneyPotSSHTransport,119163,113.195.145.21] Connection lost after 4 seconds
+2017-05-22T08:25:24+0000 [HoneyPotSSHTransport,118610,91.195.103.204] avatar 1111 logging out
+2017-05-22T08:25:24+0000 [HoneyPotSSHTransport,118610,91.195.103.204] connection lost
+2017-05-22T08:25:24+0000 [HoneyPotSSHTransport,118610,91.195.103.204] Connection lost after 11679 seconds
+2017-05-22T08:25:35+0000 [CowrieTelnetTransport,107536,222.172.162.171] first time for 222.172.162.171, need: 1
+2017-05-22T08:25:35+0000 [CowrieTelnetTransport,107536,222.172.162.171] login attempt: 1
+2017-05-22T08:25:36+0000 [CowrieTelnetTransport,107536,222.172.162.171] login attempt [admin/12345] succeeded
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Opening TTY Log: log/tty/20170522-082538-None-107536i.log
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Warning: state changed and new state returned
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] CMD: enable
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command found: enable 
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] CMD: system
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command not found: system
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] CMD: shell
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command not found: shell
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] CMD: sh
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command found: sh 
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] CMD:  /bin/busybox wget; /bin/busybox 81c46036wget; /bin/busybox echo -ne '\x0181c46036\x7f'; /bin/busybox printf '\00281c46036\177'; /bin/echo -ne '\x0381c46036\x7f'; /usr/bin/printf '\00481c46036\177'; /bin/busybox tftp; /bin/busybox 81c46036tftp;
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command found: /bin/busybox wget
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command found: wget
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command found: /bin/busybox 81c46036wget
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command found: /bin/busybox echo -ne '\x0181c46036\x7f'
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command found: echo -ne '\x0181c46036\x7f'
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command found: /bin/busybox printf '\00281c46036\177'
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command found: /bin/echo -ne '\x0381c46036\x7f'
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command not found: /usr/bin/printf '\00481c46036\177'
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command found: /bin/busybox tftp
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command found: tftp
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Command found: /bin/busybox 81c46036tftp
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Closing TTY Log: log/tty/20170522-082538-None-107536i.log after 0 seconds
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107536,222.172.162.171] Connection lost after 68 seconds
+2017-05-22T08:25:38+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 77.157.49.206:36136 (10.8.41.81:2223) [session: TT107537]
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107537,77.157.49.206] first time for 77.157.49.206, need: 1
+2017-05-22T08:25:38+0000 [CowrieTelnetTransport,107537,77.157.49.206] login attempt: 1
+2017-05-22T08:25:39+0000 [CowrieTelnetTransport,107537,77.157.49.206] login attempt [root/7ujMko0vizxv] succeeded
+2017-05-22T08:25:41+0000 [CowrieTelnetTransport,107537,77.157.49.206] Opening TTY Log: log/tty/20170522-082541-None-107537i.log
+2017-05-22T08:25:41+0000 [CowrieTelnetTransport,107537,77.157.49.206] Warning: state changed and new state returned
+2017-05-22T08:25:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,119157,91.230.47.71] got channel 'direct-tcpip' request
+2017-05-22T08:25:41+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,119157,91.230.47.71] direct-tcp connection request to 108.174.10.10:443 from localhost:5556
+2017-05-22T08:25:41+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 113.195.145.21:21701 (10.8.41.81:2222) [session: 07ddb8f1]
+2017-05-22T08:25:41+0000 [CowrieTelnetTransport,107537,77.157.49.206] CMD: enable
+2017-05-22T08:25:41+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command found: enable 
+2017-05-22T08:25:41+0000 [CowrieTelnetTransport,107537,77.157.49.206] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-22T08:25:41+0000 [CowrieTelnetTransport,107537,77.157.49.206] CMD: shell
+2017-05-22T08:25:41+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command not found: shell
+2017-05-22T08:25:41+0000 [CowrieTelnetTransport,107537,77.157.49.206] CMD: sh
+2017-05-22T08:25:41+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command found: sh 
+2017-05-22T08:25:41+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,119157,91.230.47.71] direct-tcp forward to 108.174.10.10:443 with data '\x16\x03\x01\x02\x00\x01\x00\x01\xfc\x03\x037\xf7q\x0c\x98:y#\x18\xae\x0f=\n"f\xa2\xcc\x9e\x1c\xc9\xa5vm\xc1L\x9bS\xcac\xc5\x05\xeb\x00\x00\xa0\xc00\xc0,\xc0(\xc0$\xc0\x14\xc0\n\x00\xa3\x00\x9f\x00k\x00j\x009\x008\x00\x88\x00\x87\xc0\x19\x00\xa7\x00m\x00:\x00\x89\xc02\xc0.\xc0*\xc0&\xc0\x0f\xc0\x05\x00\x9d\x00=\x005\x00\x84\xc0/\xc0+\xc0\'\xc0#\xc0\x13\xc0\t\x00\xa2\x00\x9e\x00g\x00@\x003\x002\x00\x9a\x00\x99\x00E\x00D\xc0\x18\x00\xa6\x00l\x004\x00\x9b\x00F\xc01\xc0-\xc0)\xc0%\xc0\x0e\xc0\x04\x00\x9c\x00<\x00/\x00\x96\x00A\xc0\x11\xc0\x07\xc0\x16\x00\x18\xc0\x0c\xc0\x02\x00\x05\x00\x04\xc0\x12\xc0\x08\x00\x16\x00\x13\xc0\x17\x00\x1b\xc0\r\xc0\x03\x00\n\x00\xff\x02\x01\x00\x012\x00\x00\x00\x11\x00\x0f\x00\x00\x0clinkedin.com\x00\x0b\x00\x04\x03\x00\x01\x02\x00\n\x004\x002\x00\x0e\x00\r\x00\x19\x00\x0b\x00\x0c\x00\x18\x00\t\x00\n\x00\x16\x00\x17\x00\x08\x00\x06\x00\x07\x00\x14\x00\x15\x00\x04\x00\x05\x00\x12\x00\x13\x00\x01\x00\x02\x00\x03\x00\x0f\x00\x10\x00\x11\x00\r\x00 \x00\x1e\x06\x01\x06\x02\x06\x03\x05\x01\x05\x02\x05\x03\x04\x01\x04\x02\x04\x03\x03\x01\x03\x02\x03\x03\x02\x01\x02\x02\x02\x03\x00\x0f\x00\x01\x01\x00\x15\x00\xb0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+2017-05-22T08:25:41+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,119157,91.230.47.71] failed to connect: Connection refused
+2017-05-22T08:25:41+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,119157,91.230.47.71] sending close 0
+2017-05-22T08:25:42+0000 [HoneyPotSSHTransport,119164,113.195.145.21] Remote SSH version: SSH-2.0-PUTTY
+2017-05-22T08:25:42+0000 [HoneyPotSSHTransport,119164,113.195.145.21] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-22T08:25:42+0000 [HoneyPotSSHTransport,119164,113.195.145.21] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-22T08:25:42+0000 [HoneyPotSSHTransport,119164,113.195.145.21] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] CMD: cat /proc/mounts; /bin/busybox NBMWM
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command found: cat /proc/mounts
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command found: /bin/busybox NBMWM
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] CMD: cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox NBMWM
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command found: cd /dev/shm
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command found: cat .s
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command found: cp /bin/echo .s
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command found: /bin/busybox NBMWM
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] CMD: nc; wget; /bin/busybox NBMWM
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command not found: nc
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command found: wget 
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command found: /bin/busybox NBMWM
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command not found: dd bs=52 count=1 if=.s
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command found: cat /dev/shm/.s
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] CMD: /bin/busybox NBMWM
+2017-05-22T08:25:42+0000 [CowrieTelnetTransport,107537,77.157.49.206] Command found: /bin/busybox NBMWM
+2017-05-22T08:25:42+0000 [HoneyPotSSHTransport,119164,113.195.145.21] NEW KEYS
+2017-05-22T08:25:43+0000 [HoneyPotSSHTransport,119164,113.195.145.21] starting service 'ssh-userauth'
+2017-05-22T08:25:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,119164,113.195.145.21] 'root' trying auth 'none'
+2017-05-22T08:25:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,119164,113.195.145.21] 'root' authenticated with 'none'
+2017-05-22T08:25:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,119164,113.195.145.21] starting service 'ssh-connection'
+2017-05-22T08:25:48+0000 [HoneyPotSSHTransport,119164,113.195.145.21] Got remote error, code 11
+	reason: 
+2017-05-22T08:25:48+0000 [HoneyPotSSHTransport,119164,113.195.145.21] avatar root logging out
+2017-05-22T08:25:48+0000 [HoneyPotSSHTransport,119164,113.195.145.21] connection lost
+2017-05-22T08:25:48+0000 [HoneyPotSSHTransport,119164,113.195.145.21] Connection lost after 7 seconds
+2017-05-22T08:25:48+0000 [CowrieTelnetTransport,107535,185.188.206.3] Closing TTY Log: log/tty/20170522-082341-None-107535i.log after 127 seconds
+2017-05-22T08:25:48+0000 [CowrieTelnetTransport,107535,185.188.206.3] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-22T08:25:48+0000 [CowrieTelnetTransport,107535,185.188.206.3] Connection lost after 134 seconds
+2017-05-22T08:25:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,119157,91.230.47.71] got channel 'direct-tcpip' request
+2017-05-22T08:25:57+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,119157,91.230.47.71] direct-tcp connection request to 104.122.243.148:443 from localhost:5556
+2017-05-22T08:25:57+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,119157,91.230.47.71] direct-tcp forward to 104.122.243.148:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80\xde\xc6\x11.?\xf7\xb0s\x84Q1\x8a,\x96\xe4\xe4\x81\xb9In\x0cZ\xc7\xfb\xca\xbc\xf2\xc0\x060\x82T'
+2017-05-22T08:25:57+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,119157,91.230.47.71] failed to connect: Connection refused
+2017-05-22T08:25:57+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,119157,91.230.47.71] sending close 1
