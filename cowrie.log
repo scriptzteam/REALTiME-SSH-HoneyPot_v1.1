@@ -6509,3 +6509,26 @@
 2017-05-25T15:00:00+0000 [CowrieTelnetTransport,115810,223.19.167.193] Command found: /bin/busybox dd if=/bin/busybox bs=22 count=1
 2017-05-25T15:00:00+0000 [CowrieTelnetTransport,115810,223.19.167.193] Command found: /bin/busybox cat /bin/busybox
 2017-05-25T15:00:00+0000 [CowrieTelnetTransport,115810,223.19.167.193] Command found: cat /bin/busybox
+2017-05-25T15:01:41+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 103.79.141.103:64809 (10.8.41.81:2222) [session: e0974140]
+2017-05-25T15:01:41+0000 [HoneyPotSSHTransport,132503,103.79.141.103] Remote SSH version: SSH-2.0-Granados-1.0
+2017-05-25T15:01:41+0000 [HoneyPotSSHTransport,132503,103.79.141.103] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-25T15:01:41+0000 [HoneyPotSSHTransport,132503,103.79.141.103] outgoing: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-25T15:01:41+0000 [HoneyPotSSHTransport,132503,103.79.141.103] incoming: 'aes128-cbc' 'hmac-sha1' 'none'
+2017-05-25T15:01:42+0000 [HoneyPotSSHTransport,132503,103.79.141.103] NEW KEYS
+2017-05-25T15:01:43+0000 [HoneyPotSSHTransport,132503,103.79.141.103] starting service 'ssh-userauth'
+2017-05-25T15:01:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,132503,103.79.141.103] 'support' trying auth 'password'
+2017-05-25T15:01:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,132503,103.79.141.103] login attempt: 3
+2017-05-25T15:01:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,132503,103.79.141.103] login return, expect: [support/support]
+2017-05-25T15:01:45+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,132503,103.79.141.103] login attempt [support/support] succeeded
+2017-05-25T15:01:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,132503,103.79.141.103] 'support' authenticated with 'password'
+2017-05-25T15:01:47+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,132503,103.79.141.103] starting service 'ssh-connection'
+2017-05-25T15:01:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,132503,103.79.141.103] got channel 'direct-tcpip' request
+2017-05-25T15:01:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,132503,103.79.141.103] direct-tcp connection request to ipinfo.io:80 from localhost:80
+2017-05-25T15:01:48+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,132503,103.79.141.103] direct-tcp forward to ipinfo.io:80 with data 'GET /json HTTP/1.1\r\nHost:ipinfo.io\r\n\r\n'
+2017-05-25T15:01:48+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,132503,103.79.141.103] failed to connect: Connection refused
+2017-05-25T15:01:48+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,132503,103.79.141.103] sending close 0
+2017-05-25T15:01:49+0000 [HoneyPotSSHTransport,132503,103.79.141.103] Got remote error, code 0
+	reason: 
+2017-05-25T15:01:49+0000 [HoneyPotSSHTransport,132503,103.79.141.103] avatar support logging out
+2017-05-25T15:01:49+0000 [HoneyPotSSHTransport,132503,103.79.141.103] connection lost
+2017-05-25T15:01:49+0000 [HoneyPotSSHTransport,132503,103.79.141.103] Connection lost after 8 seconds
