@@ -3616,3 +3616,46 @@
 2017-05-25T06:42:57+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,130618,91.195.103.220] direct-tcp forward to 23.0.37.229:443 with data "\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80bJ'\x14\xa5{\x06\x0b\xa9\xed\t\x19\x1f\x1e#\xc1?\r 0X\x86\x8bI\x98QO\xf3\x7f\xc51\xbd"
 2017-05-25T06:42:57+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,130618,91.195.103.220] failed to connect: Connection refused
 2017-05-25T06:42:57+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,130618,91.195.103.220] sending close 2
+2017-05-25T06:43:08+0000 [CowrieTelnetTransport,114946,185.141.24.24] Connection lost after 46 seconds
+2017-05-25T06:43:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,130587,91.195.103.218] got channel 'direct-tcpip' request
+2017-05-25T06:43:10+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,130587,91.195.103.218] direct-tcp connection request to 185.19.218.137:80 from localhost:5556
+2017-05-25T06:43:11+0000 [SSHChannel None (69) on SSHService 'ssh-connection' on HoneyPotSSHTransport,130587,91.195.103.218] direct-tcp forward to 185.19.218.137:80 with data 'GET /get-ip.php HTTP/1.1\r\nHost: 185.19.218.137\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36\r\nAccept: */*\r\nAccept-Encoding: deflate, gzip\r\n\r\n'
+2017-05-25T06:43:11+0000 [SSHChannel None (69) on SSHService 'ssh-connection' on HoneyPotSSHTransport,130587,91.195.103.218] failed to connect: Connection refused
+2017-05-25T06:43:11+0000 [SSHChannel None (69) on SSHService 'ssh-connection' on HoneyPotSSHTransport,130587,91.195.103.218] sending close 69
+2017-05-25T06:43:12+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 185.141.24.24:36434 (10.8.41.81:2223) [session: TT114951]
+2017-05-25T06:43:16+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.197.235.11:36912 (10.8.41.81:2222) [session: 55252b50]
+2017-05-25T06:43:16+0000 [HoneyPotSSHTransport,131274,91.197.235.11] Remote SSH version: SSH-2.0-ssh2js0.3.6
+2017-05-25T06:43:16+0000 [HoneyPotSSHTransport,131274,91.197.235.11] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-25T06:43:16+0000 [HoneyPotSSHTransport,131274,91.197.235.11] outgoing: '3des-cbc' 'hmac-sha1' 'none'
+2017-05-25T06:43:16+0000 [HoneyPotSSHTransport,131274,91.197.235.11] incoming: '3des-cbc' 'hmac-sha1' 'none'
+2017-05-25T06:43:16+0000 [HoneyPotSSHTransport,131274,91.197.235.11] NEW KEYS
+2017-05-25T06:43:16+0000 [HoneyPotSSHTransport,131274,91.197.235.11] starting service 'ssh-userauth'
+2017-05-25T06:43:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,131274,91.197.235.11] '0' trying auth 'password'
+2017-05-25T06:43:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,131274,91.197.235.11] login attempt: 903
+2017-05-25T06:43:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,131274,91.197.235.11] login return, expect: [1111/1111]
+2017-05-25T06:43:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,131274,91.197.235.11] login attempt [0/] failed
+2017-05-25T06:43:18+0000 [CowrieTelnetTransport,114951,185.141.24.24] login attempt: 6743
+2017-05-25T06:43:18+0000 [CowrieTelnetTransport,114951,185.141.24.24] login return, expect: [admin/5up]
+2017-05-25T06:43:19+0000 [CowrieTelnetTransport,114951,185.141.24.24] login attempt [admin/meinsm] failed
+2017-05-25T06:43:19+0000 [CowrieTelnetTransport,114951,185.141.24.24] Warning: state changed and new state returned
+2017-05-25T06:43:20+0000 [CowrieTelnetTransport,114948,185.141.24.24] Connection lost after 48 seconds
+2017-05-25T06:43:20+0000 [-] '0' failed auth 'password'
+2017-05-25T06:43:20+0000 [-] unauthorized login: 
+2017-05-25T06:43:20+0000 [HoneyPotSSHTransport,131274,91.197.235.11] connection lost
+2017-05-25T06:43:20+0000 [HoneyPotSSHTransport,131274,91.197.235.11] Connection lost after 3 seconds
+2017-05-25T06:43:20+0000 [CowrieTelnetTransport,114951,185.141.24.24] login attempt: 6744
+2017-05-25T06:43:20+0000 [CowrieTelnetTransport,114951,185.141.24.24] login return, expect: [admin/5up]
+2017-05-25T06:43:21+0000 [CowrieTelnetTransport,114951,185.141.24.24] login attempt [enable/shell] failed
+2017-05-25T06:43:21+0000 [CowrieTelnetTransport,114951,185.141.24.24] Warning: state changed and new state returned
+2017-05-25T06:43:21+0000 [CowrieTelnetTransport,114951,185.141.24.24] login attempt: 6745
+2017-05-25T06:43:21+0000 [CowrieTelnetTransport,114951,185.141.24.24] login return, expect: [admin/5up]
+2017-05-25T06:43:23+0000 [CowrieTelnetTransport,114951,185.141.24.24] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-25T06:43:23+0000 [CowrieTelnetTransport,114951,185.141.24.24] Warning: state changed and new state returned
+2017-05-25T06:43:23+0000 [CowrieTelnetTransport,114949,185.141.24.24] Connection lost after 41 seconds
+2017-05-25T06:43:28+0000 [CowrieTelnetTransport,114950,185.141.24.24] Connection lost after 43 seconds
+2017-05-25T06:43:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,130618,91.195.103.220] got channel 'direct-tcpip' request
+2017-05-25T06:43:33+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,130618,91.195.103.220] direct-tcp connection request to 23.0.37.229:443 from localhost:5556
+2017-05-25T06:43:34+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,130618,91.195.103.220] direct-tcp forward to 23.0.37.229:443 with data "\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80u\x0f\x80\xf4\x149\xb41g\x9e'\xcb1\xc5\xd8\xd5/\xc1\xe5\x0cN8\xbeR\x97}3`\xc3a\xc8I"
+2017-05-25T06:43:34+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,130618,91.195.103.220] failed to connect: Connection refused
+2017-05-25T06:43:34+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,130618,91.195.103.220] sending close 3
+2017-05-25T06:43:55+0000 [CowrieTelnetTransport,114951,185.141.24.24] Connection lost after 42 seconds
