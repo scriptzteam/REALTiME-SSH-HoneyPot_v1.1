@@ -4788,3 +4788,29 @@
 2017-05-26T11:57:35+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133537,91.195.103.213] remote eof
 2017-05-26T11:57:35+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133537,91.195.103.213] remote close
 2017-05-26T11:57:35+0000 [SSHChannel None (55) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133537,91.195.103.213] sending close 55
+2017-05-26T11:58:03+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 51.15.66.27:57722 (10.8.41.81:2222) [session: c0c60d7e]
+2017-05-26T11:58:03+0000 [HoneyPotSSHTransport,133602,51.15.66.27] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-05-26T11:58:03+0000 [HoneyPotSSHTransport,133602,51.15.66.27] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-26T11:58:03+0000 [HoneyPotSSHTransport,133602,51.15.66.27] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-26T11:58:03+0000 [HoneyPotSSHTransport,133602,51.15.66.27] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-26T11:58:03+0000 [HoneyPotSSHTransport,133602,51.15.66.27] NEW KEYS
+2017-05-26T11:58:03+0000 [HoneyPotSSHTransport,133602,51.15.66.27] starting service 'ssh-userauth'
+2017-05-26T11:58:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133602,51.15.66.27] 'redmine' trying auth 'password'
+2017-05-26T11:58:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133602,51.15.66.27] login attempt: 252
+2017-05-26T11:58:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133602,51.15.66.27] login return, expect: [adminphi/adminphi]
+2017-05-26T11:58:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133602,51.15.66.27] login attempt [redmine/redmine] failed
+2017-05-26T11:58:06+0000 [-] 'redmine' failed auth 'password'
+2017-05-26T11:58:06+0000 [-] unauthorized login: 
+2017-05-26T11:58:06+0000 [HoneyPotSSHTransport,133602,51.15.66.27] Got remote error, code 11
+	reason: Normal Shutdown, Thank you for playing
+2017-05-26T11:58:06+0000 [HoneyPotSSHTransport,133602,51.15.66.27] connection lost
+2017-05-26T11:58:06+0000 [HoneyPotSSHTransport,133602,51.15.66.27] Connection lost after 2 seconds
+2017-05-26T11:58:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133596,91.230.47.81] got channel 'direct-tcpip' request
+2017-05-26T11:58:26+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133596,91.230.47.81] direct-tcp connection request to 107.6.167.194:80 from localhost:5556
+2017-05-26T11:58:27+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133596,91.230.47.81] direct-tcp forward to 107.6.167.194:80 with data 'GET /internals/api/ip?1495799863291568687 HTTP/1.1\r\nHost: ip4.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
+2017-05-26T11:58:27+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133596,91.230.47.81] failed to connect: Connection refused
+2017-05-26T11:58:27+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133596,91.230.47.81] sending close 1
+2017-05-26T11:58:31+0000 [CowrieTelnetTransport,117524,103.197.139.178] Closing TTY Log: log/tty/20170526-115626-None-117524i.log after 124 seconds
+2017-05-26T11:58:31+0000 [CowrieTelnetTransport,117524,103.197.139.178] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-26T11:58:31+0000 [CowrieTelnetTransport,117524,103.197.139.178] Connection lost after 129 seconds
