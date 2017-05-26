@@ -1926,3 +1926,66 @@
 2017-05-26T20:09:00+0000 [SSHChannel None (76) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133782,91.230.47.81] direct-tcp forward to 136.243.58.37:80 with data 'GET /internals/api/ip?1495829296290544182 HTTP/1.1\r\nHost: ip2.adspy.mobi\r\nConnection: keep-alive\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.67 Safari/537.36\r\nAccept-Encoding: gzip, deflate, sdch\r\n\r\n'
 2017-05-26T20:09:00+0000 [SSHChannel None (76) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133782,91.230.47.81] failed to connect: Connection refused
 2017-05-26T20:09:00+0000 [SSHChannel None (76) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133782,91.230.47.81] sending close 76
+2017-05-26T20:09:11+0000 [CowrieTelnetTransport,117973,86.126.187.67] Closing TTY Log: log/tty/20170526-200709-None-117973i.log after 121 seconds
+2017-05-26T20:09:11+0000 [CowrieTelnetTransport,117973,86.126.187.67] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-26T20:09:11+0000 [CowrieTelnetTransport,117973,86.126.187.67] Connection lost after 125 seconds
+2017-05-26T20:09:35+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 183.37.222.61:47509 (10.8.41.81:2223) [session: TT117974]
+2017-05-26T20:09:37+0000 [CowrieTelnetTransport,117974,183.37.222.61] first time for 183.37.222.61, need: 1
+2017-05-26T20:09:37+0000 [CowrieTelnetTransport,117974,183.37.222.61] login attempt: 1
+2017-05-26T20:09:39+0000 [CowrieTelnetTransport,117974,183.37.222.61] login attempt [root/admin] succeeded
+2017-05-26T20:09:40+0000 [CowrieTelnetTransport,117974,183.37.222.61] Opening TTY Log: log/tty/20170526-200940-None-117974i.log
+2017-05-26T20:09:40+0000 [CowrieTelnetTransport,117974,183.37.222.61] Warning: state changed and new state returned
+2017-05-26T20:09:41+0000 [CowrieTelnetTransport,117974,183.37.222.61] Received unhandled keyID: '\x00'
+2017-05-26T20:09:41+0000 [CowrieTelnetTransport,117974,183.37.222.61] CMD: enable
+2017-05-26T20:09:41+0000 [CowrieTelnetTransport,117974,183.37.222.61] Command found: enable 
+2017-05-26T20:09:41+0000 [CowrieTelnetTransport,117974,183.37.222.61] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-26T20:09:43+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 109.236.91.85:12909 (10.8.41.81:2222) [session: f80d996c]
+2017-05-26T20:09:43+0000 [HoneyPotSSHTransport,133801,109.236.91.85] Remote SSH version: SSH-2.0-PuTTY_Release_0.67
+2017-05-26T20:09:43+0000 [HoneyPotSSHTransport,133801,109.236.91.85] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-05-26T20:09:43+0000 [HoneyPotSSHTransport,133801,109.236.91.85] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-26T20:09:43+0000 [HoneyPotSSHTransport,133801,109.236.91.85] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-26T20:09:43+0000 [HoneyPotSSHTransport,133801,109.236.91.85] NEW KEYS
+2017-05-26T20:09:43+0000 [HoneyPotSSHTransport,133801,109.236.91.85] starting service 'ssh-userauth'
+2017-05-26T20:09:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133801,109.236.91.85] 'user' trying auth 'none'
+2017-05-26T20:09:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133801,109.236.91.85] 'user' authenticated with 'none'
+2017-05-26T20:09:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133801,109.236.91.85] starting service 'ssh-connection'
+2017-05-26T20:09:44+0000 [CowrieTelnetTransport,117974,183.37.222.61] Received unhandled keyID: '\x00'
+2017-05-26T20:09:44+0000 [CowrieTelnetTransport,117974,183.37.222.61] CMD: system
+2017-05-26T20:09:44+0000 [CowrieTelnetTransport,117974,183.37.222.61] Command not found: system
+2017-05-26T20:09:44+0000 [CowrieTelnetTransport,117974,183.37.222.61] Received unhandled keyID: '\x00'
+2017-05-26T20:09:44+0000 [CowrieTelnetTransport,117974,183.37.222.61] CMD: shell
+2017-05-26T20:09:44+0000 [CowrieTelnetTransport,117974,183.37.222.61] Command not found: shell
+2017-05-26T20:09:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] got channel 'direct-tcpip' request
+2017-05-26T20:09:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] direct-tcp connection request to 216.58.213.206:80 from localhost:8080
+2017-05-26T20:09:44+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] direct-tcp forward to 216.58.213.206:80 with data 'GET / HTTP/1.0\r\nHost: google.com\r\n\r\n'
+2017-05-26T20:09:44+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] failed to connect: Connection refused
+2017-05-26T20:09:44+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] sending close 0
+2017-05-26T20:09:44+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] remote eof
+2017-05-26T20:09:44+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] remote close
+2017-05-26T20:09:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] got channel 'direct-tcpip' request
+2017-05-26T20:09:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] direct-tcp connection request to 206.190.36.45:80 from localhost:8080
+2017-05-26T20:09:44+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] direct-tcp forward to 206.190.36.45:80 with data 'GET / HTTP/1.0\r\nHost: yahoo.com\r\n\r\n'
+2017-05-26T20:09:44+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] failed to connect: Connection refused
+2017-05-26T20:09:44+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] sending close 1
+2017-05-26T20:09:44+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] remote eof
+2017-05-26T20:09:44+0000 [SSHChannel None (1) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] remote close
+2017-05-26T20:09:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] got channel 'direct-tcpip' request
+2017-05-26T20:09:44+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] direct-tcp connection request to 77.88.55.77:80 from localhost:8080
+2017-05-26T20:09:44+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] direct-tcp forward to 77.88.55.77:80 with data 'GET / HTTP/1.0\r\nHost: yandex.ru\r\n\r\n'
+2017-05-26T20:09:44+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] failed to connect: Connection refused
+2017-05-26T20:09:44+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] sending close 2
+2017-05-26T20:09:44+0000 [SSHChannel None (2) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133801,109.236.91.85] remote eof
+2017-05-26T20:09:44+0000 [HoneyPotSSHTransport,133801,109.236.91.85] avatar user logging out
+2017-05-26T20:09:44+0000 [HoneyPotSSHTransport,133801,109.236.91.85] connection lost
+2017-05-26T20:09:44+0000 [HoneyPotSSHTransport,133801,109.236.91.85] Connection lost after 1 seconds
+2017-05-26T20:09:45+0000 [CowrieTelnetTransport,117974,183.37.222.61] Received unhandled keyID: '\x00'
+2017-05-26T20:09:45+0000 [CowrieTelnetTransport,117974,183.37.222.61] CMD: sh
+2017-05-26T20:09:45+0000 [CowrieTelnetTransport,117974,183.37.222.61] Command found: sh 
+2017-05-26T20:09:46+0000 [CowrieTelnetTransport,117974,183.37.222.61] Received unhandled keyID: '\x00'
+2017-05-26T20:09:46+0000 [CowrieTelnetTransport,117974,183.37.222.61] CMD: /bin/busybox MIRAI
+2017-05-26T20:09:46+0000 [CowrieTelnetTransport,117974,183.37.222.61] Command found: /bin/busybox MIRAI
+2017-05-26T20:09:47+0000 [CowrieTelnetTransport,117974,183.37.222.61] Closing TTY Log: log/tty/20170526-200940-None-117974i.log after 6 seconds
+2017-05-26T20:09:47+0000 [CowrieTelnetTransport,117974,183.37.222.61] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-26T20:09:47+0000 [CowrieTelnetTransport,117974,183.37.222.61] Connection lost after 11 seconds
