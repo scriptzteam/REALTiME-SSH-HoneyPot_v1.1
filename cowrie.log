@@ -2019,3 +2019,25 @@
 2017-05-26T16:15:59+0000 [HoneyPotSSHTransport,133720,27.76.195.171] incoming: 'aes256-ctr' 'hmac-sha1' 'zlib'
 2017-05-26T16:16:01+0000 [HoneyPotSSHTransport,133720,27.76.195.171] NEW KEYS
 2017-05-26T16:16:01+0000 [HoneyPotSSHTransport,133720,27.76.195.171] starting service 'ssh-userauth'
+2017-05-26T16:16:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133720,27.76.195.171] 'admin' trying auth 'none'
+2017-05-26T16:16:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133720,27.76.195.171] 'admin' authenticated with 'none'
+2017-05-26T16:16:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133720,27.76.195.171] starting service 'ssh-connection'
+2017-05-26T16:16:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133720,27.76.195.171] got channel 'direct-tcpip' request
+2017-05-26T16:16:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133720,27.76.195.171] direct-tcp connection request to 125.235.30.114:443 from 192.168.1.17:57979
+2017-05-26T16:16:14+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133720,27.76.195.171] direct-tcp forward to 125.235.30.114:443 with data '\x16\x03\x03\x00z\x01\x00\x00v\x03\x03Y(T\xab\r\xb2\xef\xad\x13h]`zk \xdc\xaa\xb1\xa5\xa1\xe0p\xeb\x9d\xd4\x1b\xa1\xdem$\xdaD\x00\x00\x1a\x005\x00/\x009\x003\x00=\x00<\x00k\x00g\x00j\x00@\x00\n\x00\x05\x00\x04\x01\x00\x003\x00\x00\x00\x13\x00\x11\x00\x00\x0ewww.google.com\x00\x05\x00\x05\x01\x00\x00\x00\x00\xff\x01\x00\x01\x00\x00\r\x00\n\x00\x08\x04\x01\x05\x01\x02\x01\x01\x01'
+2017-05-26T16:16:14+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133720,27.76.195.171] failed to connect: Connection refused
+2017-05-26T16:16:14+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133720,27.76.195.171] sending close 0
+2017-05-26T16:16:21+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133710,91.230.47.82] got channel 'direct-tcpip' request
+2017-05-26T16:16:21+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133710,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-05-26T16:16:21+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133710,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-05-26T16:16:21+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133710,91.230.47.82] failed to connect: Connection refused
+2017-05-26T16:16:21+0000 [SSHChannel None (3) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133710,91.230.47.82] sending close 3
+2017-05-26T16:16:31+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133720,27.76.195.171] remote eof
+2017-05-26T16:16:31+0000 [SSHChannel None (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133720,27.76.195.171] remote close
+2017-05-26T16:16:45+0000 [HoneyPotSSHTransport,133720,27.76.195.171] avatar admin logging out
+2017-05-26T16:16:45+0000 [HoneyPotSSHTransport,133720,27.76.195.171] connection lost
+2017-05-26T16:16:45+0000 [HoneyPotSSHTransport,133720,27.76.195.171] Connection lost after 46 seconds
+2017-05-26T16:16:48+0000 [CowrieTelnetTransport,117651,2.61.173.253] Closing TTY Log: log/tty/20170526-161446-None-117651i.log after 121 seconds
+2017-05-26T16:16:48+0000 [CowrieTelnetTransport,117651,2.61.173.253] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-26T16:16:48+0000 [CowrieTelnetTransport,117651,2.61.173.253] Connection lost after 125 seconds
