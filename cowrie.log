@@ -6434,3 +6434,56 @@
 2017-05-26T02:31:33+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,132743,91.230.47.82] failed to connect: Connection refused
 2017-05-26T02:31:33+0000 [SSHChannel None (26) on SSHService 'ssh-connection' on HoneyPotSSHTransport,132743,91.230.47.82] sending close 26
 2017-05-26T02:31:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 192.227.225.82:54826 (10.8.41.81:2223) [session: TT116910]
+2017-05-26T02:32:02+0000 [CowrieTelnetTransport,116910,192.227.225.82] login attempt: 792
+2017-05-26T02:32:02+0000 [CowrieTelnetTransport,116910,192.227.225.82] login return, expect: [admin/1111]
+2017-05-26T02:32:03+0000 [CowrieTelnetTransport,116910,192.227.225.82] login attempt [support/support] failed
+2017-05-26T02:32:03+0000 [CowrieTelnetTransport,116910,192.227.225.82] Warning: state changed and new state returned
+2017-05-26T02:32:04+0000 [CowrieTelnetTransport,116910,192.227.225.82] login attempt: 793
+2017-05-26T02:32:04+0000 [CowrieTelnetTransport,116910,192.227.225.82] login return, expect: [admin/1111]
+2017-05-26T02:32:05+0000 [CowrieTelnetTransport,116910,192.227.225.82] login attempt [enable/shell] failed
+2017-05-26T02:32:05+0000 [CowrieTelnetTransport,116910,192.227.225.82] Warning: state changed and new state returned
+2017-05-26T02:32:05+0000 [CowrieTelnetTransport,116910,192.227.225.82] login attempt: 794
+2017-05-26T02:32:05+0000 [CowrieTelnetTransport,116910,192.227.225.82] login return, expect: [admin/1111]
+2017-05-26T02:32:07+0000 [CowrieTelnetTransport,116910,192.227.225.82] login attempt [sh//bin/busybox ECCHI] failed
+2017-05-26T02:32:07+0000 [CowrieTelnetTransport,116910,192.227.225.82] Warning: state changed and new state returned
+2017-05-26T02:32:31+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 189.215.199.50:42953 (10.8.41.81:2223) [session: TT116911]
+2017-05-26T02:32:32+0000 [CowrieTelnetTransport,116911,189.215.199.50] first time for 189.215.199.50, need: 1
+2017-05-26T02:32:32+0000 [CowrieTelnetTransport,116911,189.215.199.50] login attempt: 1
+2017-05-26T02:32:34+0000 [CowrieTelnetTransport,116911,189.215.199.50] login attempt [root/klv123] succeeded
+2017-05-26T02:32:36+0000 [CowrieTelnetTransport,116911,189.215.199.50] Opening TTY Log: log/tty/20170526-023236-None-116911i.log
+2017-05-26T02:32:36+0000 [CowrieTelnetTransport,116911,189.215.199.50] Warning: state changed and new state returned
+2017-05-26T02:32:36+0000 [CowrieTelnetTransport,116911,189.215.199.50] CMD: enable
+2017-05-26T02:32:36+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command found: enable 
+2017-05-26T02:32:36+0000 [CowrieTelnetTransport,116911,189.215.199.50] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-26T02:32:36+0000 [CowrieTelnetTransport,116911,189.215.199.50] CMD: shell
+2017-05-26T02:32:36+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command not found: shell
+2017-05-26T02:32:36+0000 [CowrieTelnetTransport,116911,189.215.199.50] CMD: sh
+2017-05-26T02:32:36+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command found: sh 
+2017-05-26T02:32:36+0000 [CowrieTelnetTransport,116911,189.215.199.50] CMD: cat /proc/mounts; /bin/busybox VBMKD
+2017-05-26T02:32:36+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command found: cat /proc/mounts
+2017-05-26T02:32:36+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command found: /bin/busybox VBMKD
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] CMD: cd /dev/shm; cat .s || cp /bin/echo .s; /bin/busybox VBMKD
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command found: cd /dev/shm
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command found: cat .s
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command found: cp /bin/echo .s
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command found: /bin/busybox VBMKD
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] CMD: nc; wget; /bin/busybox VBMKD
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command not found: nc
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command found: wget 
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command found: /bin/busybox VBMKD
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] CMD: dd bs=52 count=1 if=.s || cat .s
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command not found: dd bs=52 count=1 if=.s
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command found: cat /dev/shm/.s
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] CMD: /bin/busybox VBMKD
+2017-05-26T02:32:37+0000 [CowrieTelnetTransport,116911,189.215.199.50] Command found: /bin/busybox VBMKD
+2017-05-26T02:32:39+0000 [CowrieTelnetTransport,116910,192.227.225.82] Connection lost after 40 seconds
+2017-05-26T02:32:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,132735,134.19.187.75] got channel 'direct-tcpip' request
+2017-05-26T02:32:42+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,132735,134.19.187.75] direct-tcp connection request to 66.196.118.37:25 from localhost:5556
+2017-05-26T02:32:48+0000 [SSHChannel None (97) on SSHService 'ssh-connection' on HoneyPotSSHTransport,132735,134.19.187.75] remote eof
+2017-05-26T02:32:48+0000 [SSHChannel None (97) on SSHService 'ssh-connection' on HoneyPotSSHTransport,132735,134.19.187.75] remote close
+2017-05-26T02:32:48+0000 [SSHChannel None (97) on SSHService 'ssh-connection' on HoneyPotSSHTransport,132735,134.19.187.75] sending close 97
+2017-05-26T02:32:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,132735,134.19.187.75] got channel 'direct-tcpip' request
+2017-05-26T02:32:48+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,132735,134.19.187.75] direct-tcp connection request to 66.196.118.37:25 from localhost:5556
+2017-05-26T02:32:53+0000 [SSHChannel None (98) on SSHService 'ssh-connection' on HoneyPotSSHTransport,132735,134.19.187.75] remote eof
+2017-05-26T02:32:53+0000 [SSHChannel None (98) on SSHService 'ssh-connection' on HoneyPotSSHTransport,132735,134.19.187.75] remote close
+2017-05-26T02:32:53+0000 [SSHChannel None (98) on SSHService 'ssh-connection' on HoneyPotSSHTransport,132735,134.19.187.75] sending close 98
