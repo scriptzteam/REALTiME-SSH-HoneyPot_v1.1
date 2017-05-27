@@ -6416,3 +6416,26 @@
 2017-05-27T07:34:49+0000 [CowrieTelnetTransport,118940,113.86.205.168] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-05-27T07:34:49+0000 [CowrieTelnetTransport,118940,113.86.205.168] Connection lost after 127 seconds
+2017-05-27T07:35:21+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.197.235.11:42175 (10.8.41.81:2222) [session: 19fe57ca]
+2017-05-27T07:35:21+0000 [HoneyPotSSHTransport,134094,91.197.235.11] Remote SSH version: SSH-2.0-ssh2js0.3.6
+2017-05-27T07:35:21+0000 [HoneyPotSSHTransport,134094,91.197.235.11] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-27T07:35:21+0000 [HoneyPotSSHTransport,134094,91.197.235.11] outgoing: '3des-cbc' 'hmac-sha1' 'none'
+2017-05-27T07:35:21+0000 [HoneyPotSSHTransport,134094,91.197.235.11] incoming: '3des-cbc' 'hmac-sha1' 'none'
+2017-05-27T07:35:21+0000 [HoneyPotSSHTransport,134094,91.197.235.11] NEW KEYS
+2017-05-27T07:35:21+0000 [HoneyPotSSHTransport,134094,91.197.235.11] starting service 'ssh-userauth'
+2017-05-27T07:35:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134094,91.197.235.11] '1111' trying auth 'password'
+2017-05-27T07:35:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134094,91.197.235.11] login attempt: 943
+2017-05-27T07:35:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134094,91.197.235.11] login return, expect: [1111/1111]
+2017-05-27T07:35:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134094,91.197.235.11] login attempt [1111/1111] succeeded
+2017-05-27T07:35:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134094,91.197.235.11] '1111' authenticated with 'password'
+2017-05-27T07:35:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134094,91.197.235.11] starting service 'ssh-connection'
+2017-05-27T07:35:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,134094,91.197.235.11] got channel 'direct-tcpip' request
+2017-05-27T07:35:25+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,134094,91.197.235.11] direct-tcp connection request to yahoo.com:443 from localhost:0
+2017-05-27T07:35:25+0000 [HoneyPotSSHTransport,134094,91.197.235.11] avatar 1111 logging out
+2017-05-27T07:35:25+0000 [HoneyPotSSHTransport,134094,91.197.235.11] connection lost
+2017-05-27T07:35:25+0000 [HoneyPotSSHTransport,134094,91.197.235.11] Connection lost after 3 seconds
+2017-05-27T07:35:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,134021,134.19.187.78] got channel 'direct-tcpip' request
+2017-05-27T07:35:55+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,134021,134.19.187.78] direct-tcp connection request to 13.81.65.66:443 from localhost:5556
+2017-05-27T07:35:55+0000 [SSHChannel None (69) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134021,134.19.187.78] direct-tcp forward to 13.81.65.66:443 with data '\x16\x03\x01\x00e\x01\x00\x00a\x03\x01Y),2V\xf1n\xfdc\xbfP\x13\x1bMX\x12A\x8frq\xb6WB[\x9e\x01\x7f(\x9f\xd1\xb6\x0b\x00\x00*\x009\x008\x005\x00\x16\x00\x13\x00\n\x003\x002\x00/\x00\x07\x00\x05\x00\x04\x00\x15\x00\x12\x00\t\x00\x14\x00\x11\x00\x08\x00\x06\x00\x03\x00\xff\x01\x00\x00\x0e\x00\x00\x00\x06\x00\x04\x00\x00\x01a\x00#\x00\x00'
+2017-05-27T07:35:55+0000 [SSHChannel None (69) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134021,134.19.187.78] failed to connect: Connection refused
+2017-05-27T07:35:55+0000 [SSHChannel None (69) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134021,134.19.187.78] sending close 69
