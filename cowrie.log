@@ -2737,3 +2737,42 @@
 2017-05-27T08:16:00+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134033,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
 2017-05-27T08:16:00+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134033,91.230.47.82] failed to connect: Connection refused
 2017-05-27T08:16:00+0000 [SSHChannel None (10) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134033,91.230.47.82] sending close 10
+2017-05-27T08:16:10+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.195.103.217:63761 (10.8.41.81:2222) [session: 1cd9689c]
+2017-05-27T08:16:11+0000 [HoneyPotSSHTransport,134117,91.195.103.217] Remote SSH version: SSH-2.0-libssh-0.6.0
+2017-05-27T08:16:11+0000 [HoneyPotSSHTransport,134117,91.195.103.217] kex alg, key alg: 'ecdh-sha2-nistp256' 'ssh-rsa'
+2017-05-27T08:16:11+0000 [HoneyPotSSHTransport,134117,91.195.103.217] outgoing: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-27T08:16:11+0000 [HoneyPotSSHTransport,134117,91.195.103.217] incoming: 'aes256-ctr' 'hmac-sha1' 'none'
+2017-05-27T08:16:12+0000 [HoneyPotSSHTransport,134117,91.195.103.217] NEW KEYS
+2017-05-27T08:16:12+0000 [HoneyPotSSHTransport,134117,91.195.103.217] starting service 'ssh-userauth'
+2017-05-27T08:16:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134117,91.195.103.217] '1111' trying auth 'password'
+2017-05-27T08:16:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134117,91.195.103.217] login attempt: 19
+2017-05-27T08:16:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134117,91.195.103.217] login return, expect: [1111/1111]
+2017-05-27T08:16:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134117,91.195.103.217] login attempt [1111/1111] succeeded
+2017-05-27T08:16:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134117,91.195.103.217] '1111' authenticated with 'password'
+2017-05-27T08:16:15+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134117,91.195.103.217] starting service 'ssh-connection'
+2017-05-27T08:16:39+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 86.120.44.244:60329 (10.8.41.81:2223) [session: TT119054]
+2017-05-27T08:16:40+0000 [CowrieTelnetTransport,119054,86.120.44.244] first time for 86.120.44.244, need: 1
+2017-05-27T08:16:40+0000 [CowrieTelnetTransport,119054,86.120.44.244] login attempt: 1
+2017-05-27T08:16:42+0000 [CowrieTelnetTransport,119054,86.120.44.244] login attempt [root/Zte521] succeeded
+2017-05-27T08:16:43+0000 [CowrieTelnetTransport,119054,86.120.44.244] Opening TTY Log: log/tty/20170527-081643-None-119054i.log
+2017-05-27T08:16:43+0000 [CowrieTelnetTransport,119054,86.120.44.244] Warning: state changed and new state returned
+2017-05-27T08:16:43+0000 [CowrieTelnetTransport,119054,86.120.44.244] Received unhandled keyID: '\x00'
+2017-05-27T08:16:43+0000 [CowrieTelnetTransport,119054,86.120.44.244] CMD: enable
+2017-05-27T08:16:43+0000 [CowrieTelnetTransport,119054,86.120.44.244] Command found: enable 
+2017-05-27T08:16:43+0000 [CowrieTelnetTransport,119054,86.120.44.244] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-27T08:16:44+0000 [CowrieTelnetTransport,119054,86.120.44.244] Received unhandled keyID: '\x00'
+2017-05-27T08:16:44+0000 [CowrieTelnetTransport,119054,86.120.44.244] CMD: system
+2017-05-27T08:16:44+0000 [CowrieTelnetTransport,119054,86.120.44.244] Command not found: system
+2017-05-27T08:16:44+0000 [CowrieTelnetTransport,119054,86.120.44.244] Received unhandled keyID: '\x00'
+2017-05-27T08:16:44+0000 [CowrieTelnetTransport,119054,86.120.44.244] CMD: shell
+2017-05-27T08:16:44+0000 [CowrieTelnetTransport,119054,86.120.44.244] Command not found: shell
+2017-05-27T08:16:44+0000 [CowrieTelnetTransport,119054,86.120.44.244] Received unhandled keyID: '\x00'
+2017-05-27T08:16:44+0000 [CowrieTelnetTransport,119054,86.120.44.244] CMD: sh
+2017-05-27T08:16:44+0000 [CowrieTelnetTransport,119054,86.120.44.244] Command found: sh 
+2017-05-27T08:16:44+0000 [CowrieTelnetTransport,119054,86.120.44.244] Received unhandled keyID: '\x00'
+2017-05-27T08:16:44+0000 [CowrieTelnetTransport,119054,86.120.44.244] CMD: /bin/busybox MIRAI
+2017-05-27T08:16:44+0000 [CowrieTelnetTransport,119054,86.120.44.244] Command found: /bin/busybox MIRAI
+2017-05-27T08:16:45+0000 [CowrieTelnetTransport,119054,86.120.44.244] Closing TTY Log: log/tty/20170527-081643-None-119054i.log after 1 seconds
+2017-05-27T08:16:45+0000 [CowrieTelnetTransport,119054,86.120.44.244] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-27T08:16:45+0000 [CowrieTelnetTransport,119054,86.120.44.244] Connection lost after 5 seconds
