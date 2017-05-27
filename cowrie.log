@@ -3133,3 +3133,42 @@
 2017-05-27T03:42:18+0000 [CowrieTelnetTransport,118709,188.16.21.168] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
 	]
 2017-05-27T03:42:18+0000 [CowrieTelnetTransport,118709,188.16.21.168] Connection lost after 124 seconds
+2017-05-27T03:43:08+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 45.76.33.154:35554 (10.8.41.81:2222) [session: 27843e40]
+2017-05-27T03:43:08+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 45.76.33.154:35566 (10.8.41.81:2222) [session: 8f818fa5]
+2017-05-27T03:43:08+0000 [HoneyPotSSHTransport,134001,45.76.33.154] connection lost
+2017-05-27T03:43:08+0000 [HoneyPotSSHTransport,134001,45.76.33.154] Connection lost after 0 seconds
+2017-05-27T03:43:08+0000 [HoneyPotSSHTransport,134002,45.76.33.154] Remote SSH version: SSH-2.0-paramiko_1.7.5
+2017-05-27T03:43:08+0000 [HoneyPotSSHTransport,134002,45.76.33.154] kex alg, key alg: 'diffie-hellman-group1-sha1' 'ssh-rsa'
+2017-05-27T03:43:08+0000 [HoneyPotSSHTransport,134002,45.76.33.154] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-27T03:43:08+0000 [HoneyPotSSHTransport,134002,45.76.33.154] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-27T03:43:08+0000 [HoneyPotSSHTransport,134002,45.76.33.154] NEW KEYS
+2017-05-27T03:43:09+0000 [HoneyPotSSHTransport,134002,45.76.33.154] starting service 'ssh-userauth'
+2017-05-27T03:43:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134002,45.76.33.154] 'admin' trying auth 'password'
+2017-05-27T03:43:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134002,45.76.33.154] login attempt: 2
+2017-05-27T03:43:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134002,45.76.33.154] login return, expect: [admin/1111]
+2017-05-27T03:43:11+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134002,45.76.33.154] login attempt [admin/1111] succeeded
+2017-05-27T03:43:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134002,45.76.33.154] 'admin' authenticated with 'password'
+2017-05-27T03:43:13+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,134002,45.76.33.154] starting service 'ssh-connection'
+2017-05-27T03:43:13+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] got channel 'session' request
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] channel open
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] executing command "/sbin/ifconfig"
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] Opening TTY Log: log/tty/20170527-034313-8f818fa5-0e.log
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] CMD: /sbin/ifconfig
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] Command found: /sbin/ifconfig 
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] exitCode: 0
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] sending request 'exit-status'
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] sending close 0
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] received eof, sending ctrl-d to command
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] Received CTRL-D, exiting..
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] exitCode: 0
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] Closing TTY Log: log/tty/20170527-034313-8f818fa5-0e.log after 0 seconds
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-27T03:43:13+0000 [SSHChannel session (0) on SSHService 'ssh-connection' on HoneyPotSSHTransport,134002,45.76.33.154] remote close
+2017-05-27T03:43:13+0000 [HoneyPotSSHTransport,134002,45.76.33.154] avatar admin logging out
+2017-05-27T03:43:13+0000 [HoneyPotSSHTransport,134002,45.76.33.154] connection lost
+2017-05-27T03:43:13+0000 [HoneyPotSSHTransport,134002,45.76.33.154] Connection lost after 5 seconds
+2017-05-27T03:43:18+0000 [CowrieTelnetTransport,118710,177.238.33.101] Closing TTY Log: log/tty/20170527-034136-None-118710i.log after 102 seconds
+2017-05-27T03:43:18+0000 [CowrieTelnetTransport,118710,177.238.33.101] honeypot terminal protocol connection lost [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionDone'>: Connection was closed cleanly.
+	]
+2017-05-27T03:43:18+0000 [CowrieTelnetTransport,118710,177.238.33.101] Connection lost after 106 seconds
