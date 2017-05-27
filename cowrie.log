@@ -7468,3 +7468,63 @@
 2017-05-27T00:33:01+0000 [-] 'root' failed auth 'password'
 2017-05-27T00:33:01+0000 [-] unauthorized login: 
 2017-05-27T00:33:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T00:33:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] login attempt: 22354
+2017-05-27T00:33:02+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] login return, expect: [support/support]
+2017-05-27T00:33:03+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] login attempt [root/seiko2005] failed
+2017-05-27T00:33:04+0000 [-] 'root' failed auth 'password'
+2017-05-27T00:33:04+0000 [-] unauthorized login: 
+2017-05-27T00:33:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T00:33:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] login attempt: 22355
+2017-05-27T00:33:04+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] login return, expect: [support/support]
+2017-05-27T00:33:06+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] login attempt [root/seiko2005] failed
+2017-05-27T00:33:07+0000 [-] 'root' failed auth 'password'
+2017-05-27T00:33:07+0000 [-] unauthorized login: 
+2017-05-27T00:33:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T00:33:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] login attempt: 22356
+2017-05-27T00:33:07+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] login return, expect: [support/support]
+2017-05-27T00:33:09+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] login attempt [root/seiko2005] failed
+2017-05-27T00:33:10+0000 [-] 'root' failed auth 'password'
+2017-05-27T00:33:10+0000 [-] unauthorized login: 
+2017-05-27T00:33:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] 'root' trying auth 'password'
+2017-05-27T00:33:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] login attempt: 22357
+2017-05-27T00:33:10+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] login return, expect: [support/support]
+2017-05-27T00:33:12+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133887,195.22.127.83] login attempt [root/seiko2005] failed
+2017-05-27T00:33:12+0000 [HoneyPotSSHTransport,133887,195.22.127.83] connection lost
+2017-05-27T00:33:12+0000 [HoneyPotSSHTransport,133887,195.22.127.83] Connection lost after 63 seconds
+2017-05-27T00:33:13+0000 [-] 'root' failed auth 'password'
+2017-05-27T00:33:13+0000 [-] unauthorized login: 
+2017-05-27T00:33:13+0000 [twisted.internet.defer#critical] Unhandled error in Deferred:
+2017-05-27T00:33:13+0000 [twisted.internet.defer#critical] 
+	Traceback (most recent call last):
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 1252, in mainLoop
+	    self.runUntilCurrent()
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/base.py", line 878, in runUntilCurrent
+	    call.func(*call.args, **call.kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 459, in callback
+	    self._startRunCallbacks(result)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 567, in _startRunCallbacks
+	    self._runCallbacks()
+	--- <exception caught here> ---
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+	    current.result = callback(current.result, *args, **kw)
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/userauth.py", line 251, in _ebBadAuth
+	    NS(b','.join(self.supportedAuthentications)) + b'\x00')
+	  File "/home/cowrie/cowrie/cowrie-env/local/lib/python2.7/site-packages/twisted/conch/ssh/transport.py", line 637, in sendPacket
+	    self.transport.write(encPacket)
+	exceptions.AttributeError: 'NoneType' object has no attribute 'write'
+	
+2017-05-27T00:33:17+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 129.144.149.232:60858 (10.8.41.81:2222) [session: 51bdac14]
+2017-05-27T00:33:19+0000 [HoneyPotSSHTransport,133888,129.144.149.232] connection lost
+2017-05-27T00:33:19+0000 [HoneyPotSSHTransport,133888,129.144.149.232] Connection lost after 2 seconds
+2017-05-27T00:33:59+0000 [cowrie.ssh.factory.CowrieSSHFactory] New connection: 185.145.252.26:10412 (10.8.41.81:2222) [session: 04d4a100]
+2017-05-27T00:33:59+0000 [HoneyPotSSHTransport,133889,185.145.252.26] Remote SSH version: SSH-2.0-OpenSSH_5.2
+2017-05-27T00:33:59+0000 [HoneyPotSSHTransport,133889,185.145.252.26] kex alg, key alg: 'diffie-hellman-group-exchange-sha256' 'ssh-rsa'
+2017-05-27T00:33:59+0000 [HoneyPotSSHTransport,133889,185.145.252.26] outgoing: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-27T00:33:59+0000 [HoneyPotSSHTransport,133889,185.145.252.26] incoming: 'aes128-ctr' 'hmac-sha1' 'none'
+2017-05-27T00:33:59+0000 [HoneyPotSSHTransport,133889,185.145.252.26] NEW KEYS
+2017-05-27T00:33:59+0000 [HoneyPotSSHTransport,133889,185.145.252.26] starting service 'ssh-userauth'
+2017-05-27T00:33:59+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133889,185.145.252.26] 'user' trying auth 'none'
+2017-05-27T00:34:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133889,185.145.252.26] 'user' authenticated with 'none'
+2017-05-27T00:34:01+0000 [SSHService 'ssh-userauth' on HoneyPotSSHTransport,133889,185.145.252.26] starting service 'ssh-connection'
+2017-05-27T00:34:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133889,185.145.252.26] got channel 'direct-tcpip' request
+2017-05-27T00:34:01+0000 [SSHService 'ssh-connection' on HoneyPotSSHTransport,133889,185.145.252.26] direct-tcp connection request to 172.217.17.46:80 from localhost:8080
